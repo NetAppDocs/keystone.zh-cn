@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_performance.html 
+keywords: netapp, keystone, performance, 
+summary: Keystone Flex 订阅性能 
+---
+= 性能服务级别
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone 灵活订阅（ Flex 订阅）可按预定义的性能级别提供容量。
+
+每个性能服务级别均通过其 I/O 密度来定义，该密度是指性能（每秒输入 / 输出操作数 IOPS ）与已用存储（已存储数据的 TiB ）（即 IOPS/TiB ）之比。
+
+由 Flex 订阅服务管理的每个卷都与一个性能服务级别相关联。在计算卷的 I/O 密度时会考虑相应卷上使用的所有 I/O 操作和所有已用存储。
+
+下图定义了性能服务级别。
+
+image:nkfsosm_image5.png["错误：缺少图形映像"]
+
+报告卷级别的 I/O 密度计算，以显示前一周的峰值 I/O 密度。峰值性能是按每小时时间间隔确定的。每个月都会按卷生成 I/O 密度报告，以衡量是否符合相应的服务级别。

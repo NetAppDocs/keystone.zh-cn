@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: seapiref_overview_of_netapp_service_engine_apis.html 
+keywords: netapp, overview, service, engine, apis, 
+summary: NetApp 服务引擎 API 概述 
+---
+= NetApp 服务引擎 API 概述
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 服务引擎提供了一组 API ，用于通过 RESTful Web 服务界面管理受支持存储系统上的存储资源，以实现任何第三方集成。这些 API 涵盖了 GUI 支持的所有功能。NetApp 提供了 API 文档，但客户有责任将其集成到其应用程序中。
+
+本《 NetApp 服务引擎 API 参考指南》为您提供了有关 API 和示例代码的信息。通过本指南中提供的信息，您可以为 NetApp 服务引擎创建 RESTful 客户端。API 基于表述性状态传输（ Representational State Transfer ， REST ）架构模式。
+
+
+
+=== 目标受众
+
+本指南面向创建通过 REST API 与 NetApp 服务引擎软件交互的应用程序的开发人员。
+
+如果要使用存储提供程序， NetApp ONTAP 集群和管理管理 API 来管理存储，应使用本指南。
+
+
+
+=== NetApp 服务引擎 API 访问和类别
+
+
+
+==== 构建 URL 以直接访问 REST API
+
+您可以直接通过编程语言访问 REST API ，例如 Python ， C# ， C++ ， JavaScript ， 等等。要以 `https ： // <hostname>/API` 格式访问 REST API ，请输入主机名或 IP 地址以及 URL 。
+
+
+
+==== 使用者和管理员 API
+
+本文档将 API 说明分为两部分，其中包括：
+
+* 使用者 API
+* 管理员 API
+
+
+
+
+=== NetApp 服务引擎的主要概念
+
+NetApp 服务引擎支持区域和区域的概念，如下图所示。区域表示数据中心或站点，而区域表示区域内的存储子单元（从技术上讲，是指数据中心 / 站点内的集群）。多个分区支持数据可用性和数据保护（ DP ）功能。
+
+image:seapiref_image1.png["错误：缺少图形映像"]
+
+一个 NetApp 服务引擎实例可以支持一个或多个租户。NetApp 服务引擎将租户和子租户概念用作拥有或管理存储服务的分层实体。
+
+租户可以是客户，合作伙伴或计费实体。一个租户持有 Flex 订阅服务的订阅（或多个订阅）。
+
+子租户是完全位于租户内的实体。它可用于回放，安全隔离等。
+
+存储项按子租户创建。每个子租户都可以拥有适合该子租户的类型和编号的多个存储项。
+
+NetApp 服务引擎支持以下类型的存储：
+
+* 块存储和磁盘中的块存储
+* 文件服务器和文件共享中的文件存储
+* 存储在存储分段中
+

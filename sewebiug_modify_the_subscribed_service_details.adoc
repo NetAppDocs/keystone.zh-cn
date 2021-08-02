@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_the_subscribed_service_details.html 
+keywords: netapp, keystone, modify, subscribed, service, details, 
+summary: Keystone 修改订阅的服务详细信息 
+---
+= 修改订阅的服务详细信息
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此方法可以修改已订阅服务的详细信息。您可以
+
+* 修改每个服务的详细信息，如下表所示。
+* 为服务添加或删除标记。
+
+
+|===
+| 云平台 | 您可以修改： 
+
+
+| Azure 酒店 | Azure 客户端 ID ， Azure 客户端机密和名称 
+
+
+| Azure 美国政府 | TBA 
+
+
+| GCP | TBA 
+
+
+| AWS | TBA 
+|===
+
+
+=== 步骤
+
+. 从菜单中选择订阅服务 > 订阅服务。
+. 在列表中找到已订阅的服务，然后单击编辑图标。
+. 在更新订阅的服务对话框中，根据需要进行任何更改。
+. 单击 * 更新 * 。
+

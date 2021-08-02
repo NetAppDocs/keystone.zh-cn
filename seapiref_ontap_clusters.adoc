@@ -1,0 +1,626 @@
+---
+sidebar: sidebar 
+permalink: seapiref_ontap_clusters.html 
+keywords:  
+summary:  
+---
+= ONTAP 集群
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用下表中列出的方法检索，创建，修改和删除 ONTAP 集群。
+
+|===
+| HTTP 方法 | 路径 | Description 
+
+
+| `获取` | ` /v2.1/ontapclusters` | 检索所有 ONTAP 集群。 
+
+
+| `获取` | ` /v2.1/ontapclusters/ ｛ id ｝` | 按 ID 检索 ONTAP 集群。 
+
+
+| `发布` | ` /v2.1/ontapclusters` | 创建新的 ONTAP 集群。 
+
+
+| `PUT` | ` /v2.1/ontapclusters/ ｛ id ｝` | 按 ID 更新 ONTAP 集群清单。 
+
+
+| `d删除` | ` /v2.1/ontapclusters/ ｛ id ｝` | 删除 ONTAP 集群。 
+|===
+
+
+=== ONTAP 集群属性
+
+下表列出了 ONTAP 集群的属性。
+
+|===
+| 属性 | Type | Description 
+
+
+| `id` | string | ONTAP 集群的唯一标识符。 
+
+
+| `名称` | string | ONTAP 集群名称。 
+
+
+| `uuid` | string | ONTAP 集群通用唯一标识符（ UUID ）。 
+
+
+| `mantioning_IP` | string | ONTAP 集群管理 IPv4 地址。 
+
+
+| `用户名` | string | ONTAP 集群名称 
+
+
+| `密码` | string | ONTAP 集群密码 
+
+
+| `provisioning_state` | string  a| 
+标识集群是否可用于配置操作。选项包括：
+
+* 打开
+* 已关闭
+
+
+
+
+| `data_network_ip_cidr` | string | 子网的 CIDR 表示法。 
+
+
+| `data_network_default_gateway` | string | IPv4 地址。 
+
+
+| `data_network_ports` | –  a| 
+ONTAP 集群数据网络端口列表。
+
+[listing]
+----
+For example:
+[
+  {
+  "node_name": "dev-ots-per01-01",
+  "port_name": "e0c-120",
+  "parent_port": "e0c"
+  }
+]
+----
+
+
+| `intercluster_LIF` | –  a| 
+ONTAP 集群集群间 LIF 。
+
+[listing]
+----
+For example:
+[
+  {
+  "name": "peer1",
+  "node": "aff-01",
+  "port": "a0a-103",
+  "address": "10.128.113.232",
+  "netmask": "255.255.255.0"
+  },
+{
+  "name": "peer2",
+  "node": "aff-02",
+  "port": "a0a-103",
+  "address": "10.128.113.233",
+  "netmask": "255.255.255.0"
+  }
+]
+----
+
+
+| `sVM_root_service_level` | string | ONTAP 集群 Storage Virtual Machine （ SVM ）根服务级别名称。适用值包括 " 标准 " ， " 极速 " 或 " 高级 " 。默认情况下，此服务级别会分配给在集群下创建的所有 SVM 。集群应具有所述服务级别的关联聚合。 
+
+
+| `分区` | string | 分区名称。 
+
+
+| `ssubscription_number` | string | Zuora 订阅。 
+
+
+| `serves_available` | –  a| 
+列出可用服务及其状态。例如：
+
+[listing]
+----
+{
+  "fcp": false,
+  "iscsi": true,
+  "nas": true
+  }
+----
+
+
+| `data_fcp_ports` | –  a| 
+已启用 FCP 的 ONTAP 集群的节点和端口列表。例如：
+
+[listing]
+----
+[  {   "node_name": "aff-01",   "port_name": "0g"  },  {   "node_name": "aff-01",   "port_name": "0h"
+  ]
+----
+
+
+| `is_mcc` | 布尔值 | 指示集群是否已启用 MetroCluster 。默认值为 False 。 
+
+
+| `mcc_partner_cluster` | string | MetroCluster 对中当前集群的配对集群的标识符。如果为集群启用了 MetroCluster ，则为必需项。 
+|===
+
+
+=== 检索所有 ONTAP 集群
+
+使用以下列出的方法检索所有 ONTAP 集群或部分 ONTAP 集群。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` /v2.1/ontapclusters` | 检索所有 ONTAP 集群。 | `offset` 和 `limit` —请参见 link:seapiref_netapp_service_engine_rest_apis.html#pagination>["通用分页"] 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "total_records": 5,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 3,
+    "limit": 2,
+    "records": [
+      {
+        "id": "5c5bb9f16680a7002a5f7450",
+        "name": "dev-ots-per01",
+        "region": "au-west1",
+        "zone": "au-west1-a",
+        "uuid": "63053baa-ada4-11ea-b197-005056a4c0ef",
+        "management_ip": "10.128.115.173",
+        "username": "admin",
+        "services_available": {
+          "fcp": false,
+          "iscsi": true,
+          "nas": true
+        },
+        "provisioning_state": "open",
+        "data_network_ports": [
+          {
+            "node_name": "dev-ots-per01-01",
+            "port_name": "e0c-120",
+            "parent_port": "e0c"
+          }
+        ],
+        "data_network_ip_cidr": "10.96.120.0/24",
+        "data_network_default_gateway": "10.96.120.1",
+        "svm_root_service_level": "performance",
+        "intercluster_lifs": [
+          {
+            "name": "dev-ots-per01-01-icl01",
+            "node": "dev-ots-per01-01",
+            "port": "e0b",
+            "address": "10.128.115.144",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "subscription_number": "A-S00003875",
+        "created": "2019-02-22T03:38:38.867Z",
+        "data_fcp_ports": []
+      },
+      {
+        "id": "5eaf5249f038943eb46b6608",
+        "name": "aff",
+        "region": "au-east1",
+        "zone": "au-east1-b",
+        "uuid": "62d649d2-07a1-11e6-9549-00a0985c0dcb",
+        "management_ip": "10.128.113.69",
+        "username": "admin",
+        "services_available": {
+          "fcp": true,
+          "iscsi": true,
+          "nas": true
+        },
+        "provisioning_state": "open",
+        "data_network_ports": [
+          {
+            "node_name": "aff-01",
+            "port_name": "a0a-2000",
+            "parent_port": "a0a"
+          },
+          {
+            "node_name": "aff-02",
+            "port_name": "a0a-2000",
+            "parent_port": "a0a"
+          }
+        ],
+        "data_network_ip_cidr": "10.50.50.0/24",
+        "data_network_default_gateway": "10.50.50.1",
+        "svm_root_service_level": "premium",
+        "intercluster_lifs": [
+          {
+            "name": "peer1",
+            "node": "aff-01",
+            "port": "a0a-103",
+            "address": "10.128.113.232",
+            "netmask": "255.255.255.0"
+          },
+          {
+            "name": "peer2",
+            "node": "aff-02",
+            "port": "a0a-103",
+            "address": "10.128.113.233",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "subscription_number": "A-S00004635",
+        "created": "2019-02-22T03:38:38.867Z",
+        "data_fcp_ports": [
+          {
+            "node_name": "aff-01",
+            "port_name": "0g"
+          },
+          {
+            "node_name": "aff-01",
+            "port_name": "0h"
+          },
+          {
+            "node_name": "aff-02",
+            "port_name": "0g"
+          },
+          {
+            "node_name": "aff-02",
+            "port_name": "0h"
+          }
+        ],
+        "is_mcc": false,
+        "created": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+
+=== 按 ID 检索 ONTAP 集群
+
+使用下面列出的方法按 ID 检索 ONTAP 集群。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` /v2.1/ontapclusters/ ｛ id ｝` | 检索 ID 标识的 ONTAP 集群。 | `id （ string ）` ： ONTAP 集群的唯一标识符。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5c5bb9f16680a7002a5f7450",
+        "name": "dev-ots-per01",
+        "region": "au-west1",
+        "zone": "au-west1-a",
+        "uuid": "63053baa-ada4-11ea-b197-005056a4c0ef",
+        "management_ip": "10.128.115.173",
+        "username": "admin",
+        "services_available": {
+          "fcp": false,
+          "iscsi": true,
+          "nas": true
+        },
+        "provisioning_state": "open",
+        "data_network_ports": [
+          {
+            "node_name": "dev-ots-per01-01",
+            "port_name": "e0c-120",
+            "parent_port": "e0c"
+          }
+        ],
+        "data_network_ip_cidr": "10.96.120.0/24",
+        "data_network_default_gateway": "10.96.120.1",
+        "svm_root_service_level": "performance",
+        "intercluster_lifs": [
+          {
+            "name": "dev-ots-per01-01-icl01",
+            "node": "dev-ots-per01-01",
+            "port": "e0b",
+            "address": "10.128.115.144",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "subscription_number": "A-S00003875",
+        "created": "2019-02-22T03:38:38.867Z",
+        "data_fcp_ports": [],
+        "is_mcc": false,
+        "created": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+
+=== 创建 ONTAP 集群
+
+使用下表中的 API 创建 ONTAP 集群。
+
+创建 ONTAP 集群时始终启用 iSCSI 服务。此外，如果基础架构支持 FCP 服务，也可以启用该服务。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `发布` | ` /v2.1/ontapclusters` | 创建 ONTAP 集群。 | 无 
+|===
+所需的请求正文属性： `name` ， `uuid ， management_IP` ， `username` ， `password` ， `data_network_ip_cidr` ， `data_network_default_gateway` ， `intercluster_lifs` ， `zone`
+
+如果启用了 FCP （使用 `services _available` FCP 属性），则需要 `data_fcp_ports `。
+
+如果 `is_mcc` 为 true ，则需要 `mcc_partner_cluster` 。
+
+* 请求正文示例： *
+
+....
+{
+  "name": "clustername",
+  "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+  "management_ip": "10.128.112.165",
+  "username": "admin",
+  "password": "ClusterPassword",
+  "provisioning_state": "open",
+  "data_network_ip_cidr": "10.96.112.0/24",
+  "data_network_default_gateway": "10.96.112.1",
+  "data_network_ports": [
+    {
+      "node_name": "clustername-01",
+      "port_name": "e0c-112",
+      "parent_port": "e0c"
+    }
+  ],
+  "intercluster_lifs": [
+    {
+      "name": "clustername-01-icl01",
+      "node": "clustername-01",
+      "port": "e0b",
+      "address": "10.128.112.222",
+      "netmask": "255.255.255.0"
+    }
+  ],
+  "svm_root_service_level": "extreme",
+  "zone": "MyZone",
+  "subscription_number": "",
+  "services_available": {
+    "fcp": false,
+    "iscsi": true,
+    "nas": true
+  },
+  "data_fcp_ports": [
+  ],
+  "is_mcc": false,
+}
+....
+* 响应正文示例： *
+
+....
+{
+    "status": {
+        "user_message": "Okay. New resource created.",
+        "verbose_message": "",
+        "code": 201
+    },
+    "result": {
+        "returned_records": 1,
+        "records": [
+            {
+                "id": "5ef155b8f5591100010a75c5",
+                "name": "clustername",
+                "region": "MyRegion",
+                "zone": "MyZone",
+                "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+                "management_ip": "10.128.112.165",
+                "username": "admin",
+                "services_available": {
+                    "fcp": false,
+                    "iscsi": true,
+                    "nas": true
+                },
+                "provisioning_state": "open",
+                "data_network_ports": [
+                    {
+                        "node_name": "clustername-01",
+                        "port_name": "e0c-112",
+                        "parent_port": "e0c"
+                    }
+                ],
+                "data_network_ip_cidr": "10.96.112.0/24",
+                "data_network_default_gateway": "10.96.112.1",
+                "svm_root_service_level": "extreme",
+                "intercluster_lifs": [
+                    {
+                        "name": "clustername-01-icl01",
+                        "node": "clustername-01",
+                        "port": "e0b",
+                        "address": "10.128.112.222",
+                        "netmask": "255.255.255.0"
+                    }
+                ],
+                "subscription_number": "",
+                "created": "2020-06-23T01:07:04.563Z",
+                "data_fcp_ports": [],
+                "is_mcc": false,
+                "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3",
+                "created": "1995-09-07T10:40:52Z"
+            }
+        ]
+    }
+}
+....
+
+
+=== 修改 ONTAP 集群
+
+使用以下列出的方法修改 ONTAP 集群。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `PUT` | ` /v2.1/ontapclusters/ ｛ id ｝` | 修改 ID 标识的 ONTAP 集群的详细信息。 | `id （ string ）` ： ONTAP 集群的唯一标识符。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+{
+  "name": "clustername",
+  "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+  "management_ip": "10.128.112.165",
+  "username": "admin",
+  "password": "ClusterPassword",
+  "provisioning_state": "open",
+  "data_network_ip_cidr": "10.96.112.0/24",
+  "data_network_default_gateway": "10.96.112.1",
+  "data_network_ports": [
+    {
+      "node_name": "dev-ots-syd01-01",
+      "port_name": "e0c-112",
+      "parent_port": "e0c"
+    }
+  ],
+  "intercluster_lifs": [
+    {
+      "name": "dev-ots-syd01-01-icl01",
+      "node": "dev-ots-syd01-01",
+      "port": "e0b",
+      "address": "10.128.112.222",
+      "netmask": "255.255.255.0"
+    }
+  ],
+  "svm_root_service_level": "standard",
+  "zone": "MyZone",
+  "subscription_number": "",
+  "services_available": {
+    "fcp": false,
+    "iscsi": true,
+    "nas": false
+  },
+  "data_fcp_ports": [
+  ]
+}
+....
+* 响应正文示例： *
+
+....
+{
+    "status": {
+        "user_message": "Okay. Accepted for processing.",
+        "verbose_message": "",
+        "code": 202
+    },
+    "result": {
+        "returned_records": 1,
+        "records": [
+            {
+                "id": "5ef155b8f5591100010a75c5",
+                "name": "clustername",
+                "region": "MyRegion",
+                "zone": "MyZone",
+                "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+                "management_ip": "10.128.112.165",
+                "username": "admin",
+                "services_available": {
+                    "fcp": false,
+                    "iscsi": true,
+                    "nas": true
+                },
+                "provisioning_state": "open",
+                "data_network_ports": [
+                    {
+                        "node_name": "dev-ots-syd01-01",
+                        "port_name": "e0c-112",
+                        "parent_port": "e0c"
+                    }
+                ],
+                "data_network_ip_cidr": "10.96.112.0/24",
+                "data_network_default_gateway": "10.96.112.1",
+                "svm_root_service_level": "standard",
+                "intercluster_lifs": [
+                    {
+                        "name": "dev-ots-syd01-01-icl01",
+                        "node": "dev-ots-syd01-01",
+                        "port": "e0b",
+                        "address": "10.128.112.222",
+                        "netmask": "255.255.255.0"
+                    }
+                ],
+                "subscription_number": "",
+                "created": "2020-06-23T01:07:04.563Z",
+                "data_fcp_ports": [],
+                "is_mcc": false,
+                "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3",
+                "created": "1995-09-07T10:40:52Z"
+            }
+        ]
+    }
+}
+....
+
+
+=== 删除 ONTAP 集群
+
+使用下表中列出的方法删除 ONTAP 集群。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `d删除` | ` /v2.1/ontapclusters/ ｛ id ｝` | 删除 ID 标识的 ONTAP 集群。 | `id （ string ）` ： ONTAP 集群的唯一标识符。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+No content for succesful delete
+....

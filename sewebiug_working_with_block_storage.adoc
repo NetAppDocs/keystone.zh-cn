@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_working_with_block_storage.html 
+keywords: netapp, keystone, working, block, storage, 
+summary: 使用块存储的 Keystone 
+---
+= 使用块存储
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

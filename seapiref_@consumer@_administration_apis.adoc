@@ -1,0 +1,270 @@
+---
+sidebar: sidebar 
+permalink: seapiref_@consumer@_administration_apis.html 
+keywords: netapp, keystone, consumer, administration, apis, 
+summary: Keystone （使用者）管理 API 
+---
+= （使用者）管理 API
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+（使用者）管理 API 由多种方法组成，可用于执行以下任务：
+
+* 登录，设置密码并刷新身份验证令牌。
+* 检索作业并查看作业详细信息。
++
+请参见 link:seapiref_jobs.html#retrieve-jobs["检索作业"] 和 。
+
+* 检索区域。
++
+请参见 link:seapiref_regions.html#retrieve-regions["检索区域"] 和 。
+
+* 检索服务级别。
++
+请参见 link:seapiref_service_levels.html#retrieve-service-levels["检索服务级别"] 和 。
+
+* 使用子租户。
++
+请参见
+
++
+** link:seapiref_subtenants.html#retrieve-all-subtenants["检索所有子租户"]
+** link:seapiref_subtenants.html#retrieve-a-subtenant-by-id["按 ID 检索子租户"]
+** link:seapiref_subtenants.html#modify-a-subtenant-by-id["修改子租户"]
+** link:seapiref_subtenants.html#delete-a-subtenant-by-id["按 ID 删除子租户"]
+
+
+* 使用子租户。
++
+请参见
+
++
+** link:seapiref_tenants.html#retrieve-all-tenants["检索所有租户"]
+** link:seapiref_tenants.html#retrieve-a-tenant-by-id["按 ID 检索租户"]
+** link:seapiref_tenants.html#create-a-tenant["创建租户"]
+** link:seapiref_tenants.html#modify-the-tenant["修改租户"]
+** link:seapiref_tenants.html#delete-the-tenant["删除租户"]
+
+
+* 检索用户。
++
+link:seapiref_users.html#retrieve-all-users["检索所有用户"]， ，和 。
+
+* 检索分区。
++
+请参见 link:seapiref_zones.html#retrieve-all-zones["检索所有分区"] 和 
+
+
+
+下表列出了本节中介绍的使用者 API 。
+
+|===
+| HTTP 方法 | 路径 | Description 
+
+
+| `发布` | ` /v2.1/auth/ 密码` | 设置用户的密码。 
+
+
+| `发布` | ` /v2.1/auth/ 密码` | 刷新身份验证 JWT 。 
+
+
+| `发布` | ` /v2.1/auth/signin` | 登录。 
+
+
+| `获取` | ` /v2.1/auth/ 地区` | 检索区域。 
+
+
+| `获取` | ` /v2.1/auth/Regies/ ｛ name ｝` | 按名称检索区域。 
+
+
+| `获取` | ` /v2.1/auth/zones` | 检索分区。 
+
+
+| `获取` | ` /v2.1/auth/zones/ ｛ name ｝` | 按名称检索分区。 
+
+
+| `获取` | ` v2.1/jobs/` | 检索作业。 
+
+
+| `获取` | ` /v2.1/jobs/｛ id ｝` | 按 ID 检索作业。 
+|===
+
+
+=== 重置用户密码
+
+使用下表中列出的方法重置用户密码。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `发布` | ` /v2.1/auth/ 密码` | 重置密码。 | 无 
+|===
+所需的请求正文属性： `username` （字符串）， `new_password` （字符串）
+
+* 请求正文示例： *
+
+....
+{
+  "username": "MyName",
+  "old_password": "oldPassword",
+  "new_password": "newPassword"
+}
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5e61aa814559c20001df1a5f",
+          "username": "MyName",
+          "firstName": "MyFirstName",
+          "lastName": "MySurname",
+          "displayName": "CallMeMYF",
+          "email": "user@example.com",
+          "tenancies": [
+            {
+              "id": "5e5f1c4f253c820001877839",
+              "name": "MyTenant",
+              "code": "testtenantmh",
+              "role": "user"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik15TmFtZSIsImV4cCI6MTU4MzgxNjg3MX0.ZuRXjDPVtc2pH-e9wqgmszVKCBYS2PLqux2YwQ5uoAM"
+      }
+    ]
+  }
+}
+....
+
+
+=== 刷新身份验证令牌
+
+使用下表中列出的方法刷新身份验证令牌。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `发布` | ` /v2.1/auth/refresh` | 刷新身份验证令牌。 | 无 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5d914547869caefed0f3a00c",
+          "username": "myusername",
+          "firstName": "myfirstname",
+          "lastName": "",
+          "displayName": "Myfirstname Mysurname",
+          "email": "",
+          "tenancies": [
+            {
+              "id": "5d914499869caefed0f39eee",
+              "name": "MyOrg",
+              "code": "myorg",
+              "role": "admin"
+            },
+            {
+              "id": "5d9417aa869caefed0f7b4f9",
+              "name": "ABCsafe",
+              "code": "abcsafe",
+              "role": "admin"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImVsbGlvdCIsImV4cCI6MTU4MzgxNzA2N30.FdKD3QhPoNdWdbMfZ0bzCMTHluIt6HNP311F482K9AY"
+      }
+    ]
+  }
+}
+....
+
+
+=== 登录
+
+使用下表中列出的方法登录。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `发布` | ` /v2.1/auth/signin` | 以用户身份登录。 | 无 
+|===
+所需的请求正文属性： `username` （字符串）， `new_password` （字符串）
+
+* 请求正文示例： *
+
+....
+{
+  "username": "MyName",
+  "password": "newPassword"
+}
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Authentication succeeeded.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5e61aa814559c20001df1a5f",
+          "username": "MyName",
+          "firstName": "MyFirstName",
+          "lastName": "MySurname",
+          "displayName": "CallMeMYF",
+          "email": "user@example.com",
+          "tenancies": [
+            {
+              "id": "5e5f1c4f253c820001877839",
+              "name": "MyTenant",
+              "code": "testtenantmh",
+              "role": "user"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik15TmFtZSIsImV4cCI6MTU4MzgxNzQwMH0._u_UyYrzg_RewF-9ClIGoKQhfZYWrixZYBrsj1kh1hI"
+      }
+    ]
+  }
+}
+....

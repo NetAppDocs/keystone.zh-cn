@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_working_with_block_storage_overview.html 
+keywords: netapp, keystone, working, block, storage, overview, 
+summary: Keystone 使用块存储概述 
+---
+= 概述
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在块存储系统中，数据存储分为各个部分，每个部分都有一个唯一的标识符。NetApp 服务引擎将块数据存储称为块存储，而将各个部分称为磁盘。
+
+块存储属于子租户，并在区域内指定（每个子租户的每个区域一个块存储）。块存储具有网络属性（例如， IP 地址和 VLAN ID ），用于通过 iSCSI 或 FC 协议访问磁盘。可以在块存储上启用灾难恢复 DP 。有关详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery.html["灾难恢复"]。
+
+必须先初始化块存储，然后才能使用它们。如果块存储可用且尚未初始化，则可以在创建磁盘过程中在块存储上创建第一个磁盘之前对其进行初始化。
+
+磁盘在块存储上创建。磁盘具有许多可配置的属性，包括容量和关联的服务级别。DP 选项，例如 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["快照"] 和  可以为磁盘启用。
+
+对磁盘的访问通过主机组进行控制。主机组由启动程序节点名称组成；通过将一个或多个主机组映射到磁盘，您可以定义哪些启动程序可以访问磁盘。
+
+主机组
+
+* 特定于协议。它们可以是：
++
+** FC 协议主机组：这些启动程序由 FC 全球通用端口名称（ World Wide Port Name ， WWPN ）组成。例如， `20 ： 56 ： 00 ： a0 ： 98 ： 5c ： 0d ： da` ）。
+** iSCSI 协议主机组：这些启动程序由 iSCSI 限定名称（ IQN ）组成。例如， `iqn.1998-01.com.vmware:esx2` 。
+
+
+* 由别名 / 启动程序对组成。使用别名可以轻松识别启动程序。例如， `esxserver1` 。
+* 可以在不使用任何启动程序的情况下创建。空主机组可以作为占位符映射到磁盘，但必须完全定义才能访问磁盘。使用主机组可以：
+* 将多个磁盘映射到同一组启动程序
+* 跨多个磁盘更新启动程序集。
+
+
+此部分包含以下信息：
+
+* 使用主机组：
++
+** 查看主机组
+** 创建主机组
+** 修改主机组启动程序
+** 删除主机组
+
+
+* 使用磁盘：
++
+** 查看磁盘
+** 创建新磁盘
+** 从快照创建磁盘
+** 修改磁盘
+** 删除磁盘
+** 创建磁盘的临时快照
+
+
+

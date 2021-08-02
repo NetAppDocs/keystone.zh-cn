@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_service_requests_overview.html 
+keywords: netapp, keystone, managing, service, requests, overview, 
+summary: Keystone 管理服务请求概述 
+---
+= 概述
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+发出服务请求：
+
+* 备份还原
+* 灾难恢复故障转移
+* 采用 NetApp 服务引擎的技术问题描述
+* 本列表未涵盖的任何其他问题描述本节介绍：
+* 如何提出服务请求
+* 如何跟踪服务请求
+* 服务请求过程
+

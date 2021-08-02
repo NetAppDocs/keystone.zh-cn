@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_azure_volumes.html 
+keywords: netapp, keystone, managing, azure, volumes, 
+summary: 管理 Azure 卷的 Keystone 
+---
+= 管理 Azure 卷
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本节介绍如何管理 Azure 卷。
+
+
+NOTE: 管理 Azure 卷需要客户管理员访问权限。
+
+本节介绍如何执行以下任务：
+
+* 查看 Azure 卷的列表。
+* 添加 Azure 卷。
+* 修改 Azure 卷详细信息。
+* 删除 Azure 卷。
+
+
+
+
+=== 查看 Azure 卷的列表
+
+Azure Volumes 列表显示指定子租户和位置的 Azure 卷池列表。要查看此列表，请从菜单中选择 * 文件服务 > Azure Volumes* 。
+
+此列表显示了有关每个 Azure 卷的简单信息。通过每个 Azure 卷旁边的操作图标，您可以修改或删除 Azure 卷。
+
+
+
+=== 添加 Azure 卷
+
+本节介绍如何添加 Azure 卷。
+
+
+
+==== 开始之前
+
+您需要：
+
+* Azure 卷所属的子租户
+* ANF 帐户
+* Azure 虚拟网络（ vNet ）和子网
+* 用于托管卷的容量池
+* 卷的名称
+* 文件路径
+* 卷的配额（大小）
+
+
+
+
+==== 步骤
+
+. 从菜单中选择 * 文件服务 > Azure Volumes* 。
+. 单击 * 创建 * 。
+. 在创建 Azure 卷对话框中，指定子租户， ANF 帐户， vNet ，子网， 容量池，卷名称，文件路径和配额。确保输入唯一的文件路径以成功创建卷。
+. 如果需要，请向卷添加标记。
+. 单击 * 创建 * 。创建 Azure 卷后，此卷的状态将更改为 `S已更新` （可在 Azure 卷列表中查看）。
+
+
+
+
+=== 修改 Azure 卷详细信息
+
+使用此方法可修改 Azure 卷的详细信息。您可以修改文件路径和配额，以及添加或删除标记。
+
+
+
+==== 步骤
+
+. 从菜单中选择 * 文件服务 > Azure Volumes* 。
+. 从列表中，找到 Azure 卷并单击编辑图标。
+. 在管理 Azure 卷对话框中，进行所需的更改。如果要修改文件路径或配额，请确保文件路径是唯一的，并且配额不会超过池中的可用配额。
+. 单击 * 更新 * 。
+
+
+
+
+=== 删除 Azure 卷
+
+使用此方法删除 Azure 卷。
+
+
+
+==== 步骤
+
+. 从菜单中选择 * 文件服务 > Azure Volumes* 。
+. 在列表中找到 Azure 卷，然后单击删除图标。
+. 在确认删除对话框中，输入要删除的 Azure 卷的名称。
+. 单击 * 确认 * 。
+

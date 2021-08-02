@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_subscribed_services.html 
+keywords: netapp, keystone, managing, subscribed, services, 
+summary: 管理已订阅服务的 Keystone 
+---
+= 管理订阅的服务
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

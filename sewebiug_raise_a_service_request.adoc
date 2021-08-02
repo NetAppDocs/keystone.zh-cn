@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_raise_a_service_request.html 
+keywords: netapp, keystone, raise, service, request, 
+summary: Keystone 提出服务请求 
+---
+= 提出服务请求
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+=== 步骤
+
+. 从菜单中，选择支持 > 服务请求，然后单击 * 新建服务请求 * 。
++
+image:sewebiug_image36.png["错误：缺少图形映像"]
+
+. 在新服务请求页面上，选择此请求的类别和优先级，然后单击 * 下一步 * 。
++
+image:sewebiug_image37.png["错误：缺少图形映像"]
+
+. 选择子租户和服务类型。如果分区字段可用，请选择分区。
++
+image:sewebiug_image38.png["错误：缺少图形映像"]
+
+. 输入请求的简短摘要。在较大的文本字段中，为请求添加完整的问题描述。然后单击 * 下一步 * 。
++
+image:sewebiug_image39.png["错误：缺少图形映像"]
+
+. 查看请求详细信息。如果要更正任何内容，请使用 " 返回 " 按钮返回上一页并更正详细信息。如果所有详细信息都正确，请单击 * 提交 * 。
++
+image:sewebiug_image40.png["错误：缺少图形映像"]
+
+. NetApp 服务引擎将创建服务请求。服务请求编号显示在屏幕上，服务请求也显示在服务请求列表中。
++
+image:sewebiug_image41.png["错误：缺少图形映像"]
+
+. 查看请求的状态。新打开的服务请求的状态为 " 新建 " 。
++
+image:sewebiug_image42.png["错误：缺少图形映像"]
+
+. 要查看请求的详细信息，请单击查看图标。单击 * 关闭 * 以返回到服务请求列表。
++
+image:sewebiug_image43.png["错误：缺少图形映像"]
+
+. 系统会向请求者发送一封电子邮件，指示此请求已创建。此电子邮件将发送到为发出请求的 NetApp 服务引擎用户注册的电子邮件地址。
+

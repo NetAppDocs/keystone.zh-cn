@@ -1,0 +1,256 @@
+---
+sidebar: sidebar 
+permalink: seapiref_regions.html 
+keywords: netapp, keystone, regions, 
+summary: Keystone 区域 
+---
+= regions
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用下表中列出的方法创建，修改和删除区域。有关可用于检索区域的 API ，请参见（使用者）管理 API 。
+
+|===
+| HTTP 方法 | 路径 | Description 
+
+
+| `获取` | ` v2.1/Regions` | 获取区域。 
+
+
+| `获取` | ` /v2.1/Regies/ ｛ name ｝` | 按名称获取区域。 
+
+
+| `发布` | ` v2.1/Regions` | 创建新区域。 
+
+
+| `PUT` | ` /v2.1/Regies/ ｛ name ｝` | 修改区域的详细信息。 
+
+
+| `d删除` | ` /v2.1/Regies/ ｛ name ｝` | 删除区域。 
+|===
+
+
+=== 区域属性
+
+下表列出了区域属性。
+
+|===
+| 属性 | Type | Description 
+
+
+| `id` | string | 区域的唯一标识符。 
+
+
+| `名称` | string | 区域名称。 
+
+
+| 问题描述` | string | 区域的问题描述。 
+|===
+
+
+=== 检索区域
+
+使用下表中列出的方法检索所有区域或部分区域。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` v2.1/Regions` | 检索区域。 | `offset` 和 `limit` —请参见 link:seapiref_netapp_service_engine_rest_apis.html#pagination>["通用分页"] 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 4,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 1,
+    "records": [
+      {
+        "id": "5e7bf44daab46c00014ce77f",
+        "name": "au-east8",
+        "description": "This is the new region description",
+        "zones": []
+      }
+    ]
+  }
+}
+....
+
+
+=== 按名称检索区域
+
+使用下表中列出的方法按名称检索区域。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` /v2.1/Regies/ ｛ name ｝` | 按名称检索区域。 | `name （ string ）` ：区域名称。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "au-east1",
+        "description": "string",
+        "zones": [
+          "au-east1-a"
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== 创建区域
+
+使用下表中列出的方法创建区域。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `发布` | ` v2.1/Regions` | 创建新区域。 | 无 
+|===
+所需的请求正文属性： `name`
+
+* 请求正文示例： *
+
+....
+{
+  "name": "MyRegionName",
+  "description": "DescriptionOfMyRegion"
+}
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e616f849b64790001fe9658",
+        "name": "MyRegionName",
+        "Description": "DescriptionOfMyRegion",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "created": "0001-01-01T00:00:00Z",
+        "tags": null
+      }
+    ]
+  }
+}
+....
+
+
+=== 修改区域
+
+使用下表中列出的方法修改区域。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `PUT` | ` /v2.1/Regies/ ｛ name ｝` | 修改以名称标识的区域。您可以更改区域的名称和问题描述。 | `name （ string ）` ：区域的名称。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+{
+  "name": "MyRegionName",
+  "description": "NewDescriptionOfMyRegion"
+}
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e616f849b64790001fe9658",
+        "name": "MyRegionName",
+        "description": "NewDescriptionOfMyRegion",
+        "zones": []
+      }
+    ]
+  }
+}
+....
+
+
+=== 删除区域
+
+使用下表中列出的方法删除区域。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `d删除` | ` /v2.1/Regions ｛ name ｝` | 删除使用名称标识的单个区域。必须先删除某个区域中的所有分区。 | `Name （ string ）` ：区域的名称。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+No content for succesful delete
+....

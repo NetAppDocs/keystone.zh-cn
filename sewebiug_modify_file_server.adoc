@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_file_server.html 
+keywords: netapp, keystone, modify, file, server, 
+summary: 修改文件服务器 
+---
+= 修改文件服务器
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以对现有服务器进行以下更改：
+
+. 更改服务器名称
+. 启用服务器 CIFS ，并指定 Active Directory 用户名和密码， Active Directory 域， DNS 服务器，服务器名称以及可选的 Active Directory 组织单位。Active Directory 凭据必须适用于有权将计算机加入 Active Directory 域的用户。
+. 通过指定要将服务器复制到的区域或区域来启用异步灾难恢复 DP 。
+
+
+
+NOTE: 如果已启用异步灾难恢复，则无法将其禁用。有关详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["灾难恢复"]。
+
+
+
+=== 步骤
+
+. 查看 link:sewebiug_view_servers.html#view-servers["文件服务器列表"]。
+. 在列表中找到该服务器，然后单击该服务器的编辑图标。（有关使用列表中项目的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["列出视图操作"]）。
+. 根据需要进行任何更改；请参见 link:sewebiug_create_a_file_server.html["创建文件服务器"] 字段说明。
+. 单击 * 完成 * 。此操作将创建一个作业来修改服务器。
+
+
+
+
+=== 完成后
+
+修改服务器作为异步作业运行。您可以
+
+* 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
+* 作业完成后，在服务器列表中检查服务器的状态。
+

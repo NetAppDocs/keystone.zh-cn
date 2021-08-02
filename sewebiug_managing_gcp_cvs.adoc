@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_gcp_cvs.html 
+keywords: netapp, keystone, managing CVS for GCP, gcp, Google Cloud Volume, CVS, Cloud Volumes Service 
+summary: 在 Google Cloud Platform 上管理 Cloud Volume 订阅 
+---
+= 管理适用于 GCP 的 Cloud Volumes Service
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes Service for Google Cloud Platform （ GCP ）的订阅与租户下的特定子租户相关联。一个子租户订阅一个 Google Cloud 服务。您可以为租户和子租户创建和管理订阅的服务（ Google Cloud 实例），并根据租约在 Google Cloud 上配置存储。在通过 NetApp 服务引擎管理 Google Cloud 实例之前，应先设置租户和子租户的 Cloud Volumes Service 帐户。有关 GCP 上的 Cloud Volumes Service 的信息，请参见 https://docs.netapp.com/us-en/occm/concept_cvs_gcp.html["了解适用于 Google Cloud 的 Cloud Volumes Service"]。
+
+
+NOTE: 应已为 GCP 配置租户和子租户的 Cloud Volumes Service 帐户。有关服务帐户详细信息，请联系支持部门。您需要具有客户管理员访问权限才能管理 Google Cloud Volumes 。
+
+
+
+== 在 GCP 上管理订阅的服务
+
+您可以从左侧导航窗格的 * 已订阅服务 * 菜单管理 Google Cloud 上的已订阅服务。" 已订阅服务 " 页面将显示选定租户的所有子租户的所有已订阅服务。您可以从此页面查看，修改和删除已订阅的服务。您也可以按照以下步骤添加新服务。
+
+
+
+=== 开始之前
+
+您需要确保：
+
+* 此子租户已订阅 Google Cloud 服务。
+* 您已为用户的服务帐户创建了 JSON 文件，并且知道与 Google Cloud 实例关联的 GCP 项目编号。
+* 确保您的支持团队已在 Cloud Manager 上配置适用于 GCP 的 Cloud Volumes Service 。有关详细信息，请参见 https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["设置适用于 Google Cloud 的 Cloud Volumes Service"]。
+
+
+
+
+==== 步骤
+
+. 从菜单中选择 * 已订阅服务 * 。
+. 单击 * 创建 * ，然后单击 * Google Cloud* 。
+. 在 Google Cloud 的创建订阅服务页面上，选择要为其创建服务的子租户，然后添加名称和 GCP 项目编号。
+. 在 Google Cloud Credentials 部分中，上传包含服务帐户凭据的 JSON 文件。
+. 如果需要，请向服务添加标记。
+. 单击 * 创建 * 。创建后，服务状态将在 " 已订阅服务 " 页面上更改为 `S已更新` 。
+
+
+
+
+== 管理 GCP 上的卷
+
+在 GCP 上管理云卷之前，应为租户创建 Cloud Volumes Service 帐户，并为该帐户订阅云卷。请联系支持部门以确保这些步骤已完成。
+
+您可以从左侧导航窗格的 * 文件服务 > GCP Volumes* 管理 GCP 上子租户的卷。GCP 卷页面列出了在 GCP 上为选定子租户和相应区域创建的现有云卷。您可以从此页面查看，修改和删除现有卷。您也可以按照以下步骤配置新的云卷。
+
+
+
+==== 步骤
+
+. 从菜单中选择 * 文件服务 > GCP Volumes* 。
+. 单击 * 创建 * 。此时将显示创建 GCP 卷页面。
+. 选择要为其创建卷的子租户。
+. 选择区域和网络。此列表将根据 GCP 上子租户的 Cloud Volumes Service 帐户进行筛选。
+. 为卷添加名称。
+. 选择相应的服务级别。
+. 输入卷的文件路径作为创建令牌。
+. 以字节为单位分配卷配额。
+. 如果需要，请为卷添加标记。
+. 单击 * 创建 * 。创建时，卷状态会在 GCP 卷页面上更改为 `S已更新` 。
+
+
+观看以下视频，了解如何通过 Cloud Volumes Service 和 NetApp 服务引擎在 GCP 上创建卷：
+
+video::Crq5a1zi1Vg[youtube, width=750,height=400]

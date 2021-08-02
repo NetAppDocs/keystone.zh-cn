@@ -1,0 +1,135 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_a_new_file_share.html 
+keywords: netapp, keystone, create, new, file, share, 
+summary: Keystone 创建新的文件共享 
+---
+= 创建文件共享
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本节介绍如何通过直接指定共享详细信息来创建新共享。要基于现有共享的 Snapshot 创建新共享，请参见 link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["从 Snapshot 创建共享"]。
+
+
+
+=== 开始之前
+
+* 共享在文件服务器上创建。要创建新的文件共享，文件服务器必须存在且处于运行状态。
+* 要创建 CIFS 或 NFS 文件共享，必须为相应的服务启用服务器。对于多协议文件共享，服务器应同时支持 CIFS 和 NFS 服务。
+* 要为共享启用异步灾难恢复选项，必须在启用了异步灾难恢复的服务器上创建共享。有关详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["灾难恢复"]。
+* 要为共享启用同步灾难恢复，请在启用了 MetroCluster 的区域中创建共享。
+* 您可以定义备份策略以按计划捕获文件共享的备份。有关详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups["备份"]。
+* 您可以定义 Snapshot 策略以按计划捕获文件共享的 Snapshot 。有关详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["快照"]。
+
+
+
+
+=== 步骤
+
+. 转至 * 文件服务 > 共享 * 。
+. 单击 * 创建共享 * 。
+. 在创建共享对话框中，选择创建新共享。
++
+image:sewebiug_image22.png["错误：缺少图形映像"]
+
++
+此时将显示创建共享页面。
+
+. 选择共享类型： NFS ， CIFS 或多协议。这些选项将根据您的服务器支持的服务启用。
+. 填写以下字段：
++
+|===
+| 字段 | Description 
+
+
+| Name | 输入共享名称。 
+
+
+| 共享路径 | 输入文件共享的路径。对于 CIFS 共享，在共享路径的末尾添加 $ 字符将使其成为隐藏共享（例如 pathtomyhiddenshare$ ）。 
+
+
+| Region | 选择共享所在的区域。 
+
+
+| 分区 | 选择共享的分区。 
+
+
+| 文件服务器 | 选择要托管共享的文件服务器。文件服务器的列表取决于所选的区域，分区和共享类型。 
+
+
+| 安全风格 | 选择适用于文件共享的安全模式。此列表将根据选定的共享类型自动填充。 
+|===
+. 选择性能服务级别。IOPS 和吞吐量限制将根据选定的服务级别显示。
++
+
+NOTE: 选择一个选项以查看该级别的性能详细信息（如峰值 / 预期 IOPS/throughput ）。选择最符合您需求的服务级别。
+
+. 指定文件共享的容量。
++
+
+NOTE: 如果指定容量使消耗的容量发生突发（或者如果已发生突发，则容量条会发生更大的突发），则 NetApp 服务引擎会显示警告，并且容量条会改变颜色。系统将对租户中所有订阅的总容量执行容量检查。
+
+. 如果在底层文件服务器上启用了异步灾难恢复，则会自动为新共享启用异步灾难恢复复制。如果要从异步灾难恢复复制中排除共享，请切换异步灾难恢复按钮以将其禁用。
+. 如果要在已启用 MetroCluster 的区域中创建共享，则同步灾难恢复按钮将自动启用，并且无法禁用。共享将复制到同步灾难恢复切换下面板中显示的分区。
+. 如果此文件共享需要 Snapshot ：
++
+.. 切换以启用 Snapshot 策略并查看 Snapshot 策略字段。
+.. 指定何时创建快照：
++
+*** * 每小时。 * 指定创建 Snapshot 的分钟（每小时）以及要保留的每小时 Snapshot 数量。
+*** * 每日。 * 指定创建快照的时间（小时和分钟）要保留的每日快照数。如果要指定每天必须创建 Snapshot 的多个小时，则可以将小时值添加到逗号分隔列表中，例如 5 ， 10 ， 15 ， 等等。
+*** * 每周。 * 指定创建 Snapshot 的时间（星期几，小时和分钟）以及要保留的每周 Snapshot 数量。
+*** * 每月。 * 指定创建 Snapshot 的时间（日期，小时和分钟）以及要保留的每月 Snapshot 数量。
+
+
+
+
+. 为此文件共享启用备份：
++
+.. 切换以启用备份策略和备份策略字段。
+.. 指定备份区域。
+.. 指定要保留的每种备份类型的数量：每日，每周和 / 或每月。
+
+
+. 对于 NFS 或多协议共享，请指定导出策略。您可以在一个共享上应用多个导出策略。本节仅适用于 NFS 和多协议共享。
++
+.. 添加此规则所应用的客户端的 IPv4 地址（子网掩码以位数表示）。
+.. 指定读写访问权限，以及客户端是否具有 root 访问权限（超级用户）。
+
+
+. 对于 CIFS （ SMB ）或多协议共享，请指定访问控制列表（ ACL ）以限制用户访问。此部分仅适用于 CIFS 和多协议共享。
++
+.. 根据要添加到 ACL 中的 Active Directory （ AD ）设置指定 Windows 用户或组。如果指定用户名，请以 ` <domain><username>` 格式包括用户的域。默认值为 `Everyone` 。
+.. 指定 Windows 权限。默认值为 `full control` 。如果用户属于两个组，则具有较高权限的组的权限将应用于用户的访问权限。
++
+
+NOTE: 用户或组名称应遵循标准 AD 格式。如果输入的用户或组与 ONTAP 上配置的用户或用户组不匹配，则在 CIFS 操作期间， ACL 验证将失败，即使文件共享正常运行也是如此。
+
+
+
+. 如果要向文件共享添加标记（键值对），请在标记部分中指定这些标记。
+. 单击 * 创建 * 。此操作将创建一个作业以创建共享。
+
+
+
+
+=== 完成后
+
+* 仅适用于 CIFS 类型的共享：要使共享按主机名可用，域管理员必须使用 CIFS 服务器名称和 IP 地址更新 DNS 记录。否则，只能通过 IP 地址访问共享。例如：
++
+** 更新 DNS 记录后，使用主机名或 IP 访问共享：例如 file://hostname/share["\\hostname\share"^] 或
+** 如果未更新任何 DNS 记录，则必须使用 IP 地址来访问共享，即 file://IP/share["\\IP\share"^]
+
+
+* 创建共享将作为异步作业运行。您可以
++
+** 在作业列表中检查作业的状态。
+** 作业完成后，在共享列表中检查共享的状态。
+
+
+

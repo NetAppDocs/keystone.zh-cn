@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_file_share_from_snapshot.html 
+keywords: netapp, keystone, create, file share, Snapshot 
+summary: 从 Snapshot 创建文件共享 
+---
+= 从 Snapshot 创建文件共享
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以从现有 Snapshot 创建新的文件共享。从 Snapshot 克隆的新文件共享与创建 Snapshot 的文件共享具有相同的属性。
+
+.步骤
+. 从左侧导航窗格中选择 * 文件服务 * ，然后选择 * 共享 * 。
+. 单击 * 创建共享 * ，然后选择 * 从快照克隆 * 。此时将显示 * 选择共享 * 屏幕，其中包含租户的所有文件共享。您可以按区域，区域和子租户筛选文件共享。您可以选择处于运行状态的任何文件共享。
+. 选中所需文件共享旁边的复选框，然后单击 * 下一步 * 。此时将显示 * 选择 Snapshot* 屏幕，其中包含文件共享的所有 Snapshot 。
++
+
+NOTE: 对于选定文件共享，如果您在 NetApp 服务引擎之外的 SnapCenter 环境中创建了一些 Snapshot ，则可以找到这些 Snapshot 已导入并列出供您选择。您可以选择这些导入的快照并从中克隆新文件共享。
+
++
+您可以搜索特定 Snapshot 或选择计划类型以筛选 Snapshot 。
+
+. 选中要从中克隆的 Snapshot 旁边的复选框，然后单击 * 下一步 * 。新文件共享将继承选定 Snapshot 的属性。
+. 添加 * 名称 * 和 * 共享路径 * 。更新其他设置，例如分配 * 服务级别 * ，然后单击 * 创建 * 。
+
+
+.完成后
+* 仅适用于 CIFS 类型的共享：要使共享按主机名可用，域管理员应使用 CIFS 服务器名称和 IP 地址更新 DNS 记录。否则，只能通过 IP 地址访问共享。例如：
++
+** 更新 DNS 记录后，使用主机名或 IP 访问共享：例如 file://hostname/share["\\hostname\share"^] 或
+** 如果未更新任何 DNS 记录，则应使用 IP 地址访问共享，即 file://IP/share["\\IP\share"^]
+
+
+* * 创建共享 * 作为异步作业运行。您可以
++
+** 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
+** 作业完成后，在 * 共享 * 列表中检查共享的状态。
+
+
+

@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_site_requirements.html 
+keywords: netapp, keystone, sire, requirements, 
+summary: Keystone 站点要求 
+---
+= 站点要求
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在您的环境中启用 NetApp Keystone 灵活订阅（ Flex 订阅）服务有多项要求，例如空间，机架， PDU ，电源， 和散热，以及后面讨论的其他网络和安全要求。
+
+
+
+== 空间
+
+用于托管 Flex 订阅基础架构设备的占地空间（由客户提供）。NetApp 会根据最终配置提供重量规格。
+
+
+
+== 机架
+
+客户运营的产品中的四个后机架（由客户提供）。在 NetApp 运营的产品中， NetApp 或客户均可根据要求提供机架。NetApp 提供 42 个深机架。
+
+
+
+== PDU
+
+您应提供配电单元（ PDU ），该配电单元连接到两个单独的受保护电路，并具有足够的 C13 插座。在客户运营的产品中，在某些情况下，需要 C19 网点。在 NetApp 运营的产品中， NetApp 或客户均可根据要求提供 PDU 。
+
+
+
+== 电源
+
+您应提供所需的电源。NetApp 将根据 200V 额定电压（典型 A ，最大 A ，典型 W ，最大 W ，电源线类型， 和数量），具体取决于最终配置。所有组件都具有冗余电源。NetApp 将提供机柜内电源线。
+
+
+
+== 散热
+
+NetApp 可以根据最终配置和要求提供冷却要求规格（典型 BTU ，最大 BTU ）。
+
+
+
+== 网络
+
+根据客户要求和使用的存储控制器， NetApp 可以在客户站点提供 10 GB ， 40 GB 和 100 GB 连接。
+
+NetApp 仅为 NetApp 提供的 Flex 订阅基础架构设备提供所需的收发器。您应提供客户设备所需的收发器，并使用缆线连接到 NetApp 提供的 Flex 订阅基础架构设备。

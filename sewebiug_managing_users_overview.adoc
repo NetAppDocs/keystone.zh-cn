@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_users_overview.html 
+keywords: netapp, keystone, managing users, overview, 
+summary: Keystone 管理用户概述 
+---
+= 概述
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本节介绍如何管理用户：
+
+
+NOTE: 管理用户需要客户管理员访问权限。
+
+* 查看用户列表。
+* 添加用户。
+* 修改用户详细信息，例如名字，姓氏，显示名称，用户有权访问的租约以及这些租约中用户的角色。
+* 删除用户。
+

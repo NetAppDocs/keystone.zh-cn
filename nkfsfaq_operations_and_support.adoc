@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_operations_and_support.html 
+keywords: netapp, keystone, operations, support, 
+summary: 运营和支持 
+---
+= Flex 订阅操作和支持
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+未使用稍后删除
+
+* 如何查看 Flex 订阅使用情况？ * NetApp 服务引擎提供了一个信息板视图，其中包含有关已订阅的所有服务以及已使用量的信息。有关 NetApp 服务引擎的详细信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["此处"]。
+
+* 如何报告此服务的任何问题？ * 可以通过以下各种渠道获得 NetApp Keystone 支持：
+
+* 支持电子邮件： mailto ： keystone.services@netapp.com[keystone.services@netapp.com^]
+* 上报电子邮件： mailto ： keystone.escalations@netapp.com[keystone.escalations@netapp.com^]
+
+
+* 是否可以订购新的存储服务？ * 是的，可以从 NetApp 服务引擎门户请求新的存储服务或扩展存储服务。NetApp Keystone 运营团队会先处理此请求，然后再将其提供给用户使用。
+
+* 是否可以立即增加存储承诺量？ * 根据请求的容量，确定容量是否已部署，或者是否需要运输和安装额外设备。
+
+* 工作负载是否可以在层之间移动？ * 是的，工作负载可以在层之间移动，前提是用户已订阅工作负载要移至的层。但是，我们不建议从较高的层移至较低的层，因为发生原因这样可能会导致性能下降。只需编辑文件共享并更改服务级别设置即可完成此过程。
+
+* 默认安装的软件版本（例如 ONTAP ）是什么？ * 根据订阅的服务层（例如，具有文件和块服务的 ONTAP ，用于块的 SANtricity 和用于对象的 StorageGRID ），支持团队安装最新的稳定版本，而不存在任何安全或功能问题。
+
+* 是否可以申请特定软件版本？ * 否NetApp Keystone 已对其所有客户群的软件版本进行标准化。
+
+* 是否会收到有关软件升级的通知？ * 是。所有维护 / 升级活动均由 NetApp Keystone 成功经理在双方同意的时间与客户进行沟通和计划。

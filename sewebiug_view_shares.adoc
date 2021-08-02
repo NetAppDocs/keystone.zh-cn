@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_view_shares.html 
+keywords: netapp, keystone, view, shares, 
+summary: Keystone View 共享 
+---
+= 查看文件共享
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+* 共享 * 列表显示属于选定租户的文件共享。要查看此列表，请从菜单中选择 * 文件服务 > 共享 * 。
+
+您也可以在此屏幕上查看现有环境中属于 NetApp 服务引擎中配置的 Storage VM 的文件共享，并将其作为 NetApp Keystone 灵活订阅（ Flex 订阅）服务的一部分进行管理。在 NetApp 服务引擎外部配置的文件共享会定期导入并在此页面上列出，并提供相应的状态代码。
+
+如果导入的文件共享符合 NetApp 服务引擎的可接受标准，即使共享正常运行所需的所有参数均可用，则导入这些文件共享时的状态为 `Operational` ，并且可以通过 NetApp 服务引擎直接管理。但是，某些共享可能与 NetApp 服务引擎上的现有共享的标准不同。导入后，这些文件共享将按 `Imported` 或 `Non-Standard` 状态进行分类。有关了解卷状态以及为使其正常运行而要采取的步骤的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["对象状态"]
+
+共享列表显示有关每个共享的简单信息。有关如何使用列表功能的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["列表视图"]。
+
+* Share name
+* 所驻留的服务器
+* 共享路径
+* CIFS 共享路径（用于挂载与 DNS 集成的 CIFS 共享）
+* 它所属的子租户
+* 所在的区域
+* 服务级别
+* 运行状态（运行，更新或联系支持）
+* 创建日期
+

@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_getting_started_overview.html 
+keywords: netapp, keystone, getting, started, overview, 
+summary: Keystone 入门概述 
+---
+= 概述
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本节介绍如何开始使用 NetApp 服务引擎门户。它包括：
+
+* 登录到 NetApp 服务引擎 Web 界面：
++
+** 使用用户名和密码登录
+** 使用 NetApp SSO 登录
+** 从 NetApp 服务引擎 Web 界面中注销
+
+
+* 选择租户
+* NetApp 服务引擎 Web 界面概述
+

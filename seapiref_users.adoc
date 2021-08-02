@@ -1,0 +1,413 @@
+---
+sidebar: sidebar 
+permalink: seapiref_users.html 
+keywords: netapp, keystone, users, 
+summary: Keystone 用户 
+---
+= 用户
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用下表中列出的方法检索，创建，修改和删除子租户。
+
+|===
+| HTTP 方法 | 路径 | Description 
+
+
+| `获取` | ` v2.1/users` | 检索所有用户的列表。 
+
+
+| `获取` | ` /v2.1/users/ ｛ id ｝` | 按用户 ID 检索用户。 
+
+
+| `发布` | ` v2.1/users` | 创建新用户： 
+
+
+| `PUT` | ` /v2.1/users/ ｛ id ｝` | 修改用户的详细信息。 
+
+
+| `d删除` | ` /v2.1/users/ ｛ id ｝` | 删除用户。 
+
+
+| `获取` | ` /v2.1/Users/ ｛ username ｝` | 按用户名检索用户。 
+|===
+
+
+=== 用户属性
+
+下表列出了用户属性。
+
+|===
+| 属性 | Type | Description 
+
+
+| `id` | string | 用户的唯一标识符。 
+
+
+| `用户名` | string | 用户名。 
+
+
+| `密码` | string | 用户的密码。 
+
+
+| `名字` | string | 用户的名字。 
+
+
+| `lastName` | string | 用户的姓氏。 
+
+
+| `displayName` | string | 用户的显示名称。 
+
+
+| `电子邮件` | string | 用户的电子邮件地址。 
+
+
+| `电话` | string | 用户的电话号码。 
+
+
+| `profileImageURL` | string | 用户配置文件映像的 URL 。 
+
+
+| `tenant_id` | string | 此用户的主租户标识符。 
+
+
+| `租约` | –  a| 
+用户所属的租户；一个数组，包含：
+
+* `tenant_id` ，和
+* `role_name` 这是用户角色；用户，管理员，读取，配对， 或 root 。
+
+
+
+
+| `提供程序` | string | 身份验证提供程序： `local` 或 `ActiveDirectory` 
+
+
+| `提供程序数据` | –  a| 
+身份验证提供程序详细信息，包括：
+
+* `EMail_address` ，和
+* `m成员` （组成员资格）
+
+
+|===
+
+
+=== 检索所有用户
+
+使用下表中列出的方法检索所有用户。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` v2.1/users` | 检索所有用户。 | 无 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5dddbe0ef071fe0001b889fd",
+        "username": "TestUser3",
+        "firstName": "Test",
+        "lastName": "User",
+        "displayName": "",
+        "email": "testuser@netapp.com",
+        "tenancies": [
+          {
+            "id": "5d914499869caefed0f39eee",
+            "name": "MyOrg",
+            "code": "myorg",
+            "role": "admin"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== 按 ID 检索用户
+
+使用下表中列出的方法按 ID 检索用户。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` v2.1/users` | 按 ID 检索用户。 | `id （ string ）` ：用户的唯一标识符。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e585df6896bd80001dd4b44",
+        "username": "testuser01",
+        "firstName": "",
+        "lastName": "",
+        "displayName": "",
+        "email": "",
+        "tenancies": [
+          {
+            "id": "5d914499869caefed0f39eee",
+            "name": "MyOrg",
+            "code": "myorg",
+            "role": "user"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== 按用户名检索用户
+
+使用下表中列出的方法按用户名检索用户。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` v2.1/users` | 按用户名检索用户。 | `username （ string ）` ：用户的用户名。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e61aa814559c20001df1a5f",
+        "username": "MyName",
+        "firstName": "MyFirstName",
+        "lastName": "MySurname",
+        "displayName": "CallMeMYF",
+        "email": "user@example.com",
+        "tenancies": [
+          {
+            "id": "5e5f1c4f253c820001877839",
+            "name": "MyTenant",
+            "code": "testtenantmh",
+            "role": "user"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== 创建用户
+
+使用下表中列出的方法创建用户。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `发布` | ` v2.1/users` | 创建新用户： | 无 
+|===
+所需请求正文属性： `username` ， `tenant_id` ， `tenancies ， provider`
+
+* 请求正文示例： *
+
+....
+{
+  "username": "MyUser",
+  "password": "mypassword",
+  "firstName": "My",
+  "lastName": "User",
+  "displayName": "CallMeMyUser",
+  "email": "user@example.com",
+  "phone": "string",
+  "profileImageURL": "string",
+  "tenant_id": "5e7c3af7aab46c00014ce877",
+  "tenancies": [
+    {
+      "tenant_id": "5e7c3af7aab46c00014ce877",
+      "role_name": "admin"
+    }
+  ],
+  "provider": "local",
+  "provider_data": {
+    "email": "user@example.com",
+    "member_of": "string"
+  }
+}
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed6f463129e5d000102f7e1",
+        "username": "MyUser",
+        "firstName": "My",
+        "lastName": "User",
+        "displayName": "CallMeMyUser",
+        "email": "user@example.com",
+        "tenancies": [
+          {
+            "id": "5e7c3af7aab46c00014ce877",
+            "name": "MyTenant",
+            "code": "mytenantcode",
+            "role_name": "admin"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== 按 ID 修改用户
+
+使用下表中列出的方法按用户 ID 修改用户。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `PUT` | ` /v2.1/users/ ｛ id ｝` | 修改由用户 ID 标识的用户。您可以修改用户名，显示名称，密码，电子邮件地址，电话号码， 配置文件映像 URL 和租户详细信息。 | `id （ string ）` ：用户的唯一标识符。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+{
+  "password": "MyNewPassword",
+   "firstName": "MyFirstName",
+   "lastName": "MySurname",
+   "displayName": "CallMeMYF",
+   "email": "user@example.com",
+   "phone": "string",
+  "profileImageURL": "string",
+  "tenant_id": "5e5f1c4f253c820001877839",
+  "tenancies": [
+    {
+      "tenant_id": "5e5f1c4f253c820001877839",
+      "role_name": "user"
+    }
+  ]
+}
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e61aa814559c20001df1a5f",
+        "username": "MyName",
+        "firstName": "MyFirstName",
+        "lastName": "MySurname",
+        "displayName": "CallMeMYF",
+        "email": "user@example.com",
+        "tenancies": [
+          {
+            "id": "5e5f1c4f253c820001877839",
+            "name": "MyTenant",
+            "code": "testtenantmh",
+            "role": "user"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== 按 ID 删除用户
+
+使用下表中列出的方法按 ID 删除用户。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `d删除` | ` /v2.1/users/ ｛ name ｝` | 删除此 ID 标识的用户。 | `id （ string ）` ：用户的唯一标识符。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+No content for succesful delete
+....

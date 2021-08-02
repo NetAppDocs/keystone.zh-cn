@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_an_object_storage_group.html 
+keywords: netapp, keystone, delete, object, storage, group, 
+summary: keystone 删除对象存储组 
+---
+= 删除对象存储组
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此方法删除对象存储组。
+
+
+
+=== 步骤
+
+. 查看 link:sewebiug_view_host_groups.html#view-host-groups["组列表"]。
+. 确保选择了正确的子租户，并且显示的是组（而不是用户）。
+. 在列表中找到该组，然后单击该组的删除图标。
+. 要确认删除操作，请单击 * 确认 * 。对象存储组将从列表中删除。
+

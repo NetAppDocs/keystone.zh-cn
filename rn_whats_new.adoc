@@ -1,0 +1,185 @@
+---
+sidebar: sidebar 
+permalink: rn_whats_new.html 
+keywords: netapp, keystone, release notes, new features, what's new, 
+summary: NetApp 服务引擎中的新增功能 
+---
+= 此版本的 NetApp Keystone Flex 订阅服务中的新增功能
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+此版本的 NetApp Keystone 灵活订阅（ Flex 订阅）服务引入了以下功能和增强功能：
+
+
+
+== NetApp 服务引擎 2.1 中引入的功能
+
+此版本中的新功能包括在 Flex 订阅环境中支持多租户，以及有助于将非活动数据迁移到成本较低的本地层或云层的分层功能。
+
+
+
+=== 为服务提供商推出 Flex 订阅服务
+
+现在， NetApp 服务引擎支持服务提供商管理多租户环境。您可以执行配置，报告，计费和管理拥有自己订阅的客户的功能。为了支持此功能，我们进行了以下增强：
+
+* * 信息板： * 信息板显示特定订阅编号的存储订阅信息，例如服务层，每个服务级别的容量使用情况以及附加数据保护服务。作为服务提供商，您可以查看 NetApp Keystone 灵活订阅和租户订阅的详细信息。作为租户管理员，您可以查看您的租户的所有租户订阅的详细信息。
+* * 报告： * 您可以根据 NetApp Keystone Flex 订阅使用情况以及租户使用情况创建容量和性能报告。作为合作伙伴管理员，您可以从 * 报告 * > * Keystone 使用情况 * 查看有关您的 Flex 订阅使用情况的容量报告。作为合作伙伴管理员，您可以从 * 报告 * > * 租户使用情况 */* 容量使用情况 * 查看特定租户的容量使用情况报告。作为租户管理员，您可以从 * 报告 * > * 租户使用情况 * 中查看租户报告。
+* * 订阅： * 作为合作伙伴管理员，您可以分别从 * 订阅 * > * Keystone 订阅 * 和 * 订阅 * > * 租户订阅 * 查看和更新您的 Flex 订阅和租户订阅。作为租户管理员，您只能查看租户订阅。
+* * 用户： * 根据您的角色，您可以根据需要为租户中的新用户或现有用户分配权限。此角色可以是 NetApp 管理员，具有只读权限的 NetApp 管理员，合作伙伴管理员或租户管理员。作为合作伙伴管理员，您只能为新用户分配合作伙伴管理员或租户管理员角色。租户管理员用户只能将租户管理员角色分配给其他用户。
+* * 网络菜单： * 作为合作伙伴管理员，您可以查看为您的租户定义的网络。您也可以从 * 网络 * > * 子网 * 为子租户和分区创建子网。在最终客户或子租户配置存储时需要执行此操作。
+* API 支持：此版本将提供 ` 租户 / ｛ tenant_id ｝ /zones/｛ zone_name ｝ /subnets` 和 ` 租户 / ｛ tenant_id ｝ /zones/｛ zone_name ｝ /subnets/ ｛ id ｝ /tags` API ，用于为子租户创建和查看子网。
+
+
+有关此功能的详细信息，请参见以下链接： * link:nkfsosm_overview.html["运营模式，角色和职责"]* * * * * * 
+
+
+
+=== 分层
+
+NetApp Keystone Flex 订阅服务现在包括利用 NetApp FabricPool 技术的分层功能。它可以识别不太常用的数据，并将其分层到 NetApp 内部拥有，部署和管理的冷存储中。您可以通过订阅极高分层或高级分层性能级别来选择分层。
+
+以下 API 已进行修改，以包括新分层服务级别的新属性值：
+
+* 文件服务 API
+* 块存储 API
+
+
+有关详细信息，请参见以下链接： * link:nkfsosm_tiering.html["分层"]* 
+
+
+
+== NetApp Keystone Flex 订阅 2.0.1 中引入的功能
+
+
+
+=== 支持范围扩展到适用于 Google Cloud Platform 的 Cloud Volumes Services
+
+除了对 Azure NetApp Files 的现有支持之外， NetApp 服务引擎现在还能够支持适用于 Google 云平台的 Cloud Volumes Services （ GCP ）。现在，您可以通过 NetApp 服务引擎管理订阅的服务以及配置和修改 Google Cloud Volumes 。
+
+
+NOTE: Cloud Volumes Services 的订阅在 NetApp 服务引擎之外进行管理。NetApp 服务引擎可通过相关凭据连接到云服务。
+
+
+
+=== 能够管理在 NetApp 服务引擎之外配置的对象
+
+客户环境中已存在且属于 NetApp 服务引擎中配置的 Storage VM 的卷（磁盘和文件共享）现在可以在 NetApp Keystone 灵活订阅（ Flex 订阅）中进行查看和管理。现在，在 NetApp 服务引擎外部配置的卷将列在具有相应状态代码的 * 共享 * 和 * 磁盘 * 页面上。后台进程定期运行，并在 NetApp 服务引擎实例中导入外部工作负载。
+
+导入的磁盘和文件共享可能与 NetApp 服务引擎上的现有磁盘和文件共享不在同一标准中。导入后，这些磁盘和文件共享将按 `Non-Standard` status 进行分类。您可以从 * 支持 > 服务请求 > 新服务请求 * 中提出服务请求，以便通过 NetApp 服务引擎门户对其进行标准化和管理。
+
+
+
+=== SnapCenter 与 NetApp 服务引擎集成
+
+作为 SnapCenter 与 NetApp 服务引擎集成的一部分，您现在可以从 SnapCenter 环境中创建的 Snapshot 克隆磁盘和文件共享，而不是从 NetApp 服务引擎实例中进行克隆。在 NetApp 服务引擎门户上从现有 Snapshot 克隆文件共享或磁盘时，系统会列出这些 Snapshot 供您选择。采集过程会定期在后台运行，以便在 NetApp 服务引擎实例中导入 Snapshot 。
+
+
+
+=== 用于维护备份的新屏幕
+
+通过新的 * 备份 * 屏幕，您可以查看和管理在环境中创建的磁盘和文件共享的备份。您可以编辑备份策略，中断与源卷的备份关系，以及删除备份卷及其所有恢复点。此功能允许保留备份（作为孤立备份），即使删除了源卷也是如此，以便日后进行还原。要从特定恢复点还原文件共享或磁盘，您可以通过 * 支持 > 服务请求 > 新服务请求 * 提出服务请求。
+
+
+
+=== 配置以限制用户对 CIFS 共享的访问
+
+现在，您可以指定访问控制列表（ ACL ）来限制用户对 CIFS （ SMB ）或多协议共享的访问。您可以根据要添加到 ACL 中的 Active Directory （ AD ）设置指定 Windows 用户或组。link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["了解更多信息。"]
+
+
+
+== NetApp Keystone Flex 订阅 2.0 中引入的功能
+
+
+
+=== 支持 MetroCluster
+
+NetApp 服务引擎支持使用 MetroCluster 配置的站点。MetroCluster 是 ONTAP 的一项数据保护功能，可通过同步镜像为持续可用的存储提供恢复点目标（ RPO ） 0 或恢复时间目标（ RTO ） 0 。MetroCluster 支持可转换为 NetApp 服务引擎中的同步灾难恢复功能。MetroCluster 实例的每一侧都注册为一个单独的分区，每个分区都有自己的订阅，其中包括数据保护高级费率计划。在启用了 MetroCluster 的区域中创建的共享或磁盘会同步复制到第二个区域。复制分区的使用量遵循适用于配置存储的分区的数据保护高级速率计划。
+
+
+
+=== Cloud Volumes Services 支持
+
+NetApp 服务引擎现在能够支持 Cloud Volumes Services 。现在，它可以支持 Azure NetApp Files 。
+
+
+NOTE: Cloud Volumes Services 的订阅在 NetApp 服务引擎之外进行管理。NetApp 服务引擎可通过相关凭据连接到云服务。
+
+NetApp 服务引擎支持：
+
+* 配置或修改 Cloud Volumes Services 卷（包括创建快照的功能）
+* 将数据备份到 Cloud Volumes Services 区域
+* 查看 NSE 清单中的 Cloud Volumes Services 卷
+* 查看 Cloud Volumes Services 使用情况。
+
+
+
+
+=== 主机组
+
+NetApp 服务引擎支持使用主机组。主机组是一组 FC 协议主机全球通用端口名称（ WWPN ）或 iSCSI 主机节点名称（ IQN ）。您可以定义主机组并将其映射到磁盘，以控制哪些启动程序可以访问磁盘。主机组不再需要为每个磁盘指定单独的启动程序，而是需要满足以下条件：
+
+* 要提供给同一组启动程序的额外磁盘
+* 跨多个磁盘更新启动程序集
+
+
+
+
+=== 突发使用情况和通知
+
+某些 NetApp 服务引擎支持的存储订阅允许客户在其承诺容量之外使用突发容量，该容量会在订阅的承诺容量之上单独收取。用户必须了解何时将使用或已使用突发容量来控制其使用情况和成本。
+
+
+
+==== 建议的更改导致使用突发容量时的通知
+
+显示建议配置更改的通知，发生原因此更改会使订阅发生突发。用户可以选择继续，因为知道订阅会导致突发或选择不继续操作。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["了解更多信息。"]
+
+
+
+==== 订阅处于突发状态时的通知
+
+订阅突发时，系统将显示通知横幅。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["了解更多信息。"]
+
+
+
+==== 容量报告显示突发使用量
+
+容量报告，显示订阅突发的天数以及已用突发容量的数量。link:sewebiug_working_with_reports.html#capacity-usage["了解更多信息。"]
+
+
+
+=== 性能报告
+
+NetApp 服务引擎 Web 界面中的新性能报告可显示有关各个磁盘或共享在以下性能指标上的性能信息：
+
+* IOPS/TiB （每字节每秒输入 / 输出操作数）：存储设备上每秒输入和输出操作数（ IOPS ）的速率。
+* 吞吐量（以 MBps 为单位）：存储介质之间的数据传输速率（以 MB/ 秒为单位）。
+* 延迟（毫秒）：从磁盘或共享进行读取和写入的平均时间，以毫秒为单位。
+
+
+
+
+=== 订阅管理
+
+订阅管理已得到增强。您现在可以：
+
+* 为订阅或服务申请数据保护附加项或为数据保护附加项请求额外容量
+* 查看数据保护使用量
+
+
+
+
+=== 计费增强功能
+
+现在，计费功能支持对 ONTAP （文件和块）存储的快照使用量进行衡量和计费。
+
+
+
+=== 隐藏的 CIFS 共享
+
+NetApp 服务引擎支持创建隐藏的 CIFS 共享。

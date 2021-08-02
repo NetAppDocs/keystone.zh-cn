@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_service_level_metrics_and_definitions.html 
+keywords: netapp, keystone, service, level, metrics, definitions, 
+summary: Keystone 服务级别指标和定义 
+---
+= 服务级别指标和定义
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone 灵活订阅（ Flex 订阅）服务中使用了以下术语和定义：
+
+* * GiB ， TiB 和 PIB 。 * 数据存储容量测量，使用基数为 1024 （ 1 GiB = 1024^3^ 字节， 1 TiB = 1024^4^ 字节， 1 PiB = 1024^5^ 字节）。
+* * IOPS/TiB 。 * 应用程序请求的每秒协议操作数除以卷的已分配逻辑大小。
+* * 可用性 * 以服务成功响应的 I/O 请求数的百分比除以服务在指定月份按服务划分度量的 I/O 请求总数，不包括计划内服务停机或所需设施不可用情况。 由客户提供的网络或其他服务。
+* * 持久性 * 是指在不影响保真度的情况下访问的数据所占的百分比，不包括客户导致的删除或损坏。
+* * 每个 TiB 的目标 IOPS 。 * 达到每个 TiB 的目标 IOPS 阈值之前向卷发出的所有 I/O 请求的保证 IOPS 。卷上的性能上限为所选的每 TiB IOPS 。
+
+
+
+NOTE: 每 TiB 的目标 IOPS 性能指标是根据以 TiB 为单位的逻辑消耗容量计算得出的。
+
+* * 延迟。 * 从客户端收到的 I/O 请求的处理时间，以服务划分（存储控制器 I/O 端口）为单位。
+

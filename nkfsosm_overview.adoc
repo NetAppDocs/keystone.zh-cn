@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_overview.html 
+keywords: netapp, keystone, kfs, overview, 
+summary: NetApp Flex 订阅概述 
+---
+= 运营模式，角色和职责
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone 灵活订阅（ Flex 订阅）基于租户模式。
+
+Flex 订阅提供了三种服务交付操作模式。
+
+* * NetApp 运营的模式 * 允许客户订阅所提供的服务（根据选定的性能层和存储服务类型），并选择 NetApp 运营的选项，但需要额外付费。NetApp 使用 NetApp 存储和 IT 资源定义架构和产品，在客户内部安装以及管理日常基础架构管理操作。可用的存储服务类型包括文件，块和对象。基于适用于 GCP 和 AWS 的 Cloud Volumes Service 的存储订阅也可以通过 NetApp Keystone 实例进行管理。
+* * 合作伙伴运营的 * * 型号 * 与 NetApp 运营的模式类似，但合作伙伴为其最终客户运营服务。在此模型中，合作伙伴是引用的合同方。租户是合作伙伴或服务提供商的客户，与 NetApp 没有任何计费关系。合作伙伴运营的模式通常具有多租户环境，其中租户和最终客户 / 子租户拥有自己的订阅，并由服务提供商 / 合作伙伴付费。配对管理员对所有租户执行管理任务。管理员可以在合作伙伴运营的模式下执行的功能与管理员在 NetApp 运营的模式下可以执行的功能不同。
+* * 客户操作 * * * 型号 * 允许客户根据选定的性能层和存储服务类型订阅所提供的服务。NetApp 定义了客户内部的架构，产品和安装，并允许客户使用其存储和 IT 资源管理基础架构。客户可以与 NetApp 或合作伙伴 / 服务提供商绑定，并可根据此情况向 NetApp 或服务提供商提出服务请求。客户管理员可以在客户操作的环境中执行管理任务。这些任务与特定客户的租户和子租户相关联。
+
+
+产品中的功能和选项因型号而异。有关信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["服务提供商和客户的角色和运营"]
+
+此图总结了整体服务生命周期模型并对相关服务进行了分类。
+
+image:nkfsosm_image7.png["错误：缺少图形映像"]
+
+
+
+=== 角色和职责摘要
+
+以下列表总结了 NetApp 的角色和职责：
+
+* NetApp 提供，安装，配置和启用适用的服务（包括客户指定的数据中心或 Colo 上的适用 NetApp 服务引擎版本）。NetApp 负责在合同期限结束时进行卸载，或者客户选择提前终止合同。
+* 在与其他 IT 服务提供商进行连接时， NetApp 会与客户的 IT 服务提供商或其技术团队合作。
+* 其中包括 NetApp 运营的服务的性能，前提是共享责任适用于受支持的环境。
+

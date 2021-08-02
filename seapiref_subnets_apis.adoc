@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: seapiref_subnets_apis.html 
+keywords: netapp, keystone, subnets, networks, apis 
+summary: Keystone 网络 API 
+---
+= 使用子网 API 定义网络配置
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用子网 API 查看和创建子租户和分区的子网。您可以使用它们定义网络配置。
+
+[cols="1,1,3,2"]
+|===
+| HTTP 动词 | 路径 | Description | 必需参数 / 请求正文 
+
+
+ a| 
+`获取`
+ a| 
+` /v2.1/tenant/ ｛ tenant_id ｝ /` `分区 / ｛ zone_name ｝ / 子网`
+| 您可以检索租户和区域的所有子网对象。检索子网的详细信息，例如 VLAN ，子租户，分区，路由， 和标记。  a| 
+`tenant_id` ：租户的 ID 。`zone_name` ：分区的名称。`offset` ：开始收集结果集之前要跳过的项数。`limit` ：要返回的项数。
+
+
+
+ a| 
+`获取`
+ a| 
+` /v2.1/tenant/ ｛ tenant_id ｝ /` `分区 / ｛ zone_name ｝ /subnets/` ` ｛ id ｝`
+| 您可以检索为租户和区域创建的特定子网对象的详细信息。检索子网的详细信息，例如 VLAN ，子租户，分区，路由， 和标记。  a| 
+`tenant_id` ：租户的 ID 。`zone_name` ：分区的名称。`id` ：子网的 ID 。
+
+
+
+ a| 
+`发布`
+ a| 
+` /v2.1/tenant/ ｛ tenant_id ｝ /` `分区 / ｛ zone_name ｝ / 子网`
+| 您可以为特定租户和区域创建子网对象。在请求正文中添加值以使用指定参数创建子租户对象，例如名称， VLAN ， CIDR ，子租户 ID ， 路由和标记。  a| 
+`tenant_id` ：租户的 ID 。`zone_name` ：分区的名称。`` ｛ "name" ： "string" ， "VLAN" ： "1000" ， "CIDR" ： "10.0.0.0/24 " ， "subtenant_id" ： "5d2fb0fb4f47df00015274e3" ， "routes" ： [ ｛ "destination" ： "10.0.0.0/24 ， "gateway" ： "5d2fb0fb4fb4f47df00015274e3" ， "b" ， "key2" ： " `` ， "key2" ： " ， "key2" ： "key2" ： " ， "key2" ： "key2" ： " ， "key1" ， "key2" ： "key2" ： "key2" ， "key1" ， "key2" ：
+
+
+
+ a| 
+`发布`
+ a| 
+` /v2.1/tenant/ ｛ tenant_id ｝ /` `分区 / ｛ zone_name ｝ /subnets/` ` ｛ id ｝ /tags`
+| 您可以为租户的子网对象创建或替换标记。在请求正文中添加子网对象的 ID 以及 "key ： value pair" 格式的标记值。  a| 
+`tenant_id` ：租户的 ID 。`zone_name` ：分区的名称。`id` ：备份对象的 ID 。`` ｛ "key1" ： "< 标记 1>" ， "key2" ： "< 标记 2>" ， "keyN" ： "< 标记 N>" ｝ ``
+
+|===

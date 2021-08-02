@@ -1,0 +1,273 @@
+---
+sidebar: sidebar 
+permalink: seapiref_storagegrid_instances.html 
+keywords: netapp, keystone, storagegrid, instances, 
+summary: Keystone StorageGRID 实例 
+---
+= StorageGRID 实例
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用下表中列出的方法设置和管理 StorageGRID 实例以支持对象存储。
+
+|===
+| HTTP 方法 | 路径 | Description 
+
+
+| `获取` | ` /v2.1/storageggridinstances` | 检索 StorageGRID 实例。 
+
+
+| `发布` | ` /v2.1/storageggridinstances` | 创建新的 StorageGRID 实例以托管对象存储。 
+
+
+| `获取` | ` /v2.1/storageggridinstances/｛ id ｝` | 按 ID 检索 StorageGRID 实例。 
+
+
+| `PUT` | ` /v2.1/storageggridinstances/｛ id ｝` | 更新 StorageGRID 实例。 
+|===
+
+
+=== StorageGRID 实例属性
+
+下表列出了 StorageGRID 实例属性。
+
+|===
+| 属性 | Type | Description 
+
+
+| `id` | string | StorageGRID 实例的唯一标识符。 
+
+
+| `名称` | string | StorageGRID 实例名称。 
+
+
+| `admin_rest_uri` | 字符串（ $uri ） | StorageGRID 管理节点端点。 
+
+
+| `s 3_Endpoints` | 字符串（ $uri ） | StorageGRID 端点。例如： [ `"https://s3.examplegrid.com"[]，  ] 
+
+
+| `grid_username` | string | StorageGRID 用户名。 
+
+
+| `grid_password` | string | StorageGRID 密码。 
+
+
+| `tenant_username` | string | StorageGRID 租户用户名。 
+
+
+| `tenant_password` | string | StorageGRID 租户密码。 
+
+
+| `ssubscription_number` | string | Zuora 订阅编号。 
+|===
+
+
+=== 检索 StorageGRID 实例
+
+使用下表中列出的方法检索 StorageGRID 实例。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` /v2.1/storageggridinstances` | 检索 StorageGRID 实例。 | 无 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e3ba2840271823644cb8ab6",
+        "name": "NSE StorageGRID Dev1",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "admin_rest_uri": "https://sggmi-dev.dev.ausngs.netapp.au",
+        "s3_endpoints": [
+          "https://sgs3.dev.ausngs.netapp.au"
+        ],
+        "subscription_number": "A-S00004566"
+      }
+    ]
+  }
+}
+....
+
+
+=== 按 ID 检索 StorageGRID 实例
+
+使用下表中列出的方法按 ID 检索 StorageGRID 实例。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` /v2.1/storageggridinstances/｛ id ｝` | 按 ID 检索 StorageGRID 实例。 | `id （ string ）` ： StorageGRID 实例的唯一标识符。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e3ba2840271823644cb8ab6",
+        "name": "NSE StorageGRID Dev1",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "admin_rest_uri": "https://sggmi-dev.dev.ausngs.netapp.au",
+        "s3_endpoints": [
+          "https://sgs3.dev.ausngs.netapp.au"
+        ],
+        "subscription_number": "A-S00004566"
+      }
+    ]
+  }
+}
+....
+
+
+=== 按 ID 创建 StorageGRID 实例
+
+使用下表中列出的方法按 ID 创建 StorageGRID 实例。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `发布`` | ` /v2.1/storageggridinstances/｛ id ｝` | 按 ID 检索 StorageGRID 实例。 | `id （字符串）：` StorageGRID 实例的唯一标识符。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+{
+  "name": "Grid1",
+  "admin_rest_uri": "https://examplegrid.com",
+  "s3_endpoints": [
+    "https://s3.examplegrid.com",
+    "https://s3.location.company.com"
+  ],
+  "grid_username": "root",
+  "grid_password": "string",
+  "tenant_username": "root",
+  "tenant_password": "string",
+  "subscription_number": "A-S00003969"
+}
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "Grid1",
+        "admin_rest_uri": "https://examplegrid.com",
+        "user_id": "5d2fb0fb4f47df00015274e3",
+        "s3_endpoints": [
+          "https://s3.examplegrid.com",
+          "https://s3.location.company.com"
+        ],
+        "subscription_number": "A-S00003969"
+      }
+    ]
+  }
+}
+....
+
+
+=== 按 ID 修改 StorageGRID 实例
+
+使用下表中列出的方法按 ID 修改 StorageGRID 实例。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `PUT` | ` /v2.1/storageggridinstances/｛ id ｝` | 按 ID 修改 StorageGRID 实例。 | `id （ string ）` ： StorageGRID 实例的唯一标识符。 
+|===
+所需请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+{
+  "name": "Grid1",
+  "admin_rest_uri": "https://examplegrid.com",
+  "s3_endpoints": [
+    "https://s3.examplegrid.com",
+    "https://s3.location.company.com"
+  ],
+  "grid_username": "root",
+  "grid_password": "string",
+  "tenant_username": "root",
+  "tenant_password": "string",
+  "subscription_number": "A-S00003969"
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "Grid1",
+        "admin_rest_uri": "https://examplegrid.com",
+        "user_id": "5d2fb0fb4f47df00015274e3",
+        "s3_endpoints": [
+          "https://s3.examplegrid.com",
+          "https://s3.location.company.com"
+        ],
+        "subscription_number": "A-S00003969"
+      }
+    ]
+  }
+}
+....

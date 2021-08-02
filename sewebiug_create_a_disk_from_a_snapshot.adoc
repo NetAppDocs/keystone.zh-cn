@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_a_disk_from_a_snapshot.html 
+keywords: netapp, keystone, create, disk, Snapshot 
+summary: 从 Snapshot 创建磁盘 
+---
+= 从 Snapshot 创建磁盘
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以从现有 Snapshot 创建新磁盘。从 Snapshot 克隆的新磁盘与从中创建 Snapshot 的磁盘具有相同的属性。
+
+.步骤
+. 从左侧导航窗格中选择 * 块存储 * ，然后选择 * 磁盘 * 。
+. 单击 * 创建磁盘 * ，然后选择 * 从快照克隆 * 。此时将显示 * 选择磁盘 * 屏幕，其中包含租户的所有磁盘。您可以按区域，区域和子租户筛选磁盘。您可以选择处于运行状态的任何磁盘。
+. 选中所需磁盘旁边的复选框，然后单击 * 下一步 * 。此时将显示 * 选择 Snapshot* 屏幕，其中包含磁盘的所有 Snapshot 。
++
+
+NOTE: 对于选定磁盘，如果您在 NetApp 服务引擎之外的 SnapCenter 环境中创建了一些 Snapshot ，则可以找到这些已导入并列出的快照供您选择。您可以选择这些导入的快照并从中克隆新磁盘。
+
++
+您可以搜索特定 Snapshot 或选择计划类型以筛选 Snapshot 。
+
+. 选中要从中克隆的 Snapshot 旁边的复选框，然后单击 * 下一步 * 。新磁盘将继承选定 Snapshot 的属性。
+. 添加 * 名称 * 和 * 磁盘路径 * 。更新其他设置，例如分配 * 服务级别 * ，然后单击 * 创建 * 。
+
+
+* 创建磁盘 * 作为异步作业运行。您可以
+
+* 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
+* 作业完成后，在 * 磁盘 * 列表中检查磁盘的状态。
+

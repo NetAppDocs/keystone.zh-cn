@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_azure_netapp_accounts.html 
+keywords: netapp, keystone, managing, azure, accounts, 
+summary: 管理 Azure NetApp 帐户 
+---
+= 管理 Azure NetApp 帐户
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本节介绍如何管理 Azure NetApp 帐户：
+
+
+NOTE: 管理 Azure NetApp 帐户需要客户管理员访问权限。
+
+在本节中：
+
+* 查看 Azure NetApp 帐户列表
+* 添加 Azure NetApp 帐户
+* 修改 Azure NetApp 帐户详细信息
+* 删除 Azure NetApp 帐户
+
+
+
+
+=== 查看 Azure NetApp 帐户列表
+
+Azure NetApp 帐户列表显示登录用户有权访问的租约中的所有 Azure NetApp 帐户的列表。要查看此列表，请从菜单中选择 * 管理 > Azure NetApp 帐户 * 。
+
+此列表显示了有关每个 Azure NetApp 帐户的简单信息。通过每个 Azure NetApp 帐户旁边的操作图标，您可以修改或删除 Azure NetApp 帐户。
+
+
+
+=== 添加 Azure NetApp 帐户
+
+本节介绍如何添加 Azure NetApp 帐户。
+
+
+
+=== 开始之前
+
+您需要：
+
+* Azure NetApp 帐户所属的子租户
+* ANF 实例
+* Azure 位置（区域）
+* Azure 资源组
+* 帐户的名称
+
+
+
+
+==== 步骤
+
+. 从菜单中选择 * 管理 > Azure NetApp 帐户 * 。
+. 单击 * 创建 * 。
+. 在创建 Azure NetApp 帐户对话框中，指定子租户， Azure 位置（区域）， Azure 资源组以及 Azure NetApp 帐户的名称。
+. 如果需要，请向帐户添加标记。
+. 单击 * 创建 * 。成功创建后，帐户状态将会成功（可以在 Azure NetApp 帐户列表中查看）。
+
+
+
+
+=== 修改 Azure NetApp 帐户标记
+
+使用此方法可修改与 Azure NetApp 帐户关联的标记。
+
+
+
+==== 步骤
+
+. 从菜单中选择 * 管理 > Azure NetApp 帐户 * 。
+. 在列表中找到 Azure NetApp 帐户，然后单击编辑图标。
+. 在管理 Azure NetApp 帐户对话框中，根据需要添加，删除或编辑标记。
+. 单击 * 更新 * 。
+
+
+
+
+=== 删除 Azure NetApp 帐户
+
+使用此方法删除 Azure NetApp 帐户。
+
+
+
+==== 步骤
+
+. 从菜单中选择 * 管理 > Azure NetApp 帐户 * 。
+. 在列表中找到 Azure NetApp 帐户，然后单击删除图标。
+. 在确认删除对话框中，输入要删除的 Azure NetApp 帐户的名称。
+. 单击 * 确认 * 。
+

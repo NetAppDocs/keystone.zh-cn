@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_netapp_global_services_and_support_center_@gssc@.html 
+keywords: netapp, keystone, global, services, support, center, gssc, 
+summary: NetApp 全球服务和支持中心（ GSSC ） 
+---
+= Flex 订阅服务操作
+
+
+[role="lead"]
+NetApp Keystone 灵活订阅服务可利用 NetApp 全球服务和支持中心（ GSSC ）， NetApp Keystone 成功经理和 NetApp Keystone 服务交付经理来运行。
+
+
+
+== NetApp 全球服务和支持中心（ GSSC ）
+
+NetApp 为 NetApp Keystone 客户远程提供运营服务。这些服务涵盖存储管理活动中的一系列操作准则，包括资产和配置管理，容量和性能管理，变更管理，事件，意外事件和问题管理，服务请求履行和报告。NetApp 将展示控制状态，并根据需要提供支持证据。
+
+
+
+== 追加信息和支持联系人
+
+NetApp 全球服务和支持中心（ GSSC ）团队主要为 NetApp Keystone 灵活订阅客户提供服务支持。
+
+直接从 NetApp 服务引擎门户（ * 支持 > 服务请求 * ）提交一个服务单，并提供相应的问题描述详细信息以获得帮助。
+
+您还可以使用以下信息联系支持团队。
+
+* 全球服务联系人：https://www.netapp.com/us/contact-us/support.aspx[]
+* 如果您有待处理案例 / 服务单需要上报，请发送电子邮件至以下地址之一： Keystone.services@netapp.com Keystone.escalations@netapp.com
+* NetApp 使用基于云的远程网关解决方案 OpsRamp 主动监控和连接到 NetApp Keystone 环境以进行故障排除。有关 OpsRamp 的信息，请参见 https://www.opsramp.com/#[]。
+
+
+
+NOTE: 在合作伙伴运营的模式中，租户和子租户的服务请求将分配给合作伙伴的服务台。合作伙伴的支持工具可能已与 OpsRamp 和 GSSC 应用程序集成。只有 L3 问题才会通过 GSSC 上报给 NetApp 。
+
+要了解有关本文档中所述信息的更多信息，请查看以下文档和 / 或网站：
+
+* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* NetApp 产品文档https://docs.netapp.com["https://docs.netapp.com"^]
+

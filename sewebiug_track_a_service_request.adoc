@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_track_a_service_request.html 
+keywords: netapp, keystone, track, service, request, 
+summary: Keystone 跟踪服务请求 
+---
+= 跟踪服务请求
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+服务请求遵循本节所述的过程。
+
+下表列出了服务请求状态。
+
+|===
+| Status | Description 
+
+
+| 新增 | 这是一个新创建的请求。 
+
+
+| 打开 | 此请求正在审核 / 执行中。 
+
+
+| 待定 | 此请求正在等待第三方执行操作（即正在等待追加信息）。 
+
+
+| 已解决 | 此请求已解决。 
+
+
+| 保持 | 此请求正在等待支持无法控制的活动，可能需要一段时间才能解决此请求。 
+
+
+| 已关闭 | 此请求已关闭。 
+|===
+您可以通过查看 NetApp 服务引擎中的状态来跟踪服务请求的状态，如下所述，也可以跟踪在该过程中发送的自动电子邮件中的状态。
+
+. 从菜单中，选择支持 > 服务请求。此时将显示服务请求列表。
++
+image:sewebiug_image44.png["错误：缺少图形映像"]
+
+. 在列表中找到服务请求，并在状态列中查看状态。
+
+
+image:sewebiug_image42.png["错误：缺少图形映像"]

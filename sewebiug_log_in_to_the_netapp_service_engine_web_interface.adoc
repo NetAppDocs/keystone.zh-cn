@@ -1,0 +1,106 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_log_in_to_the_netapp_service_engine_web_interface.html 
+keywords: netapp, keystone, log, in, netapp, service, engine, web, interface, 
+summary: 登录到 NetApp 服务引擎 Web 界面 
+---
+= 登录到 NetApp 服务引擎 Web 界面
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要使用 NetApp 服务引擎 Web 界面，您必须拥有一个帐户。NetApp 服务引擎管理员会为您的帐户分配一个或多个角色，用于确定您的权限以及您可以在 NetApp 服务引擎门户中执行的活动。
+
+NetApp 服务引擎允许您使用以下凭据登录：
+
+* 用户名和密码（请参见 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-user-name-and-password["使用用户名和密码登录"]）
+* NetApp SSO （请参见 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-netapp-sso["使用 NetApp SSO 登录"]）
++
+向 NetApp 服务引擎管理员确认 NetApp 服务引擎实例中使用的登录选项。
+
+
+
+
+
+=== 基于角色的访问
+
+下表列出了基于角色的访问说明。
+
+|===
+| Role | 访问 
+
+
+| 合作伙伴管理员 / 客户所有者 | 可以执行管理租户及其订阅的所有任务。有关详细信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["此链接。"]。 
+
+
+| 客户 / 租户管理员 | 客户或租户管理员可以执行与管理子租户相关的所有操作。有关详细信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["此链接。"]。 
+
+
+| NetApp 管理员（读取） | 对所有组件的只读访问。 
+
+
+| NetApp 管理员 | 完全访问和权限，可执行 NetApp 服务引擎 Web 门户中用于管理 NetApp Keystone Flex 订阅的所有功能，以及用于合作伙伴和租户管理的所有活动。 
+|===
+
+
+=== 使用用户名和密码登录
+
+要使用用户名和密码登录，您需要：
+
+* 您的 NetApp 服务引擎 Web 界面用户名和密码
+* NetApp 服务引擎门户的 URL
+* Web 浏览器
+
+
+
+
+==== 步骤
+
+. 在 Web 浏览器中，转到 NetApp 服务引擎门户的 URL 。此时将显示登录页面。
+. 选择 * 本地用户登录 * 。
+. 在登录到 NetApp Keystone 页面上，输入您的用户名和密码，然后单击 * 登录 * 。
+. 成功登录后，将加载 NetApp 服务引擎 Web 界面，并在信息板上打开。有关图形用户界面的概述，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp 服务引擎 Web 界面概述"]。
+
+
+
+NOTE: 如果登录成功，但无法看到信息板，请与 NetApp 服务引擎门户管理员联系，以确保您的 NetApp 服务引擎门户帐户已分配正确的角色。
+
+
+
+=== 使用 NetApp SSO 登录
+
+要使用 NetApp SSO 登录，您需要：
+
+* NetApp SSO 帐户。您可以在 NetApp 支持站点上申请帐户；在登录屏幕中选择 * 创建 NetApp SSO 帐户 * 并执行以下步骤。
+* NetApp 服务引擎门户的 URL 。
+* Web 浏览器。
+
+
+
+
+==== 步骤
+
+. 在 Web 浏览器中，转到 NetApp 服务引擎门户的 URL 。此时将显示登录页面。
+. 选择 NetApp SSO 。
+. 在 SSO 登录页面上，输入您的用户名和密码，然后单击 * 登录 * 。
++
+成功登录后， NetApp 服务引擎 Web 界面将加载，此时将显示 Flex 订阅信息板。有关图形用户界面的概述，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp 服务引擎 Web 界面概述"]。
+
+
+
+
+
+=== 从 NetApp 服务引擎 Web 界面中注销
+
+
+
+==== 步骤
+
+. 要注销此界面，请单击用户图标并单击 * 注销 * 。
+
+
+image:sewebiug_image7.png["错误：缺少图形映像"]

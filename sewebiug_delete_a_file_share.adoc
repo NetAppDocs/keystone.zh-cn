@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_a_file_share.html 
+keywords: netapp, keystone, delete, file, share, 
+summary: keystone 删除文件共享 
+---
+= 删除文件共享
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本节介绍如何删除文件共享。
+
+* 注意： *
+
+* 您无法撤消删除共享。删除后，数据将无法恢复。
+* 删除主文件共享将删除所有关联的备份
+
+
+
+
+=== 步骤
+
+. 查看 link:sewebiug_view_shares.html#view-shares["共享列表"]。
+. 在列表中找到共享，然后单击该共享的删除图标。（有关使用列表中项目的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["列出视图操作"]）。
+. 在确认删除对话框中，输入文件共享名称以确认要删除此文件共享。
++
+image:sewebiug_image25.png["错误：缺少图形映像"]
+
+. 单击 * 确认 * 。此操作将创建一个用于删除共享的作业。
+
+
+
+
+=== 完成后
+
+删除共享作为异步作业运行。您可以
+
+* 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
+* 作业完成后，验证共享是否已从共享列表中删除。
+

@@ -1,0 +1,386 @@
+---
+sidebar: sidebar 
+permalink: seapiref_tenants.html 
+keywords: netapp, keystone, tenants, 
+summary: Keystone 租户 
+---
+= Tenants
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用下表中列出的方法检索，创建，修改和删除租户。
+
+|===
+| HTTP 方法 | 路径 | Description 
+
+
+| `获取` | ` v2.1/tenants` | 检索所有租户的列表。 
+
+
+| `获取` | ` /v2.1/teners/ ｛ id ｝` | 按租户 ID 检索租户。 
+
+
+| `发布` | ` v2.1/tenants` | 创建新租户。 
+
+
+| `PUT` | ` /v2.1/teners/ ｛ id ｝` | 修改租户的详细信息。 
+
+
+| `d删除` | ` /v2.1/teners/ ｛ id ｝` | 删除租户。 
+|===
+
+
+=== 租户属性
+
+下表列出了租户属性。
+
+|===
+| 属性 | Type | Description 
+
+
+| `id` | string | 租户的唯一标识符。 
+
+
+| `代码` | string | 客户指定的（或默认的）代码，用于表示租户。此属性可以包含小写字母，数字和下划线。 
+
+
+| `名称` | string | 租户名称。 
+
+
+| `zuora_account_name` | string | 计费帐户名称： Zuora 中订阅的名称。 
+
+
+| `zuora_account_number` | string | 计费帐户编号： Zuora 中的订阅编号。 
+
+
+| 问题描述` | string | 租户的问题描述。 
+
+
+| `使用情况` | – | 适用于租户的服务和服务详细信息。对于每个服务级别，此属性将显示以下内容： * 名称： * 服务级别名称 * 已用 _size_GB ： * 服务级别名称 * 角色名称： * 用户角色（用户，管理员，读取，配对或 root ） 
+|===
+
+
+=== 检索所有租户
+
+使用下表中列出的方法检索所有租户或所有租户的一部分。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` v2.1/tenants` | 检索所有租户。 | `offset` 和 `limit` —请参见 link:seapiref_netapp_service_engine_rest_apis.html#pagination>["通用分页"] 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "total_records": 23,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 2,
+    "records": [
+      {
+        "id": "5e7c3af7aab46c00014ce877",
+        "name": "MyTenant",
+        "zuora_account_name": "MyAccount",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "mytenantcode",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 10,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 1.94,
+              "committed": 30,
+              "burst": 0
+            }
+          ],
+          "A-S00004566": [
+            {
+              "service_level": "object",
+              "consumed": 3.31,
+              "committed": 300,
+              "burst": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "5d914499869caefed0f39eee",
+        "name": "MyOrg",
+        "zuora_account_name": "MyOrg Inc",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "myorg",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "standard",
+              "consumed": 12.33,
+              "committed": 30,
+              "burst": 0
+            },
+            {
+              "service_level": "object",
+              "consumed": 0,
+              "committed": 40,
+              "burst": 0
+            }
+          ],
+          "A-S00003969": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 5,
+              "burst": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+....
+
+
+=== 按 ID 检索租户
+
+使用下表中列出的方法按 ID 检索租户。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `获取` | ` /v2.1/teners/ ｛ id ｝` | 检索 ID 指定的租户。 | `id （ string ）` ：租户的唯一标识符。 
+|===
+所需的请求正文属性： `none`
+
+请求正文示例：
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e7c3af7aab46c00014ce877",
+        "name": "MyTenant",
+        "zuora_account_name": "MyAccount",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "mytenantcode",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 10,
+              "burst": 0
+            },
+            {
+              "service_level": "premium",
+              "consumed": 2.4,
+              "committed": 20,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 1.94,
+              "committed": 30,
+              "burst": 0
+            },
+            {
+              "service_level": "object",
+              "consumed": 0,
+              "committed": 40,
+              "burst": 0
+            }
+          ],
+          "A-S00003969": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 5,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 0,
+              "committed": 30,
+              "burst": 0
+            }
+          ],
+          "A-S00004566": [
+            {
+              "service_level": "object",
+              "consumed": 3.31,
+              "committed": 300,
+              "burst": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+....
+
+
+=== 创建租户
+
+使用下表中列出的方法创建租户。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `发布` | ` v2.1/tenants` | 创建新租户。 | 无 
+|===
+所需请求正文属性： `code` ， `name` ， `zuora_account_name` ， `zuora_account_number`
+
+* 请求正文示例： *
+
+....
+{
+  "name": "MyNewTenant",
+  "code": "mytenant",
+  "zuora_account_name": "string",
+  "zuora_account_number": "A00000415",
+  "description": "DescriptionOfMyTenant"
+}
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5ac802c356a0001a735af",
+        "name": "MyNewTenant",
+        "zuora_account_name": "string",
+        "zuora_account_number": "A00000415",
+        "description": "DescriptionOfMyTenant",
+        "code": "mytenant",
+        "usage": null
+      }
+    ]
+  }
+}
+....
+
+
+=== 修改租户
+
+使用下表中列出的方法修改租户。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `PUT` | ` /v2.1/teners/ ｛ id ｝` | 修改 ID 指定的租户。您可以更改租户的名称， Zuora 订阅详细信息（帐户名称或订阅编号）和问题描述。 | `id （ string ）` ：租户的唯一标识符。 
+|===
+所需的请求正文属性： `code`
+
+* 请求正文示例： *
+
+....
+{
+  "name": "MyNewTenant",
+  "code": "mytenant",
+  "zuora_account_name": "string",
+  "zuora_account_number": "A00000415",
+  "description": "New description of my tenant"
+}
+....
+* 响应正文示例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5ac802c356a0001a735af",
+        "name": "MyNewTenant",
+        "zuora_account_name": "string",
+        "zuora_account_number": "A00000415",
+        "description": "New description of my tenant",
+        "code": "mytenant",
+        "usage": null
+      }
+    ]
+  }
+}
+....
+
+
+=== 删除租户
+
+使用下表中列出的方法删除租户。
+
+|===
+| HTTP 方法 | 路径 | Description | Parameters 
+
+
+| `d删除` | ` /v2.1/teners/ ｛ id ｝` | 删除此 ID 指定的租户。 | `id （ string ）` ：租户的唯一标识符。 
+|===
+所需的请求正文属性： `none`
+
+* 请求正文示例： *
+
+....
+none
+....
+* 响应正文示例： *
+
+....
+No content for successful delete
+....

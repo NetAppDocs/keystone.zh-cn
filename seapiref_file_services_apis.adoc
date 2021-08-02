@@ -1,0 +1,176 @@
+---
+sidebar: sidebar 
+permalink: seapiref_file_services_apis.html 
+keywords: netapp, keystone, file services, file servers, file shares, apis 
+summary: Keystone 文件服务 API 
+---
+= 文件服务 API
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用文件服务 API 查看和管理文件服务器和文件共享。
+
+在创建文件共享之前，您必须先创建文件服务器来托管它们。
+
+
+
+== 文件服务器 API
+
+您可以使用文件服务器 API 查看和管理文件服务器。有关文件服务器的详细信息，请参见 link:hsewebiug_create_a_file_server.html["创建文件服务器"]。
+
+[cols="1,1,3,2"]
+|===
+| HTTP 动词 | 路径 | Description | 必需参数 / 请求正文 
+
+
+ a| 
+`获取`
+ a| 
+` v2.1/fileservers`
+| 您可以检索所有文件服务器的详细信息。检索文件服务器的详细信息，例如文件服务器 ID ，名称，区域，区域，租户， 和标记。  a| 
+`offset` ：开始收集结果集之前要跳过的项数。`limit` ：要返回的项数。
+
+
+
+ a| 
+`获取`
+ a| 
+` /v2.1/fileservers/ ｛ id ｝`
+| 您可以检索特定文件服务器的详细信息。检索文件服务器的详细信息，例如名称，区域，区域，租户， 和标记。  a| 
+`id` ：文件服务器的 ID 。
+
+
+
+ a| 
+`发布`
+ a| 
+` v2.1/fileservers`
+| 您可以创建文件服务器。在请求正文中添加值以使用指定参数创建文件服务器，例如名称，子租户 ID ，区域，子网 ID 。  a| 
+`name` ：文件服务器的名称。`ssubtenant_id` ：子租户的 ID 。`zone` ：分区的名称。`ssubnet_id` ：子网的 ID 。
+
+
+
+ a| 
+`发布`
+ a| 
+` /v2.1/fileservers/ ｛ id ｝ /` `标记`
+| 您可以为文件服务器创建或替换标记。在请求正文中以 "key ： value pair" 格式添加文件服务器的 ID 以及标记的值。  a| 
+`id` ：文件服务器的 ID 。
+
+
+
+ a| 
+`PUT`
+ a| 
+` /v2.1/fileservers/ ｛ id ｝`
+| 您可以根据文件服务器的 ID 修改该服务器。添加文件服务器的 ID 以及要在请求正文中修改的值，例如名称，协议，区域，区域和标记。  a| 
+`id` ：文件服务器的 ID 。
+
+
+
+ a| 
+`d删除`
+ a| 
+` /v2.1/fileservers/ ｛ id ｝`
+ a| 
+您可以按 ID 删除任何文件服务器。
+ a| 
+`id` ：文件服务器的 ID 。
+
+|===
+[NOTE]
+====
+删除文件服务器之前，应删除映射到该服务器的所有文件共享。
+
+删除启用了 CIFS 的文件服务器后， Active Directory 计算机对象将保留。请 Active Directory 管理员手动从 Active Directory 中删除已删除文件服务器的计算机对象。
+
+====
+
+
+== 文件共享 API
+
+您可以使用文件共享 API 查看和管理文件共享。有关文件共享的详细信息，请参见 link:sewebiug_create_a_new_file_share.html["创建文件共享"]。
+
+[cols="1,1,3,2"]
+|===
+| HTTP 动词 | 路径 | Description | 必需参数 / 请求正文 
+
+
+ a| 
+`获取`
+ a| 
+` v2.1/fileshares`
+| 您可以检索所有文件共享的详细信息。检索文件共享的详细信息，例如 ID ，名称， Snapshot 策略，协议， 文件服务器 IP 和标记。  a| 
+`offset` ：开始收集结果集之前要跳过的项数。`limit` ：要返回的项数。
+
+
+
+ a| 
+`获取`
+ a| 
+` /v2.1/fileshares/ ｛ id ｝`
+| 您可以检索特定文件共享的详细信息。检索文件共享的详细信息，例如 ID ，名称，快照策略，协议，文件服务器 IP ， 和标记。  a| 
+`id` ：文件共享的 ID 。
+
+
+
+ a| 
+`发布`
+ a| 
+` v2.1/fileshares`
+| 您可以创建文件共享。在请求正文中添加值以使用指定参数创建文件共享，例如 ID ，名称， Snapshot 策略，协议， 文件服务器 IP 和标记。  a| 
+`name` ：文件共享的名称。`share _path` ：文件共享的路径。`fileserver_id` ：文件服务器的 ID 。`size_GB` ：文件共享的大小，以 GB 为单位。`sservice_level` ：适用的服务级别名称：标准，高级，高级分层，至尊或至尊分层。`protocol` ：用于访问文件共享的协议（ NFS ， CIFS 或多协议）。`security_style` ：安全模式（ Unix 或 NTFS ）。`export_policy` ：文件共享的导出策略。
+
+
+
+ a| 
+`发布`
+ a| 
+` /v2.1/fileshares/ ｛ id ｝ /` `snapshot/ ｛ name ｝`
+| 您可以创建文件共享的快照。  a| 
+`id` ：文件共享的 ID 。`name` ：快照的名称。
+
+
+
+ a| 
+`发布`
+ a| 
+` /v2.1/fileshares/ ｛ id ｝ /` `标记`
+| 您可以为文件共享创建或替换标记。在请求正文中以 "key ： value pair" 格式添加文件共享的 ID 和标记值。  a| 
+`id` ：文件共享的 ID 。
+
+
+
+ a| 
+`PUT`
+ a| 
+` /v2.1/fileshares/ ｛ id ｝`
+| 您可以根据文件共享的 ID 修改该文件共享。在请求正文中添加文件服务器的 ID 以及要修改的值，例如名称，协议，快照策略，备份策略和标记。  a| 
+`id` ：文件共享的 ID 。`name` ：文件共享的名称。`size_GB` ：文件共享的大小，以 GB 为单位。`sservice_level` ：适用的服务级别名称：标准，高级，高级分层，至尊或至尊分层。`protocol` ：用于访问文件共享的协议（ NFS ， CIFS 或多协议）。`export_policy` ：文件共享的导出策略。
+
+
+
+ a| 
+`d删除`
+ a| 
+` /v2.1/fileshares/ ｛ id ｝`
+| 您可以按 ID 删除任何文件共享。  a| 
+`id` ：文件共享的 ID 。
+
+
+
+ a| 
+`d删除`
+ a| 
+` /v2.1/fileshares/ ｛ id ｝ /` `snapshot/ ｛ name ｝`
+| 您可以按文件共享的 ID 和快照的名称删除文件共享的任何快照。  a| 
+`id` ：文件共享的 ID 。`name` ：快照的名称。
+
+|===
+
+NOTE: 对于 CIFS 共享，在共享路径的末尾添加 ` $` 字符将使其成为隐藏共享，例如， `pathtomyhiddenshare$` 。

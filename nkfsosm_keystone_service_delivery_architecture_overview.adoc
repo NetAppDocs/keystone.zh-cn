@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_keystone_service_delivery_architecture_overview.html 
+keywords: netapp, keystone, service, delivery, architecture, overview, 
+summary: 服务交付架构概述 
+---
+= Flex 订阅基础架构
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本节介绍适用于 NetApp 和客户操作环境的 NetApp Keystone 灵活订阅（ Flex 订阅）基础架构和管理应用程序。
+
+灵活订阅基础架构架构架构，设计，技术选择和组件产品仅由 NetApp 提供。NetApp 保留采取以下操作的权利：
+
+* 选择，替换或重新利用产品。
+* 如果认为合适，请使用新技术更新产品。
+* 增加或减少产品容量以满足服务要求。
+* 修改架构，技术和 / 或产品以满足服务要求。
+
+
+Flex 订阅基础架构包括多个组件：
+
+* NetApp 服务引擎的用户界面（ Web 门户）。
+* 用于集成的 NetApp 服务引擎 API 。
+* 包含存储控制器的 Flex 订阅基础架构
+* 用于管理和运行服务的工具，例如 OpsRamp ， Active IQ 和 Active IQ Unified Manager 。
+
+
+有关 NetApp Keystone 与 Active IQ 集成的详细信息，请参见 link:https://docs.netapp.com/us-en/active-iq/["Active IQ 数字顾问文档"]
+
+image:nkfsosm_image8.png["错误：缺少图形映像"]
+
+
+
+== NetApp 服务引擎
+
+您可以使用 NetApp 服务引擎 Web 门户以 NetApp ，合作伙伴或客户运营的模式管理和监控您的 Flex 订阅服务。此门户包含以下功能：
+
+* 一个图形界面（ NetApp 服务引擎 Web 界面），支持监控和简单的存储配置。
+* 一组 NetApp 服务引擎 REST API ，支持更高级的设置和存储管理操作。
+
+
+image:nkfsosm_image9.png["错误：缺少图形映像"]
+
+NetApp 服务引擎门户是一个单一界面，可供客户执行以下任务：
+
+* 订阅信息板。查看已订阅容量的状态以及正在使用的容量。
+* 存储配置用于创建 NFS/CIFS 文件共享， FC/iSCSI 磁盘和 S3 存储分段的工作流。
+* 数据保护在配置的文件共享或磁盘上创建快照并设置备份策略或数据复制。
+* 报告查看文件共享和磁盘清单，以及不同服务级别的容量使用趋势。
+* 管理订阅。通过门户为现有订阅或新服务订购额外容量。
+* 提交服务请求或支持问题并查看其状态
+
+
+NetApp 服务引擎的完整功能仅在 NetApp 运营的型号中提供。在客户或合作伙伴运营的模式下， NetApp 服务引擎功能仅限于报告和订阅管理。

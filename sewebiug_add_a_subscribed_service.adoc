@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_add_a_subscribed_service.html 
+keywords: netapp, keystone, add, subscribed, service, 
+summary: Keystone 添加订阅的服务 
+---
+= 添加订阅的服务
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本节介绍如何添加订阅的服务。
+
+NetApp 服务引擎支持 Azure NetApp Files 。
+
+
+
+=== 开始之前
+
+您需要有关已订阅服务的信息，包括用于连接到服务的凭据。此信息因订阅的服务类型而异。
+
+
+
+=== 步骤
+
+. 从菜单中选择 * 已订阅服务 * 。
+. 单击 * 创建 * 。
+. 在创建订阅服务页面上，选择云服务类型，然后填写此服务类型的相关信息：
++
+* Azure ： *
+
++
+.. 选择子租户。
+.. 输入要为服务创建的 OCCM 工作环境的名称。
+.. 输入 Azure 目录（租户） ID ， Azure 客户端 ID ， Azure 客户端机密和已订阅服务的名称。
+
+
+. 根据需要为服务指定标记。
+. 单击 * 创建 * 。
+

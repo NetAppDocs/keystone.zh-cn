@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_overview.html 
+keywords: netapp, keystone, overview, 
+summary: NetApp Keystone 概述 
+---
+= NetApp Keystone 常见问题解答
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+以下问题解答了您经常询问的有关 NetApp Keystone 的问题。
+
+
+
+=== 什么是 NetApp Keystone ？
+
+NetApp Keystone 是一种内部资本支出（ capex ）替代方案组合，由 NetApp Keystone 灵活支付（ Flex Pay ）和 NetApp Keystone 灵活订阅（ Flex 订阅）组成。
+
+* * 灵活支付： * 一种包括传统融资，租赁和固定 / 可变选项在内的支付解决方案组合，可满足客户的现金流需求。
+* * 灵活订阅： * 基于按需购买的订阅服务，可在内部环境中提供类似于云的体验，并提供基于结果的服务选项（ NetApp 运营）。有关详细信息，请参见 link:https://docs.netapp.com/us-en/keystone/index.html["此处"]。
+
+
+
+
+=== NetApp Keystone 如何让客户受益？
+
+NetApp Keystone 是连接我们资本支出和混合云战略的核心要素的桥梁，可提供灵活性，财务灵活性和降低财务风险，帮助客户满足其现金流和业务需求。
+
+NetApp Keystone 品牌提供一系列灵活的支付解决方案，其中包括为注重现金的客户提供的传统融资，租赁和固定 / 可变选项以及 Flex 订阅。
+
+* * 灵活支付（财务灵活性，支付解决方案）： *
++
+** 更愿意拥有资产所有权，但需要付款 / 财务灵活性（租赁模式，租赁，贷款，分期付款）
+** 严格的安全要求，无外部数据连接选项支持订阅
+** 工作负载的容量增长可预测，并与资本支出预算保持一致
+** 管理完善的基础架构，资产利用率高
+** 更喜欢以原始容量为基础购买存储，并保留效率优势
+
+
+* * Flex 订阅（ OPEX ，类似云的体验）： *
++
+** 更喜欢 100% 的 OPEX ，因此资产不会最终出现在客户的资产负债表上
+** 希望将成本与使用量 / 收入保持一致的内部 / 外部服务提供商
+** 容量增长不可预测的工作负载
+** 从典型存储任务（迁移，技术更新，升级等）中重新分配 IT 资源
+** 将工作负载迁移到云之前的短期解决方案
+** 将工作负载从云重新部署到内部
+
+
+
+
+
+
+=== 什么是 Flex 订阅？
+
+Flex 订阅是一种基于内部订阅的全新灵活采购模式。它可以消除资源管理方面的障碍，让客户在漫长的采购周期内加速实现价值。通过 Flex 订阅，客户可以根据业务优先级调整经济效益。有关详细信息，请参见 link:https://docs.netapp.com/us-en/keystone/index.html#netapp-keystone-flex-subscription["此处"]。
+
+
+
+=== 内部部署意味着什么？
+
+内部部署是指客户拥有的数据中心或主机代管中心内的客户拥有的空间。客户负责空间，电源和散热。
+
+
+
+=== Flex 订阅服务有哪些优势？
+
+Flex 订阅服务的一些优势包括：
+
+* 将 IT 员工从与存储相关的复杂任务中解放出来，让他们可以专注于应用程序管理
+* 减少前期资本投资
+* 允许客户在不过度配置的情况下满足其需求
+* 根据业务需求 / 活动调整数据存储成本
+* 绕过复杂的组织采购流程，简化基础架构配置
+* 确保数据在其内部环境中的安全
+* 能够正确控制合规性，性能和安全性有关详细信息，请参见 link:https://docs.netapp.com/us-en/keystone/index.html#benefits-of-flex-subscription["此处"]。
+

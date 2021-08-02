@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_object_storage_user.html 
+keywords: netapp, keystone, create, object, storage, user, 
+summary: Keystone 创建对象存储用户 
+---
+= 创建对象存储用户
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+=== 开始之前
+
+由于对象存储用户属于对象存储组，因此必须存在该对象存储组，然后才能创建该用户。
+
+
+
+=== 步骤
+
+. 查看 link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["用户列表"]。
+. 确保选择了正确的子租户，并且显示的是用户（而不是组）。
+. 单击 * 创建用户 * 。
+. 在创建用户对话框中：
++
+.. 输入用户名。
+.. 选择成员所属的组。
+
+
+. 单击 * 创建 * 。此操作将创建一个作业，用于使用指定设置创建用户。
+
+
+
+
+=== 完成后
+
+创建用户将作为异步作业运行。您可以
+
+* 在作业列表中检查作业的状态。
+* 作业完成后，在用户列表中检查共享的状态。
+
