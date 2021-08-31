@@ -2,7 +2,6 @@
 <blocks>
   <block id="bbf5c00a5a74c975684f1ea9625170dc" category="summary">NetApp 服务引擎中的已知问题</block>
   <block id="df2d7d810d56e2ac1424497ce621a5b4" category="doc">NetApp 服务引擎中的已知问题</block>
-  <block id="169b34e4ab011706634f67c10f307535" category="paragraph">此版本的 NetApp 服务引擎报告了以下已知问题。</block>
   <block id="7a80ca9b8510ef9ffe2e1220e504556f" category="cell">已知问题描述</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
   <block id="7aebfa1e2291377e040de92d7f7f335f" category="cell">临时解决策</block>
@@ -24,7 +23,6 @@
   <block id="068bb1be1378596135e3a28692966278" category="cell">此时将删除所有主卷和复制关系。但是，不会删除灾难恢复对象。此对象不会占用任何容量或网络。</block>
   <block id="c8d49ad83dee61f7445c0ee8241f314a" category="cell">此问题描述没有临时解决策。</block>
   <block id="15af90465a6fa17b3d45e4a04546e02d" category="cell">禁用卷备份的限制</block>
-  <block id="0333cfff0270b7dbba3cc836e02be62d" category="cell">删除网络子网的限制</block>
   <block id="da13c6df8ee6f220a7fd4e875de9a14d" category="cell">客户无法删除网络子网。</block>
   <block id="43b8342b3b270185be758f3c753f9ebf" category="cell">使用 API 删除 VLAN 的限制</block>
   <block id="1fe5fd82c9e1426b6bfefaacca18c158" category="cell">删除具有关联子网的 VLAN 时， UI 中会留下一个空子网存根。</block>
@@ -369,9 +367,7 @@
   <block id="43639e8f38adc48b4a422a080cb873c2" category="paragraph">使用 NetApp 服务引擎 Web 界面时，您看到的任何数据以及您执行的任何活动都与选定租户相关。您可以在屏幕顶部查看租户，如下所示。</block>
   <block id="3dfcfbfe54ce542f048931777f79fd53" category="paragraph"><block ref="3dfcfbfe54ce542f048931777f79fd53" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3646933fa9f46e9d9198d0dfb5745d1f" category="paragraph">大多数 NetApp 服务引擎 Web 界面用户只能访问一个租户。但是，如果您可能有权访问多个租户，则可以通过在租户字段中选择另一个租户来更改此租户。</block>
-  <block id="9327006006e30b46442f35de3b114e84" category="summary">Keystone 修改订阅的服务详细信息</block>
   <block id="4c449a34cd08a335e390682a36b43ce9" category="doc">修改订阅的服务详细信息</block>
-  <block id="7482169f51f5b143aeb3890c57ccb7ee" category="paragraph">使用此方法可以修改已订阅服务的详细信息。您可以</block>
   <block id="536462d0f7ddd1195bced7308b8d1230" category="list-text">修改每个服务的详细信息，如下表所示。</block>
   <block id="7677ce2933ef947f8f4af0164e8fca52" category="list-text">为服务添加或删除标记。</block>
   <block id="56d18ab06f7cb000f46d437e9c0abda0" category="cell">云平台</block>
@@ -382,9 +378,6 @@
   <block id="a03c78cae8453f4dd95563e5741aaf4c" category="cell">TBA</block>
   <block id="c731f72e1d22a7c5e01a7cb789a8885e" category="cell">GCP</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="cell">AWS</block>
-  <block id="a34f67ae3248c17e1c9279e0f1b57544" category="list-text">从菜单中选择订阅服务 &gt; 订阅服务。</block>
-  <block id="916f9f905708e8edc17ec2f8c4f72921" category="list-text">在列表中找到已订阅的服务，然后单击编辑图标。</block>
-  <block id="373fafe4f97d398d1a1acc165e5e59ee" category="list-text">在更新订阅的服务对话框中，根据需要进行任何更改。</block>
   <block id="04252e4e5460971d7f33943bd841f366" category="list-text">单击 * 更新 * 。</block>
   <block id="8f1ca7f38c49eb1efb82277e92a1a867" category="summary">Keystone （使用者）管理 API</block>
   <block id="2655746c323f42776e54553d63680ec0" category="doc">（使用者）管理 API</block>
@@ -459,12 +452,7 @@
   <block id="b6d4223e60986fa4c9af77ee5f7149c5" category="section-title">登录</block>
   <block id="722eb3eb47bc62367a535bee7ba9ee4f" category="paragraph">使用下表中列出的方法登录。</block>
   <block id="1bc67190391b40360ccefe940a662840" category="cell">以用户身份登录。</block>
-  <block id="626634f88519b7ff6ed01c797bd1eb07" category="summary">Keystone 查看已订阅服务的列表</block>
   <block id="1c4ff4148966375bdb9755ebc24f8cf9" category="doc">查看已订阅服务的列表</block>
-  <block id="dc4903fc98537c2f31ba1a8a31d0fc2f" category="paragraph">订阅服务列表显示选定租户中所有已订阅服务的列表。</block>
-  <block id="ffad6faffc7317f6bc8469406caecba6" category="paragraph">要查看此列表，请从菜单中选择订阅服务 &gt; 订阅服务。</block>
-  <block id="2d5989606547c01316f0f94c7984dcca" category="paragraph">此列表显示了有关每个已订阅服务的简单信息。</block>
-  <block id="5f163459a55ce6d568973d04a70cefdc" category="paragraph">通过每个已订阅服务旁边的操作图标，您可以修改或删除已订阅的服务。</block>
   <block id="4d76839da96d12ecc14c456cf5c67834" category="summary">Keystone 服务级别</block>
   <block id="1b4db106b3929030e7743e9c5a745ee1" category="paragraph">使用下表中列出的方法检索，创建，修改和删除服务级别。</block>
   <block id="2a4df15c0eac68c58729cdbad5afb7b9" category="cell">` /v2.1/ServiceLevels`</block>
@@ -544,17 +532,13 @@
   <block id="83d51fe62088359eb316a0f39dcbbddf" category="list-text">* 每个 TiB 的目标 IOPS 。 * 达到每个 TiB 的目标 IOPS 阈值之前向卷发出的所有 I/O 请求的保证 IOPS 。卷上的性能上限为所选的每 TiB IOPS 。</block>
   <block id="e102db89251a6f1bdb1ab702ee3f9027" category="admonition">每 TiB 的目标 IOPS 性能指标是根据以 TiB 为单位的逻辑消耗容量计算得出的。</block>
   <block id="93df9c79daa24b389866d9bf40848977" category="list-text">* 延迟。 * 从客户端收到的 I/O 请求的处理时间，以服务划分（存储控制器 I/O 端口）为单位。</block>
-  <block id="5f48143908a154ad3ec3c1d634efcd9e" category="summary">Keystone 管理订阅服务概述</block>
   <block id="623bec026d6b13afc9c7789ea2ed556f" category="paragraph">在向 NetApp 服务引擎注册后，您可以通过 NetApp 服务引擎 Web 门户管理云卷服务（ CVS ）。其中包括：</block>
   <block id="8f53b5241aa3284f9058318dcbc2504d" category="list-text">Azure NetApp 文件 (ANF)</block>
   <block id="ada188510a75b5e28d9e93f26a76b501" category="list-text">（未来） Amazon Web Services （ AWS ）</block>
   <block id="77c2b5f917c02d295d63df419dff3f65" category="list-text">（未来） Google Cloud Platform （ GCP ）</block>
   <block id="6a4b2ec816a251ff33a3ce5d497f2552" category="paragraph">您只能向 NetApp 服务引擎注册现有 CVS 订阅；要创建新订阅，请按常规方式创建 CVS 订阅，然后使用您的订阅凭据将其注册到 NetApp 服务引擎。</block>
-  <block id="738b338bb84acc4c4204c2d29f48ffb4" category="paragraph">本节介绍如何管理已订阅的服务</block>
-  <block id="920d6a950bea4ef5e162b5f6f8032b30" category="admonition">管理订阅的服务需要客户管理员访问权限。</block>
   <block id="e083dcb18268eb01dbd74355540847c7" category="paragraph">您可以</block>
   <block id="107e5a722744b136c2b64b3b9f34ba3d" category="list-text">添加订阅的服务</block>
-  <block id="e49b84edf465fa4b9336fed5afb92a31" category="list-text">修改订阅的服务详细信息</block>
   <block id="bc32a38186dae6ec37fbc645cf6beafc" category="list-text">删除已订阅的服务</block>
   <block id="44b0b983528d36c638cfe11e34569844" category="summary">Keystone 创建对象存储用户</block>
   <block id="086935e12a9a16e561e3fea09863edd0" category="doc">创建对象存储用户</block>
@@ -766,21 +750,8 @@
   <block id="61af5d59426d1e9c60b178c39f9f8bce" category="list-text">创建磁盘的临时快照</block>
   <block id="e8f221d15eb31d00b8a988529a3e2527" category="summary">Keystone 提出服务请求</block>
   <block id="811f26bd987ce6c5ae16ef3f82a0e54b" category="doc">提出服务请求</block>
-  <block id="e57af5ab7df82b45d41bfc20223416c2" category="list-text">从菜单中，选择支持 &gt; 服务请求，然后单击 * 新建服务请求 * 。</block>
-  <block id="08f3f4f6177db96386af8ca23fca7f79" category="paragraph"><block ref="08f3f4f6177db96386af8ca23fca7f79" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f2dcdabaded22e13ec16edb510458300" category="list-text">在新服务请求页面上，选择此请求的类别和优先级，然后单击 * 下一步 * 。</block>
-  <block id="21b5448bfc34cc61b5a4c357b38acead" category="paragraph"><block ref="21b5448bfc34cc61b5a4c357b38acead" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="90bea45dea632917afc7280a8bb84807" category="list-text">选择子租户和服务类型。如果分区字段可用，请选择分区。</block>
-  <block id="bc59f2ae222ee320d0e4ca9255598014" category="paragraph"><block ref="bc59f2ae222ee320d0e4ca9255598014" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8d6b1f0f2bb0ecf6fb34e4d7097bed28" category="list-text">输入请求的简短摘要。在较大的文本字段中，为请求添加完整的问题描述。然后单击 * 下一步 * 。</block>
-  <block id="0b3ee0a9ce828a3fe36315d1d99a2cfa" category="paragraph"><block ref="0b3ee0a9ce828a3fe36315d1d99a2cfa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="721b8bc2578cf4a3290ff3e1ae267444" category="list-text">查看请求详细信息。如果要更正任何内容，请使用 " 返回 " 按钮返回上一页并更正详细信息。如果所有详细信息都正确，请单击 * 提交 * 。</block>
-  <block id="024c98cf6793f9857a1af318294f6746" category="paragraph"><block ref="024c98cf6793f9857a1af318294f6746" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="da32f5bf301e7caf88dbb8794e2abc68" category="list-text">NetApp 服务引擎将创建服务请求。服务请求编号显示在屏幕上，服务请求也显示在服务请求列表中。</block>
-  <block id="9839653419674983654f0014ffdcef62" category="paragraph"><block ref="9839653419674983654f0014ffdcef62" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7df4bcdd1bdcb669377eb4a2168cb7ce" category="list-text">查看请求的状态。新打开的服务请求的状态为 " 新建 " 。</block>
-  <block id="f6fcd40c2cf22da3d068f820ae4e5c93" category="list-text">要查看请求的详细信息，请单击查看图标。单击 * 关闭 * 以返回到服务请求列表。</block>
-  <block id="a959233f3b2d3402e97d070c9ad9b26f" category="paragraph"><block ref="a959233f3b2d3402e97d070c9ad9b26f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="385907468665e91a15044c37c13e9d76" category="list-text">系统会向请求者发送一封电子邮件，指示此请求已创建。此电子邮件将发送到为发出请求的 NetApp 服务引擎用户注册的电子邮件地址。</block>
   <block id="742ef9f3b9cf3b40d63f3f7a076f1fc7" category="summary">管理订阅的 Keystone</block>
   <block id="0ab18403e50bd7c93f06357102158121" category="paragraph">管理订阅包括为 NetApp Keystone 灵活订阅（ Flex 订阅）和租户订阅服务分配服务级别，或者使用 NetApp 服务引擎界面为服务级别分配容量并更改容量。</block>
@@ -1120,19 +1091,6 @@
   <block id="7beff930d10499c66cc25c8911fe65dd" category="list-text">单击 * 完成 * 。此操作将创建一个作业来修改共享。</block>
   <block id="4f6cfcf670602d0d3965cdfad9003301" category="paragraph">修改共享将作为异步作业运行。您可以</block>
   <block id="c65f438b154be9ea4bf677eda0f12729" category="list-text">作业完成后，在共享列表中检查共享的状态。</block>
-  <block id="23c633c723864ccbcd0cdb7bfc301f14" category="summary">Keystone View 已订阅服务容量</block>
-  <block id="80223cea2bb61f755be632e0605e95b4" category="paragraph">信息板页面显示有关特定订阅编号的存储订阅的信息。对于选定订阅，信息板将显示构成选定订阅的服务层。此外，它还会在其他选项卡中显示每个服务级别以及附加服务（例如数据保护和高级保护）的容量使用情况。</block>
-  <block id="9c6d0304bad1a79eb549b1fac2e06aba" category="paragraph"><block ref="9c6d0304bad1a79eb549b1fac2e06aba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="254c244a50ec9f15268d1c91ba1b12b0" category="section-title">服务提供商的信息板视图</block>
-  <block id="82ad6b25175af4800de40b164bcc00ff" category="paragraph">此信息板简要概述了 NetApp Keystone 灵活订阅。作为服务提供商 / 合作伙伴，您可以查看您的订阅的服务级别以及每个订阅下的租户服务。您还可以查看每个租户的数据使用情况（例如突发数据），并根据特定租户筛选使用情况（从右上角选择一个特定租户）。</block>
-  <block id="b9c11fa3eca29b1c11f4610f8d9f59c2" category="admonition">如果您已订阅数据保护基本服务和高级数据保护服务，则使用情况的详细信息将显示在数据保护和高级保护选项卡中。</block>
-  <block id="1a1247b901cd0fe72cc64d217270a5ce" category="paragraph"><block ref="1a1247b901cd0fe72cc64d217270a5ce" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="278455adabb96ea28282c5bf5e5adef4" category="paragraph">作为服务提供商，您订阅的每个服务都由一个由四个同心环组成的圆圈表示。环表示与服务相关的容量：外环表示已为租户提交的容量。中间的蓝色环表示该订阅下的租户实际占用的容量。内环指示任何突发容量使用情况（红色）。最内部分概述了您订阅的 Flex 订阅服务下的总容量。将光标悬停在环上可查看相关容量。</block>
-  <block id="32b913b5f11fde879cd215a6a2aea579" category="paragraph"><block ref="32b913b5f11fde879cd215a6a2aea579" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9061748572741e851e0dae9879678107" category="paragraph">如果服务提供商拥有多个订阅，则可以向下滚动以查看其他订阅的订阅服务。</block>
-  <block id="32b271a9fb0ad660eced012a1b7825c8" category="section-title">租户的信息板视图</block>
-  <block id="f3fa8c8c0e30465c73e726bd8c609f09" category="paragraph">对于租户管理员，您只能在其他选项卡中查看租户的所有租户订阅的当前详细信息，即您的订阅的服务级别以及任何附加服务。</block>
-  <block id="47d13487c42559d109436170e55bd627" category="paragraph">作为租户，您订阅的每个服务都由一个由四个同心环组成的圆圈表示。环表示与服务关联的容量：外环表示已为租户提交的容量。中间的蓝色环表示该订阅下的租户实际占用的容量。内环指示任何突发容量使用情况（红色）。最内部分概述了您订阅的 Flex 订阅服务下的总容量。将光标悬停在环上可查看相关容量。</block>
   <block id="91ddc16de769a9f97aed8824a94f4eff" category="summary">使用块存储的 Keystone</block>
   <block id="378550b5a79b735cc6584d4de45ce11c" category="doc">使用块存储</block>
   <block id="e69a67ee29567c85d079a5da92e0021d" category="summary">keystone 修改磁盘</block>
@@ -1497,10 +1455,7 @@
   <block id="89e91545d4b526e8e4482562b627b0c3" category="paragraph">本节介绍以下使用者 API ：</block>
   <block id="e675507781d5853607199f12b9a7e82b" category="list-text">云业务流程 API</block>
   <block id="a4e463ed28163125af79067c4522a375" category="list-text">（使用者）管理 API</block>
-  <block id="fa220bbdf3f70bf42098deac255b63f4" category="summary">Keystone 删除已订阅的服务</block>
   <block id="c8cf175a50e08f37c84843196b2ccbcb" category="paragraph">使用此方法可从 NetApp 服务引擎 Web 门户中删除 CVS 订阅。</block>
-  <block id="1ec15421ef71e6849140bd732f19c51b" category="list-text">在列表中找到已订阅的服务，然后单击删除图标。</block>
-  <block id="b21ecaf6300af9ec9f05017e18ac5be9" category="list-text">在确认删除对话框中，输入要删除的已订阅服务的名称。</block>
   <block id="153134fefaef2b8b8167bd48ae5b7439" category="summary">Keystone 管理服务请求概述</block>
   <block id="0750d1d0068b321d8ce20396636f1eaf" category="paragraph">发出服务请求：</block>
   <block id="e1b769719ccb6a19b5da0f54a9ce124a" category="list-text">备份还原</block>
@@ -1518,7 +1473,6 @@
   <block id="906dd567228b70ab6daba9a2c4b157ed" category="list-text">修改用户在其有权访问的每个租户中的角色。</block>
   <block id="0ca6560aa88bd22fa1b3bb69d8594555" category="section-title">步骤</block>
   <block id="ce94f5b2a91b358093abc8743e47b67d" category="list-text">在列表中找到该用户，然后单击编辑图标。</block>
-  <block id="ffcbce480a9477988f79d47bbb410870" category="list-text">在编辑用户对话框中，根据需要进行任何更改。</block>
   <block id="7c0a8133d524d744dc1d309ff2d635de" category="list-text">要更改用户在租户中的角色，请在租户列表中找到该租户并选择新角色。</block>
   <block id="560da9d680f7592a9fd4dc57688710e5" category="list-text">要授予用户对其他租户的访问权限，请单击 * 添加租户 * ，然后在新的输入字段中选择租户以及用户在此租户中的角色。</block>
   <block id="40e31965143342f756d5d254e77a2687" category="list-text">要删除用户对某个租户的访问权限，请在租户列表中找到该租户，然后选择删除图标。</block>
@@ -2060,16 +2014,10 @@
   <block id="a28f80082e126b6575c142147d151fd0" category="paragraph">这些图形显示了存储在一段时间内的性能。您可以</block>
   <block id="23a0be47be6dab4fd91f2a39b6ad9beb" category="list-text">通过选择时间段筛选器或单击并拖动图形来选择要显示的时间段。</block>
   <block id="e27a750275bddf265e26181ce3f4ba0e" category="list-text">将光标悬停在图中的某个点上方可查看该点的详细信息。</block>
-  <block id="8fbb260bef8cbc3909bb1276c5102a0f" category="summary">Keystone 添加订阅的服务</block>
-  <block id="e5e6a711fd7fe30a05a914169cee6678" category="paragraph">本节介绍如何添加订阅的服务。</block>
   <block id="aaa767a3abe004c8aa9b69f47e39a4e0" category="paragraph">NetApp 服务引擎支持 Azure NetApp Files 。</block>
-  <block id="96b9d9c0fbdbb28f9c6c23b686c373ff" category="paragraph">您需要有关已订阅服务的信息，包括用于连接到服务的凭据。此信息因订阅的服务类型而异。</block>
-  <block id="dbc3fd058700159c8c1f6d9904fa8965" category="list-text">从菜单中选择 * 已订阅服务 * 。</block>
-  <block id="be46110a0c7ba0b9a231dd57db7ccd42" category="list-text">在创建订阅服务页面上，选择云服务类型，然后填写此服务类型的相关信息：</block>
   <block id="cef25a9a965091c290f0d22966a12d36" category="paragraph">* Azure ： *</block>
   <block id="114e3d2d5bc790998a4ea6ae57984b84" category="list-text">选择子租户。</block>
   <block id="fe8e2b404735f8580cee598d230d6e2e" category="list-text">输入要为服务创建的 OCCM 工作环境的名称。</block>
-  <block id="1ee08254f3cbb81d5d75246ed66f25b3" category="list-text">输入 Azure 目录（租户） ID ， Azure 客户端 ID ， Azure 客户端机密和已订阅服务的名称。</block>
   <block id="bb86c3b26f64c63dbc8f2d5c13f9c813" category="list-text">根据需要为服务指定标记。</block>
   <block id="7eddfc78b8a9dd933570c6b9a9131fc9" category="summary">Keystone 服务请求流程</block>
   <block id="f940797ffa9c017dbbeaa4b7e0c12a85" category="doc">服务请求流程</block>
@@ -2298,21 +2246,15 @@
   <block id="e84417b811d892cfabeb4dbee529c832" category="summary">在 Google Cloud Platform 上管理 Cloud Volume 订阅</block>
   <block id="d2b2c18fa0ca629c1ca61a9d48a4cb2b" category="doc">管理适用于 GCP 的 Cloud Volumes Service</block>
   <block id="e946962d2bea46b9a982a912efacd934" category="inline-link">了解适用于 Google Cloud 的 Cloud Volumes Service</block>
-  <block id="fbbec27b83e78cfe7447b9c71835b015" category="paragraph">Cloud Volumes Service for Google Cloud Platform （ GCP ）的订阅与租户下的特定子租户相关联。一个子租户订阅一个 Google Cloud 服务。您可以为租户和子租户创建和管理订阅的服务（ Google Cloud 实例），并根据租约在 Google Cloud 上配置存储。在通过 NetApp 服务引擎管理 Google Cloud 实例之前，应先设置租户和子租户的 Cloud Volumes Service 帐户。有关 GCP 上的 Cloud Volumes Service 的信息，请参见<block ref="192f77308acf6a52f09939ce57413739" category="inline-link-rx"></block>。</block>
   <block id="5f10f16fcab268512f1148f3db048605" category="admonition">应已为 GCP 配置租户和子租户的 Cloud Volumes Service 帐户。有关服务帐户详细信息，请联系支持部门。您需要具有客户管理员访问权限才能管理 Google Cloud Volumes 。</block>
-  <block id="2401b1a9f37271c12dda4f1cb2aa14f1" category="section-title">在 GCP 上管理订阅的服务</block>
-  <block id="a77d81abea2e167840e2feb4b104cc26" category="paragraph">您可以从左侧导航窗格的 * 已订阅服务 * 菜单管理 Google Cloud 上的已订阅服务。" 已订阅服务 " 页面将显示选定租户的所有子租户的所有已订阅服务。您可以从此页面查看，修改和删除已订阅的服务。您也可以按照以下步骤添加新服务。</block>
   <block id="8a8d2ece11ef7b6dc9f7d3f2f1d7c44d" category="paragraph">您需要确保：</block>
   <block id="6be9adc0bb5eb38197744a6ba6770654" category="list-text">此子租户已订阅 Google Cloud 服务。</block>
   <block id="b22f259a7845cf612bcf5a7d485a6137" category="list-text">您已为用户的服务帐户创建了 JSON 文件，并且知道与 Google Cloud 实例关联的 GCP 项目编号。</block>
   <block id="b3ae8c33b08587c2b6be6031629d0de3" category="inline-link">设置适用于 Google Cloud 的 Cloud Volumes Service</block>
   <block id="084cafb5240ee412a1336b10f1e95d54" category="list-text">确保您的支持团队已在 Cloud Manager 上配置适用于 GCP 的 Cloud Volumes Service 。有关详细信息，请参见<block ref="1956ecad31d7ae695fe28eacaf067e5e" category="inline-link-rx"></block>。</block>
-  <block id="f0c3d1eab63af43c565c08693cb2c9ad" category="list-text">从菜单中选择 * 已订阅服务 * 。</block>
   <block id="300a306a4df8277005591f8c37dca4ad" category="list-text">单击 * 创建 * ，然后单击 * Google Cloud* 。</block>
-  <block id="8247dc806b4b4495248c3384069971f8" category="list-text">在 Google Cloud 的创建订阅服务页面上，选择要为其创建服务的子租户，然后添加名称和 GCP 项目编号。</block>
   <block id="d3e4adc8f56c48d2cb91db12131aa538" category="list-text">在 Google Cloud Credentials 部分中，上传包含服务帐户凭据的 JSON 文件。</block>
   <block id="fc5127bbf11e334554718f2fe100b9f3" category="list-text">如果需要，请向服务添加标记。</block>
-  <block id="170396590512a7ec803f2220578339aa" category="list-text">单击 * 创建 * 。创建后，服务状态将在 " 已订阅服务 " 页面上更改为 `S已更新` 。</block>
   <block id="9839af59beb0900e8a867ca422a1df5b" category="section-title">管理 GCP 上的卷</block>
   <block id="80adafe0fefeca7302f270fb7669ca67" category="paragraph">在 GCP 上管理云卷之前，应为租户创建 Cloud Volumes Service 帐户，并为该帐户订阅云卷。请联系支持部门以确保这些步骤已完成。</block>
   <block id="90be185cb77d53282f9802339ca11d1e" category="paragraph">您可以从左侧导航窗格的 * 文件服务 &gt; GCP Volumes* 管理 GCP 上子租户的卷。GCP 卷页面列出了在 GCP 上为选定子租户和相应区域创建的现有云卷。您可以从此页面查看，修改和删除现有卷。您也可以按照以下步骤配置新的云卷。</block>
@@ -2381,8 +2323,6 @@
   <block id="6aabc28e97e5b07ba5874eb058e7c779" category="paragraph">使用此方法删除 Azure 卷。</block>
   <block id="d473b43cbc289b5d22f96515d63627bd" category="list-text">在列表中找到 Azure 卷，然后单击删除图标。</block>
   <block id="b88fffaac19d5aeb6ed0d2a1b5b615d8" category="list-text">在确认删除对话框中，输入要删除的 Azure 卷的名称。</block>
-  <block id="fda1f69e782d722db9bbce152f443a0d" category="summary">管理已订阅服务的 Keystone</block>
-  <block id="f1676af3a7ecf91e417ac9be1165e1fa" category="doc">管理订阅的服务</block>
   <block id="5b2f0bd4fc7bb59187f107fcb9a848fa" category="summary">管理服务请求的 Keystone</block>
   <block id="cbf99d0314c4530c4f7c8155643e7e2d" category="doc">管理服务请求</block>
   <block id="57ca22f6724957bd8f72afe27628993a" category="summary">Keystone 管理用户概述</block>
@@ -2753,7 +2693,6 @@
   <block id="6baf7bb4c3a662abfd85e87f87fc45c3" category="summary">NetApp 服务引擎 Web 界面概述</block>
   <block id="03ff7aa314c102c91de1cacb464b1cb6" category="paragraph">下图是 NetApp 服务引擎 Web 界面的示例。它包含以下组件：</block>
   <block id="95e473080304dfcb95988f4c8e7d89d7" category="list-text">* 显示区域。 * 这是屏幕的主要工作区域；它有两个视图：</block>
-  <block id="4452d6734a6e71259d6d48381418f254" category="list-text">信息板视图：显示用于监控存储使用情况和性能的各种工具。</block>
   <block id="5fbd15d2f317cfb600352444a1a26a96" category="list-text">列表视图：显示可导航和排序的项目列表（稍后提供更多信息）。</block>
   <block id="80f1a75781fb74e72995d365b05b4268" category="list-text">* 菜单。 * 使用菜单可查看和管理存储项，查看报告以及访问支持。</block>
   <block id="b813eb54648754143314737391e83723" category="list-text">* NetApp 标识。 * 随时单击此按钮可将显示内容恢复为信息板视图。</block>
@@ -2762,11 +2701,7 @@
   <block id="1a7329d747cecb967d7d9480931c66cf" category="inline-link-macro">作业和作业状态指示符</block>
   <block id="d8cde4e37ff1a1302038c73b5ac8511a" category="list-text">* 作业。 * 单击可查看最新配置作业的状态。此图标将更改颜色以显示配置作业状态。有关详细信息，请参见 <block ref="08ab40cd728ae5bfe16832c715077c4e" category="inline-link-macro-rx"></block>。</block>
   <block id="45fe389621c6ad8c79f04be5299b6bf3" category="list-text">* 用户登录。 * 显示当前已登录用户的名称。单击此图标可注销。有关详细信息，请参见 <block ref="e34eb35f8b60dac9d35bfebfa7fbdc61" category="inline-link-macro-rx"></block>。</block>
-  <block id="1906c6225fa7fdabbca286f0ebc20461" category="paragraph"><block ref="1906c6225fa7fdabbca286f0ebc20461" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9d69eb1d1f9b81e3744508094bca2f6" category="section-title">信息板视图</block>
-  <block id="e503352230447a9974d67b8b9854c9eb" category="inline-link-macro">查看订阅的服务容量</block>
-  <block id="e8b91e65e7b13726311bfcbd753f0dc0" category="paragraph">信息板视图显示有关已订阅服务的信息；这是首次登录屏幕时的默认视图。有关如何查看已订阅服务容量的信息，请参见 <block ref="2a04d49cddf12fd8a051bf4559fba190" category="inline-link-macro-rx"></block>。</block>
-  <block id="4678c020edc4afe21b2d30e3d6061d3d" category="admonition">要返回信息板视图，请单击屏幕左上角的 NetApp 图标。</block>
   <block id="b12346088b66b082e71918ca323fef01" category="paragraph">列表视图用于查看对象列表。例如，在订阅中支持文件共享的服务器列表将显示在列表视图中，如以下屏幕截图所示。</block>
   <block id="dba859b4b475b5e4f3ccada40f327fdd" category="paragraph">在列表视图中，您可以：</block>
   <block id="4737288f6cd847fd2e974f8f19ba95f6" category="list-text">对列表中的项执行操作：请参见 <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>。</block>
@@ -2867,7 +2802,6 @@
   <block id="145d95205a14e251671b34c73807092e" category="sidebar">从 Snapshot 创建文件共享</block>
   <block id="cf073e83f3900e4116bf15fa47e252a1" category="sidebar">从快照创建磁盘</block>
   <block id="9aa8ff5deefebf063dcc15ad6c56e6f2" category="sidebar">使用对象存储</block>
-  <block id="7a21da91904fd6f35a09267b2b84392f" category="sidebar">管理订阅的服务</block>
   <block id="1783e449724614e360999417e8b10901" category="sidebar">管理 Azure NetApp Files</block>
   <block id="17bcffb3afe645d6c1ca30ac89fadb75" category="sidebar">管理适用于 Google 云平台的 Cloud Volumes Service</block>
   <block id="2b3328083f206d967cbcd7831dc1e1b2" category="sidebar">使用备份</block>
@@ -2878,4 +2812,117 @@
   <block id="2f12e5ae44c9cf77ed83b5e5e83ea318" category="sidebar">管理网络</block>
   <block id="2bd05dd0cbc467a7641e108606fa1c5a" category="sidebar">《 NetApp 服务引擎 API 参考》</block>
   <block id="ab4eeed97074daacb19be5e9f701fc55" category="sidebar">使用 API 创建子网</block>
+  <block id="f1e15aa54b6335c950ebc7c78df7f652" category="paragraph">NetApp 服务引擎报告了以下已知问题。在 Flex 订阅中配置或使用存储时，您可能会遇到这些问题。</block>
+  <block id="0ccf0b892d14cafd61224e166f1d19d9" category="cell">删除网络子网的限制</block>
+  <block id="54b6e42090cc9528c4b9e8c1ae20d482" category="cell">导入具有非标准子网的 Storage VM 的限制</block>
+  <block id="378a9be6f9eb4298ff0de63717b05df4" category="cell">由于子网非标准，在 NetApp 服务引擎外部创建的 Storage VM （ Storage Virtual Machine ，也称为 SVM ）无法正常运行。此时将导入 Storage VM ，其状态为 `已联系支持` 。</block>
+  <block id="c5e6bc3afe6a04316b0a8fd822d236d2" category="cell">在 NetApp 管理的环境中，容量和计费报告可能不准确</block>
+  <block id="16ab12b85a2a088ff1c2d6aea60c6e81" category="cell">在 NetApp 管理的环境中，由于缺少备份卷上的 LUN 大小指标和服务级别，从 UI 生成的容量和计费报告可能会受到影响。</block>
+  <block id="387d94b48f6e34eb9f5d76e4b5c34fa6" category="summary">Keystone 修改云服务详细信息</block>
+  <block id="b737fcde1a9b42a49be2af9921837940" category="doc">修改云服务详细信息</block>
+  <block id="8680c26030b9a27c21af17a744eac5b4" category="paragraph">使用此方法可修改云服务的详细信息。您可以</block>
+  <block id="cee1b7f6ebd6638e6c144f4fb1eba5c9" category="list-text">从菜单中选择 * 云服务 * &gt; * 云服务 * 。</block>
+  <block id="86e73338f3df8ab014a2c65ecee4d4dc" category="list-text">在列表中找到云服务，然后单击编辑图标。</block>
+  <block id="b89124ba309cdf3df8d74a737109270c" category="list-text">在更新云服务对话框中，根据需要进行任何更改。</block>
+  <block id="203fef1952cfe950b24a1aadbcddf128" category="summary">Keystone 查看云服务列表</block>
+  <block id="1664dd3a08b79e5924b879ef24394c8d" category="doc">查看云服务列表</block>
+  <block id="f9b400812a92a105de5e6e834b6fee73" category="paragraph">" 云服务 " 列表显示选定租户中所有云服务的列表。</block>
+  <block id="575b8fc63fae5448b8cfc34430f9236f" category="paragraph">要查看此列表，请从菜单中选择 * 云服务 * &gt; * 云服务 * 。</block>
+  <block id="f8632d33aefd3cc704d0bb4c2bcdcfe7" category="paragraph">此列表显示了有关每个云服务的简单信息。</block>
+  <block id="20f6417872058a1c3c3d444dc165b5fa" category="paragraph">通过每个云服务旁边的操作图标，您可以修改或删除云服务。</block>
+  <block id="72462f0bbc0c2ed541318b8613865933" category="summary">Keystone 管理云服务概述</block>
+  <block id="f7dd1ff7874f77047bb2a8d874adac56" category="paragraph">本节介绍如何管理云服务</block>
+  <block id="3ffdee1f3bfaec259b253c679cc88b78" category="admonition">管理云服务需要客户管理员访问权限。</block>
+  <block id="4118b451733eaaba4a001e64e2793edd" category="list-text">添加云服务</block>
+  <block id="0f83de51ee3f98244525029c39dd344f" category="list-text">修改云服务详细信息</block>
+  <block id="2c8f81e62f64aa238546fbbb6c76f311" category="list-text">删除云服务</block>
+  <block id="cd7a86fe2c68638edfc590d0348e2ac6" category="section-title">NetApp 服务引擎 2.2 中引入的功能</block>
+  <block id="d10191cc409a22b097fadfc82b9dc423" category="paragraph">此版本中的新功能包括改进的信息板，其中包含有关计费，容量利用率，服务请求和警报的新小工具。此版本还提供了用于管理计费和警报以及将订阅服务菜单重命名为云服务的新屏幕。</block>
+  <block id="7e65194cd4a857baedc63512c62ee99a" category="section-title">增强的信息板视图</block>
+  <block id="38a7d0cf0ace34d391c73209f8c3e560" category="paragraph">NetApp 服务引擎信息板经过重新设计，包含以下新组件： * * 容量利用率 * ，用于查看已订阅服务的已用容量。* * * 每月费用（计费） * ，用于查看所有订阅的总每月费用。* * * 警报 * 用于查看环境中最新警报的摘要。* * 服务请求 * 用于查看环境中生成的最新服务请求列表。有关详细信息，请参见 <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block></block>
+  <block id="02d61b8c4c5f7e969d94e2a3bbbddda9" category="section-title">新建计费屏幕</block>
+  <block id="559c46ea5c53176aa95f7f853382e6ae" category="paragraph">添加了一个新的 * 计费 * 屏幕，便于访问和计算历史计费数据。此屏幕提供了与所有订阅服务相关的每月费用的整体视图。</block>
+  <block id="6248db19c2de1402d7d089733e1d2bc8" category="inline-link-macro">查看计费</block>
+  <block id="da5db10e4737b04c684d7faaed6ace01" category="paragraph">从信息板上的 * 每月费用 * 小工具或从 * 管理 &gt; 计费 * 导航到此屏幕，以查看所有已订阅服务的每月订阅级别费用细分。计费数据基于已提交和突发容量使用情况，可供您在前几个月使用。有关详细信息，请参见 <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block></block>
+  <block id="a43ab2a03163297cf69e7df55101858b" category="section-title">新警报屏幕</block>
+  <block id="2ae145e579555cbdc76abe246b780993" category="inline-link-macro">创建和管理警报</block>
+  <block id="73090ce7a860b524974661c8d2109693" category="paragraph">此版本引入了一个新的 * 警报 * 屏幕，其中列出了系统生成的和用户生成的所有警报。此外，您还可以通过此屏幕为与您的环境相关的严重事件创建自定义警报消息，并将其传达给其他用户。他们可以根据需要查看和取消警报。有关详细信息，请参见 <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block></block>
+  <block id="41e171bf0ff077a4168d47bccb4e4cb6" category="section-title">增强的用户界面</block>
+  <block id="a444de99116173decf32c9f244b0d673" category="paragraph">NetApp 服务引擎用户界面进行了以下增强： * 左侧导航窗格上的 * 信息板 * 菜单提供了一个直观的导航点来访问信息板。* 左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。</block>
+  <block id="711953faa9bb8cc628e913011d0e5b33" category="paragraph">通过服务请求屏幕，您可以提出新的服务请求，以供您自己的支持团队或 NetApp GSSC 处理。</block>
+  <block id="0db330634d2013b5c1d235072b61db84" category="paragraph">您可以在信息板上的 * 服务请求 * 小工具上查看按优先级和创建时间排序的最新服务请求摘要。您还可以导航到服务请求屏幕，搜索并查看环境中提出的所有服务请求的详细信息。</block>
+  <block id="51eb35cbb4e3a4cefea470dcb9610124" category="paragraph">要创建新的服务请求，请遵循此操作步骤。</block>
+  <block id="9187ea14b0030339be001019f5b66e57" category="list-text">从菜单中选择 * 支持 &gt; 服务请求 * ，然后单击 * 新建服务请求 * 。</block>
+  <block id="1bacea68b531028513d23df48579f200" category="list-text">" 详细信息 " 屏幕上的字段会根据您选择的类别而有所不同。输入所需的详细信息。单击 * 下一步 * 。</block>
+  <block id="563d16503074b1783f0c64fc34fa990c" category="list-text">此时将创建服务请求并将其列在服务请求屏幕上。新打开的服务请求的状态为 `New` 。</block>
+  <block id="57c38af73404a7e13785e8f986b2da22" category="paragraph">警报是指自动触发或手动创建的消息，用于共享有关环境中关键事件的信息。</block>
+  <block id="3f09a903d787fca86c90e74203656523" category="paragraph">配置存储时，在以下情况下会触发自动警报：</block>
+  <block id="dbd67d97469be64bad383073cc51077b" category="list-text">新磁盘或文件共享会将订阅推入突发状态</block>
+  <block id="42d2093b66e19fcd702a59fa298c0dac" category="list-text">新的磁盘或文件共享将根据新订阅进行配置</block>
+  <block id="6b6d04779a2615a6ad545bd1344e0775" category="list-text">订阅中的已用容量已超过阈值容量或接近已提交容量</block>
+  <block id="c5f56157127b0993af867064958cb51d" category="paragraph">通过 * 警报 * 屏幕，您可以查看环境中系统生成的警报和用户生成的警报。</block>
+  <block id="ea5e1c6f1f14a32489f92a4e85aef2dd" category="paragraph">您还可以创建自定义警报并将其显示给其他用户。他们可以根据需要查看和取消自身以及其租户中的其他用户的警报。</block>
+  <block id="c4f32b1e62976a4372a6aa346fd5c4cc" category="section-title">在多租户环境中创建警报</block>
+  <block id="c08b1ed500f185e3a35b776d072bc70d" category="paragraph">如果您是合作伙伴管理员，则可以手动创建警报并将其发送给环境中的单个租户或所有租户。</block>
+  <block id="aa5c57e4bd8621ad6b24f96a1b931758" category="admonition">您可以取消创建的警报。但是，只有尚未查看此信息的租户才会取消此信息。</block>
+  <block id="708abbcb0c629c843808068695507a3c" category="list-text">从菜单中选择 * 管理 * &gt; * 警报 * 。</block>
+  <block id="437b04b5bb6618f1b52d645d58bb2c5d" category="list-text">单击 * 创建警报 * 。</block>
+  <block id="6ef17bdaaf22bf0655e8785436d04735" category="list-text">在 * 创建警报 * 屏幕上，选择要向其发送警报的状态和租户，然后添加消息。</block>
+  <block id="a817d2bc7c7b25f6893846bdcc1ce71d" category="admonition">如果要向环境中的所有租户发送警报，请选择 " 全部 " 。</block>
+  <block id="aa6dadd33882662adb8f910200748877" category="list-text">单击 * 创建 * 。此时将创建新警报。</block>
+  <block id="ebe71ffe38c2fc9d447af0c1f5bb43ef" category="section-title">在您的租户中创建警报</block>
+  <block id="e50c8a15c343af7fa03f2ed9b23a8c61" category="paragraph">如果您是租户管理员，则可以手动创建警报并将其发送给环境中的所有用户。</block>
+  <block id="5c3b1ce8c68bc11a43f573fd025f4b39" category="admonition">您可以取消创建的警报。但是，只有尚未查看它的用户才会取消此设置。</block>
+  <block id="5d6fae0b4b2770bfc19fcf10f0ec7bb7" category="list-text">在 * 创建警报 * 屏幕上，选择状态并添加消息。</block>
+  <block id="1081f948afa2d143c87d6da7211a035b" category="summary">查看和下载计费详细信息</block>
+  <block id="4b05f54a57f365f5b3a9cf1c15167df8" category="paragraph">您可以查看 Keystone Flex 订阅（ Flex 订阅）上所有已订阅服务的每月费用。</block>
+  <block id="791dbdaded77a63f96c45e9ea5d1d43d" category="paragraph">您可以查看前几个月为 NetApp Keystone 订阅的所有服务的计费详细信息。系统将突出显示每个月突发容量的计费。</block>
+  <block id="58a63b8f702f92fd3245851e54a6c44c" category="admonition">如果您的任何订阅按年计费，则发票将反映按比例分配的金额，而不是实际的每月发票金额。</block>
+  <block id="2b09ac5055682c23d8ba4e6a14e9f967" category="paragraph">您可以按月份对表中的数据进行排序，并查看任何给定月份的所有存储订阅列表。</block>
+  <block id="9688bae6343916e20e0218a59bd2f60d" category="list-text">从菜单中选择 * 管理 * &gt; * 计费 * 。</block>
+  <block id="817f3b83b5cf8d6998d86253d328cfa8" category="admonition">您也可以单击信息板上 * 每月费用 * 小工具右上角的箭头或小工具中表示一个月的任意条形以查看 " 计费 " 页面。此时将显示选定月份的所有订阅。</block>
+  <block id="8e694bf2e1747edf7543b2e2df0bf434" category="list-text">或者，将鼠标悬停在表示月份的条上可查看其他详细信息。</block>
+  <block id="2f5581d8cc6f970e6c70eac91215546f" category="list-text">选择表中列出的任何月份。此表将显示您当月的所有订阅以及相关的计费。费用将根据已提交容量和突发使用量进行分摊。</block>
+  <block id="fe3173f25be041d3c6b308be02a46d9c" category="paragraph">信息板可快速概述您的 NetApp Keystone 存储订阅。它会显示有关已用容量，使用情况计费以及最近的警报和服务请求的信息。</block>
+  <block id="f9ed75da3555257ca938c77e189c07a4" category="paragraph">信息板可通过以下小工具显示重要信息，您可以单击这些小工具进行深入分析：</block>
+  <block id="af0bb0722f05fcc5cad936bc276df6a9" category="list-text">* 容量利用率： * 显示已订阅服务的容量利用率，例如 Keystone Flex 订阅， Keystone Flex 实用程序和云服务。将鼠标悬停在条形图上可显示已利用容量的细分。您可以查看已使用容量和突发容量，并确定是否需要为订阅添加更多容量。单击条形图可在新的弹出窗口中查看您订阅的服务的所有订阅。单击此弹出窗口中的订阅图表后，您可以查看每个服务级别的已用容量细分。如果适用，您还可以查看附加服务的已利用容量，例如数据保护和高级保护。</block>
+  <block id="33c8c200b16895b7c3c094f7a7212c8e" category="list-text">* 每月费用（计费）： * 显示所有订阅的总每月费用。您可以查看过去三个月的计费详细信息。将光标悬停在图表上方时，您可以查看根据已提交和突发使用量拆分的费用。如果某个订阅服务有多个订阅，则在单击一个月的条形图后，订阅列表将显示在 " 计费 " 屏幕上。有关计费的详细信息，请参见 <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block>。</block>
+  <block id="fb994140e833b58c3ba599dee0fa679b" category="list-text">* 警报： * 显示最新警报的摘要，例如状态，消息及其创建时间。有关警报的详细信息，请参见 <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block>。</block>
+  <block id="c0def6fc0af1233163f1454da45f3c7d" category="list-text">* 服务请求： * 显示最新服务请求的摘要，按优先级和创建时间进行排序。有关服务请求的详细信息，请参见 <block ref="afc02109994a487037ec15ea835679fe" category="inline-link-macro-rx"></block>。</block>
+  <block id="d783979237c7ea92de545879f7a32381" category="inline-image-macro">NSE 信息板 -1</block>
+  <block id="1009c6bd1106a6330629df68b3ad1564" category="paragraph"><block ref="1009c6bd1106a6330629df68b3ad1564" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94732c2ea4ec914af226b88a9a3b8572" category="inline-image-macro">NSE 信息板 -2</block>
+  <block id="094bd937ff6187998d5dba676a812eff" category="paragraph"><block ref="094bd937ff6187998d5dba676a812eff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad4d1829005dd03f7cf9ab881abe5ea6" category="section-title">多租户中服务提供商的信息板视图</block>
+  <block id="fa88a38bcd21fdecbef74c2036b327e0" category="paragraph">如果您是多租户环境中的合作伙伴管理员，则此信息板将简要概述您为 NetApp Keystone 订阅的所有服务。容量利用率和计费详细信息等小工具数据代表您与 NetApp 的订阅和计费关系。</block>
+  <block id="f177e1a19970ff5e25307154c24a4391" category="paragraph">您还可以通过从右上角选择特定租户来查看每个租户的容量利用率。容量利用率小工具中的数据表示选定租户的数据使用情况，而所有其他小工具中的数据保持不变，并表示您的存储订阅。</block>
+  <block id="089e685563941e94026d37cb86934aed" category="section-title">多租户中租户的信息板视图</block>
+  <block id="130df011efb540e36544c1adf704710b" category="paragraph">如果您是多租户环境中的租户管理员，则可以查看租户的容量利用率，近期警报和服务请求，并单击各个小工具以了解更多详细信息。有关计费详细信息，请联系您的服务提供商。</block>
+  <block id="615bcb1a7f65784ea979b216e8a51154" category="summary">Keystone 删除云服务</block>
+  <block id="83f9c0fb0871c4b2f47270c917a7214c" category="list-text">在列表中找到云服务，然后单击删除图标。</block>
+  <block id="df0de48df3265aa36019bc064c118aad" category="list-text">在确认删除对话框中，输入要删除的云服务的名称。</block>
+  <block id="c5befc20aabc78db19577c59986d177d" category="list-text">选择 * 管理 &gt; 用户 * 。</block>
+  <block id="692d021adef35b5b0845d5d5e1d07417" category="list-text">在编辑用户对话框中，根据需要进行更改。</block>
+  <block id="1065aefe268f1d48a7b1c69e6a2b98a7" category="summary">Keystone 添加云服务</block>
+  <block id="0878d7da2674cb02eec5cd01ad1511fc" category="paragraph">本节介绍如何添加云服务。</block>
+  <block id="0546cab66a20c893a9882186a4b62d7c" category="paragraph">您需要有关云服务的信息，包括连接到该服务的凭据。这些信息因云服务类型而异。</block>
+  <block id="82c258770e146727924b1c33a7733179" category="list-text">从菜单中选择 * 云服务 * 。</block>
+  <block id="91ded82e2417c7b5674b680ce1ae887f" category="list-text">在创建云服务页面上，选择云服务类型，然后填写此服务类型的相关信息：</block>
+  <block id="8a7493d74ba9fec9ac2e08e9d13d7a7e" category="list-text">输入 Azure 目录（租户） ID ， Azure 客户端 ID ， Azure 客户端机密和云服务的名称。</block>
+  <block id="e37a2645be9da94babc088481594660a" category="paragraph">Cloud Volumes Service for Google Cloud Platform （ GCP ）的订阅与租户下的特定子租户相关联。一个子租户订阅一个 Google Cloud 服务。您可以为租户和子租户创建和管理云服务（ Google Cloud 实例），并根据租约在 Google Cloud 上配置存储。在通过 NetApp 服务引擎管理 Google Cloud 实例之前，应先设置租户和子租户的 Cloud Volumes Service 帐户。有关 GCP 上的 Cloud Volumes Service 的信息，请参见<block ref="192f77308acf6a52f09939ce57413739" category="inline-link-rx"></block>。</block>
+  <block id="4617d6cb5f047282f7ea1d3b1879ed18" category="section-title">在 GCP 上管理云服务</block>
+  <block id="66a33122a12b0ecf446b3303baf610ea" category="paragraph">您可以从左侧导航窗格的 * 云服务 * 菜单管理 Google Cloud 上的云服务。" 云服务 " 页面显示选定租户的所有子租户的所有云服务。您可以从此页面查看，修改和删除云服务。您也可以按照以下步骤添加新服务。</block>
+  <block id="d900b34f4ec7d4c5aedb24b1b84b6642" category="list-text">从菜单中选择 * 云服务 * 。</block>
+  <block id="b9ff3c79bce6a74407aef38bc921b4d6" category="list-text">在 Google Cloud 的 Create Cloud Service 页面上，选择要为其创建服务的子租户，然后添加名称和 GCP 项目编号。</block>
+  <block id="304a1797d3d8fe020002005a39cf8fd1" category="list-text">单击 * 创建 * 。创建后，云服务页面上的服务状态将更改为 `S已更新` 。</block>
+  <block id="09d86387c57736659bbab38839c5f2da" category="summary">管理云服务的基石</block>
+  <block id="27ee5c08c2a81e9de81aff03196f5e43" category="doc">管理云服务</block>
+  <block id="ff73f07d33b95ca8cfc1150265940594" category="section-title">我可以从何处查看我的使用情况的计费？</block>
+  <block id="91c4b877df1393baf62833e39a8a1140" category="paragraph">您可以在信息板上的 * 每月费用 * 小工具中查看过去三个月订阅的总月费用。您可以通过单击小工具或导航到 * 管理 * &gt; * 计费 * 来查看详细的计费信息。</block>
+  <block id="6f3775f5739b5cdd88b89ba7d8a013e2" category="list-text">信息板视图：显示用于监控使用情况，计费，警报和服务请求的各种工具。</block>
+  <block id="a076faa5a9987e9b4759e761e7de52c4" category="paragraph">信息板可显示有关 NetApp Keystone 存储订阅的信息，例如已用容量，使用情况计费以及最近的警报和服务请求。这是首次登录 NetApp 服务引擎时的默认视图。有关信息板的详细信息，请参见 <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block>。</block>
+  <block id="9fb2c96c2b07eeb85651af0dd0232553" category="sidebar">管理云服务</block>
+  <block id="60961ff996ca5668ec37fbe666117adc" category="sidebar">管理云服务</block>
+  <block id="e38bf2476e8d2e225da1a053aacfd12c" category="sidebar">执行管理任务</block>
+  <block id="1d02064d5ee1a5a4a8455f06dacb6b1f" category="sidebar">查看和管理警报</block>
 </blocks>

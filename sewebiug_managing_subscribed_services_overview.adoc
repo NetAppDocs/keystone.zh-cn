@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_managing_subscribed_services_overview.html 
-keywords: netapp, keystone, managing, subscribed, services, overview, 
-summary: Keystone 管理订阅服务概述 
+keywords: netapp, keystone, managing, cloud, services, overview, 
+summary: Keystone 管理云服务概述 
 ---
 = 概述
 :hardbreaks:
@@ -22,17 +22,17 @@ summary: Keystone 管理订阅服务概述
 您只能向 NetApp 服务引擎注册现有 CVS 订阅；要创建新订阅，请按常规方式创建 CVS 订阅，然后使用您的订阅凭据将其注册到 NetApp 服务引擎。
 
 +
-本节介绍如何管理已订阅的服务
+本节介绍如何管理云服务
 
 
 
 
-NOTE: 管理订阅的服务需要客户管理员访问权限。
+NOTE: 管理云服务需要客户管理员访问权限。
 
 您可以
 
-* 查看已订阅服务的列表
-* 添加订阅的服务
-* 修改订阅的服务详细信息
-* 删除已订阅的服务
+* 查看云服务列表
+* 添加云服务
+* 修改云服务详细信息
+* 删除云服务
 

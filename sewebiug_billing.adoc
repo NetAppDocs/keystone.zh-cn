@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_billing.html 
+keywords: netapp, keystone, monthly charges, billing, flex subscription, flex utility, cloud services 
+summary: 查看和下载计费详细信息 
+---
+= 查看计费
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以查看 Keystone Flex 订阅（ Flex 订阅）上所有已订阅服务的每月费用。
+
+您可以查看前几个月为 NetApp Keystone 订阅的所有服务的计费详细信息。系统将突出显示每个月突发容量的计费。
+
+
+NOTE: 如果您的任何订阅按年计费，则发票将反映按比例分配的金额，而不是实际的每月发票金额。
+
+您可以按月份对表中的数据进行排序，并查看任何给定月份的所有存储订阅列表。
+
+.步骤
+. 从菜单中选择 * 管理 * > * 计费 * 。
++
+
+NOTE: 您也可以单击信息板上 * 每月费用 * 小工具右上角的箭头或小工具中表示一个月的任意条形以查看 " 计费 " 页面。此时将显示选定月份的所有订阅。
+
+. 或者，将鼠标悬停在表示月份的条上可查看其他详细信息。
+. 选择表中列出的任何月份。此表将显示您当月的所有订阅以及相关的计费。费用将根据已提交容量和突发使用量进行分摊。
+

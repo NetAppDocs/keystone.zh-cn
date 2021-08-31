@@ -13,7 +13,7 @@ summary: NetApp 服务引擎中的已知问题
 
 
 [role="lead"]
-此版本的 NetApp 服务引擎报告了以下已知问题。
+NetApp 服务引擎报告了以下已知问题。在 Flex 订阅中配置或使用存储时，您可能会遇到这些问题。
 
 [cols="3*"]
 |===
@@ -45,4 +45,10 @@ summary: NetApp 服务引擎中的已知问题
 
 
 | 使用 API 删除 VLAN 的限制 | 删除具有关联子网的 VLAN 时， UI 中会留下一个空子网存根。 | 为 GSSC 提出服务请求以解决问题描述。 
+
+
+| 导入具有非标准子网的 Storage VM 的限制 | 由于子网非标准，在 NetApp 服务引擎外部创建的 Storage VM （ Storage Virtual Machine ，也称为 SVM ）无法正常运行。此时将导入 Storage VM ，其状态为 `已联系支持` 。 | 为 GSSC 提出服务请求以解决问题描述。 
+
+
+| 在 NetApp 管理的环境中，容量和计费报告可能不准确 | 在 NetApp 管理的环境中，由于缺少备份卷上的 LUN 大小指标和服务级别，从 UI 生成的容量和计费报告可能会受到影响。 | 为 GSSC 提出服务请求以解决问题描述。 
 |===

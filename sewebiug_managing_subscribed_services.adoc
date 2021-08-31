@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_managing_subscribed_services.html 
-keywords: netapp, keystone, managing, subscribed, services, 
-summary: 管理已订阅服务的 Keystone 
+keywords: netapp, keystone, managing, cloud, services, 
+summary: 管理云服务的基石 
 ---
-= 管理订阅的服务
+= 管理云服务
 :hardbreaks:
 :nofooter: 
 :icons: font

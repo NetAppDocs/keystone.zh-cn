@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_view_a_list_of_subscribed_services.html 
-keywords: netapp, keystone, view, list, subscribed, services, 
-summary: Keystone 查看已订阅服务的列表 
+keywords: netapp, keystone, view, list, cloud, services, 
+summary: Keystone 查看云服务列表 
 ---
-= 查看已订阅服务的列表
+= 查看云服务列表
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -13,10 +13,10 @@ summary: Keystone 查看已订阅服务的列表
 
 
 [role="lead"]
-订阅服务列表显示选定租户中所有已订阅服务的列表。
+" 云服务 " 列表显示选定租户中所有云服务的列表。
 
-要查看此列表，请从菜单中选择订阅服务 > 订阅服务。
+要查看此列表，请从菜单中选择 * 云服务 * > * 云服务 * 。
 
-此列表显示了有关每个已订阅服务的简单信息。
+此列表显示了有关每个云服务的简单信息。
 
-通过每个已订阅服务旁边的操作图标，您可以修改或删除已订阅的服务。
+通过每个云服务旁边的操作图标，您可以修改或删除云服务。

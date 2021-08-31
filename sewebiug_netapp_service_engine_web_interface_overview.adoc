@@ -17,7 +17,7 @@ summary: NetApp 服务引擎 Web 界面概述
 
 * * 显示区域。 * 这是屏幕的主要工作区域；它有两个视图：
 +
-** 信息板视图：显示用于监控存储使用情况和性能的各种工具。
+** 信息板视图：显示用于监控使用情况，计费，警报和服务请求的各种工具。
 ** 列表视图：显示可导航和排序的项目列表（稍后提供更多信息）。
 
 
@@ -28,20 +28,19 @@ summary: NetApp 服务引擎 Web 界面概述
 * * 用户登录。 * 显示当前已登录用户的名称。单击此图标可注销。有关详细信息，请参见 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["从 NetApp 服务引擎 Web 界面中注销"]。
 
 
-image:sewebiug_image9.png["错误：缺少图形映像"]
+image:sewebiug_image9_dashboard1.png["NSE 信息板 -1"]
+
+image:sewebiug_image9_dashboard2.png["NSE 信息板 -2"]
 
 
 
-=== 信息板视图
+== 信息板视图
 
-信息板视图显示有关已订阅服务的信息；这是首次登录屏幕时的默认视图。有关如何查看已订阅服务容量的信息，请参见 link:sewebiug_view_subscribed_services_capacity.html["查看订阅的服务容量"]。
-
-
-NOTE: 要返回信息板视图，请单击屏幕左上角的 NetApp 图标。
+信息板可显示有关 NetApp Keystone 存储订阅的信息，例如已用容量，使用情况计费以及最近的警报和服务请求。这是首次登录 NetApp 服务引擎时的默认视图。有关信息板的详细信息，请参见 link:sewebiug_dashboard.html["查看 Flex 订阅信息板"]。
 
 
 
-=== 列表视图
+== 列表视图
 
 列表视图用于查看对象列表。例如，在订阅中支持文件共享的服务器列表将显示在列表视图中，如以下屏幕截图所示。
 
@@ -52,7 +51,7 @@ NOTE: 要返回信息板视图，请单击屏幕左上角的 NetApp 图标。
 
 
 
-==== 列出视图操作
+=== 列出视图操作
 
 列表视图可显示项目列表，并可快速查看某些项目详细信息（包括状态）。在列表视图中，您可以执行下表中列出的操作。
 
@@ -76,7 +75,7 @@ NOTE: 要返回信息板视图，请单击屏幕左上角的 NetApp 图标。
 |===
 
 
-=== 对象状态
+== 对象状态
 
 在配置和修改期间，存储对象会经历一系列状态，然后才能正常运行。存储对象的状态将显示在这些项目的列表视图中。对象可能处于以下状态之一：
 
@@ -109,7 +108,7 @@ NOTE: 此状态通常表示此对象未达到在您的 Flex 订阅中由 NetApp 
 
 
 
-=== 作业和作业状态指示符
+== 作业和作业状态指示符
 
 NetApp 服务引擎中的某些配置任务（例如创建，修改或删除存储项）可能需要一些时间才能完成。这些任务会异步执行，而不是立即执行（同步任务）。启动此类任务时， NetApp 服务引擎将返回作业记录。可以通过右上角的铃形图标跟踪状态，该图标指示已提交的任务是否已成功完成。也可以通过 API 跟踪作业状态。有关信息，请参见 link:https://docs.netapp.com/us-en/keystone/seapiref_jobs.html#retrieve-jobs["此处"]
 

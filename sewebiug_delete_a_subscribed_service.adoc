@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_delete_a_subscribed_service.html 
-keywords: netapp, keystone, delete, subscribed, service, 
-summary: Keystone 删除已订阅的服务 
+keywords: netapp, keystone, delete, cloud, service, 
+summary: Keystone 删除云服务 
 ---
-= 删除已订阅的服务
+= 删除云服务
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -19,8 +19,8 @@ summary: Keystone 删除已订阅的服务
 
 === 步骤
 
-. 从菜单中选择订阅服务 > 订阅服务。
-. 在列表中找到已订阅的服务，然后单击删除图标。
-. 在确认删除对话框中，输入要删除的已订阅服务的名称。
+. 从菜单中选择 * 云服务 * > * 云服务 * 。
+. 在列表中找到云服务，然后单击删除图标。
+. 在确认删除对话框中，输入要删除的云服务的名称。
 . 单击 * 确认 * 。
 

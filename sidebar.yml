@@ -62,6 +62,8 @@ entries:
       url: "/sewebiug_netapp_service_engine_web_interface_overview.html"
   - title: 查看 Flex 订阅信息板
     url: "/sewebiug_dashboard.html"
+  - title: 查看计费
+    url: "/sewebiug_billing.html"
   - title: 使用文件服务
     url: "/sewebiug_working_with_file_services_overview.html"
     entries:
@@ -128,9 +130,9 @@ entries:
       url: "/sewebiug_create_an_s3_key_for_a_user.html"
     - title: 删除用户的 S3 密钥
       url: "/sewebiug_delete_an_s3_key_for_a_user.html"
-  - title: 管理订阅的服务
+  - title: 管理云服务
     entries:
-    - title: 管理订阅的服务
+    - title: 管理云服务
       entries:
       - title: 概述
         url: "/sewebiug_managing_subscribed_services_overview.html"
@@ -168,20 +170,22 @@ entries:
       url: "/sewebiug_track_a_service_request.html"
     - title: 服务请求流程
       url: "/sewebiug_service_request_process.html"
-  - title: 管理租户和子租户
-    url: "/sewebiug_managing_tenants_and_subtenants.html"
-  - title: 管理用户
+  - title: 执行管理任务
     entries:
-    - title: 概述
-      url: "/sewebiug_managing_users_overview.html"
-    - title: 查看用户列表
-      url: "/sewebiug_view_a_list_of_users.html"
-    - title: 添加用户
-      url: "/sewebiug_add_a_user.html"
-    - title: 修改用户详细信息
-      url: "/sewebiug_modify_user_details.html"
-    - title: 删除用户
-      url: "/sewebiug_delete_a_user.html"
+    - title: 管理用户
+      entries:
+      - title: 查看用户列表
+        url: "/sewebiug_view_a_list_of_users.html"
+      - title: 添加用户
+        url: "/sewebiug_add_a_user.html"
+      - title: 修改用户详细信息
+        url: "/sewebiug_modify_user_details.html"
+      - title: 删除用户
+        url: "/sewebiug_delete_a_user.html"
+    - title: 管理租户和子租户
+      url: "/sewebiug_managing_tenants_and_subtenants.html"
+    - title: 查看和管理警报
+      url: "/sewebiug_alerts.html"
   - title: 管理网络
     url: "/sewebiug_define_network_configurations.html"
 - title: "《 NetApp 服务引擎 API 参考》"
