@@ -15,10 +15,7 @@ summary: keystone 修改对象存储组
 [role="lead"]
 使用此方法可以修改对象存储组的详细信息，例如组名称和 S3 策略。
 
-
-
-=== 步骤
-
+.步骤
 . 查看 link:sewebiug_view_host_groups.html#view-host-groups["组列表"]。
 . 确保选择了正确的子租户，并且显示的是组（而不是用户）。
 . 在列表中找到该组，然后单击该组的编辑图标。

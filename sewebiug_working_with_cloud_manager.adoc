@@ -23,10 +23,6 @@ NetApp 服务引擎可以连接到 NetApp Cloud Manager 。本节介绍 NetApp �
 
 === 连接到 Cloud Manager
 
-
-
-==== 开始之前
-
 您需要：
 
 * Cloud Manager API 端点 URL
@@ -34,10 +30,7 @@ NetApp 服务引擎可以连接到 NetApp Cloud Manager 。本节介绍 NetApp �
 * Cloud Manager SaaS 服务的刷新令牌
 
 
-
-
-==== 步骤
-
+.步骤
 . 从菜单中选择管理 > OCCM 连接。
 . 指定 OCCM API 端点 URL
 . 输入客户端 ID 。

@@ -18,25 +18,14 @@ summary: keystone 修改文件共享
 
 NOTE: 如果可用，您可以使用此方法将共享移动到不同的性能级别。只有当服务器支持相应的服务时，才能更改共享类型。
 
-
-
-=== 开始之前
-
 文件共享必须处于运行状态。有关了解卷状态以及为使其正常运行而要采取的步骤的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["查看磁盘"] 和 
 
-
-
-=== 步骤
-
+.步骤
 . 查看 link:sewebiug_view_shares.html#view-shares["共享列表"]。
 . 在列表中找到共享，然后单击该共享的编辑图标。（有关使用列表中项目的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["列出视图操作"]）。
 . 根据需要进行任何更改；有关字段说明，请参见 link:sewebiug_create_a_new_file_share.html["创建新文件共享"]。
 . 单击 * 完成 * 。此操作将创建一个作业来修改共享。
 
-
-
-
-=== 完成后
 
 修改共享将作为异步作业运行。您可以
 

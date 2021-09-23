@@ -40,10 +40,6 @@ Azure NetApp 帐户列表显示登录用户有权访问的租约中的所有 Azu
 
 本节介绍如何添加 Azure NetApp 帐户。
 
-
-
-=== 开始之前
-
 您需要：
 
 * Azure NetApp 帐户所属的子租户
@@ -53,10 +49,7 @@ Azure NetApp 帐户列表显示登录用户有权访问的租约中的所有 Azu
 * 帐户的名称
 
 
-
-
-==== 步骤
-
+.步骤
 . 从菜单中选择 * 管理 > Azure NetApp 帐户 * 。
 . 单击 * 创建 * 。
 . 在创建 Azure NetApp 帐户对话框中，指定子租户， Azure 位置（区域）， Azure 资源组以及 Azure NetApp 帐户的名称。
@@ -70,10 +63,7 @@ Azure NetApp 帐户列表显示登录用户有权访问的租约中的所有 Azu
 
 使用此方法可修改与 Azure NetApp 帐户关联的标记。
 
-
-
-==== 步骤
-
+.步骤
 . 从菜单中选择 * 管理 > Azure NetApp 帐户 * 。
 . 在列表中找到 Azure NetApp 帐户，然后单击编辑图标。
 . 在管理 Azure NetApp 帐户对话框中，根据需要添加，删除或编辑标记。
@@ -86,10 +76,7 @@ Azure NetApp 帐户列表显示登录用户有权访问的租约中的所有 Azu
 
 使用此方法删除 Azure NetApp 帐户。
 
-
-
-==== 步骤
-
+.步骤
 . 从菜单中选择 * 管理 > Azure NetApp 帐户 * 。
 . 在列表中找到 Azure NetApp 帐户，然后单击删除图标。
 . 在确认删除对话框中，输入要删除的 Azure NetApp 帐户的名称。

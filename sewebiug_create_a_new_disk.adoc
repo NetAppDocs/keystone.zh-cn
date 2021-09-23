@@ -15,10 +15,7 @@ summary: Keystone 创建新磁盘
 [role="lead"]
 本节介绍如何通过直接指定磁盘详细信息来创建新磁盘。有关如何基于现有磁盘的 Snapshot 创建磁盘的说明，请参见 link:sewebiug_create_a_disk_from_a_snapshot.html#create-a-disk-from-a-snapshot["从 Snapshot 创建磁盘"]。
 
-
-
-=== 开始之前
-
+.开始之前
 * 如果块存储可用但未初始化，则系统会要求您先对其进行初始化，然后才能创建磁盘。要初始化块存储，您需要：
 +
 ** 块存储的子网。如果您不熟悉网络环境，请咨询 IT 部门以了解相关值。
@@ -32,10 +29,7 @@ summary: Keystone 创建新磁盘
 * 您可以定义备份策略以按计划捕获磁盘备份。有关详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups["备份"]。
 
 
-
-
-=== 步骤
-
+.步骤
 . 查看 link:sewebiug_view_disks.html#view-disks["磁盘列表"]。
 . 单击 * 创建磁盘 * 。
 . 在创建磁盘对话框中，选择创建新磁盘。
@@ -118,10 +112,6 @@ image:sewebiug_image27.png["错误：缺少图形映像"]
 . 如果要向磁盘添加标记（键值对），请在标记部分中指定这些标记。
 . 单击 * 创建 * 。此操作将创建一个作业来创建磁盘。
 
-
-
-
-=== 完成后
 
 创建磁盘将作为异步作业运行。您可以
 

@@ -25,7 +25,13 @@ summary: NetApp 服务引擎中的新增功能
 
 === 增强的信息板视图
 
-NetApp 服务引擎信息板经过重新设计，包含以下新组件： * * 容量利用率 * ，用于查看已订阅服务的已用容量。* * * 每月费用（计费） * ，用于查看所有订阅的总每月费用。* * * 警报 * 用于查看环境中最新警报的摘要。* * 服务请求 * 用于查看环境中生成的最新服务请求列表。有关详细信息，请参见 link:sewebiug_dashboard.html["查看 Flex 订阅信息板"]
+NetApp 服务引擎信息板经过重新设计，包括以下新组件：
+
+* * 容量利用率 * 用于查看已订阅服务的已用容量。
+* * 每月费用（计费） * ，用于查看所有订阅的总每月费用。
+* * 警报 * 用于查看环境中最新警报的摘要。
+* * 服务请求 * 用于查看环境中生成的最新服务请求列表。有关详细信息，请参见 link:sewebiug_dashboard.html["查看 Flex 订阅信息板"]。
+
 
 
 
@@ -33,19 +39,23 @@ NetApp 服务引擎信息板经过重新设计，包含以下新组件： * * �
 
 添加了一个新的 * 计费 * 屏幕，便于访问和计算历史计费数据。此屏幕提供了与所有订阅服务相关的每月费用的整体视图。
 
-从信息板上的 * 每月费用 * 小工具或从 * 管理 > 计费 * 导航到此屏幕，以查看所有已订阅服务的每月订阅级别费用细分。计费数据基于已提交和突发容量使用情况，可供您在前几个月使用。有关详细信息，请参见 link:sewebiug_billing.html["查看计费"]
+从信息板上的 * 每月费用 * 小工具或从 * 管理 > 计费 * 导航到此屏幕，以查看所有已订阅服务的每月订阅级别费用细分。计费数据基于已提交和突发容量使用情况，可供您在前几个月使用。有关详细信息，请参见 link:sewebiug_billing.html["查看计费"]。
 
 
 
 === 新警报屏幕
 
-此版本引入了一个新的 * 警报 * 屏幕，其中列出了系统生成的和用户生成的所有警报。此外，您还可以通过此屏幕为与您的环境相关的严重事件创建自定义警报消息，并将其传达给其他用户。他们可以根据需要查看和取消警报。有关详细信息，请参见 link:sewebiug_alerts.html["创建和管理警报"]
+此版本引入了一个新的 * 警报 * 屏幕，其中列出了系统生成的和用户生成的所有警报。此外，您还可以通过此屏幕为与您的环境相关的严重事件创建自定义警报消息，并将其传达给其他用户。他们可以根据需要查看和取消警报。有关详细信息，请参见 link:sewebiug_alerts.html["创建和管理警报"]。
 
 
 
 === 增强的用户界面
 
-NetApp 服务引擎用户界面进行了以下增强： * 左侧导航窗格上的 * 信息板 * 菜单提供了一个直观的导航点来访问信息板。* 左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。
+NetApp 服务引擎用户界面进行了以下增强：
+
+* 左侧导航窗格上的 * 信息板 * 菜单提供了一个直观的导航点，用于访问信息板。
+* 左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。
+
 
 ====
 
@@ -70,7 +80,16 @@ NetApp 服务引擎用户界面进行了以下增强： * 左侧导航窗格上�
 * API 支持：此版本将提供 ` 租户 / ｛ tenant_id ｝ /zones/｛ zone_name ｝ /subnets` 和 ` 租户 / ｛ tenant_id ｝ /zones/｛ zone_name ｝ /subnets/ ｛ id ｝ /tags` API ，用于为子租户创建和查看子网。
 
 
-有关此功能的详细信息，请参见以下链接： * link:nkfsosm_overview.html["运营模式，角色和职责"]* * * * * * 
+有关此功能的详细信息，请参见以下链接：
+
+* link:nkfsosm_overview.html["运营模式，角色和职责"]
+* link:nkfsosm_tenancy_overview.html["Flex 订阅中的租户和多租户"]
+* link:sewebiug_dashboard.html["查看 Flex 订阅信息板"]
+* link:sewebiug_working_with_reports.html["查看报告"]
+* link:sewebiug_managing_subscriptions.html["管理订阅"]
+* link:sewebiug_managing_tenants_and_subtenants.html["管理租户和子租户"]
+* link:sewebiug_define_network_configurations.html["为租户和子租户定义网络"]
+
 
 
 
@@ -84,7 +103,11 @@ NetApp Keystone Flex 订阅服务现在包括利用 NetApp FabricPool 技术的�
 * 块存储 API
 
 
-有关详细信息，请参见以下链接： * link:nkfsosm_tiering.html["分层"]* 
+有关详细信息，请参见以下链接：
+
+* link:nkfsosm_tiering.html["分层"]
+* link:nkfsosm_performance.html["性能服务级别"]
+
 
 ====
 
@@ -126,7 +149,7 @@ NOTE: Cloud Volumes Services 的订阅在 NetApp 服务引擎之外进行管理�
 
 === 配置以限制用户对 CIFS 共享的访问
 
-现在，您可以指定访问控制列表（ ACL ）来限制用户对 CIFS （ SMB ）或多协议共享的访问。您可以根据要添加到 ACL 中的 Active Directory （ AD ）设置指定 Windows 用户或组。link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["了解更多信息。"]
+现在，您可以指定访问控制列表（ ACL ）来限制用户对 CIFS （ SMB ）或多协议共享的访问。您可以根据要添加到 ACL 中的 Active Directory （ AD ）设置指定 Windows 用户或组。link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["了解更多信息。"]。
 
 ====
 
@@ -178,19 +201,19 @@ NetApp 服务引擎支持使用主机组。主机组是一组 FC 协议主机全
 
 ==== 建议的更改导致使用突发容量时的通知
 
-显示建议配置更改的通知，发生原因此更改会使订阅发生突发。用户可以选择继续，因为知道订阅会导致突发或选择不继续操作。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["了解更多信息。"]
+显示建议配置更改的通知，发生原因此更改会使订阅发生突发。用户可以选择继续，因为知道订阅会导致突发或选择不继续操作。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["了解更多信息。"]。
 
 
 
 ==== 订阅处于突发状态时的通知
 
-订阅突发时，系统将显示通知横幅。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["了解更多信息。"]
+订阅突发时，系统将显示通知横幅。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["了解更多信息。"]。
 
 
 
 ==== 容量报告显示突发使用量
 
-容量报告，显示订阅突发的天数以及已用突发容量的数量。link:sewebiug_working_with_reports.html#capacity-usage["了解更多信息。"]
+容量报告，显示订阅突发的天数以及已用突发容量的数量。link:sewebiug_working_with_reports.html#capacity-usage["了解更多信息。"]。
 
 
 

@@ -15,10 +15,7 @@ summary: keystone 删除用户的 S3 密钥
 [role="lead"]
 使用此方法可删除用户的 S3 密钥。
 
-
-
-=== 步骤
-
+.步骤
 . 查看 link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["用户列表"]。
 . 确保选择了正确的子租户，并且显示的是用户（而不是组）。
 . 在列表中找到该用户，然后单击该组对应的密钥图标。

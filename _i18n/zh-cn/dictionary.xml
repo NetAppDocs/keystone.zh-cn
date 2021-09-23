@@ -14,8 +14,6 @@
   <block id="f71a9fe1b9b0e445f211a5361f84ce04" category="cell">删除启用了灾难恢复的文件服务器和块存储时的限制</block>
   <block id="1d059636426199df0d4be79f97706f13" category="cell">删除启用了灾难恢复的块存储或文件共享可能会失败，因为对等关系由于超时未被删除。</block>
   <block id="32146264e62046666bfb767563049925" category="cell">删除失败可从 " 联系支持 " 中获取，支持人员将通过 OpsRamp 服务单收到通知。</block>
-  <block id="f777190cdd49106f9cd8ed1c2ef61ae4" category="cell">长时间运行的作业置于 " 已排队 " 状态的限制。</block>
-  <block id="cccab10f94128bf5216a59b16188fd25" category="cell">当作业长时间运行时，它们将置于 " 已排队 " 状态。必须提交支持服务单才能识别问题描述。</block>
   <block id="effb73c8f3207d8902624278d29cdee1" category="cell">创建多个快照时的限制</block>
   <block id="d1ffff1ebdfabe3464cfe28d00102e27" category="cell">如果触发多个快照进行创建，则此网页最初仅会显示上次发出的快照。</block>
   <block id="5fe27de964bdc422d447440d7d46dd6c" category="cell">自动作业会在 15 分钟内获取其他快照。</block>
@@ -573,14 +571,12 @@
   <block id="95a0841b9a7d083d0e92b10bbb2d9538" category="inline-link-macro">管理订阅</block>
   <block id="88d1aa7a34ab02fff2690d2338ac4a65" category="inline-link-macro">管理租户和子租户</block>
   <block id="c25ec10f452d7554efb64ee2fcb1fe87" category="inline-link-macro">为租户和子租户定义网络</block>
-  <block id="eeff4ffe60766f15b5849f02a83b30ef" category="paragraph">有关此功能的详细信息，请参见以下链接： * <block ref="6c1babef94ecdfe13ce1038b7eabf5ab" category="inline-link-macro-rx"></block>* <block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block>* <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block>* <block ref="36306f145ef689666473a1929809d786" category="inline-link-macro-rx"></block>* <block ref="45b741825810868f56434f4ccdaa98f8" category="inline-link-macro-rx"></block>* <block ref="34a1628d8177bd814d041e80cc5bbfe7" category="inline-link-macro-rx"></block>* <block ref="a5e64bd5bd172a87e39299de9ee21453" category="inline-link-macro-rx"></block></block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="section-title">分层</block>
   <block id="7b4219ec32695bc3518befa372ddf006" category="paragraph">NetApp Keystone Flex 订阅服务现在包括利用 NetApp FabricPool 技术的分层功能。它可以识别不太常用的数据，并将其分层到 NetApp 内部拥有，部署和管理的冷存储中。您可以通过订阅极高分层或高级分层性能级别来选择分层。</block>
   <block id="e63549c96b8e55ee68565f5ba8a07e7e" category="paragraph">以下 API 已进行修改，以包括新分层服务级别的新属性值：</block>
   <block id="b67fd9e59c0d4417b843449739a56dde" category="list-text">文件服务 API</block>
   <block id="798a6e7cd9ee58fef9fc3e96d8f6dd38" category="list-text">块存储 API</block>
   <block id="9dc46e9b8e8e3325a5f950ba6b189e61" category="inline-link-macro">性能服务级别</block>
-  <block id="b1265be331101c9be81a738d1c2426b3" category="paragraph">有关详细信息，请参见以下链接： * <block ref="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="inline-link-macro-rx"></block>* <block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
   <block id="c572e2a9971c00b53b66e29d6e92697e" category="section-title">NetApp Keystone Flex 订阅 2.0.1 中引入的功能</block>
   <block id="cadfcc0fd90fd80d56ec3a89b8ee3c04" category="section-title">支持范围扩展到适用于 Google Cloud Platform 的 Cloud Volumes Services</block>
   <block id="6487b3f92c71573b469940fc4dcc7dae" category="paragraph">除了对 Azure NetApp Files 的现有支持之外， NetApp 服务引擎现在还能够支持适用于 Google 云平台的 Cloud Volumes Services （ GCP ）。现在，您可以通过 NetApp 服务引擎管理订阅的服务以及配置和修改 Google Cloud Volumes 。</block>
@@ -593,7 +589,6 @@
   <block id="5242e0746d32723bfc908642de41d50a" category="paragraph">通过新的 * 备份 * 屏幕，您可以查看和管理在环境中创建的磁盘和文件共享的备份。您可以编辑备份策略，中断与源卷的备份关系，以及删除备份卷及其所有恢复点。此功能允许保留备份（作为孤立备份），即使删除了源卷也是如此，以便日后进行还原。要从特定恢复点还原文件共享或磁盘，您可以通过 * 支持 &gt; 服务请求 &gt; 新服务请求 * 提出服务请求。</block>
   <block id="cf83b66ab1fd044baa702dd03ceae80a" category="section-title">配置以限制用户对 CIFS 共享的访问</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">了解更多信息。</block>
-  <block id="9276f4b7c0f50ebb7a629a0ea7549108" category="paragraph">现在，您可以指定访问控制列表（ ACL ）来限制用户对 CIFS （ SMB ）或多协议共享的访问。您可以根据要添加到 ACL 中的 Active Directory （ AD ）设置指定 Windows 用户或组。<block ref="4f9563ddfe8454a11d948aaea717447e" category="inline-link-macro-rx"></block></block>
   <block id="085ba9b2d41b5b153f712315a4f7b62d" category="section-title">NetApp Keystone Flex 订阅 2.0 中引入的功能</block>
   <block id="c6afc2a7c10cd55aed74c7ec88063113" category="section-title">支持 MetroCluster</block>
   <block id="ff313ed24f110ac3b3b8da1abb60665c" category="paragraph">NetApp 服务引擎支持使用 MetroCluster 配置的站点。MetroCluster 是 ONTAP 的一项数据保护功能，可通过同步镜像为持续可用的存储提供恢复点目标（ RPO ） 0 或恢复时间目标（ RTO ） 0 。MetroCluster 支持可转换为 NetApp 服务引擎中的同步灾难恢复功能。MetroCluster 实例的每一侧都注册为一个单独的分区，每个分区都有自己的订阅，其中包括数据保护高级费率计划。在启用了 MetroCluster 的区域中创建的共享或磁盘会同步复制到第二个区域。复制分区的使用量遵循适用于配置存储的分区的数据保护高级速率计划。</block>
@@ -611,11 +606,8 @@
   <block id="bcdc3a1733590958146ee37993bbb81e" category="section-title">突发使用情况和通知</block>
   <block id="b266cc05e4a761d6ebb926d99bd87b61" category="paragraph">某些 NetApp 服务引擎支持的存储订阅允许客户在其承诺容量之外使用突发容量，该容量会在订阅的承诺容量之上单独收取。用户必须了解何时将使用或已使用突发容量来控制其使用情况和成本。</block>
   <block id="04db063f0b9fb0dfa9d9a216f46e18bc" category="section-title">建议的更改导致使用突发容量时的通知</block>
-  <block id="64fbaaf45da7efdcfbf12ab0f6ca5c47" category="paragraph">显示建议配置更改的通知，发生原因此更改会使订阅发生突发。用户可以选择继续，因为知道订阅会导致突发或选择不继续操作。<block ref="bbf9ee2ac4df7c9ff5c7967b0be97837" category="inline-link-macro-rx"></block></block>
   <block id="e51d0bcef5b2c5116a609115d4a0b049" category="section-title">订阅处于突发状态时的通知</block>
-  <block id="e31780ac1a759f59c39de16afdf35df6" category="paragraph">订阅突发时，系统将显示通知横幅。<block ref="bbf9ee2ac4df7c9ff5c7967b0be97837" category="inline-link-macro-rx"></block></block>
   <block id="c54986ba73616c4d51a52f0b596d4e9e" category="section-title">容量报告显示突发使用量</block>
-  <block id="2bc586489f6ff2376443c39005fc6947" category="paragraph">容量报告，显示订阅突发的天数以及已用突发容量的数量。<block ref="93e6f79b7360982319022ebaa135badc" category="inline-link-macro-rx"></block></block>
   <block id="f7ced170f0a650cade73ee4d9d2d75de" category="section-title">性能报告</block>
   <block id="a6271e39deb228d4bf0b5177e78fe4fd" category="paragraph">NetApp 服务引擎 Web 界面中的新性能报告可显示有关各个磁盘或共享在以下性能指标上的性能信息：</block>
   <block id="911ef162fdebbb44fa5b130d0dfc40f1" category="list-text">IOPS/TiB （每字节每秒输入 / 输出操作数）：存储设备上每秒输入和输出操作数（ IOPS ）的速率。</block>
@@ -1471,7 +1463,6 @@
   <block id="3b38e28a64a4ad0d6cbb5f1b93762730" category="list-text">修改用户的名字，姓氏和显示名称。</block>
   <block id="12895261272d8760e8637ce75e04400b" category="list-text">添加或删除用户有权访问的租约。</block>
   <block id="906dd567228b70ab6daba9a2c4b157ed" category="list-text">修改用户在其有权访问的每个租户中的角色。</block>
-  <block id="0ca6560aa88bd22fa1b3bb69d8594555" category="section-title">步骤</block>
   <block id="ce94f5b2a91b358093abc8743e47b67d" category="list-text">在列表中找到该用户，然后单击编辑图标。</block>
   <block id="7c0a8133d524d744dc1d309ff2d635de" category="list-text">要更改用户在租户中的角色，请在租户列表中找到该租户并选择新角色。</block>
   <block id="560da9d680f7592a9fd4dc57688710e5" category="list-text">要授予用户对其他租户的访问权限，请单击 * 添加租户 * ，然后在新的输入字段中选择租户以及用户在此租户中的角色。</block>
@@ -2839,16 +2830,12 @@
   <block id="cd7a86fe2c68638edfc590d0348e2ac6" category="section-title">NetApp 服务引擎 2.2 中引入的功能</block>
   <block id="d10191cc409a22b097fadfc82b9dc423" category="paragraph">此版本中的新功能包括改进的信息板，其中包含有关计费，容量利用率，服务请求和警报的新小工具。此版本还提供了用于管理计费和警报以及将订阅服务菜单重命名为云服务的新屏幕。</block>
   <block id="7e65194cd4a857baedc63512c62ee99a" category="section-title">增强的信息板视图</block>
-  <block id="38a7d0cf0ace34d391c73209f8c3e560" category="paragraph">NetApp 服务引擎信息板经过重新设计，包含以下新组件： * * 容量利用率 * ，用于查看已订阅服务的已用容量。* * * 每月费用（计费） * ，用于查看所有订阅的总每月费用。* * * 警报 * 用于查看环境中最新警报的摘要。* * 服务请求 * 用于查看环境中生成的最新服务请求列表。有关详细信息，请参见 <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block></block>
   <block id="02d61b8c4c5f7e969d94e2a3bbbddda9" category="section-title">新建计费屏幕</block>
   <block id="559c46ea5c53176aa95f7f853382e6ae" category="paragraph">添加了一个新的 * 计费 * 屏幕，便于访问和计算历史计费数据。此屏幕提供了与所有订阅服务相关的每月费用的整体视图。</block>
   <block id="6248db19c2de1402d7d089733e1d2bc8" category="inline-link-macro">查看计费</block>
-  <block id="da5db10e4737b04c684d7faaed6ace01" category="paragraph">从信息板上的 * 每月费用 * 小工具或从 * 管理 &gt; 计费 * 导航到此屏幕，以查看所有已订阅服务的每月订阅级别费用细分。计费数据基于已提交和突发容量使用情况，可供您在前几个月使用。有关详细信息，请参见 <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block></block>
   <block id="a43ab2a03163297cf69e7df55101858b" category="section-title">新警报屏幕</block>
   <block id="2ae145e579555cbdc76abe246b780993" category="inline-link-macro">创建和管理警报</block>
-  <block id="73090ce7a860b524974661c8d2109693" category="paragraph">此版本引入了一个新的 * 警报 * 屏幕，其中列出了系统生成的和用户生成的所有警报。此外，您还可以通过此屏幕为与您的环境相关的严重事件创建自定义警报消息，并将其传达给其他用户。他们可以根据需要查看和取消警报。有关详细信息，请参见 <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block></block>
   <block id="41e171bf0ff077a4168d47bccb4e4cb6" category="section-title">增强的用户界面</block>
-  <block id="a444de99116173decf32c9f244b0d673" category="paragraph">NetApp 服务引擎用户界面进行了以下增强： * 左侧导航窗格上的 * 信息板 * 菜单提供了一个直观的导航点来访问信息板。* 左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。</block>
   <block id="711953faa9bb8cc628e913011d0e5b33" category="paragraph">通过服务请求屏幕，您可以提出新的服务请求，以供您自己的支持团队或 NetApp GSSC 处理。</block>
   <block id="0db330634d2013b5c1d235072b61db84" category="paragraph">您可以在信息板上的 * 服务请求 * 小工具上查看按优先级和创建时间排序的最新服务请求摘要。您还可以导航到服务请求屏幕，搜索并查看环境中提出的所有服务请求的详细信息。</block>
   <block id="51eb35cbb4e3a4cefea470dcb9610124" category="paragraph">要创建新的服务请求，请遵循此操作步骤。</block>
@@ -2925,4 +2912,29 @@
   <block id="60961ff996ca5668ec37fbe666117adc" category="sidebar">管理云服务</block>
   <block id="e38bf2476e8d2e225da1a053aacfd12c" category="sidebar">执行管理任务</block>
   <block id="1d02064d5ee1a5a4a8455f06dacb6b1f" category="sidebar">查看和管理警报</block>
+  <block id="19197d26752453b6361c93a735d6e619" category="paragraph">NetApp 服务引擎信息板经过重新设计，包括以下新组件：</block>
+  <block id="0caef90f473333638233895b49c4fe3f" category="list-text">* 容量利用率 * 用于查看已订阅服务的已用容量。</block>
+  <block id="32a4aac8628597b118611112cce8649a" category="list-text">* 每月费用（计费） * ，用于查看所有订阅的总每月费用。</block>
+  <block id="4a5a6ee7fd46e06b9aefa7e80f3131b0" category="list-text">* 警报 * 用于查看环境中最新警报的摘要。</block>
+  <block id="737f127282bf96dd7809eafbb91b328b" category="list-text">* 服务请求 * 用于查看环境中生成的最新服务请求列表。有关详细信息，请参见 <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block>。</block>
+  <block id="e33ef28a3be6d3b0af6e4e3522458821" category="paragraph">从信息板上的 * 每月费用 * 小工具或从 * 管理 &gt; 计费 * 导航到此屏幕，以查看所有已订阅服务的每月订阅级别费用细分。计费数据基于已提交和突发容量使用情况，可供您在前几个月使用。有关详细信息，请参见 <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block>。</block>
+  <block id="78c10cb50c4cd8e6713eccd09451bc7b" category="paragraph">此版本引入了一个新的 * 警报 * 屏幕，其中列出了系统生成的和用户生成的所有警报。此外，您还可以通过此屏幕为与您的环境相关的严重事件创建自定义警报消息，并将其传达给其他用户。他们可以根据需要查看和取消警报。有关详细信息，请参见 <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block>。</block>
+  <block id="5edd9100af263950a47e74c117e19f7c" category="paragraph">NetApp 服务引擎用户界面进行了以下增强：</block>
+  <block id="787b14bb23fa38c0a9cf37fcf840abf0" category="list-text">左侧导航窗格上的 * 信息板 * 菜单提供了一个直观的导航点，用于访问信息板。</block>
+  <block id="d462ad78106f749467b02f63cf18f585" category="list-text">左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。</block>
+  <block id="f617d7068a52e45a25c2eac0d3e8f1db" category="paragraph">有关此功能的详细信息，请参见以下链接：</block>
+  <block id="6c1babef94ecdfe13ce1038b7eabf5ab" category="list-text"><block ref="6c1babef94ecdfe13ce1038b7eabf5ab" category="inline-link-macro-rx"></block></block>
+  <block id="3a337ffb28bf0d116cc65c4b009401e6" category="list-text"><block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block></block>
+  <block id="51b99950f96aebac50d3a68ee27b3fbd" category="list-text"><block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block></block>
+  <block id="36306f145ef689666473a1929809d786" category="list-text"><block ref="36306f145ef689666473a1929809d786" category="inline-link-macro-rx"></block></block>
+  <block id="45b741825810868f56434f4ccdaa98f8" category="list-text"><block ref="45b741825810868f56434f4ccdaa98f8" category="inline-link-macro-rx"></block></block>
+  <block id="34a1628d8177bd814d041e80cc5bbfe7" category="list-text"><block ref="34a1628d8177bd814d041e80cc5bbfe7" category="inline-link-macro-rx"></block></block>
+  <block id="a5e64bd5bd172a87e39299de9ee21453" category="list-text"><block ref="a5e64bd5bd172a87e39299de9ee21453" category="inline-link-macro-rx"></block></block>
+  <block id="c99a33ad99ce532b267aaef154dd9886" category="paragraph">有关详细信息，请参见以下链接：</block>
+  <block id="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="list-text"><block ref="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="inline-link-macro-rx"></block></block>
+  <block id="eb5228f75c5e56b970f5ae0448055097" category="list-text"><block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
+  <block id="833ec058716a58e38798e5c8dcd487e0" category="paragraph">现在，您可以指定访问控制列表（ ACL ）来限制用户对 CIFS （ SMB ）或多协议共享的访问。您可以根据要添加到 ACL 中的 Active Directory （ AD ）设置指定 Windows 用户或组。<block ref="4f9563ddfe8454a11d948aaea717447e" category="inline-link-macro-rx"></block>。</block>
+  <block id="1aef2aae8b02201584ba967122cd80e3" category="paragraph">显示建议配置更改的通知，发生原因此更改会使订阅发生突发。用户可以选择继续，因为知道订阅会导致突发或选择不继续操作。<block ref="bbf9ee2ac4df7c9ff5c7967b0be97837" category="inline-link-macro-rx"></block>。</block>
+  <block id="1313d08838ac189999a3b07cec8af7a8" category="paragraph">订阅突发时，系统将显示通知横幅。<block ref="bbf9ee2ac4df7c9ff5c7967b0be97837" category="inline-link-macro-rx"></block>。</block>
+  <block id="da4e7f6651cd8a3e083c058160f59e73" category="paragraph">容量报告，显示订阅突发的天数以及已用突发容量的数量。<block ref="93e6f79b7360982319022ebaa135badc" category="inline-link-macro-rx"></block>。</block>
 </blocks>

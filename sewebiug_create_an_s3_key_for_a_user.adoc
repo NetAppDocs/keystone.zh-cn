@@ -17,10 +17,7 @@ summary: Keystone 为用户创建 S3 密钥
 
 确保在创建密钥后立即捕获该密钥。创建密钥后，无法检索密钥详细信息。
 
-
-
-=== 步骤
-
+.步骤
 . 查看 link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["用户列表"]。
 . 确保选择了正确的子租户，并且显示的是用户（而不是组）。
 . 在列表中找到该用户，然后单击该组对应的密钥图标。

@@ -15,17 +15,10 @@ summary: keystone 创建文件共享的临时快照
 [role="lead"]
 本节介绍如何为文件共享创建临时快照。
 
-
-
-=== 步骤
-
+.步骤
 . 查看 link:sewebiug_view_shares.html#view-shares["共享列表"]。
 . 在列表中找到共享，然后单击该共享的 Snapshot 图标。（有关使用列表中项目的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["列出视图操作"]。
 . 在 Create Snapshot 对话框中，输入快照的名称，然后单击 * 创建 * 。
 
-
-
-
-=== 完成后
 
 快照可能需要几分钟才能可用。
