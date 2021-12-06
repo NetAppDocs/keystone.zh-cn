@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_kfs_billing.html 
+keywords: netapp, keystone, billing, flex subscription billing logic, charges, charging, billing cycle, billing schedule, MetroCluster billing, TMP temporary volumes, Adaptive QoS policy billing, cloned volumes, burst billing 
+summary: Keystone Flex 订阅计费 
+---
+= Flex 订阅计费
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone 灵活订阅（ Flex 订阅）计费基于已提交容量和突发消耗量。
+
+有关已提交容量和突发容量使用情况的信息，请参见 link:nkfsosm_keystone_service_capacity_definitions.html["Flex 订阅服务容量定义"]。
+
+有关如何查看计费详细信息的信息，请参见 link:sewebiug_billing.html["查看计费"]。
+
+
+
+== 根据已提交容量计费
+
+已承诺容量是指由相关方（ NetApp/ 合作伙伴和客户）商定的单一订阅中各种服务的容量。此容量在每个 Flex 订阅订单上进行说明，并进行计费，而不管实际使用量如何。
+
+在 Flex订 阅服务部署中， NetApp 会持续监控和衡量服务的使用情况。系统每五分钟生成一次使用记录，详细说明订阅的当前已用容量。这些记录会在计费期间进行汇总，以生成发票和使用情况报告。
+
+
+
+== 按突发消耗计费
+
+如果已用容量大于给定性能服务级别的已用容量，则会记录突发消耗量，并相应地收取费用。生成的每个消耗记录都会发生此过程。因此，突发消耗量反映了超出承诺容量的过度消耗容量的数量和使用期限。
+
+
+
+== 计费计划
+
+Flex 订阅服务按月和按年计费。
+
+发票每月发送一次。对于提供服务的月份，将在下个月发送发票。例如，您在 1 月份使用的服务的发票将在 2 月初交付。此发票包括已提交容量的费用以及任何突发使用情况（如果适用）。
+
+在每个订阅年度开始时，系统会为已提交容量的最低付款生成一张发票。它会在订阅开始日期生成。订阅季度结束时会发送另一张发票，汇总该季度累积的任何突发使用量的适用费用。如果已提交容量在订阅期间发生更改，则会在已提交容量更改生效的当天为该订阅年度其余时间按比例分配的最低付款发送发票。
+
+
+
+== Flex 订阅计费的其他情形
+
+Flex 订阅计费有多种情形，您应熟悉这些情形。
+
+
+
+=== 为克隆的卷计费
+
+如果在 ONTAP 中克隆了卷，而您使用这些卷来备份和还原数据，则可以继续使用这些克隆，而无需支付任何额外费用。但是，在您的业务中用于任何其他目的的克隆卷会收取很长时间的费用。
+
+请注意以下事项：
+
+* 在克隆创建的前 24 小时内不会考虑克隆卷上的消耗量；在此期间不会产生任何费用。
+* 如果没有向卷写入新数据，则不会考虑使用具有标准和价值性能服务级别的克隆卷。例如，在备份或还原使用情形中，从克隆卷备份或还原数据不会更改克隆卷本身中的数据，也不会将其视为消耗。
+
+
+
+
+=== MetroCluster 计费
+
+高级数据保护使用 NetApp MetroCluster 在两个物理隔离的集群之间镜像数据。在 MetroCluster 镜像聚合上，数据写入两次，每个集群一次。Flex 订阅服务会对每一方的消费单独收取费用，从而产生两个相同的消费记录。如果您通过 ONTAP System Manager （ System Manager ）或 Active IQ Unified Manager （ Unified Manager ）监控集群，则可能会发现这些工具上报告的使用量与 Flex 订阅之间存在差异。System Manager 和 Unified Manager 不会报告镜像（远程）集群上的卷，在这样做时，会报告 Flex 订阅服务报告的使用量指标的一半。
+
+例如：站点 A 和站点 B 在 MetroCluster 配置中设置。当用户在站点 A 中创建一个 10 TB 的卷时，会在站点 B 中创建一个 10 TB 的相同卷Flex 订阅可区分这两个卷，并在每个站点中额外记录 10 TB 的使用量，总增加量为 20 TB 。System Manager 和 Unified Manager 报告在站点 A 中创建了一个 10 TB 的卷
+
+
+
+=== 临时卷的计费
+
+有时， ONTAP 会在移动卷时创建临时（ TMP ）卷。这些临时卷的使用寿命很短，不会对这些卷上的使用量进行计费。
+
+
+
+=== 计费和自适应 QoS 策略
+
+Flex 订阅可根据性能服务级别衡量使用情况。每个性能服务级别都与一个特定的自适应服务质量（ QoS ）策略相关联。在部署期间，您将了解订阅的 Flex 订阅服务的每个 QoS 策略的详细信息。在存储管理操作期间，请确保您的卷已根据您订阅的性能服务级别分配适当的 QoS 策略，以避免意外计费。有关 ONTAP 中 QoS 策略的详细信息，请参见 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"]。

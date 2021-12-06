@@ -25,9 +25,7 @@ NetApp Keystone 灵活订阅（ Flex 订阅）是一种基于订阅的服务产�
 
 === 在 Flex 订阅中提供了哪些存储服务？
 
-下图显示了数据存储性能服务级别选项。
-
-image:nkfsosm_image5.png["灵活订阅性能服务级别"]
+有关信息，请参见 link:nkfsosm_performance.html["性能服务级别"]
 
 
 

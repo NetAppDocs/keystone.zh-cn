@@ -21,10 +21,18 @@ sidebar:
         url: "/nkfsosm_performance.html"
       - title: 服务级别指标和定义
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
+      - title: 计费
+        url: "/nkfsosm_kfs_billing.html"
       - title: 数据保护
         url: "/nkfsosm_data_protection.html"
       - title: 分层
         url: "/nkfsosm_tiering.html"
+      - title: 不可退回的磁盘
+        url: "/nkfsosm_nrd.html"
+      - title: 美国公民支持
+        url: "/nkfsosm_uscs.html"
+      - title: Flex 订阅和 Equinix
+        url: "/nkfsosm_equinix.html"
     - title: 运营模式和职责
       url: "/nkfsosm_overview.html"
     - title: 租户和多租户
@@ -35,6 +43,8 @@ sidebar:
       url: "/nkfsosm_site_requirements.html"
     - title: 操作
       url: "/nkfsosm_netapp_global_services_and_support_center_@gssc@.html"
+    - title: 灵活订阅和 Active IQ
+      url: "/nkfsosm-keystone-and-aiq.html"
   - title: 发行说明
     entries:
     - title: 新增功能

@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm-keystone-and-aiq.html 
+keywords: netapp, keystone, aiq keystone customers, Active IQ and keystone 
+summary: 客户可以在 Active IQ 中看到 Keystone 的情况 
+---
+= Flex订 阅客户可以在 Active IQ 中查看哪些内容？
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您已订阅 NetApp Keystone 灵活订阅（ Flex 订阅）服务，则可以在 Active IQ 数字顾问信息板上查看使用情况报告和图形。
+
+有关 Active IQ 数字顾问的详细信息，请参见 link:https://docs.netapp.com/us-en/active-iq/index.html["Active IQ 数字顾问文档"]
+
+如果您的站点默认安装了 NetApp 服务引擎，则除了 Active IQ 数字顾问之外，您还可以通过 NetApp 服务引擎界面查看使用情况图表。但是，在客户管理的环境中，您无法访问 NetApp 服务引擎界面，并且只能通过 Active IQ 数字顾问信息板查看容量图表和使用情况报告。有关客户管理的环境的信息，请参见 link:nkfsosm_overview.html["运营模式，角色和职责"]
+
+从您的站点收集指标数据的间隔为 5 分钟。
+
+作为客户，如果您订阅了 Flex 订阅服务，则可以在 Active IQ 数字顾问上查看以下信息：
+
+* * Keystone Flex 订阅 * 小工具：如果您已登录到 Active IQ 数字顾问，则可以看到 * Keystone Flex 订阅 * 小工具，其中汇总了已购买的 Flex 订阅服务的容量使用情况。
+* 如果单击小工具上的 * 查看详细信息 * ，则可以看到 * Keystone - 容量利用率 * 信息板。"Keystone - 容量利用率 " 信息板可根据订阅的服务（例如服务级别，数据保护和高级数据保护服务）进一步细分和分析容量和使用情况数据。此信息板还会显示过去 1 天， 7 天和 30 天的已用容量，已提交容量和突发容量使用情况图，并计算和拆分当前计期内的平均累积突发量。
+
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["使用 NetApp Keystone Flex 订阅查看容量利用率"]。

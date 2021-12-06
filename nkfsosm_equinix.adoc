@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_equinix.html 
+keywords: netapp, keystone, Equinix 
+summary: Keystone Flex 订阅和 Equinix 
+---
+= 由 Equinix 提供支持的 Flex 订阅
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 与 Equinix 合作，在 Equinix 数据中心托管 NetApp Keystone Flex 订阅（ Flex 订阅），以确保为您提供统一的解决方案。
+
+由 Equinix 提供支持的 Flex 订阅与标准 Flex 订阅产品保持不变。
+
+除了标准的 Flex 订阅服务之外，您还需要选择一个 Equinix 数据中心来托管您的 Flex 订阅设备。
