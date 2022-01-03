@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>NetApp Keystone Flex 订阅文档</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="NetApp Keystone Flex 订阅文档" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/keystone/index.html" />
+	<meta property="og:description" content="欢迎使用 Keystone 文档门户。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/keystone/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="欢迎使用 Keystone 文档门户。">
+  <meta name="keywords" content=" netapp, keystone, service, offering,">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/zh-cn/keystone/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-cn/keystone/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-cn/keystone/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-cn/keystone/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-cn/keystone/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-cn/keystone/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-cn/keystone/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-cn/keystone/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/keystone/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/keystone/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-cn/keystone/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/keystone/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href='/zh-cn/keystone/css/product-family.css' type="text/css">
+  
+
+  
+  <link rel='stylesheet' href='/zh-cn/keystone/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/zh-cn/keystone/js/na-search.js'></script>
+  
+
+  
+  <script src='/zh-cn/keystone/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/zh-cn/keystone/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/keystone/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-cn/keystone/js/na-utility.js'></script>
+  <script src='/zh-cn/keystone/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/zh-cn/keystone/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-cn/keystone/js/toc.js'></script>
+  <script src='/zh-cn/keystone/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/zh-cn/keystone/js/version-dropdown.js'></script>
+  <script src='/zh-cn/keystone/js/product-family.js'></script>
+  <script src='/zh-cn/keystone/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/keystone/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/keystone/js/jszip.min.js'></script>
+  <script src='/zh-cn/keystone/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">产品和解决方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支持和培训</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">云中心</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社区</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">日志</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客户案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-cn/keystone/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-cn/keystone/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-cn/keystone/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-cn/keystone/search.html"
+          data-type="widget" 
+          data-placeholder="搜索文档" 
+          data-no-results-found="未找到与 {query} 匹配的结果。" 
+          data-did-you-mean="搜索 {suggestion}。" 
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
+          data-results-found="找到 {hitCount} 个结果"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">简体中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/keystone/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/keystone/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/keystone/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/de-de/keystone/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" >
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/zh-cn/keystone/pdfs/fullsite-sidebar/NetApp_Keystone_Flex_订阅文档.pdf" >
+          <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/NetApp_Keystone_Flex_订阅.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            NetApp Keystone Flex 订阅
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/服务条款和问题描述.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            服务条款和问题描述
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+            <li class="active pdf-hide">
+  <a target="_blank" href="/zh-cn/keystone/pdfs/pages/index.pdf" >
+    <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/发行说明.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            发行说明
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/Flex_订阅常见问题解答.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            Flex 订阅常见问题解答
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/NetApp_服务引擎_Web_界面.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            NetApp 服务引擎 Web 界面
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/入门.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            入门
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/使用文件服务.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            使用文件服务
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/使用块存储.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            使用块存储
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/使用对象存储.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            使用对象存储
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/管理云服务.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            管理云服务
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/管理云服务.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            管理云服务
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/管理_Azure_NetApp_Files.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            管理 Azure NetApp Files
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/管理服务请求.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            管理服务请求
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/执行管理任务.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            执行管理任务
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/管理用户.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            管理用户
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/__NetApp_服务引擎_API_参考_.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            《 NetApp 服务引擎 API 参考》
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/使用者_API.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            使用者 API
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/keystone/pdfs/sidebar/管理员_API.pdf" 
+            
+          >
+            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            管理员 API
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-cn/keystone/images/pdf-zip.png" width="16" height="16"/>
+      <pre>收集单独的 PDF 文档<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class="subfolders  active "><a href="/zh-cn/keystone/index.html">
+        <div class="na-navbar-padding"> NetApp Keystone Flex 订阅</div>
+      </a>
+      <ul><li class="subfolders "><a href="/zh-cn/keystone/nkfsosm_service_terms_and_description_overview.html">
+        <div class="na-navbar-padding"> 服务条款和问题描述</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_keystone_service_capacity_definitions.html">
+        服务容量定义
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_performance.html">
+        性能服务级别
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_service_level_metrics_and_definitions.html">
+        服务级别指标和定义
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_kfs_billing.html">
+        计费
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_data_protection.html">
+        数据保护
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_tiering.html">
+        分层
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_nrd.html">
+        不可退回的磁盘
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_uscs.html">
+        美国公民支持
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_equinix.html">
+        Flex 订阅和 Equinix
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_overview.html">
+        运营模式和职责
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_tenancy_overview.html">
+        租户和多租户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_keystone_service_delivery_architecture_overview.html">
+        Flex 订阅基础架构
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_site_requirements.html">
+        站点要求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm_netapp_global_services_and_support_center_@gssc@.html">
+        操作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsosm-keystone-and-aiq.html">
+        灵活订阅和 Active IQ
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 发行说明</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/rn_whats_new.html">
+        新增功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/rn_known_issues.html">
+        已知问题
+      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/keystone/nkfsfaq_overview.html">
+        <div class="na-navbar-padding"> Flex 订阅常见问题解答</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsfaq_keystone_subscription.html">
+        Flex 订阅
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsfaq_service_offer_details.html">
+        服务优惠详细信息
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsfaq_operating_models.html">
+        操作模式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html">
+        NetApp 服务引擎 / 自助服务访问门户
+      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/keystone/sewebiug_overview.html">
+        <div class="na-navbar-padding"> NetApp 服务引擎 Web 界面</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html">
+        计费帐户，订阅，服务和性能
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 入门</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_getting_started_overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_log_in_to_the_netapp_service_engine_web_interface.html">
+        登录
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_partner_service_provider.html">
+        服务提供商和客户的角色和运营
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_select_tenant.html">
+        选择租户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_netapp_service_engine_web_interface_overview.html">
+        查看 NetApp 服务引擎 Web 界面
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_dashboard.html">
+        查看 Flex 订阅信息板
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_billing.html">
+        查看计费
+      </a></li><li class="subfolders "><a href="/zh-cn/keystone/sewebiug_working_with_file_services_overview.html">
+        <div class="na-navbar-padding"> 使用文件服务</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_view_servers.html">
+        查看服务器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_a_file_server.html">
+        创建文件服务器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_modify_file_server.html">
+        修改文件服务器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_delete_file_server.html">
+        删除文件服务器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_view_shares.html">
+        查看共享
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_a_new_file_share.html">
+        创建文件共享
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_file_share_from_snapshot.html">
+        从 Snapshot 创建文件共享
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_modify_a_file_share.html">
+        修改文件共享
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_delete_a_file_share.html">
+        删除文件共享
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_adhoc_snapshot_of_a_file_share.html">
+        创建文件共享的临时快照
+      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/keystone/sewebiug_working_with_block_storage_overview.html">
+        <div class="na-navbar-padding"> 使用块存储</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_view_host_groups.html">
+        使用主机组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_view_disks.html">
+        查看磁盘
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_a_new_disk.html">
+        创建磁盘
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_a_disk_from_a_snapshot.html">
+        从快照创建磁盘
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_modify_a_disk.html">
+        修改磁盘
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_delete_a_disk.html">
+        删除磁盘
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_an_adhoc_snapshot_of_a_disk.html">
+        创建磁盘的临时快照
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用对象存储</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_working_with_object_storage_overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_view_buckets.html">
+        查看存储分段
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_initialize_object_storage.html">
+        初始化对象存储
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_buckets.html">
+        创建存储分段
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_view_the_object_storage_group_and_users.html">
+        查看对象存储组和用户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_an_object_storage_group.html">
+        创建对象存储组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_modify_an_object_storage_group.html">
+        修改对象存储组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_delete_an_object_storage_group.html">
+        删除对象存储组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_object_storage_user.html">
+        创建对象存储用户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_modify_an_object_storage_user.html">
+        修改对象存储用户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_create_an_s3_key_for_a_user.html">
+        为用户创建 S3 密钥
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_delete_an_s3_key_for_a_user.html">
+        删除用户的 S3 密钥
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理云服务</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理云服务</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_managing_subscribed_services_overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_view_a_list_of_subscribed_services.html">
+        查看已订阅服务的列表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_add_a_subscribed_service.html">
+        添加订阅的服务
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_modify_the_subscribed_service_details.html">
+        修改订阅的服务详细信息
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_delete_a_subscribed_service.html">
+        删除已订阅的服务
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理 Azure NetApp Files</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_managing_azure_netapp_accounts.html">
+        管理 Azure NetApp 帐户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_managing_azure_capacity_pools.html">
+        管理 Azure 容量池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_managing_azure_volumes.html">
+        管理 Azure 卷
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_managing_gcp_cvs.html">
+        管理适用于 Google 云平台的 Cloud Volumes Service
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_working_with_reports.html">
+        查看报告
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_back_up_file_shares_and_disks.html">
+        使用备份
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_managing_subscriptions.html">
+        管理订阅
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理服务请求</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_managing_service_requests_overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_raise_a_service_request.html">
+        提出服务请求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_track_a_service_request.html">
+        跟踪服务请求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_service_request_process.html">
+        服务请求流程
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 执行管理任务</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理用户</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_view_a_list_of_users.html">
+        查看用户列表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_add_a_user.html">
+        添加用户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_modify_user_details.html">
+        修改用户详细信息
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_delete_a_user.html">
+        删除用户
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_managing_tenants_and_subtenants.html">
+        管理租户和子租户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_alerts.html">
+        查看和管理警报
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/sewebiug_define_network_configurations.html">
+        管理网络
+      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/keystone/seapiref_overview_of_netapp_service_engine_apis.html">
+        <div class="na-navbar-padding"> 《 NetApp 服务引擎 API 参考》</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_authorization_and_authentication.html">
+        授权和身份验证
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_netapp_service_engine_rest_apis.html">
+        NetApp 服务引擎 REST API
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用者 API</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_consumer_apis_overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_cloud_orchestration_apis.html">
+        云业务流程 API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_block_storage_apis.html">
+        块存储 API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_file_services_apis.html">
+        文件服务 API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_object_storage_apis.html">
+        对象存储 API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_backups_apis.html">
+        备份 API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_reporting_apis.html">
+        报告 API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_subnets_apis.html">
+        使用 API 创建子网
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_@consumer@_administration_apis.html">
+        （使用者）管理 API
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理员 API</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_administrator_apis_overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_tenants.html">
+        Tenants
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_subtenants.html">
+        子租户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_users.html">
+        用户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_zones.html">
+        分区
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_regions.html">
+        regions
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_ontap_clusters.html">
+        ONTAP 集群
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_storagegrid_instances.html">
+        StorageGRID 实例
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_service_levels.html">
+        服务级别
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_service_requests.html">
+        服务请求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/keystone/seapiref_jobs.html">
+        作业
+      </a></li></ul></li></ul></li></ul>
+</div>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">主页</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">文档</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-cn/keystone/">Keystone</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          NetApp Keystone Flex 订阅文档
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-cn/keystone/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">NetApp Keystone Flex 订阅文档</h1>
+</div>
+
+
+<p class="page-details">
+  
+
+<span>提供者
+  <a target="_blank" href="https://github.com/netapp-manini">
+    <img  class="avatar avatar-small"
+          alt="netapp-manini"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/59729581?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/ciarm">
+    <img  class="avatar avatar-small"
+          alt="ciarm"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/68733805?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/dmp-netapp">
+    <img  class="avatar avatar-small"
+          alt="dmp-netapp"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/50704017?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>NetApp Keystone 灵活订阅是 NetApp Keystone 服务产品的一部分。NetApp Keystone 是一种内部资本支出（ capex ）替代产品组合，旨在实现云之旅的快速发展，其中包括 NetApp Keystone Flex Pay 和 NetApp Keystone Flex 订阅服务。NetApp Keystone 通过存储服务在您的内部环境和云中提供无缝的混合云体验。有关 NetApp Keystone 的详细信息，请参见 <a href="https://www.netapp.com/services/subscriptions/keystone/">"NetApp Keystone"</a></p>
+</div>
+<div class="paragraph">
+<p>有关 NetApp Keystone Flex 订阅的详细信息，请参见 <a href="https://www.netapp.com/services/subscriptions/keystone/flex-subscription">"Keystone Flex 订阅"</a></p>
+</div>
+<div class="paragraph">
+<p>Flex 订阅是一种存储即服务产品，可在您的内部系统上提供类似于云的体验，并可连接到云—具体视您的意愿而定。* * NetApp Keystone 灵活支付 * — NetApp Keystone 灵活支付（ Flex Pay ）是一套灵活的财务备选方案组合，其中包括传统的融资，租赁和固定 / 可变选项，可满足客户的现金流需求。* * NetApp Keystone 灵活订阅 * — NetApp Keystone 灵活订阅（ Flex 订阅）是一种按需购买，基于结果的订阅服务，可为内部环境带来类似云的体验。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/nkfsosm_image1.png" alt="错误：缺少图形映像"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="flex-订阅">Flex 订阅</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Flex 订阅是一种按需购买的基于订阅的服务模式，可为那些倾向于使用运营支出消费模式而不是前期资本支出或租赁模式的客户提供无缝的混合云体验。它可以减少与管理不可预测的容量增长以及经历复杂的采购周期相关的障碍，帮助客户加速实现价值。通过 Flex 订阅，客户可以根据业务优先级调整经济效益和运营。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/nkfsosm_image2.png" alt="错误：缺少图形映像"></span></p>
+</div>
+<div class="paragraph">
+<p>Flex 订阅是一种基于订阅的服务产品，可在预定义的性能服务级别为块，文件和对象数据类型提供存储容量，这些数据可在内部部署，并可由 NetApp ，合作伙伴或客户操作。除了 Flex 订阅提供的基础服务之外，还可以选择附加服务，但需要额外付费。下图介绍了这些服务。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>* 数据保护基本 * 服务使用默认设置提供 NetApp SnapMirror 和 NetApp SnapVault 功能。</p>
+</li>
+<li>
+<p>* 高级数据保护 * 可利用 NetApp MetroCluster 功能提供 SLA 为 RPO=0 的服务。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="注">
+</td>
+<td class="content">
+Flex 订阅可使用 SnapVault 技术执行备份操作，并使用 SnapMirror 进行灾难恢复以远程复制数据；它不会自动故障转移和还原应用程序。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/nkfsosm_image3.png" alt="错误：缺少图形映像"></span></p>
+</div>
+<div class="sect2">
+<h3 id="flex-订阅的优势">Flex 订阅的优势</h3>
+<div class="paragraph">
+<p>Flex 订阅具有以下优势：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>将 IT 员工从与存储相关的复杂任务中解放出来，让他们可以专注于应用程序管理</p>
+</li>
+<li>
+<p>减少前期资本投资</p>
+</li>
+<li>
+<p>允许客户在不过度配置的情况下满足其需求</p>
+</li>
+<li>
+<p>根据业务需求 / 活动调整数据存储成本</p>
+</li>
+<li>
+<p>绕过复杂的组织采购流程，简化基础架构配置</p>
+</li>
+<li>
+<p>确保数据在其内部环境中的安全</p>
+</li>
+<li>
+<p>能够正确控制合规性，性能和安全性</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/nkfsosm_image4.png" alt="错误：缺少图形映像"></span></p>
+</div>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/keystone/issues/new?body=Page%3A%20[NetApp Keystone Flex 订阅文档](https://docs.netapp.com/zh-cn/keystone/index.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/keystone/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/keystone/blob/main/index.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/keystone/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/keystone/images/article-sm.svg" class="github-icon" />提供者指南</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此页面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
+  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/keystone/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/keystone/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/keystone/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/keystone/js/www-ntap.js'></script>
+    <script src='/zh-cn/keystone/js/tabbed-blocks.js'></script>
+  </body>
+
+  
+</html>
