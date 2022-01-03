@@ -1616,12 +1616,8 @@
   <block id="edea9398bafcc918142f79d91b628f61" category="list-text">再次单击 * 关闭 * 以关闭 " 管理 S3 密钥 " 对话框。</block>
   <block id="e4355ea354829ede276c4aa44fe13eb2" category="summary">欢迎使用 Keystone 文档门户。</block>
   <block id="70b7e76ada1def06c1f069b092352192" category="doc">NetApp Keystone Flex 订阅文档</block>
-  <block id="75154c1c7433b00eeb604286d9a29cf1" category="paragraph">NetApp Keystone 灵活订阅是 NetApp Keystone 服务产品的一部分。NetApp Keystone 是一种内部资本支出（ capex ）替代产品组合，旨在实现云之旅的快速发展，其中包括 NetApp Keystone Flex Pay 和 NetApp Keystone Flex 订阅服务。</block>
-  <block id="e49cf55687c692a556892a0f614ce9bf" category="list-text">* NetApp Keystone 灵活支付 * — NetApp Keystone 灵活支付（ Flex Pay ）是一套灵活的财务备选方案组合，其中包括传统的融资，租赁和固定 / 可变选项，可满足客户的现金流需求。</block>
-  <block id="cf7ec62445091377db24ebd1c9fd2d93" category="list-text">* NetApp Keystone 灵活订阅 * — NetApp Keystone 灵活订阅（ Flex 订阅）是一种按需购买，基于结果的订阅服务，可提供类似于内部云的体验。</block>
   <block id="3799607edcd82b379d62cf94110a1f1a" category="paragraph"><block ref="3799607edcd82b379d62cf94110a1f1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fdba3cae37eccb96c4307e07af690784" category="section-title">Flex 订阅</block>
-  <block id="0e8fe1ec8af71b797b941560e704d2f7" category="paragraph">Flex 订阅是一种基于结果的内部订阅服务模式。它可以减少与管理不可预测的容量增长以及经历复杂的采购周期相关的障碍，帮助客户加速实现价值。通过 Flex 订阅，客户可以根据业务优先级调整经济效益和运营。</block>
   <block id="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="paragraph"><block ref="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af401326a6f27af7fc3bb2ff21b788dc" category="paragraph">Flex 订阅是一种基于订阅的服务产品，可在预定义的性能服务级别为块，文件和对象数据类型提供存储容量，这些数据可在内部部署，并可由 NetApp ，合作伙伴或客户操作。除了 Flex 订阅提供的基础服务之外，还可以选择附加服务，但需要额外付费。下图介绍了这些服务。</block>
   <block id="173cfa01f909dadb1cc7bb7d43b24a2e" category="list-text">* 数据保护基本 * 服务使用默认设置提供 NetApp SnapMirror 和 NetApp SnapVault 功能。</block>
@@ -2891,7 +2887,6 @@
   <block id="78c10cb50c4cd8e6713eccd09451bc7b" category="paragraph">此版本引入了一个新的 * 警报 * 屏幕，其中列出了系统生成的和用户生成的所有警报。此外，您还可以通过此屏幕为与您的环境相关的严重事件创建自定义警报消息，并将其传达给其他用户。他们可以根据需要查看和取消警报。有关详细信息，请参见 <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block>。</block>
   <block id="5edd9100af263950a47e74c117e19f7c" category="paragraph">NetApp 服务引擎用户界面进行了以下增强：</block>
   <block id="787b14bb23fa38c0a9cf37fcf840abf0" category="list-text">左侧导航窗格上的 * 信息板 * 菜单提供了一个直观的导航点，用于访问信息板。</block>
-  <block id="d462ad78106f749467b02f63cf18f585" category="list-text">左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。</block>
   <block id="f617d7068a52e45a25c2eac0d3e8f1db" category="paragraph">有关此功能的详细信息，请参见以下链接：</block>
   <block id="6c1babef94ecdfe13ce1038b7eabf5ab" category="list-text"><block ref="6c1babef94ecdfe13ce1038b7eabf5ab" category="inline-link-macro-rx"></block></block>
   <block id="3a337ffb28bf0d116cc65c4b009401e6" category="list-text"><block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block></block>
@@ -2923,11 +2918,7 @@
   <block id="463c3a95787ac56f36c227feeb7bd389" category="list-text">* 客户运营模式 * ：下表总结了整体服务生命周期模式以及在客户运营的环境中与其相关的角色和职责。</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">任务</block>
   <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="cell">NetApp</block>
-  <block id="f65fb766c7d030aa6abd4c295a31c4c0" category="cell">安装和相关任务 * 安装 * 配置 * 部署 * 板载</block>
   <block id="244f78a4e039400f39e0eb94595bdc02" category="cell"><block ref="244f78a4e039400f39e0eb94595bdc02" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0a42ace755e3b3ce6cac106e8608f0b5" category="cell">管理和监控 * 监控 * 报告 * 执行管理任务 * 警报</block>
-  <block id="28d3eeb3a2cb3e9bf8861c7bae6f4266" category="cell">操作和优化 * 管理容量 * 管理性能 * 管理 SLA</block>
-  <block id="830a98b50bf596db55a80460163ac880" category="cell">支持 * 支持客户 * 硬件中断修复 * 软件支持 * 升级和修补程序</block>
   <block id="7feb8545e008b64a43a24668068761be" category="summary">客户可以在 Active IQ 中看到 Keystone 的情况</block>
   <block id="262343e94e4c53e68a3899e4036dbba5" category="doc">Flex订 阅客户可以在 Active IQ 中查看哪些内容？</block>
   <block id="902acbb4ec533e7ef722d0120abac953" category="paragraph">如果您已订阅 NetApp Keystone 灵活订阅（ Flex 订阅）服务，则可以在 Active IQ 数字顾问信息板上查看使用情况报告和图形。</block>
@@ -2943,8 +2934,6 @@
   <block id="a47468120853c1eae9253fff2798d8d6" category="paragraph">下表定义了性能服务级别。</block>
   <block id="ae14ae08bc11163da49596ed847fb224" category="section-title">不同存储类型的性能服务级别</block>
   <block id="28307c52fb9de3f0b2b26086b89eb8f3" category="paragraph">此处列出了文件，块和对象存储的服务级别。</block>
-  <block id="c2d47b6bc95c845ff73e9809734fad1a" category="section-title">文件共享</block>
-  <block id="af2d7929bc6a3f27f8ef1349af16d6bb" category="paragraph">* 支持的协议 * ： NFS 和 CIFS</block>
   <block id="079bbc110741f438dfb37f32218c4c21" category="cell">* 服务级别 *</block>
   <block id="cdf0cc519fabc4c14999e89090d33dc1" category="cell">* 至尊 *</block>
   <block id="153a19d482de580ce84c77ac52c6f907" category="cell">* 高级版 *</block>
@@ -2994,7 +2983,6 @@
   <block id="346ddf53d2d569d0bb73eb7826cf95d8" category="cell">介质存储库，归档</block>
   <block id="29de402441037919e9b47a4ad8a12baa" category="cell">500 TiB^3^</block>
   <block id="f1dae87d14ba76423e263dc9a79acdd7" category="paragraph">下表概括了客户可以选择的三种运行模式： NetApp 运营模式，合作伙伴运营模式和客户运营模式。</block>
-  <block id="b2e00d582e399129fd88a8c0f4a49c24" category="cell">图标：检查 []</block>
   <block id="10288ddd3c9dd46deaa222ee129df3fb" category="doc">美国公民支持（ USCS ）</block>
   <block id="b705fe2f9502ab5e1421d02eae05ad9f" category="paragraph">NetApp Keystone 灵活订阅（ Flex 订阅）可通过 NetApp 全球服务和支持中心（ GSSC ）持续监控和支持美国公民支持（ USCS ）服务。</block>
   <block id="437e64ea2377702ad2881edf8040c7c0" category="paragraph">GSSC 是一个分布在不同地理位置的团队，为各种 NetApp 客户提供服务。适用于 Flex 订阅的 USCS 产品可确保灵活订阅服务的监控和支持由位于美国的美国公民提供。此外，还包括维护系统所需的现场支持和故障排除。</block>
@@ -3025,7 +3013,6 @@
   <block id="4b894cf74c19de19660a5ffeee9a97ec" category="paragraph">由 Equinix 提供支持的 Flex 订阅与标准 Flex 订阅产品保持不变。</block>
   <block id="bc54a58207fd4d61b1d1879b8e83baf5" category="paragraph">除了标准的 Flex 订阅服务之外，您还需要选择一个 Equinix 数据中心来托管您的 Flex 订阅设备。</block>
   <block id="6b75063f02ddd200c4e0552e16617253" category="summary">Keystone Flex 订阅计费</block>
-  <block id="64dd6ef1863bf8e7223bfb0b6a76dc35" category="paragraph">NetApp Keystone 灵活订阅（ Flex 订阅）计费基于已提交容量和突发消耗量。</block>
   <block id="cb89411dcf9eebdd80bb208fdd32b0ca" category="paragraph">有关已提交容量和突发容量使用情况的信息，请参见 <block ref="a5de5e295217718375a90b1ecd6ab5f8" category="inline-link-macro-rx"></block>。</block>
   <block id="fc741d08744d3f762b0e8f40143e0c9f" category="paragraph">有关如何查看计费详细信息的信息，请参见 <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block>。</block>
   <block id="da0abce09003b51065ed5b06d06021f1" category="section-title">根据已提交容量计费</block>
@@ -3055,22 +3042,16 @@
   <block id="c84b839ec902b06b55455b45091db81d" category="paragraph">您可以在 NetApp Keystone 灵活订阅（ Flex 订阅）的 "NetApp 服务引擎 " 信息板和 " 计费 " 屏幕上查看所有已订阅服务的每月费用。</block>
   <block id="bb75d5742f3f8cd7ea2b3326b4ead1a8" category="paragraph">您可以查看前几个月为 Flex 订阅订阅订阅的所有服务的计费详细信息。系统将突出显示每个月突发容量的计费。</block>
   <block id="61813b3866df19ca76d72405fbac5ce9" category="paragraph">有关信息，请参见 <block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
-  <block id="2a56bee7f3b19653c23e02991c687747" category="paragraph">NetApp 服务引擎 2.7 引入了以下功能，以支持 NetApp Keystone 灵活订阅（ Flex 订阅）的增强服务：</block>
-  <block id="d935429310d3dd0ed962c755740fb123" category="section-title">NetApp 服务引擎 2.7 中引入的功能</block>
   <block id="6100897489646888867118f23efef503" category="paragraph">此版本中的新增功能包括：</block>
-  <block id="0678836712433ff7db78b2ffd5f26af1" category="section-title">可以通过 Flex订 阅查看 Cloud Volumes ONTAP 使用情况和计费</block>
-  <block id="7f7472103c50a9845b3d7cebcb44330e" category="paragraph">如果您是 NetApp Keystone Flex 订阅客户且同时拥有 Cloud Volumes ONTAP 订阅，则可以通过 Flex 订阅查看云卷上的使用情况和计费。Cloud Manager 现在可以发现您的 Flex 订阅详细信息并在 Cloud Manager 界面上显示这些详细信息。单击 * 所有服务 &gt; 数字电子钱包 &gt; Keystone Flex 订阅 * 选项卡后，您可以执行以下活动：</block>
   <block id="5238fb622db8670699adbf5b482678e6" category="list-text">查看欢迎屏幕，在此可以请求您的 Flex 订阅管理员将您的 Cloud Manager 用户 ID 与您的 Flex 订阅用户 ID 关联，从而访问 * Keystone Flex 订阅 * 选项卡。</block>
   <block id="c1a093259dea21d070b755503e96dcdf" category="list-text">查看内部部署系统和 Cloud Volumes ONTAP 上已订阅服务的已用容量和已用容量的使用数据。</block>
   <block id="85d3d7bdabae93d4846321bc050d6645" category="list-text">查看与您的 Cloud Manager 帐户关联的 Flex 订阅详细信息。此时将显示已提交，已用和突发容量等详细信息。</block>
-  <block id="ca42416279e3cfdb651eeba1f68765de" category="list-text">将您的 Cloud Volumes ONTAP 帐户与您的 Flex 订阅 ID 关联起来，以便为计费和容量使用情况报告关联此帐户。</block>
   <block id="88f141f3566ea09da3443b01f7f089fb" category="list-text">请求增加或减少已订阅 Flex 订阅服务的已提交容量。</block>
   <block id="b20b42d4f6cb65fa8e788ec44f8341a5" category="list-text">查看链接的 Flex 订阅 ID 并将其用作 Cloud Volumes ONTAP 消耗计费方法（仅限链接 ID ）。</block>
   <block id="a47bcecd4f4a1f89ad4e82bca88975ab" category="inline-link-macro">Keystone Flex 订阅</block>
   <block id="46172ce69f0d69dc6b2a28ea9573950b" category="inline-link-macro">管理 Keystone Flex 订阅</block>
   <block id="dd8bfc39d1b97c46fd88e0e7b3533909" category="paragraph">有关详细信息，请参见 Cloud Manager 文档中的以下链接：<block ref="4f790696e8e1be6ca66a4737e5e654e6" category="inline-link-macro-rx"></block>
 <block ref="1e99115c1a8b1bdb052bb8f16835e10f" category="inline-link-macro-rx"></block></block>
-  <block id="6505b63ebb98715b5081b2c13c7f1f62" category="admonition">NetApp Keystone Flex 订阅 2.7 的发布版本是 2.2 版之后的主要版本。2.2 和 2.7 之间的内部版本仅提供了一些次要修复。</block>
   <block id="44f95b8178b2bd2c0cde2f2b9c0f84c8" category="section-title">NetApp 服务引擎 2.0.1 中引入的功能</block>
   <block id="d2f339d731af47b666b5930ce1c2a0ec" category="section-title">NetApp 服务引擎 2.0 中引入的功能</block>
   <block id="780c462e85ba4399a5d42e88f69a15ca" category="sidebar">计费</block>
@@ -3078,4 +3059,57 @@
   <block id="0e0fe605239796a7018441e65fa28979" category="sidebar">美国公民支持</block>
   <block id="c2c19492d8278f541b461dfa6849c504" category="sidebar">Flex 订阅和 Equinix</block>
   <block id="6b9cddec4dacfc2b279a47aff83fcc02" category="sidebar">灵活订阅和 Active IQ</block>
+  <block id="faf37da472ffd232f9810c360b4c1f18" category="paragraph">安装及相关任务</block>
+  <block id="349838fb1d851d3e2014b9fe39203275" category="list-text">安装</block>
+  <block id="f1206f9fadc5ce41694f69129aecac26" category="list-text">配置</block>
+  <block id="507a3a88cebc46603ce2be8eaa924eee" category="list-text">部署</block>
+  <block id="79b7581616a6892a33647af8676f7c45" category="list-text">板载</block>
+  <block id="b407d85189fae6568411d1e0477e1a61" category="paragraph">管理和监控</block>
+  <block id="d2986ac8cb6bd55892099c1ffd6b1f6f" category="list-text">监控</block>
+  <block id="4b1b4dc8cf38b3c64b1d657da8f5ac8c" category="list-text">report</block>
+  <block id="b92071d61c88498171928745ca53078b" category="list-text">警报</block>
+  <block id="c22aff68d4c151984d3e3059f7389289" category="paragraph">操作和优化</block>
+  <block id="29930ffab2df479b4c9daf785d967075" category="list-text">管理容量</block>
+  <block id="c34138e317002ec9728d2c9e157799ee" category="list-text">管理性能</block>
+  <block id="07de8c2f393655cba5ee3012e3689412" category="list-text">管理 SLA</block>
+  <block id="db5eb84117d06047c97c9a0191b5fffe" category="paragraph">支持</block>
+  <block id="b932b332a780d244d163d8aeaa1cc82e" category="list-text">为客户提供支持</block>
+  <block id="550340cfbad3ac61a634336458de3119" category="list-text">硬件中断修复</block>
+  <block id="9f65492afee4fdfba75618fed6d0f9dd" category="list-text">软件支持</block>
+  <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">升级和修补程序</block>
+  <block id="e674e65192e6527dabaf52c23f514da4" category="section-title">文件服务</block>
+  <block id="73cf2790a3f92d26764722174d70cf34" category="paragraph">* 支持的协议 * ： NFS ， CIFS ， iSCSI 和 FC</block>
+  <block id="c5ffad16a8fef3a87dd99f3ee19c48b2" category="summary">Keystone 和 Cloud Manager 集成</block>
+  <block id="86ab31ff62a64b275109761b712760ae" category="doc">在您的 Cloud Volumes ONTAP 使用中，您如何受益于 Flex 订阅</block>
+  <block id="12ab7d2a453cfba801dd3a48030aa11a" category="paragraph">您订阅的 NetApp Keystone 灵活订阅（ Flex 订阅）服务有助于满足 Cloud Volumes ONTAP 使用的使用和计费需求。如果您是 NetApp Keystone Flex 订阅客户且同时拥有 Cloud Volumes ONTAP 订阅，则可以使用 Flex 订阅为 Cloud Volumes ONTAP 使用量收费并查看您的计费和使用量详细信息。</block>
+  <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
+  <block id="6365a10673e69e63960434eee08936a3" category="paragraph">NetApp Keystone 灵活订阅是 NetApp Keystone 服务产品的一部分。NetApp Keystone 是一种内部资本支出（ capex ）替代产品组合，旨在实现云之旅的快速发展，其中包括 NetApp Keystone Flex Pay 和 NetApp Keystone Flex 订阅服务。NetApp Keystone 通过存储服务在您的内部环境和云中提供无缝的混合云体验。有关 NetApp Keystone 的详细信息，请参见 <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
+  <block id="84df3063bf7c9a845b2944da17dc7ada" category="paragraph">有关 NetApp Keystone Flex 订阅的详细信息，请参见 <block ref="dd62aedd4673206c815c56eddc5536f2" category="inline-link-macro-rx"></block></block>
+  <block id="ac6330b2ef35ed0beec99df3fdccc9e2" category="paragraph">Flex 订阅是一种存储即服务产品，可在您的内部系统上提供类似于云的体验，并可连接到云—具体视您的意愿而定。* * NetApp Keystone 灵活支付 * — NetApp Keystone 灵活支付（ Flex Pay ）是一套灵活的财务备选方案组合，其中包括传统的融资，租赁和固定 / 可变选项，可满足客户的现金流需求。* * NetApp Keystone 灵活订阅 * — NetApp Keystone 灵活订阅（ Flex 订阅）是一种按需购买，基于结果的订阅服务，可为内部环境带来类似云的体验。</block>
+  <block id="60e9d00fe6da3c4a7ff384bed342bf02" category="paragraph">Flex 订阅是一种按需购买的基于订阅的服务模式，可为那些倾向于使用运营支出消费模式而不是前期资本支出或租赁模式的客户提供无缝的混合云体验。它可以减少与管理不可预测的容量增长以及经历复杂的采购周期相关的障碍，帮助客户加速实现价值。通过 Flex 订阅，客户可以根据业务优先级调整经济效益和运营。</block>
+  <block id="dc9a1eb62617a53e09590e225defee14" category="paragraph">NetApp Keystone 灵活订阅（ Flex 订阅）可为您的存储订阅提供可预测的前期定价。</block>
+  <block id="b1abcf87d81cee786e5ff7efba9f8162" category="paragraph">如果您更喜欢运营支出（ OPEX ）消费模式而不是资本支出（ CAPEX ）或租赁模式，则可以选择灵活的 " 按需购买 " 模式来满足您灵活且可扩展的消费需求。</block>
+  <block id="b9d67fd7da1429660d7fcfc1925f1beb" category="paragraph">Flex 订阅可为您提供以下计费工具：</block>
+  <block id="70eb65f810b8fa33ab14a55587c9dce5" category="list-text">您可以根据已提交的 IOPS 和延迟容量付费，以满足各种工作负载需求。您可以通过不同的性能服务层（至尊版，高级版，标准版和价值）根据您为 Flex 订阅购买的服务级别来管理存储。</block>
+  <block id="5866f5199f36da24870932aa9db6ab49" category="list-text">它可以为已提交容量提供可预测的计费，并按使用情况为可变（突发）容量使用量付费。</block>
+  <block id="a40d52252bf8cd6939e9352eeffb837b" category="list-text">您可以为硬件，核心操作系统选择捆绑包价格，并以每 TiB 价格获得支持。对于每种存储类型，文件，块，对象或云存储服务，您都有一张发票。</block>
+  <block id="40729792b47d4ca2beff3d5aaa13c6e0" category="list-text">选择灵活的服务和付款期限：您可以选择每个站点 12 个月， 100 TiB 或更多。此后，您可以自动续订 12 个月，也可以按月续订。</block>
+  <block id="4ec4e822132124cf94b121ed6e88e49b" category="paragraph">Flex 订阅计费基于已提交容量和可变突发消耗量。</block>
+  <block id="18b8a063bbf57f20dcdbb6f12a9dc0e9" category="section-title">为 SnapMirror 目标计费</block>
+  <block id="73b8b41eb9fb2753d0aa2c1ae6b36a05" category="paragraph">受源上分配的性能服务级别（服务级别）的 QoS 策略管理的 SnapMirror 目标卷的定价。但是，如果源没有关联的 QoS 策略，则会根据最低可用服务级别对目标进行计费。</block>
+  <block id="4bda389d4364c3a5f8e0002b0f1d48a6" category="section-title">为 FlexGroup 计费</block>
+  <block id="13a0b5a0cf8933d6ff04c50c4b84bac9" category="paragraph">FlexGroup 根据 FlexGroup 的自适应 QoS 策略进行计费。不考虑其成分卷的 QoS 策略。</block>
+  <block id="c73be2f2aaeb82cecf852c49f3ea4cce" category="section-title">LUN 计费</block>
+  <block id="05741b4ec38077cef83606c70f08f335" category="paragraph">对于 LUN ，通常遵循与受 QoS 策略管理的卷相同的计费模式。如果在 LUN 上设置了单独的 QoS 策略，则：</block>
+  <block id="cb1713b138a78b69b1922aa45131c2df" category="list-text">LUN 的大小将根据该 LUN 的关联服务级别进行计数以供使用。</block>
+  <block id="a0426b9dc757c80060e1b3657daf68d2" category="list-text">卷中的剩余空间（如果有）将根据卷上设置的服务级别的 QoS 策略进行收费。</block>
+  <block id="1eba80d57d3138b5dae3b976f061f9d9" category="section-title">系统卷和根卷</block>
+  <block id="076ac590232b28791043054102a0cc92" category="paragraph">在对 Flex 订阅服务进行整体监控的过程中，系统卷和根卷会受到监控，但不会计入或计费。这些卷上的消费免除计费。</block>
+  <block id="53a68c6a8d27bd5b379a7dc2368c5756" category="paragraph">本发行说明将向您介绍 NetApp Keystone 灵活订阅（ Flex 订阅）服务中引入的新功能和增强功能，以及已知限制和修复。</block>
+  <block id="5c333f255c8b8fe478018b592064ef12" category="section-title">查看 Cloud Volumes ONTAP 使用情况和计费（ 2021 年 12 月 5 日）</block>
+  <block id="c3e11b13166205f01b3a91c292ed2ef8" category="paragraph">如果您是 NetApp Keystone 灵活订阅（ Flex 订阅）客户，并且还订阅了 Cloud Volumes ONTAP ，则可以使用灵活订阅对 Cloud Volumes ONTAP 使用量进行收费，并查看您的计费和使用量详细信息。Cloud Manager 现在可以发现您的 Flex 订阅帐户并在 Cloud Manager 界面上显示详细信息。单击 * 所有服务 &gt; 数字电子钱包 &gt; Keystone Flex 订阅 * 选项卡后，您可以执行以下活动：</block>
+  <block id="1fe79890d855ed34bd46612c12db6061" category="list-text">将您的 Cloud Volumes ONTAP 帐户与您的 Flex 订阅 ID 关联起来，以便将该帐户与计费和容量使用情况报告关联起来。</block>
+  <block id="3be9d287dfe7e07ebfb53a3c94eb47ad" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ NetApp 服务引擎的不同版本引入了以下功能，以支持通过 NetApp Keystone 灵活订阅（ Flex 订阅）提供的增强功能：</block>
+  <block id="977c206c65138747de0f437c3e9da160" category="list-text">左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。+ + +</block>
+  <block id="60b9454b357d4028e1a44f67fe213faa" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝</block>
 </blocks>

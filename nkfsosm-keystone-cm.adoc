@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm-keystone-cm.html 
+keywords: netapp, keystone, cloud manager, keystone customers, CVO, cloud volumes ontap, cloud volumes ontap cvo billing 
+summary: Keystone 和 Cloud Manager 集成 
+---
+= 在您的 Cloud Volumes ONTAP 使用中，您如何受益于 Flex 订阅
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您订阅的 NetApp Keystone 灵活订阅（ Flex 订阅）服务有助于满足 Cloud Volumes ONTAP 使用的使用和计费需求。如果您是 NetApp Keystone Flex 订阅客户且同时拥有 Cloud Volumes ONTAP 订阅，则可以使用 Flex 订阅为 Cloud Volumes ONTAP 使用量收费并查看您的计费和使用量详细信息。

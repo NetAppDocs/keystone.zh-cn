@@ -13,24 +13,18 @@ summary: NetApp 服务引擎中的新增功能
 
 
 [role="lead"]
-NetApp 服务引擎 2.7 引入了以下功能，以支持 NetApp Keystone 灵活订阅（ Flex 订阅）的增强服务：
+本发行说明将向您介绍 NetApp Keystone 灵活订阅（ Flex 订阅）服务中引入的新功能和增强功能，以及已知限制和修复。
 
 
 
-== NetApp 服务引擎 2.7 中引入的功能
+== 查看 Cloud Volumes ONTAP 使用情况和计费（ 2021 年 12 月 5 日）
 
-此版本中的新增功能包括：
-
-
-
-=== 可以通过 Flex订 阅查看 Cloud Volumes ONTAP 使用情况和计费
-
-如果您是 NetApp Keystone Flex 订阅客户且同时拥有 Cloud Volumes ONTAP 订阅，则可以通过 Flex 订阅查看云卷上的使用情况和计费。Cloud Manager 现在可以发现您的 Flex 订阅详细信息并在 Cloud Manager 界面上显示这些详细信息。单击 * 所有服务 > 数字电子钱包 > Keystone Flex 订阅 * 选项卡后，您可以执行以下活动：
+如果您是 NetApp Keystone 灵活订阅（ Flex 订阅）客户，并且还订阅了 Cloud Volumes ONTAP ，则可以使用灵活订阅对 Cloud Volumes ONTAP 使用量进行收费，并查看您的计费和使用量详细信息。Cloud Manager 现在可以发现您的 Flex 订阅帐户并在 Cloud Manager 界面上显示详细信息。单击 * 所有服务 > 数字电子钱包 > Keystone Flex 订阅 * 选项卡后，您可以执行以下活动：
 
 * 查看欢迎屏幕，在此可以请求您的 Flex 订阅管理员将您的 Cloud Manager 用户 ID 与您的 Flex 订阅用户 ID 关联，从而访问 * Keystone Flex 订阅 * 选项卡。
 * 查看内部部署系统和 Cloud Volumes ONTAP 上已订阅服务的已用容量和已用容量的使用数据。
 * 查看与您的 Cloud Manager 帐户关联的 Flex 订阅详细信息。此时将显示已提交，已用和突发容量等详细信息。
-* 将您的 Cloud Volumes ONTAP 帐户与您的 Flex 订阅 ID 关联起来，以便为计费和容量使用情况报告关联此帐户。
+* 将您的 Cloud Volumes ONTAP 帐户与您的 Flex 订阅 ID 关联起来，以便将该帐户与计费和容量使用情况报告关联起来。
 * 请求增加或减少已订阅 Flex 订阅服务的已提交容量。
 * 查看链接的 Flex 订阅 ID 并将其用作 Cloud Volumes ONTAP 消耗计费方法（仅限链接 ID ）。
 
@@ -38,12 +32,8 @@ NetApp 服务引擎 2.7 引入了以下功能，以支持 NetApp Keystone 灵活
 有关详细信息，请参见 Cloud Manager 文档中的以下链接：link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription["Keystone Flex 订阅"]
 
 
+｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ NetApp 服务引擎的不同版本引入了以下功能，以支持通过 NetApp Keystone 灵活订阅（ Flex 订阅）提供的增强功能：
 
-NOTE: NetApp Keystone Flex 订阅 2.7 的发布版本是 2.2 版之后的主要版本。2.2 和 2.7 之间的内部版本仅提供了一些次要修复。
-
-====
-
-====
 
 
 == NetApp 服务引擎 2.2 中引入的功能
@@ -83,12 +73,9 @@ NetApp 服务引擎信息板经过重新设计，包括以下新组件：
 NetApp 服务引擎用户界面进行了以下增强：
 
 * 左侧导航窗格上的 * 信息板 * 菜单提供了一个直观的导航点，用于访问信息板。
-* 左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。
+* 左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。+ + +
 
 
-====
-
-====
 
 
 == NetApp 服务引擎 2.1 中引入的功能
@@ -138,12 +125,13 @@ NetApp Keystone Flex 订阅服务现在包括利用 NetApp FabricPool 技术的�
 * link:nkfsosm_performance.html["性能服务级别"]
 
 
-====
+｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝
 
-====
 
 
 == NetApp 服务引擎 2.0.1 中引入的功能
+
+此版本中的新增功能包括：
 
 
 
@@ -180,12 +168,11 @@ NOTE: Cloud Volumes Services 的订阅在 NetApp 服务引擎之外进行管理�
 
 现在，您可以指定访问控制列表（ ACL ）来限制用户对 CIFS （ SMB ）或多协议共享的访问。您可以根据要添加到 ACL 中的 Active Directory （ AD ）设置指定 Windows 用户或组。link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["了解更多信息。"]。
 
-====
-
-====
 
 
 == NetApp 服务引擎 2.0 中引入的功能
+
+此版本中的新增功能包括：
 
 
 

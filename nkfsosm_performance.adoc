@@ -31,9 +31,9 @@ NetApp Keystone 灵活订阅（ Flex 订阅）可按预定义的性能级别提�
 
 
 
-=== 文件共享
+=== 文件服务
 
-* 支持的协议 * ： NFS 和 CIFS
+* 支持的协议 * ： NFS ， CIFS ， iSCSI 和 FC
 
 |===
 
