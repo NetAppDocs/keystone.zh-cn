@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: rn_whats_new.html 
-keywords: netapp, keystone, release notes, new features, what's new, 
+keywords: 'netapp, keystone, release notes, new features, what"s new,' 
 summary: NetApp 服务引擎中的新增功能 
 ---
 = 此版本的 NetApp Keystone Flex 订阅服务中的新增功能

@@ -550,7 +550,6 @@
   <block id="672993dd6c7cdd1424762e0e618fd823" category="list-text">在作业列表中检查作业的状态。</block>
   <block id="8e6fc98e081283f66ed3168150e5d498" category="list-text">作业完成后，在用户列表中检查共享的状态。</block>
   <block id="a569539ebc048051428ba08b3174903c" category="summary">NetApp 服务引擎中的新增功能</block>
-  <block id="d72649d2d9afbaa244cbf7f2572c81ea" category="doc">此版本的 NetApp Keystone Flex 订阅服务中的新增功能</block>
   <block id="93092acc18d3bdf5908f28cece6c30c1" category="section-title">NetApp 服务引擎 2.1 中引入的功能</block>
   <block id="48d5f8cc22bf9548ea72bbe64efcd6eb" category="paragraph">此版本中的新功能包括在 Flex 订阅环境中支持多租户，以及有助于将非活动数据迁移到成本较低的本地层或云层的分层功能。</block>
   <block id="673e2d6c1773c639e536f87f964973bb" category="section-title">为服务提供商推出 Flex 订阅服务</block>
@@ -3112,4 +3111,5 @@
   <block id="3be9d287dfe7e07ebfb53a3c94eb47ad" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ NetApp 服务引擎的不同版本引入了以下功能，以支持通过 NetApp Keystone 灵活订阅（ Flex 订阅）提供的增强功能：</block>
   <block id="977c206c65138747de0f437c3e9da160" category="list-text">左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。+ + +</block>
   <block id="60b9454b357d4028e1a44f67fe213faa" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝</block>
+  <block id="1754f916c701cd7759c35b6738e4fbc0" category="doc">此版本的 NetApp Keystone Flex 订阅服务中的新增功能</block>
 </blocks>
