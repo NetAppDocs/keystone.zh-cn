@@ -1318,7 +1318,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-03 07:44:51 +0000">02/03/2022</time>
+    <time datetime="2022-02-15 11:24:16 +0000">02/15/2022</time>
     
   
 
@@ -1411,6 +1411,17 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">在 NetApp 管理的环境中，容量和计费报告可能不准确</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">在 NetApp 管理的环境中，由于缺少备份卷上的 LUN 大小指标和服务级别，从 UI 生成的容量和计费报告可能会受到影响。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">为 GSSC 提出服务请求以解决问题描述。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>创建订阅后，在图形上报告已提交容量的滞后时间为 15 分钟。</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>创建租户订阅后，如果立即检查报告图形（在创建订阅后 15 分钟内），则不会正确报告已提交容量。</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>创建订阅后至少 15 分钟查看报告图。</p>
+</div></div></td>
 </tr>
 </tbody>
 </table>
