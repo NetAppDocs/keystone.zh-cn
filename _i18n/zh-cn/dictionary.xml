@@ -3112,4 +3112,7 @@
   <block id="977c206c65138747de0f437c3e9da160" category="list-text">左侧导航窗格中的 * 已订阅服务 * 菜单已重命名为 * 云服务 * 。+ + +</block>
   <block id="60b9454b357d4028e1a44f67fe213faa" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝</block>
   <block id="1754f916c701cd7759c35b6738e4fbc0" category="doc">此版本的 NetApp Keystone Flex 订阅服务中的新增功能</block>
+  <block id="c07c08a8bb12ddacd97c50e289cfeabb" category="paragraph">创建订阅后，在图形上报告已提交容量的滞后时间为 15 分钟。</block>
+  <block id="d56ad7d41c9c131e7177635c575214ef" category="paragraph">创建租户订阅后，如果立即检查报告图形（在创建订阅后 15 分钟内），则不会正确报告已提交容量。</block>
+  <block id="d5ef5fd8e9c00193aa18dda53d77e710" category="paragraph">创建订阅后至少 15 分钟查看报告图。</block>
 </blocks>
