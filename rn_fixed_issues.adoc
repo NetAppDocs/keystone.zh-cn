@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: rn_fixed_issues.html 
+keywords: netapp, keystone, release notes, fixed issues, hot fixes 
+summary: 已修复 NetApp 服务引擎中的问题 
+---
+= 已修复 NetApp 服务引擎中的问题
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+已修复先前版本的 NetApp 服务引擎中发现的以下问题，以使您能够成功使用 NetApp Keystone 灵活订阅服务。
+
+[cols="3*"]
+|===
+| 问题描述 | 修复之后 | 版本已修复 
+
+
+| 如果集群上存在非 FabricPool 聚合，则会自动触发卷移动。对卷或磁盘进行的任何修改都会触发卷移动到另一个聚合。 | 卷操作不会触发卷移动。 | NetApp 服务引擎 2.2 
+
+
+| 主机组删除会从 NetApp 服务引擎用户界面（ UI ）中删除主机组，但不会从集群中删除。 | 已解决。 | NetApp 服务引擎 2.2 
+
+
+| 可以从 NetApp 服务引擎 UI 上的磁盘取消映射主机组，但不能从集群取消映射。 | 已解决。 | NetApp 服务引擎 2.2 
+
+
+| 无法从 NetApp 服务引擎 UI 中删除导出策略。 | 可以从用户界面保存更改后的策略。 | NetApp 服务引擎 2.2 
+|===

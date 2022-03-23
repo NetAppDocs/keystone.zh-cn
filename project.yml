@@ -50,6 +50,8 @@ sidebar:
     entries:
     - title: 新增功能
       url: "/rn_whats_new.html"
+    - title: 已修复的问题
+      url: "/rn_fixed_issues.html"
     - title: 已知问题
       url: "/rn_known_issues.html"
   - title: Flex 订阅常见问题解答

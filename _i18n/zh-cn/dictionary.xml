@@ -3115,4 +3115,25 @@
   <block id="c07c08a8bb12ddacd97c50e289cfeabb" category="paragraph">创建订阅后，在图形上报告已提交容量的滞后时间为 15 分钟。</block>
   <block id="d56ad7d41c9c131e7177635c575214ef" category="paragraph">创建租户订阅后，如果立即检查报告图形（在创建订阅后 15 分钟内），则不会正确报告已提交容量。</block>
   <block id="d5ef5fd8e9c00193aa18dda53d77e710" category="paragraph">创建订阅后至少 15 分钟查看报告图。</block>
+  <block id="c158748a3e69a9b1c13a961e778ec66b" category="paragraph">更改性能服务级别不会移动卷</block>
+  <block id="1783b0f8371d7661f74ab43e7076b5ef" category="paragraph">如果在同一集群中对两个服务级别使用两个不同的聚合，则将卷上的服务级别更改为另一个不会将卷移至另一个聚合。仅应用自适应 QoS 策略。</block>
+  <block id="44d15e01a306125fbc9b5a504261f2c3" category="paragraph">创建 FCP SVM 需要激活 iSCSI</block>
+  <block id="452ff3a7d441b2a105350eaeb7f00609" category="paragraph">要创建 Storage Virtual Machine （ SVM ）并在其上启用 FCP 支持，需要激活 iSCSI 接口。</block>
+  <block id="25af90aa8eda6df4dff2dd44b18198ab" category="paragraph">具有相同启动程序的多个主机组的限制</block>
+  <block id="d5a6291a0291469140c54e77e4b9ffce" category="paragraph">如果创建了多个具有相同启动程序名称的主机组，并且磁盘映射到所有主机组，则这些磁盘只会映射到集群上的一个主机组。</block>
+  <block id="b6727396faa1e4cf255c182ddc668fb9" category="summary">已修复 NetApp 服务引擎中的问题</block>
+  <block id="33659bd1c7f876bf4e9d181ffeebe959" category="doc">已修复 NetApp 服务引擎中的问题</block>
+  <block id="08742bb18ffa6199e545bb58248ee780" category="paragraph">已修复先前版本的 NetApp 服务引擎中发现的以下问题，以使您能够成功使用 NetApp Keystone 灵活订阅服务。</block>
+  <block id="3e6913b831218e5028d3a4532f801a65" category="cell">问题描述</block>
+  <block id="ad7fffc52967fac2195a87d71ddfefed" category="cell">修复之后</block>
+  <block id="c2d43cce4d21238bde127e51e8abf23a" category="cell">版本已修复</block>
+  <block id="31e90b75256e52a204cc966bbcfc52ec" category="cell">如果集群上存在非 FabricPool 聚合，则会自动触发卷移动。对卷或磁盘进行的任何修改都会触发卷移动到另一个聚合。</block>
+  <block id="1a54cda28aa8548ea53bccf486f1fae0" category="cell">卷操作不会触发卷移动。</block>
+  <block id="2f7daf18759a2f708f89c67f9ea296e0" category="cell">NetApp 服务引擎 2.2</block>
+  <block id="5e5483d38497c131d13b217cfbe624a7" category="cell">主机组删除会从 NetApp 服务引擎用户界面（ UI ）中删除主机组，但不会从集群中删除。</block>
+  <block id="af70f3681f4f3ba4f5b6940d7863a08b" category="cell">已解决。</block>
+  <block id="1b0fa9db56937e5f35319d185505e24d" category="cell">可以从 NetApp 服务引擎 UI 上的磁盘取消映射主机组，但不能从集群取消映射。</block>
+  <block id="38e55e934e595693c4955be6041102a9" category="cell">无法从 NetApp 服务引擎 UI 中删除导出策略。</block>
+  <block id="a9835757eaec1d4ebc950e91ee095db7" category="cell">可以从用户界面保存更改后的策略。</block>
+  <block id="69464e68a5cdd0b54694ac92276fa1a3" category="sidebar">已修复的问题</block>
 </blocks>
