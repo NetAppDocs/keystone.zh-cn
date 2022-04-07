@@ -18,7 +18,7 @@ summary: keystone 修改文件共享
 
 NOTE: 如果可用，您可以使用此方法将共享移动到不同的性能级别。只有当服务器支持相应的服务时，才能更改共享类型。
 
-文件共享必须处于运行状态。有关了解卷状态以及为使其正常运行而要采取的步骤的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["查看磁盘"] 和 
+文件共享必须处于运行状态。有关了解卷状态以及为使其正常运行而要采取的步骤的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["查看磁盘"] 和 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["对象状态"]
 
 .步骤
 . 查看 link:sewebiug_view_shares.html#view-shares["共享列表"]。

@@ -49,7 +49,7 @@ summary: Keystone StorageGRID 实例
 | `admin_rest_uri` | 字符串（ $uri ） | StorageGRID 管理节点端点。 
 
 
-| `s 3_Endpoints` | 字符串（ $uri ） | StorageGRID 端点。例如： [ `"https://s3.examplegrid.com"[]，  ] 
+| `s 3_Endpoints` | 字符串（ $uri ） | StorageGRID 端点。例如： [ `"https://s3.examplegrid.com"[]， "https://s3.location.company.com"`[] ] 
 
 
 | `grid_username` | string | StorageGRID 用户名。 

@@ -655,8 +655,6 @@
   <block id="36fb5c07f0b0b78c83b989e4caa15fcc" category="paragraph">所需的请求正文属性： `name`</block>
   <block id="0ac8caaee0e274f9f7e62a7cb2ea8a71" category="paragraph">使用下表中列出的方法按 ID 删除子租户。</block>
   <block id="a1d122241ce16ad6ba056c39a1e256fb" category="cell">删除此 ID 指定的子租户。</block>
-  <block id="6f2229565e303cc23cce957bf5939451" category="summary">Keystone 用于对象存储</block>
-  <block id="491da0d77ad2ffda662200ba7b8bb157" category="doc">使用对象存储</block>
   <block id="29109dc5270edc08f080a36766a2a630" category="summary">Keystone 视图主机组</block>
   <block id="dde43dbd895f6357fc850b7fd654a02b" category="doc">使用主机组</block>
   <block id="53fbfda0d450075d52315d5b09703b67" category="paragraph">已定义主机组以确定对磁盘的访问权限。根据分配给主机组的启动程序节点，确定该主机组的访问权限。</block>
@@ -1074,8 +1072,6 @@
   <block id="7beff930d10499c66cc25c8911fe65dd" category="list-text">单击 * 完成 * 。此操作将创建一个作业来修改共享。</block>
   <block id="4f6cfcf670602d0d3965cdfad9003301" category="paragraph">修改共享将作为异步作业运行。您可以</block>
   <block id="c65f438b154be9ea4bf677eda0f12729" category="list-text">作业完成后，在共享列表中检查共享的状态。</block>
-  <block id="91ddc16de769a9f97aed8824a94f4eff" category="summary">使用块存储的 Keystone</block>
-  <block id="378550b5a79b735cc6584d4de45ce11c" category="doc">使用块存储</block>
   <block id="e69a67ee29567c85d079a5da92e0021d" category="summary">keystone 修改磁盘</block>
   <block id="99e386b08e85bd69bd5c2cf4790ac52c" category="paragraph">您可以更改磁盘名称，主机组映射，性能服务级别，容量和快照策略。如果可用，您可以使用此方法将磁盘移动到不同的服务级别。</block>
   <block id="01e4e789a3c7b5698552e1195e37cb41" category="paragraph">磁盘必须处于运行状态。有关了解卷状态以及为使其正常运行而要采取的步骤的信息，请参见 <block ref="7e36d1153c26a010b4cff09ad58116d3" category="inline-link-macro-rx"></block> 和 <block ref="1dd0eaff8c7fecd5c80f4e2420f50d3b" category="inline-link-macro-rx"></block></block>
@@ -1166,19 +1162,8 @@
   <block id="da5d112bd273df54b63928cc644e122f" category="paragraph">您可以按主机组的 ID 和启动程序的别名删除启动程序。</block>
   <block id="47a6272e6bd00815d552cf2a794666db" category="paragraph">将启动程序添加到主机组时，启动程序应与主机组协议匹配。对于采用 iSCSI 协议的主机组，应使用 IQN ；对于采用 FC 协议的主机组，应使用 WWPN 。</block>
   <block id="c9a807d15738b1059fe78763b600d98e" category="paragraph">从主机组中删除启动程序会影响该主机组映射到的所有磁盘。</block>
-  <block id="d700018034ba1791acaf8b8f2d55cf06" category="summary">运营和支持</block>
-  <block id="3f4323f493fa17b2a55be0cb5d3fc084" category="doc">Flex 订阅操作和支持</block>
-  <block id="5418a29e251ddd457b45c4728c44077b" category="paragraph">未使用稍后删除</block>
-  <block id="4419434a1b65d14caa10786114db3112" category="paragraph">* 如何查看 Flex 订阅使用情况？ * NetApp 服务引擎提供了一个信息板视图，其中包含有关已订阅的所有服务以及已使用量的信息。有关 NetApp 服务引擎的详细信息，请参见 <block ref="8d35461a50e9d2cb480a76a035c5e522" category="inline-link-macro-rx"></block>。</block>
-  <block id="5a3115449a2b3065d5bb7484cfe4f999" category="paragraph">* 如何报告此服务的任何问题？ * 可以通过以下各种渠道获得 NetApp Keystone 支持：</block>
   <block id="f65085dc4bb69a27d3e266d2c5504a2b" category="list-text">支持电子邮件： mailto ： keystone.services@netapp.com[keystone.services@netapp.com^]</block>
   <block id="d0a96adfc74a1b7215d05e43eb9ac7eb" category="list-text">上报电子邮件： mailto ： keystone.escalations@netapp.com[keystone.escalations@netapp.com^]</block>
-  <block id="00b8e318a80a143ca212b4f3b0cb449f" category="paragraph">* 是否可以订购新的存储服务？ * 是的，可以从 NetApp 服务引擎门户请求新的存储服务或扩展存储服务。NetApp Keystone 运营团队会先处理此请求，然后再将其提供给用户使用。</block>
-  <block id="eff136c1ba2e8a2d6e4b14ddd6a80383" category="paragraph">* 是否可以立即增加存储承诺量？ * 根据请求的容量，确定容量是否已部署，或者是否需要运输和安装额外设备。</block>
-  <block id="f71fb6dbf8a02dfaed157786a5d1337e" category="paragraph">* 工作负载是否可以在层之间移动？ * 是的，工作负载可以在层之间移动，前提是用户已订阅工作负载要移至的层。但是，我们不建议从较高的层移至较低的层，因为发生原因这样可能会导致性能下降。只需编辑文件共享并更改服务级别设置即可完成此过程。</block>
-  <block id="0d5e545b2de42575e5208d3abb79f68c" category="paragraph">* 默认安装的软件版本（例如 ONTAP ）是什么？ * 根据订阅的服务层（例如，具有文件和块服务的 ONTAP ，用于块的 SANtricity 和用于对象的 StorageGRID ），支持团队安装最新的稳定版本，而不存在任何安全或功能问题。</block>
-  <block id="f02a13196264a51fda1b26c5e2a551ec" category="paragraph">* 是否可以申请特定软件版本？ * 否NetApp Keystone 已对其所有客户群的软件版本进行标准化。</block>
-  <block id="1a5e72df744341345327e87c09268047" category="paragraph">* 是否会收到有关软件升级的通知？ * 是。所有维护 / 升级活动均由 NetApp Keystone 成功经理在双方同意的时间与客户进行沟通和计划。</block>
   <block id="e30f63950de5eb7cabdf63338b63b720" category="summary">Keystone 对象存储 API</block>
   <block id="e714b8004e2284dd893321431bc030df" category="doc">对象存储 API</block>
   <block id="37deb72473c94f177d40086068ef7480" category="paragraph">本节提供用于管理对象存储，对象存储用户和对象存储组的 API 。</block>
@@ -1474,8 +1459,6 @@
   <block id="338ff852a30204809c638053667e5bc0" category="paragraph">使用下表中列出的方法删除分区。</block>
   <block id="76bb4544baa185e4267cc26594a9e9d1" category="cell">删除通过名称标识的单个分区。必须先删除区域中的所有存储资源。</block>
   <block id="ad08458bea3ad21f1766baa2eae4bb9f" category="paragraph">成功删除后，不会返回任何内容。</block>
-  <block id="eb7dc54ae67b4113bd8f2e3cfdd3cd99" category="summary">管理用户的 Keystone</block>
-  <block id="93e4e8b56119093f81b4aed41ceeea38" category="doc">管理用户</block>
   <block id="7373680aa88b367bc7b0be53010ec82c" category="summary">Keystone 使用对象存储概述</block>
   <block id="a57a35a8efe969d50a1f98ce9971fc96" category="paragraph">对象存储需要订阅对象存储服务。如果订阅中提供了对象存储服务，则必须先初始化存储，然后才能使用该存储。</block>
   <block id="7c6f436812b25d3ddbf2d6db58ada2bc" category="paragraph">对于对象存储，对象存储在 S3 存储分段中。可以通过在对象存储组上设置的权限来管理对 S3 存储分段的访问。对象存储用户将被授予一个或多个对象存储组的成员资格，从而从组成员资格继承权限。</block>
@@ -1627,21 +1610,7 @@
   <block id="aec784453871c969db30ddf8954f7b70" category="paragraph">Flex 订阅具有以下优势：</block>
   <block id="1a8f20342523eaa8f9195dffa647161c" category="list-text">能够正确控制合规性，性能和安全性</block>
   <block id="a0a35eef0076381c8b78bfe2cdbed28b" category="paragraph"><block ref="a0a35eef0076381c8b78bfe2cdbed28b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="161ad817030874893546af0d58614618" category="summary">Keystone 与 Cloud Manager 配合使用</block>
-  <block id="dce9eeb81c0ba57d0b2f61915e5252c5" category="doc">使用 Cloud Manager</block>
-  <block id="db86d84f317b816ba1a698ab59703ba1" category="paragraph">NetApp 服务引擎可以连接到 NetApp Cloud Manager 。本节介绍 NetApp 管理员用户如何执行以下任务：</block>
-  <block id="213cfa9430289b17153b74af2bf4838c" category="list-text">连接到 Cloud Manager</block>
-  <block id="0d5eb8aed41b9ec328e17b1255fb7adc" category="list-text">查看 Cloud Manager 连接的状态</block>
   <block id="64cb5f10c6949d975da63108f4244697" category="paragraph">您需要：</block>
-  <block id="ed8f5a635964432920379bf2e5e8627d" category="list-text">Cloud Manager API 端点 URL</block>
-  <block id="d339114e912d2c7ce09638812f77dd96" category="list-text">Cloud Manager SaaS 服务的客户端 ID</block>
-  <block id="5f448ec8d9c86c57e21f44790cfe7aa2" category="list-text">Cloud Manager SaaS 服务的刷新令牌</block>
-  <block id="3cb7a7d3c577f380ab4045baaceb18dc" category="list-text">从菜单中选择管理 &gt; OCCM 连接。</block>
-  <block id="91ff0584115ddaface4284e480ac8de4" category="list-text">指定 OCCM API 端点 URL</block>
-  <block id="05ce373a0178041c09cbd3115554885e" category="list-text">输入客户端 ID 。</block>
-  <block id="2a10e639a91338d915c46d1dcfb06495" category="list-text">输入 OCCM 刷新令牌。</block>
-  <block id="f8666bf87bae2c9aef8090ddc6d3b590" category="inline-link"><block ref="f8666bf87bae2c9aef8090ddc6d3b590" category="inline-link-rx"></block></block>
-  <block id="e582f390ab8b6e0709976f564e66d228" category="paragraph"><block ref="e582f390ab8b6e0709976f564e66d228" category="inline-link-rx"></block></block>
   <block id="02154846d04868cd579969e490705c31" category="summary">登录到 NetApp 服务引擎 Web 界面</block>
   <block id="6502fca6147310b6dade74cf980b775c" category="doc">登录到 NetApp 服务引擎 Web 界面</block>
   <block id="61c7ff0fadf9ef207b62f81c88cd67aa" category="paragraph">要使用 NetApp 服务引擎 Web 界面，您必须拥有一个帐户。NetApp 服务引擎管理员会为您的帐户分配一个或多个角色，用于确定您的权限以及您可以在 NetApp 服务引擎门户中执行的活动。</block>
@@ -1682,8 +1651,6 @@
   <block id="a124e126039367350c2bd3e2dffea7f4" category="paragraph">成功登录后， NetApp 服务引擎 Web 界面将加载，此时将显示 Flex 订阅信息板。有关图形用户界面的概述，请参见 <block ref="2f9b8af2c7d5dd961826f7a81f97b9de" category="inline-link-macro-rx"></block>。</block>
   <block id="9cca15dcee862bea12a0f1b1f2c84fe4" category="list-text">要注销此界面，请单击用户图标并单击 * 注销 * 。</block>
   <block id="2f67801bbc64ccc68a6a7e45990d9f24" category="paragraph"><block ref="2f67801bbc64ccc68a6a7e45990d9f24" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="189883a9b3994b084f540d287e546a8e" category="summary">Keystone 入门</block>
-  <block id="cb59b87e00d11222bfd9159d0d23836f" category="doc">入门</block>
   <block id="ee966310f09723c05298f5d7d7aa6f27" category="summary">从 Snapshot 创建文件共享</block>
   <block id="298c17df37c9568ee5167ba1ad189316" category="paragraph">您可以从现有 Snapshot 创建新的文件共享。从 Snapshot 克隆的新文件共享与创建 Snapshot 的文件共享具有相同的属性。</block>
   <block id="ba791218e3e41923099db15abe057c18" category="list-text">从左侧导航窗格中选择 * 文件服务 * ，然后选择 * 共享 * 。</block>
@@ -1825,7 +1792,6 @@
   <block id="468c95ce8260e42060992d5c99daa33b" category="paragraph">使用此方法删除 Azure NetApp 帐户。</block>
   <block id="03ec8f9354501e9c2c8a10dfba0b8819" category="list-text">在列表中找到 Azure NetApp 帐户，然后单击删除图标。</block>
   <block id="d1bd03dea5e50660d5be4ae12156bba8" category="list-text">在确认删除对话框中，输入要删除的 Azure NetApp 帐户的名称。</block>
-  <block id="603f84c5ec6ba84bbd05890b124d6501" category="summary">Keystone 使用者 API</block>
   <block id="a597fcc752926830c3e3aec481c0b755" category="summary">管理子租户的 Keystone</block>
   <block id="2125e8d6093cd73490e417b762ef2aa9" category="paragraph">您可以使用 NetApp 服务引擎查看和管理租户和子租户。初始租户由 NetApp 支持部门为服务提供商 / 合作伙伴和租户设置。区域，分区和订阅已由支持人员配置，在您的租户下创建租户和子租户时，这些区域，分区和订阅均可用。</block>
   <block id="2369c5c1246ccd710ecb61d29b2e3ff5" category="paragraph">如果您是合作伙伴管理员，则可以从 * 管理 * &gt; * 租户 * 中创建，修改和删除租户。租户管理员只能查看其各自的租户订阅和子租户。对于合作伙伴租户，您还可以定义网络。</block>
@@ -2118,10 +2084,6 @@
   <block id="d28310f59eb153f28bc11be01c1ce4ab" category="list-text">正在使用的协议（ NFS ， CIFS ）</block>
   <block id="3f0c23d19cad0108dad2e160c8794205" category="list-text">CIFS 服务器名称（如果相关）。</block>
   <block id="7851f0fd079b9408c0e43475b6a7c5ef" category="paragraph">有关如何使用列表功能的详细信息，请参见 <block ref="06c69cf03ada5a3283b333d7ac5a7d25" category="inline-link-macro-rx"></block>。</block>
-  <block id="b9f431015005979712525d673ef8e68a" category="summary">Keystone 从何处查找追加信息</block>
-  <block id="3887d417240a72ab69f6d0301efd3b2b" category="doc">从何处查找追加信息</block>
-  <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="paragraph">NetApp 产品文档</block>
-  <block id="2e85fc867cab94d246e0bf6043b361cd" category="paragraph"><block ref="2e85fc867cab94d246e0bf6043b361cd" category="inline-link-rx"></block></block>
   <block id="efe1af10fee306e4da483388593432ed" category="summary">Keystone 文件服务 API</block>
   <block id="d4645c3c664d980b7130691e0352abce" category="paragraph">您可以使用文件服务 API 查看和管理文件服务器和文件共享。</block>
   <block id="47b6bb2cce100732829dd417cfe27e9d" category="paragraph">在创建文件共享之前，您必须先创建文件服务器来托管它们。</block>
@@ -2168,7 +2130,6 @@
   <block id="6e38eaf3c64cc8f5260081b7bb3a1eb2" category="paragraph">您还可以对响应进行排序：</block>
   <block id="01d1f93c48d9fc7d410a036fa64ec37c" category="list-text">* 排序方式 * 使用指定属性对记录进行排序。例如，要按创建日期进行排序，请指定已创建。</block>
   <block id="5fa4c576a4973e9d5d057e34b449b0d2" category="list-text">* order_by-* 按升序（ asc ）或降序（ desc ）顺序排列记录。</block>
-  <block id="7a59e920c74c196d0f57ba4b6a8d1185" category="summary">Keystone 管理员 API</block>
   <block id="85dac96112743e58b2685d4be2d26037" category="summary">管理 Azure 容量池的 Keystone</block>
   <block id="c8b1502f7cf0ad4e087f224a2c408756" category="doc">管理 Azure 容量池</block>
   <block id="6cd169fe355cb205cd1b4f241e34baab" category="paragraph">本节介绍如何管理 Azure 容量池：</block>
@@ -2284,14 +2245,6 @@
   <block id="6aabc28e97e5b07ba5874eb058e7c779" category="paragraph">使用此方法删除 Azure 卷。</block>
   <block id="d473b43cbc289b5d22f96515d63627bd" category="list-text">在列表中找到 Azure 卷，然后单击删除图标。</block>
   <block id="b88fffaac19d5aeb6ed0d2a1b5b615d8" category="list-text">在确认删除对话框中，输入要删除的 Azure 卷的名称。</block>
-  <block id="5b2f0bd4fc7bb59187f107fcb9a848fa" category="summary">管理服务请求的 Keystone</block>
-  <block id="cbf99d0314c4530c4f7c8155643e7e2d" category="doc">管理服务请求</block>
-  <block id="57ca22f6724957bd8f72afe27628993a" category="summary">Keystone 管理用户概述</block>
-  <block id="e8ff30361af2dd520948eb0660b6d477" category="paragraph">本节介绍如何管理用户：</block>
-  <block id="8c843ad1aee6e372e5633948a6640fbe" category="admonition">管理用户需要客户管理员访问权限。</block>
-  <block id="9d83936f36f2c3a28508e6773d80030b" category="list-text">查看用户列表。</block>
-  <block id="548af37b2544b71473c1539bb4a68df9" category="list-text">添加用户。</block>
-  <block id="1cebf46707524678b62437238f0c5bb5" category="list-text">修改用户详细信息，例如名字，姓氏，显示名称，用户有权访问的租约以及这些租约中用户的角色。</block>
   <block id="9e6a9bc413f130a4dbd0233b18e642e1" category="list-text">删除用户。</block>
   <block id="ac7d21b63f88f561c798cfcfabd678f4" category="summary">NetApp 服务引擎 / 自助服务访问门户</block>
   <block id="fb7268175d0ac71e5fdf71ab277aca4b" category="doc">NetApp 服务引擎 / 自助服务访问门户</block>
@@ -2448,8 +2401,6 @@
   <block id="f19d5dd3a3e7b41ea53b7235d13b34ce" category="list-text">指定子租户，分区，子网名称， VLAN 和子网 CIDR 。您还可以添加路由规范和标记。</block>
   <block id="48317d60b65cfa7212c3f635b1d1ee18" category="admonition">在路由规范中， * 目标 * 应是唯一的且属于所述 VLAN ，多个路由的 * 度量 * 值可以相同。</block>
   <block id="040baf1e68e10c200531c74cedffdcde" category="admonition">您不能编辑或删除子网。您只能编辑与其关联的标记。</block>
-  <block id="b268d7d0d9afd8d193fa80aa1622a161" category="summary">使用文件服务的 Keystone</block>
-  <block id="a5ad8b42722c291ff0a2b6ad207fa790" category="doc">使用文件服务</block>
   <block id="7fdb44c4efca9cb2f8ad3b4db2328a89" category="summary">Keystone 备份 API</block>
   <block id="160dacdfe2b74f89864f2e85eafc1976" category="doc">备份 API</block>
   <block id="0d7d4c02eb916025bec65984e23e01bf" category="paragraph">您可以使用备份 API 查看和管理环境中卷（文件共享和磁盘）的快照（备份或恢复点）。</block>
@@ -2867,8 +2818,6 @@
   <block id="d900b34f4ec7d4c5aedb24b1b84b6642" category="list-text">从菜单中选择 * 云服务 * 。</block>
   <block id="b9ff3c79bce6a74407aef38bc921b4d6" category="list-text">在 Google Cloud 的 Create Cloud Service 页面上，选择要为其创建服务的子租户，然后添加名称和 GCP 项目编号。</block>
   <block id="304a1797d3d8fe020002005a39cf8fd1" category="list-text">单击 * 创建 * 。创建后，云服务页面上的服务状态将更改为 `S已更新` 。</block>
-  <block id="09d86387c57736659bbab38839c5f2da" category="summary">管理云服务的基石</block>
-  <block id="27ee5c08c2a81e9de81aff03196f5e43" category="doc">管理云服务</block>
   <block id="ff73f07d33b95ca8cfc1150265940594" category="section-title">我可以从何处查看我的使用情况的计费？</block>
   <block id="91c4b877df1393baf62833e39a8a1140" category="paragraph">您可以在信息板上的 * 每月费用 * 小工具中查看过去三个月订阅的总月费用。您可以通过单击小工具或导航到 * 管理 * &gt; * 计费 * 来查看详细的计费信息。</block>
   <block id="6f3775f5739b5cdd88b89ba7d8a013e2" category="list-text">信息板视图：显示用于监控使用情况，计费，警报和服务请求的各种工具。</block>
@@ -3078,9 +3027,6 @@
   <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">升级和修补程序</block>
   <block id="e674e65192e6527dabaf52c23f514da4" category="section-title">文件服务</block>
   <block id="73cf2790a3f92d26764722174d70cf34" category="paragraph">* 支持的协议 * ： NFS ， CIFS ， iSCSI 和 FC</block>
-  <block id="c5ffad16a8fef3a87dd99f3ee19c48b2" category="summary">Keystone 和 Cloud Manager 集成</block>
-  <block id="86ab31ff62a64b275109761b712760ae" category="doc">在您的 Cloud Volumes ONTAP 使用中，您如何受益于 Flex 订阅</block>
-  <block id="12ab7d2a453cfba801dd3a48030aa11a" category="paragraph">您订阅的 NetApp Keystone 灵活订阅（ Flex 订阅）服务有助于满足 Cloud Volumes ONTAP 使用的使用和计费需求。如果您是 NetApp Keystone Flex 订阅客户且同时拥有 Cloud Volumes ONTAP 订阅，则可以使用 Flex 订阅为 Cloud Volumes ONTAP 使用量收费并查看您的计费和使用量详细信息。</block>
   <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
   <block id="6365a10673e69e63960434eee08936a3" category="paragraph">NetApp Keystone 灵活订阅是 NetApp Keystone 服务产品的一部分。NetApp Keystone 是一种内部资本支出（ capex ）替代产品组合，旨在实现云之旅的快速发展，其中包括 NetApp Keystone Flex Pay 和 NetApp Keystone Flex 订阅服务。NetApp Keystone 通过存储服务在您的内部环境和云中提供无缝的混合云体验。有关 NetApp Keystone 的详细信息，请参见 <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
   <block id="84df3063bf7c9a845b2944da17dc7ada" category="paragraph">有关 NetApp Keystone Flex 订阅的详细信息，请参见 <block ref="dd62aedd4673206c815c56eddc5536f2" category="inline-link-macro-rx"></block></block>
@@ -3136,4 +3082,6 @@
   <block id="38e55e934e595693c4955be6041102a9" category="cell">无法从 NetApp 服务引擎 UI 中删除导出策略。</block>
   <block id="a9835757eaec1d4ebc950e91ee095db7" category="cell">可以从用户界面保存更改后的策略。</block>
   <block id="69464e68a5cdd0b54694ac92276fa1a3" category="sidebar">已修复的问题</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
+  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
 </blocks>

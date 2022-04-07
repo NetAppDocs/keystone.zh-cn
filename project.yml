@@ -6,8 +6,8 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-    langs: zh-cn,us-en,ja-jp,de-de,ko-kr
-  langs: zh-cn,us-en,ja-jp,de-de,ko-kr
+    langs: zh-cn,us-en,ja-jp,ko-kr,de-de
+  langs: zh-cn,us-en,ja-jp,ko-kr,de-de
 sidebar:
   entries:
   - title: NetApp Keystone Flex 订阅
@@ -261,3 +261,5 @@ sidebar:
         url: "/seapiref_service_requests.html"
       - title: 作业
         url: "/seapiref_jobs.html"
+  - title: 法律声明
+    url: "/legal-notices.html"

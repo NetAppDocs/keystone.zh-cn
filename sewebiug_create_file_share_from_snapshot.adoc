@@ -33,7 +33,7 @@ NOTE: 对于选定文件共享，如果您在 NetApp 服务引擎之外的 SnapC
 .完成后
 * 仅适用于 CIFS 类型的共享：要使共享按主机名可用，域管理员应使用 CIFS 服务器名称和 IP 地址更新 DNS 记录。否则，只能通过 IP 地址访问共享。例如：
 +
-** 更新 DNS 记录后，使用主机名或 IP 访问共享：例如 file://hostname/share["\\hostname\share"^] 或
+** 更新 DNS 记录后，使用主机名或 IP 访问共享：例如 file://hostname/share["\\hostname\share"^] 或 file://IP/share["\\IP\share"^]
 ** 如果未更新任何 DNS 记录，则应使用 IP 地址访问共享，即 file://IP/share["\\IP\share"^]
 
 

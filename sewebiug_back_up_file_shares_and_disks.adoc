@@ -34,7 +34,7 @@ NOTE: 可以随时通过 GUI 或 API 手动执行临时（非计划）备份。
 
 == 创建备份对象
 
-您可以通过在时定义备份策略来为卷创建 Snapshot link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html["创建文件共享"] 或 。
+您可以通过在时定义备份策略来为卷创建 Snapshot link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html["创建文件共享"] 或 link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_disk.html["创建磁盘"]。
 
 .步骤
 . 启用 * 备份策略 * 。

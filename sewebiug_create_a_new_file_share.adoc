@@ -113,7 +113,7 @@ NOTE: 用户或组名称应遵循标准 AD 格式。如果输入的用户或组�
 .完成后
 * 仅适用于 CIFS 类型的共享：要使共享按主机名可用，域管理员必须使用 CIFS 服务器名称和 IP 地址更新 DNS 记录。否则，只能通过 IP 地址访问共享。例如：
 +
-** 更新 DNS 记录后，使用主机名或 IP 访问共享：例如 file://hostname/share["\\hostname\share"^] 或
+** 更新 DNS 记录后，使用主机名或 IP 访问共享：例如 file://hostname/share["\\hostname\share"^] 或 file://IP/share["\\IP\share"^]
 ** 如果未更新任何 DNS 记录，则必须使用 IP 地址来访问共享，即 file://IP/share["\\IP\share"^]
 
 

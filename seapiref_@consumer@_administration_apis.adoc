@@ -18,15 +18,15 @@ summary: Keystone （使用者）管理 API
 * 登录，设置密码并刷新身份验证令牌。
 * 检索作业并查看作业详细信息。
 +
-请参见 link:seapiref_jobs.html#retrieve-jobs["检索作业"] 和 。
+请参见 link:seapiref_jobs.html#retrieve-jobs["检索作业"] 和 link:seapiref_jobs.html#retrieve-a-job-by-job-id["按作业检索作业 ID"]。
 
 * 检索区域。
 +
-请参见 link:seapiref_regions.html#retrieve-regions["检索区域"] 和 。
+请参见 link:seapiref_regions.html#retrieve-regions["检索区域"] 和 link:seapiref_regions.html#retrieve-a-region-by-name["按名称检索区域"]。
 
 * 检索服务级别。
 +
-请参见 link:seapiref_service_levels.html#retrieve-service-levels["检索服务级别"] 和 。
+请参见 link:seapiref_service_levels.html#retrieve-service-levels["检索服务级别"] 和 link:seapiref_service_levels.html#retrieve-service-levels-by-name["按名称检索服务级别"]。
 
 * 使用子租户。
 +
@@ -53,11 +53,11 @@ summary: Keystone （使用者）管理 API
 
 * 检索用户。
 +
-link:seapiref_users.html#retrieve-all-users["检索所有用户"]， ，和 。
+link:seapiref_users.html#retrieve-all-users["检索所有用户"]， link:seapiref_users.html#retrieve-a-user-by-id["按 ID 检索用户"]，和 link:seapiref_users.html#retrieve-a-user-by-user-name["按用户名检索用户"]。
 
 * 检索分区。
 +
-请参见 link:seapiref_zones.html#retrieve-all-zones["检索所有分区"] 和 
+请参见 link:seapiref_zones.html#retrieve-all-zones["检索所有分区"] 和 link:seapiref_zones.html#retrieve-a-zone-by-name["按名称检索分区"]
 
 
 
