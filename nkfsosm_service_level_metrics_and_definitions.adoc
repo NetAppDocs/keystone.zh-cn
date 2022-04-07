@@ -6,6 +6,7 @@ summary: Keystone 服务级别指标和定义
 ---
 = 服务级别指标和定义
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

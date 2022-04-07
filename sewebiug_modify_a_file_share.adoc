@@ -6,6 +6,7 @@ summary: keystone 修改文件共享
 ---
 = 修改文件共享
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

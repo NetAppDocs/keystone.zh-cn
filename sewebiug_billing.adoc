@@ -6,6 +6,7 @@ summary: 查看和下载计费详细信息
 ---
 = 查看计费
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

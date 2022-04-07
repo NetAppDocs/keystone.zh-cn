@@ -6,6 +6,7 @@ summary: Keystone 选择租户
 ---
 = 选择租户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

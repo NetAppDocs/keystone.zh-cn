@@ -6,6 +6,7 @@ summary: keystone 删除文件共享
 ---
 = 删除文件共享
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 修改文件服务器
 ---
 = 修改文件服务器
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

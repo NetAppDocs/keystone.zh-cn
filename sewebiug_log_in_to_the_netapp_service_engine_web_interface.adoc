@@ -6,6 +6,7 @@ summary: 登录到 NetApp 服务引擎 Web 界面
 ---
 = 登录到 NetApp 服务引擎 Web 界面
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

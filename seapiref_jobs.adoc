@@ -6,6 +6,7 @@ summary: Keystone 作业 API
 ---
 = 作业
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

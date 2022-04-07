@@ -6,6 +6,7 @@ summary: Keystone View 磁盘
 ---
 = 查看磁盘
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

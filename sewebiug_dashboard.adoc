@@ -6,6 +6,7 @@ summary: 信息板视图
 ---
 = 查看 Flex 订阅信息板
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

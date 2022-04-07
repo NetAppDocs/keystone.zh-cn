@@ -6,6 +6,7 @@ summary: 操作型号
 ---
 = 运营模式和职责
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

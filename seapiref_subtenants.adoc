@@ -6,6 +6,7 @@ summary: Keystone 子租户
 ---
 = 子租户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

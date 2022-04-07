@@ -6,6 +6,7 @@ summary: Keystone 视图分段
 ---
 = 查看存储分段
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

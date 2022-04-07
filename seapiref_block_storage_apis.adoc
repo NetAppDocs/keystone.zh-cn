@@ -6,6 +6,7 @@ summary: Keystone 块存储 API
 ---
 = 块存储 API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

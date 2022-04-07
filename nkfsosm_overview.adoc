@@ -6,6 +6,7 @@ summary: NetApp Flex 订阅概述
 ---
 = 运营模式，角色和职责
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

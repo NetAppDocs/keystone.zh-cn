@@ -6,6 +6,7 @@ summary: Keystone 添加用户
 ---
 = 添加用户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 创建和管理警报
 ---
 = 创建和管理警报
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

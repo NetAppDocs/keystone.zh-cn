@@ -6,6 +6,7 @@ summary: Keystone 初始化对象存储
 ---
 = 初始化对象存储
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: NetApp 服务引擎合作伙伴，服务提供商职能部门
 ---
 = 服务提供商和客户的角色和运营
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

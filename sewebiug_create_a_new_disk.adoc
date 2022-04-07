@@ -6,6 +6,7 @@ summary: Keystone 创建新磁盘
 ---
 = 创建磁盘
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone 提出服务请求
 ---
 = 提出服务请求
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

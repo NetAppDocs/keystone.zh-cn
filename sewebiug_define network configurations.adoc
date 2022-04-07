@@ -6,6 +6,7 @@ summary: 创建和删除子网
 ---
 = 定义租户和子租户的网络配置
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

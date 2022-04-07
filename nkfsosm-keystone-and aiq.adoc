@@ -6,6 +6,7 @@ summary: 客户可以在 Active IQ 中看到 Keystone 的情况
 ---
 = Flex订 阅客户可以在 Active IQ 中查看哪些内容？
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 服务优惠详细信息
 ---
 = Flex 订阅服务优惠详细信息
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone View 服务器
 ---
 = 查看服务器
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

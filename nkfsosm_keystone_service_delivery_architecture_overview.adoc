@@ -6,6 +6,7 @@ summary: 服务交付架构概述
 ---
 = Flex 订阅基础架构
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

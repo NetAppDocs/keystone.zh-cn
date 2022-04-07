@@ -6,6 +6,7 @@ summary: 管理子租户的 Keystone
 ---
 = 管理租户和子租户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

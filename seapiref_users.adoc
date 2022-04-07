@@ -6,6 +6,7 @@ summary: Keystone 用户
 ---
 = 用户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

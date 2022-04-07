@@ -6,6 +6,7 @@ summary: Keystone 站点要求
 ---
 = 站点要求
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

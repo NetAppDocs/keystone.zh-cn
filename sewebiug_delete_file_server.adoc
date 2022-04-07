@@ -6,6 +6,7 @@ summary: Keystone 删除文件服务器
 ---
 = 删除文件服务器
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

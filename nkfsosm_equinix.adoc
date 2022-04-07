@@ -6,6 +6,7 @@ summary: Keystone Flex 订阅和 Equinix
 ---
 = 由 Equinix 提供支持的 Flex 订阅
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 管理 Azure NetApp 帐户
 ---
 = 管理 Azure NetApp 帐户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

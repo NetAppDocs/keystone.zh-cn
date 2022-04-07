@@ -6,6 +6,7 @@ summary: 从 Snapshot 创建磁盘
 ---
 = 从 Snapshot 创建磁盘
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

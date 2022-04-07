@@ -6,6 +6,7 @@ summary: Keystone View 共享
 ---
 = 查看文件共享
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

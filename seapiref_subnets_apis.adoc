@@ -6,6 +6,7 @@ summary: Keystone 网络 API
 ---
 = 使用子网 API 定义网络配置
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

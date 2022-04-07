@@ -6,6 +6,7 @@ summary: Keystone 创建新的文件共享
 ---
 = 创建文件共享
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

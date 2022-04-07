@@ -6,6 +6,7 @@ summary: Keystone 为用户创建 S3 密钥
 ---
 = 为用户创建 S3 密钥
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

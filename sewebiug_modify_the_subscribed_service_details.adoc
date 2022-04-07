@@ -6,6 +6,7 @@ summary: Keystone 修改云服务详细信息
 ---
 = 修改云服务详细信息
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

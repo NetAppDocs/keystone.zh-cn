@@ -6,6 +6,7 @@ summary: keystone 修改对象存储组
 ---
 = 修改对象存储组
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

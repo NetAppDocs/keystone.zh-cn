@@ -6,6 +6,7 @@ summary: NetApp Keystone 灵活订阅租户概述
 ---
 = Flex 订阅中的租户和多租户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

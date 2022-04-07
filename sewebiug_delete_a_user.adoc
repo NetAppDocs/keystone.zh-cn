@@ -6,6 +6,7 @@ summary: keystone 删除用户
 ---
 = 删除用户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone 视图主机组
 ---
 = 使用主机组
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

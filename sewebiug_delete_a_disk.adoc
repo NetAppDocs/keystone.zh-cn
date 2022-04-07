@@ -6,6 +6,7 @@ summary: Keystone 删除磁盘
 ---
 = 删除磁盘
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

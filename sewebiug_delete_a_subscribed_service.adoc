@@ -6,6 +6,7 @@ summary: Keystone 删除云服务
 ---
 = 删除云服务
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

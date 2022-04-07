@@ -6,6 +6,7 @@ summary: Keystone Flex 订阅计费
 ---
 = Flex 订阅计费
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone 创建存储分段
 ---
 = 创建存储分段
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

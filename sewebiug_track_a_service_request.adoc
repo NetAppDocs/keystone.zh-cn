@@ -6,6 +6,7 @@ summary: Keystone 跟踪服务请求
 ---
 = 跟踪服务请求
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone Flex 订阅和 Equinix
 ---
 = 不可退回的磁盘产品
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

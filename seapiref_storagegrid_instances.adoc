@@ -6,6 +6,7 @@ summary: Keystone StorageGRID 实例
 ---
 = StorageGRID 实例
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

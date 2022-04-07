@@ -6,6 +6,7 @@ summary: 管理 Azure 卷的 Keystone
 ---
 = 管理 Azure 卷
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

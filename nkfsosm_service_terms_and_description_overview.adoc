@@ -6,6 +6,7 @@ summary: Keystone 服务条款和问题描述概述
 ---
 = Flex 订阅服务条款和说明
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

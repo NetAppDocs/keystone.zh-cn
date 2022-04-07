@@ -6,6 +6,7 @@ summary: 已修复 NetApp 服务引擎中的问题
 ---
 = 已修复 NetApp 服务引擎中的问题
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

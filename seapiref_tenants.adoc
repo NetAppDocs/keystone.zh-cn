@@ -6,6 +6,7 @@ summary: Keystone 租户
 ---
 = Tenants
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone 服务容量定义
 ---
 = Flex 订阅服务容量定义
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

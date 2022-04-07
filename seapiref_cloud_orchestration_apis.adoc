@@ -6,6 +6,7 @@ summary:
 ---
 = 云编排 API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: NetApp 服务引擎中的新增功能
 ---
 = 此版本的 NetApp Keystone Flex 订阅服务中的新增功能
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

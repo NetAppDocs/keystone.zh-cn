@@ -6,6 +6,7 @@ summary: 欢迎使用 Keystone 文档门户。
 ---
 = NetApp Keystone Flex 订阅文档
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

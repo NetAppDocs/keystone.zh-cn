@@ -6,6 +6,7 @@ summary: keystone 创建文件共享的临时快照
 ---
 = 创建文件共享的临时快照
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone 分区
 ---
 = 分区
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

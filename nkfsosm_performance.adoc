@@ -6,6 +6,7 @@ summary: Keystone Flex 订阅性能
 ---
 = 性能服务级别
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

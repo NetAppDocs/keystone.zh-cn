@@ -6,6 +6,7 @@ summary: Keystone 查看对象存储组和用户
 ---
 = 查看对象存储组和用户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: keystone 修改磁盘
 ---
 = 修改磁盘
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

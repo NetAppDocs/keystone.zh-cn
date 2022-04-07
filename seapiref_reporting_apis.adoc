@@ -6,6 +6,7 @@ summary: Keystone 报告 API
 ---
 = 报告 API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

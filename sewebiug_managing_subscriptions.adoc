@@ -6,6 +6,7 @@ summary: 管理订阅的 Keystone
 ---
 = 管理订阅
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

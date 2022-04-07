@@ -6,6 +6,7 @@ summary: Keystone 查看云服务列表
 ---
 = 查看云服务列表
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

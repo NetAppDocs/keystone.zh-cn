@@ -6,6 +6,7 @@ summary: keystone 修改对象存储用户
 ---
 = 修改对象存储用户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

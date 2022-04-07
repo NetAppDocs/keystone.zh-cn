@@ -6,6 +6,7 @@ summary: 管理 Azure 容量池的 Keystone
 ---
 = 管理 Azure 容量池
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

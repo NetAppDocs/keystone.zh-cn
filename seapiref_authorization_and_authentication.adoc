@@ -6,6 +6,7 @@ summary: Keystone 授权和身份验证
 ---
 = 授权和身份验证
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
