@@ -20,6 +20,13 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-cn/keystone/legal-notices.html</loc>
+      
+      <lastmod>2022-04-07T12:41:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/nkfsfaq_keystone_subscription.html</loc>
       
       <lastmod>2021-12-06T09:43:28+00:00</lastmod>
@@ -41,13 +48,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/nkfsfaq_operations_and_support.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/nkfsfaq_overview.html</loc>
       
       <lastmod>2021-08-03T14:14:43+00:00</lastmod>
@@ -65,13 +65,6 @@
       <loc>https://docs.netapp.com/zh-cn/keystone/nkfsosm-keystone-and-aiq.html</loc>
       
       <lastmod>2021-12-06T09:43:28+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/nkfsosm-keystone-cm.html</loc>
-      
-      <lastmod>2022-01-03T10:59:25+00:00</lastmod>
       
     </url>
   
@@ -197,21 +190,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/rn_whats_new.html</loc>
       
-      <lastmod>2022-02-03T07:44:51+00:00</lastmod>
+      <lastmod>2022-04-07T12:41:29+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/seapiref_@consumer@_administration_apis.html</loc>
       
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/seapiref_administrator_apis.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
+      <lastmod>2022-04-07T12:41:29+00:00</lastmod>
       
     </url>
   
@@ -245,13 +231,6 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/seapiref_cloud_orchestration_apis.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/seapiref_consumer_apis.html</loc>
       
       <lastmod>2021-08-03T14:14:43+00:00</lastmod>
       
@@ -337,7 +316,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/seapiref_storagegrid_instances.html</loc>
       
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
+      <lastmod>2022-04-07T12:41:29+00:00</lastmod>
       
     </url>
   
@@ -379,7 +358,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/keystone//search.html</loc>
       
-      <lastmod>2022-03-23T08:43:19+00:00</lastmod>
+      <lastmod>2022-04-07T12:41:52+00:00</lastmod>
       
     </url>
   
@@ -407,7 +386,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_back_up_file_shares_and_disks.html</loc>
       
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
+      <lastmod>2022-04-07T12:41:29+00:00</lastmod>
       
     </url>
   
@@ -449,7 +428,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_create_a_new_file_share.html</loc>
       
-      <lastmod>2021-09-23T09:37:51+00:00</lastmod>
+      <lastmod>2022-04-07T12:41:29+00:00</lastmod>
       
     </url>
   
@@ -491,7 +470,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_create_file_share_from_snapshot.html</loc>
       
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
+      <lastmod>2022-04-07T12:41:29+00:00</lastmod>
       
     </url>
   
@@ -566,13 +545,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_getting_started.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_getting_started_overview.html</loc>
       
       <lastmod>2021-08-03T14:14:43+00:00</lastmod>
@@ -622,23 +594,9 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_managing_service_requests.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_managing_service_requests_overview.html</loc>
       
       <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_managing_subscribed_services.html</loc>
-      
-      <lastmod>2021-08-31T09:24:22+00:00</lastmod>
       
     </url>
   
@@ -664,30 +622,16 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_managing_users.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_managing_users_overview.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_modify_a_disk.html</loc>
       
-      <lastmod>2021-09-23T09:37:51+00:00</lastmod>
+      <lastmod>2022-04-07T12:41:29+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_modify_a_file_share.html</loc>
       
-      <lastmod>2021-09-23T09:37:51+00:00</lastmod>
+      <lastmod>2022-04-07T12:41:29+00:00</lastmod>
       
     </url>
   
@@ -832,49 +776,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_where_to_find_additional_information.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_working_with_block_storage.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_working_with_block_storage_overview.html</loc>
       
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_working_with_cloud_manager.html</loc>
-      
-      <lastmod>2021-09-23T09:37:51+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_working_with_file_services.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
+      <lastmod>2022-04-07T12:41:29+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_working_with_file_services_overview.html</loc>
-      
-      <lastmod>2021-08-03T14:14:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-cn/keystone/sewebiug_working_with_object_storage.html</loc>
       
       <lastmod>2021-08-03T14:14:43+00:00</lastmod>
       
