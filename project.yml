@@ -6,8 +6,8 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-    langs: zh-cn,us-en,ja-jp,ko-kr,de-de
-  langs: zh-cn,us-en,ja-jp,ko-kr,de-de
+    langs: zh-cn,us-en,ja-jp,ko-kr,de-de,fr-fr
+  langs: zh-cn,us-en,ja-jp,ko-kr,de-de,fr-fr
 sidebar:
   entries:
   - title: NetApp Keystone Flex 订阅
