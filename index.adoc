@@ -17,7 +17,11 @@ NetApp Keystone 灵活订阅是 NetApp Keystone 服务产品的一部分。NetAp
 
 有关 NetApp Keystone Flex 订阅的详细信息，请参见 link:https://www.netapp.com/services/subscriptions/keystone/flex-subscription["Keystone Flex 订阅"]
 
-Flex 订阅是一种存储即服务产品，可在您的内部系统上提供类似于云的体验，并可连接到云—具体视您的意愿而定。* * NetApp Keystone 灵活支付 * — NetApp Keystone 灵活支付（ Flex Pay ）是一套灵活的财务备选方案组合，其中包括传统的融资，租赁和固定 / 可变选项，可满足客户的现金流需求。* * NetApp Keystone 灵活订阅 * — NetApp Keystone 灵活订阅（ Flex 订阅）是一种按需购买，基于结果的订阅服务，可为内部环境带来类似云的体验。
+Flex 订阅是一种存储即服务产品，可在您的内部系统上提供类似于云的体验，并可连接到云—具体视您的意愿而定。
+
+* * NetApp Keystone 灵活支付 * — NetApp Keystone 灵活支付（ Flex Pay ）是一套灵活的财务备选方案组合，其中包括传统的融资，租赁和固定 / 可变选项，可满足客户的现金流需求。
+* * NetApp Keystone 灵活订阅 * — NetApp Keystone 灵活订阅（ Flex 订阅）是一种按需购买，基于结果的订阅服务，可提供类似于内部云的体验。
+
 
 image:nkfsosm_image1.png["错误：缺少图形映像"]
 
