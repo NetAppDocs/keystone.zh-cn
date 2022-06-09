@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_keystone_subscription.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_keystone_subscription.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/zh-cn/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone Flex 订阅</div>
       </a>
@@ -1395,149 +1387,93 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:19:07 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:20:52 +0000">06/09/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>以下问题解答了您经常询问的有关 NetApp Keystone Flex 订阅服务的问题。</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp Keystone Flex订阅中提供的内容？* NetApp Keystone Flex订阅(Flex订阅)是一种基于订阅的服务产品、可用于块、文件和对象数据服务、这些服务可在内部部署、并可由NetApp、合作伙伴或客户操作。</p>
+</li>
+</ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="netapp-keystone-flex-订阅提供了哪些内容">NetApp Keystone Flex 订阅提供了哪些内容？</h3>
 <div class="paragraph">
-<p>NetApp Keystone 灵活订阅（ Flex 订阅）是一种基于订阅的服务产品，可提供块，文件和对象数据服务，这些服务可以在内部部署，并可由 NetApp ，合作伙伴或客户操作。</p>
+<p>*在Flex订阅中提供了哪些存储服务？*有关信息、请参见 <a href="nkfsosm_performance.html">"性能服务级别"</a></p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="在-flex-订阅中提供了哪些存储服务">在 Flex 订阅中提供了哪些存储服务？</h3>
 <div class="paragraph">
-<p>有关信息，请参见 <a href="nkfsosm_performance.html">"性能服务级别"</a></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="支持哪些附加服务">支持哪些附加服务？</h3>
-<div class="paragraph">
-<p>高级数据保护（备份和灾难恢复）以及采用 FabricPool 的混合云分层是一种附加服务，可在额外费用的情况下选择。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="netapp-通过该服务保证哪些服务级别">NetApp 通过该服务保证哪些服务级别？</h3>
-<div class="paragraph">
-<p>在 NetApp 操作的情况下， NetApp Keystone 可为已配置的存储保证 IOPS/TiB ，并保证每个服务级别的延迟。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="flex-订阅映射到什么">Flex 订阅映射到什么？</h3>
-<div class="paragraph">
-<p>Flex 订阅映射到单个站点或单个数据中心，它可以包含不同的性能服务级别。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="极高分层和高级分层性能级别有哪些优势">极高分层和高级分层性能级别有哪些优势？</h3>
-<div class="paragraph">
-<p>分层是在极高分层和高级分层性能级别下实现的，可帮助您减少存储占用空间和相关成本。NetApp 假定 25% 的数据为热数据，而其余 75% 的数据不常使用或冷数据，并将其移至冷存储。此外，您还可以查看使用情况报告以了解访问数据的频率，并根据这些信息启用分层服务。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="合作伙伴向客户销售的容量是否超过从-netapp-购买的容量">合作伙伴向客户销售的容量是否超过从 NetApp 购买的容量？</h3>
-<div class="paragraph">
-<p>租户订阅不受合作伙伴已购买容量的限制。合作伙伴可以向客户销售比从 NetApp 购买的容量更多的容量。超出已购买容量的容量称为超额预订。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="是否提供-api-以与客户工具集成">是否提供 API 以与客户工具集成？</h3>
-<div class="paragraph">
-<p>可以， RESTful API 可集成到您自己的应用程序中。导航到 * 支持 &gt; API 文档 * 以查看 Flex 订阅服务的 API 文档。有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html">"Keystone Flex 订阅 API 指南"</a>。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="什么是突发容量">什么是突发容量？</h3>
-<div class="paragraph">
-<p>您可以将使用量增加或减少到比已承诺容量高 20% 的位置。突发容量使用量按天计量，仅在使用时计费。例如，如果已提交容量为 100 TiB ，则可以突发到 120 TiB 。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="使用突发是否需要额外付费">使用突发是否需要额外付费？</h3>
-<div class="paragraph">
-<p>突发容量使用量高达已承诺容量的 20% 与已承诺容量相同，超过已承诺容量 20% 的任何使用量均按 50% 的额外费用计费。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="突发容量有何优势">突发容量有何优势？</h3>
-<div class="paragraph">
-<p>突发容量可以让您灵活地按需使用存储，而不是长期使用。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="如何为租户分配突发容量">如何为租户分配突发容量？</h3>
-<div class="paragraph">
-<p>突发容量会分配给合作伙伴，合作伙伴会根据需求进一步将其分配给客户。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="在何处可以查看已提交容量和突发容量使用情况">在何处可以查看已提交容量和突发容量使用情况？</h3>
-<div class="paragraph">
-<p>NetApp 服务引擎具有内置的信息板，用于根据已提交容量报告已用容量。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="如果我达到已提交容量使用量的特定百分比是否会收到任何通知">如果我达到已提交容量使用量的特定百分比，是否会收到任何通知？</h3>
-<div class="paragraph">
-<p>可以。管理工具可通过 NetApp 服务引擎信息板提供容量使用情况通知。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="如何查看-flex-订阅使用情况">如何查看 Flex 订阅使用情况？</h3>
-<div class="paragraph">
-<p>NetApp 服务引擎提供了一个信息板视图，其中包含有关已订阅的所有服务以及使用量的信息。有关 NetApp 服务引擎的详细信息，请参见 <a href="https://docs.netapp.com/us-en/keystone/sewebiug_overview.html">"此处"</a>。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="如何报告此服务的任何问题">如何报告此服务的任何问题？</h3>
-<div class="paragraph">
-<p>可以通过以下各种渠道获得 NetApp Keystone 支持：</p>
+<p>*支持哪些附加服务？*高级数据保护(备份和灾难恢复)和采用FabricPool 的混合云分层是可以选择的附加服务、但需要额外付费。</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>NetApp通过该服务保证哪些服务级别？*在NetApp运营的情况下、NetApp Keystone 保证所配置存储的IOPS/TiB以及每个服务级别的延迟。</p>
+</li>
+<li>
+<p>Flex订阅与什么对应？* Flex订阅映射到单个站点或单个数据中心、它可以包含不同的性能服务级别。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*极高分层和高级分层性能级别有哪些优势？*分层在极高分层和高级分层性能级别下启用、可帮助您减少存储占用空间和相关成本。NetApp 假定 25% 的数据为热数据，而其余 75% 的数据不常使用或冷数据，并将其移至冷存储。此外，您还可以查看使用情况报告以了解访问数据的频率，并根据这些信息启用分层服务。</p>
+</div>
+<div class="paragraph">
+<p>*合作伙伴向客户销售的容量是否超过从NetApp购买的容量？*租户订阅不受合作伙伴购买的容量的限制。合作伙伴可以向客户销售比从 NetApp 购买的容量更多的容量。超出已购买容量的容量称为超额预订。</p>
+</div>
+<div class="paragraph">
+<p>*是否提供了用于与客户工具集成的API？*是的、RESTful API可集成到您自己的应用程序中。导航到 * 支持 &gt; API 文档 * 以查看 Flex 订阅服务的 API 文档。有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html">"Keystone Flex 订阅 API 指南"</a>。</p>
+</div>
+<div class="paragraph">
+<p>*什么是突发容量？*您可以将利用率提高和降低到比已承诺容量高出20%的程度。突发容量使用量按天计量，仅在使用时计费。例如，如果已提交容量为 100 TiB ，则可以突发到 120 TiB 。</p>
+</div>
+<div class="paragraph">
+<p>*使用突发是否需要额外付费？*突发容量使用量高达已承诺容量的20%与已承诺容量的相同比率计费、超过已承诺容量20%的任何使用量均按50%的额外费用计费。</p>
+</div>
+<div class="paragraph">
+<p>*突发容量有何优势？*突发容量可让您灵活地按需使用存储、而不是长期使用。</p>
+</div>
+<div class="paragraph">
+<p>如何为租户分配突发容量？*突发容量分配给合作伙伴、合作伙伴会根据需求进一步将其分配给客户。</p>
+</div>
+<div class="paragraph">
+<p>在哪里可以看到已提交容量和突发容量使用情况？* NetApp服务引擎内置了信息板、用于根据已提交容量报告已用容量。</p>
+</div>
+<div class="paragraph">
+<p>*如果我达到已提交容量使用量的特定百分比、是否会收到任何通知？*是的、管理工具会通过NetApp服务引擎信息板提供有关容量使用情况的通知。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>如何查看 Flex 订阅使用情况？ * NetApp 服务引擎提供了一个信息板视图，其中包含有关已订阅的所有服务以及已使用量的信息。有关 NetApp 服务引擎的详细信息，请参见 <a href="https://docs.netapp.com/us-en/keystone/sewebiug_overview.html">"此处"</a>。</p>
+</li>
+<li>
+<p>如何报告此服务的任何问题？ * 可以通过以下各种渠道获得 NetApp Keystone 支持：</p>
+</li>
 <li>
 <p>支持电子邮件： mailto ： <a href="mailto:keystone.services@netapp.com">keystone.services@netapp.com</a>[<a href="mailto:keystone.services@netapp.com">keystone.services@netapp.com</a>^]</p>
 </li>
 <li>
 <p>上报电子邮件： mailto ： <a href="mailto:keystone.escalations@netapp.com">keystone.escalations@netapp.com</a>[<a href="mailto:keystone.escalations@netapp.com">keystone.escalations@netapp.com</a>^]</p>
 </li>
+<li>
+<p>是否可以订购新的存储服务？ * 是的，可以从 NetApp 服务引擎门户请求新的存储服务或扩展存储服务。NetApp Keystone 运营团队会先处理此请求，然后再将其提供给用户使用。</p>
+</li>
+<li>
+<p>是否可以立即增加存储承诺量？ * 根据请求的容量，确定容量是否已部署，或者是否需要运输和安装额外设备。</p>
+</li>
+<li>
+<p>工作负载是否可以在层之间移动？ * 是的，工作负载可以在层之间移动，前提是用户已订阅工作负载要移至的层。但是，我们不建议从较高的层移至较低的层，因为发生原因这样可能会导致性能下降。只需编辑文件共享并更改服务级别设置即可完成此过程。</p>
+</li>
+<li>
+<p>默认安装的软件版本（例如 ONTAP ）是什么？ * 根据订阅的服务层（例如，具有文件和块服务的 ONTAP ，用于块的 SANtricity 和用于对象的 StorageGRID ），支持团队安装最新的稳定版本，而不存在任何安全或功能问题。</p>
+</li>
 </ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="是否可以订购新的存储服务">是否可以订购新的存储服务？</h3>
-<div class="paragraph">
-<p>可以，可以从 NetApp 服务引擎门户请求新的存储服务或扩展存储服务。NetApp Keystone 运营团队会先处理此请求，然后再将其提供给用户使用。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="是否可以立即增加存储承诺">是否可以立即增加存储承诺？</h3>
-<div class="paragraph">
-<p>根据请求的容量，确定容量是否已部署，或者是否需要运输和安装额外的设备。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="工作负载是否可以在层之间移动">工作负载是否可以在层之间移动？</h3>
-<div class="paragraph">
-<p>可以。如果用户已订阅工作负载要移至的层，则可以在层之间移动工作负载。但是，我们不建议从较高的层移至较低的层，因为发生原因这样可能会导致性能下降。只需编辑文件共享并更改服务级别设置即可完成此过程。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="默认安装的软件版本是什么例如-ontap">默认安装的软件版本是什么（例如 ONTAP ）？</h3>
-<div class="paragraph">
-<p>根据订阅的服务层（例如，具有文件和块服务的 ONTAP ，用于块的 SANtricity 和用于对象的 StorageGRID ），支持团队将安装最新的稳定版本，而不会出现任何安全或功能问题。</p>
-</div>
 </div>
 
     </article>
@@ -1685,4 +1621,5 @@
     </script>
     <script src='/zh-cn/keystone/js/www-ntap.js'></script>
     <script src='/zh-cn/keystone/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/keystone/js/sidebar.js'></script>
   </body></html>

@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/zh-cn/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone Flex 订阅</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:19:07 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:20:52 +0000">06/09/2022</time>
     
   
 
@@ -1449,8 +1441,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="已提交已用和突发容量以及过度使用">已提交，已用和突发容量以及过度使用</h3>
+<div class="sect1">
+<h2 id="已提交已用和突发容量以及过度使用">已提交，已用和突发容量以及过度使用</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>已用容量是指已分配（但不一定已使用）的容量。已提交容量是订阅中承诺的容量；无论使用多少容量，订阅者都会按已提交容量的固定费率付费。</p>
 </div>
@@ -1475,7 +1468,6 @@
 </tr>
 </table>
 </div>
-</div>
 <div class="sect2">
 <h3 id="突发使用情况通知">突发使用情况通知</h3>
 <div class="paragraph">
@@ -1494,8 +1486,9 @@
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="建议的更改将导致使用突发容量时的通知">建议的更改将导致使用突发容量时的通知</h4>
+</div>
+<div class="sect2">
+<h3 id="建议的更改将导致使用突发容量时的通知">建议的更改将导致使用突发容量时的通知</h3>
 <div class="paragraph">
 <p>此图显示了一个通知示例发生原因，当建议的配置更改将使订阅发生突发时，会显示此通知。您可以选择继续知道订阅将导致突发，也可以选择不继续执行此操作。</p>
 </div>
@@ -1575,8 +1568,8 @@
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="订阅处于突发状态时的通知">订阅处于突发状态时的通知</h4>
+<div class="sect2">
+<h3 id="订阅处于突发状态时的通知">订阅处于突发状态时的通知</h3>
 <div class="paragraph">
 <p>如果订阅处于突发状态，则会显示以下通知横幅。系统将向客户管理员显示此租户的通知，并在确认通知之前一直显示此通知。</p>
 </div>
@@ -1585,8 +1578,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="数据保护">数据保护</h3>
+</div>
+<div class="sect1">
+<h2 id="数据保护">数据保护</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>DP 是指支持数据备份以及在需要时恢复数据的方法。</p>
 </div>
@@ -1606,8 +1601,8 @@
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="快照">快照</h4>
+<div class="sect2">
+<h3 id="快照">快照</h3>
 <div class="paragraph">
 <p>快照是数据的时间点副本。可以克隆快照以形成具有相同或相似功能的新磁盘或共享。</p>
 </div>
@@ -1627,8 +1622,8 @@
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="备份">备份</h4>
+<div class="sect2">
+<h3 id="备份">备份</h3>
 <div class="paragraph">
 <p>备份是指创建项目的副本，对其进行复制，并将副本存储在原始区域以外的区域中，原始区域已启用相应的协议（仅适用于块存储），并且未启用 MetroCluster 。NetApp 服务引擎可在文件和块存储上提供备份（订阅需要 DP 服务）。共享 / 磁盘的备份存储在订阅时成本最低的性能层（即标准）的备份区域中。</p>
 </div>
@@ -1681,8 +1676,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="灾难恢复">灾难恢复</h3>
+</div>
+<div class="sect1">
+<h2 id="灾难恢复">灾难恢复</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>灾难恢复是指在发生灾难时恢复到正常操作的能力。</p>
 </div>
@@ -1701,8 +1698,8 @@
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="灾难恢复异步">灾难恢复—异步</h4>
+<div class="sect2">
+<h3 id="灾难恢复异步">灾难恢复—异步</h3>
 <div class="paragraph">
 <p>NetApp 服务引擎可通过以下功能支持异步灾难恢复：</p>
 </div>
@@ -1735,14 +1732,9 @@
 </li>
 </ul>
 </div>
-<div class="sect4">
-<h5 id="配置文件服务器或块存储以支持异步灾难恢复">配置文件服务器或块存储以支持异步灾难恢复</h5>
 <div class="paragraph">
 <p>在创建文件服务器或块存储时或以后对其启用异步灾难恢复。启用后，将无法禁用灾难恢复，并且无法更改灾难恢复区域。灾难恢复计划指定将数据复制到灾难恢复位置的频率（每小时，每四小时或每天）。</p>
 </div>
-</div>
-<div class="sect4">
-<h5 id="在文件共享或磁盘上启用异步灾难恢复">在文件共享或磁盘上启用异步灾难恢复</h5>
 <div class="paragraph">
 <p>只有在首次为异步灾难恢复配置父文件服务器或块存储时，才能为异步灾难恢复复制配置文件共享或磁盘。默认情况下，如果在父级中启用了复制，则会在父级托管的文件共享或磁盘中启用复制。您可以通过在特定共享或磁盘上禁用灾难恢复来排除对该共享或磁盘的复制。可以在这些共享 / 磁盘上启用和禁用复制之间进行切换。</p>
 </div>
@@ -1763,9 +1755,8 @@
 </ul>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="灾难恢复同步">灾难恢复—同步</h4>
+<div class="sect2">
+<h3 id="灾难恢复同步">灾难恢复—同步</h3>
 <div class="paragraph">
 <p>MetroCluster 是一项 DP 功能，用于在位于不同位置或故障域的两个不同区域之间同步复制数据和配置。如果某个站点发生灾难，管理员可以从正常运行的站点提供数据。</p>
 </div>
@@ -1790,15 +1781,15 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="数据保护已用容量和费用">数据保护，已用容量和费用</h3>
+</div>
+<div class="sect1">
+<h2 id="数据保护已用容量和费用">数据保护，已用容量和费用</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>本节中的图说明了 DP 费用的计算方式。</p>
 </div>
-<div class="sect3">
-<h4 id="灾难恢复-2">灾难恢复</h4>
-<div class="sect4">
-<h5 id="异步灾难恢复">异步灾难恢复</h5>
+<div class="sect2">
+<h3 id="异步灾难恢复">异步灾难恢复</h3>
 <div class="paragraph">
 <p>在异步灾难恢复中，使用情况和成本由以下费用组成：</p>
 </div>
@@ -1819,8 +1810,8 @@
 <p><span class="image"><img src="./media/sewebiug_image4.png" alt="错误：缺少图形映像"></span></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="同步灾难恢复">同步灾难恢复</h5>
+<div class="sect2">
+<h3 id="同步灾难恢复">同步灾难恢复</h3>
 <div class="paragraph">
 <p>在同步灾难恢复中，使用情况和成本由以下费用组成：</p>
 </div>
@@ -1828,9 +1819,8 @@
 <p><span class="image"><img src="./media/sewebiug_image5.png" alt="错误：缺少图形映像"></span></p>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="备份-2">备份</h4>
+<div class="sect2">
+<h3 id="备份-2">备份</h3>
 <div class="paragraph">
 <p>在备份中，使用情况和成本由以下费用组成：</p>
 </div>
@@ -1849,6 +1839,7 @@
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/sewebiug_image6.png" alt="错误：缺少图形映像"></span></p>
+</div>
 </div>
 </div>
 </div>
@@ -1998,4 +1989,5 @@
     </script>
     <script src='/zh-cn/keystone/js/www-ntap.js'></script>
     <script src='/zh-cn/keystone/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/keystone/js/sidebar.js'></script>
   </body></html>

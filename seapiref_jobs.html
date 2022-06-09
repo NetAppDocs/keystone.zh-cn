@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/zh-cn/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone Flex 订阅</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:19:07 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:20:52 +0000">06/09/2022</time>
     
   
 
@@ -1409,8 +1401,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="检索作业">检索作业</h3>
+<div class="sect1">
+<h2 id="检索作业">检索作业</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下表中列出的方法检索所有作业或部分作业。指定 <code>tenant_id</code> 将仅返回属于该租户的作业。</p>
 </div>
@@ -1517,8 +1510,8 @@
 }</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="按作业-id-检索作业">按作业 ID 检索作业</h4>
+<div class="sect2">
+<h3 id="按作业-id-检索作业">按作业 ID 检索作业</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法按 ID 检索作业。</p>
 </div>
@@ -1621,16 +1614,18 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="作业对象-api-和异步进程">作业对象 API 和异步进程</h3>
+</div>
+<div class="sect1">
+<h2 id="作业对象-api-和异步进程">作业对象 API 和异步进程</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>某些 API 调用（尤其是用于添加或修改资源的 API 调用）的完成时间可能比其他调用更长。NetApp 服务引擎会异步处理这些长时间运行的请求。</p>
 </div>
 <div class="paragraph">
 <p>发出异步运行的 API 调用后， HTTP 响应代码 202 表示此请求已成功验证并被接受，但尚未完成。此请求将作为后台任务进行处理，在对客户端进行初始 HTTP 响应后，此任务将继续运行。响应包括作业对象锁定请求，包括其唯一标识符。</p>
 </div>
-<div class="sect3">
-<h4 id="正在查询与-api-请求关联的作业对象">正在查询与 API 请求关联的作业对象</h4>
+<div class="sect2">
+<h3 id="正在查询与-api-请求关联的作业对象">正在查询与 API 请求关联的作业对象</h3>
 <div class="paragraph">
 <p>HTTP 响应中返回的作业对象包含多个属性。您可以查询 state 属性以确定请求是否成功完成。作业对象可以处于以下状态之一：</p>
 </div>
@@ -1664,8 +1659,8 @@
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="异步请求的步骤">异步请求的步骤</h4>
+<div class="sect2">
+<h3 id="异步请求的步骤">异步请求的步骤</h3>
 <div class="paragraph">
 <p>您可以使用以下高级操作步骤完成异步 API 调用。</p>
 </div>
@@ -1687,6 +1682,7 @@
 <p>验证作业的终端状态并检索作业结果。</p>
 </li>
 </ol>
+</div>
 </div>
 </div>
 </div>
@@ -1836,4 +1832,5 @@
     </script>
     <script src='/zh-cn/keystone/js/www-ntap.js'></script>
     <script src='/zh-cn/keystone/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/keystone/js/sidebar.js'></script>
   </body></html>

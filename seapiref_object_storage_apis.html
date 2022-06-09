@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/zh-cn/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone Flex 订阅</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:19:07 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:20:52 +0000">06/09/2022</time>
     
   
 
@@ -1428,8 +1420,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="对象存储组">对象存储组</h3>
+<div class="sect1">
+<h2 id="对象存储组">对象存储组</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下表中列出的方法检索，创建或修改对象存储组。</p>
 </div>
@@ -1474,8 +1467,8 @@
 </tr>
 </tbody>
 </table>
-<div class="sect3">
-<h4 id="对象存储组属性">对象存储组属性</h4>
+<div class="sect2">
+<h3 id="对象存储组属性">对象存储组属性</h3>
 <div class="paragraph">
 <p>下表列出了对象存储属性。</p>
 </div>
@@ -1545,7 +1538,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 </div>
 <div class="sect2">
 <h3 id="检索对象存储组">检索对象存储组</h3>
@@ -1636,8 +1628,9 @@
     ]</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="按-id-检索对象存储组">按 ID 检索对象存储组</h4>
+</div>
+<div class="sect2">
+<h3 id="按-id-检索对象存储组">按 ID 检索对象存储组</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法按 ID 检索对象存储组。</p>
 </div>
@@ -1722,8 +1715,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="创建对象存储组">创建对象存储组</h4>
+<div class="sect2">
+<h3 id="创建对象存储组">创建对象存储组</h3>
 <div class="paragraph">
 <p>使用以下列出的方法创建对象存储组。</p>
 </div>
@@ -1817,8 +1810,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="修改对象存储组">修改对象存储组</h4>
+<div class="sect2">
+<h3 id="修改对象存储组">修改对象存储组</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法修改对象存储组。</p>
 </div>
@@ -1918,8 +1911,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="按-id-删除对象存储组">按 ID 删除对象存储组</h4>
+<div class="sect2">
+<h3 id="按-id-删除对象存储组">按 ID 删除对象存储组</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法按 ID 删除对象存储组。</p>
 </div>
@@ -2005,8 +1998,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="对象存储用户">对象存储用户</h3>
+</div>
+<div class="sect1">
+<h2 id="对象存储用户">对象存储用户</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下表中列出的方法执行以下任务：</p>
 </div>
@@ -2081,8 +2076,8 @@
 </tr>
 </tbody>
 </table>
-<div class="sect3">
-<h4 id="对象存储用户属性">对象存储用户属性</h4>
+<div class="sect2">
+<h3 id="对象存储用户属性">对象存储用户属性</h3>
 <div class="paragraph">
 <p>下表列出了对象存储用户属性。</p>
 </div>
@@ -2142,7 +2137,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 </div>
 <div class="sect2">
 <h3 id="检索对象存储用户">检索对象存储用户</h3>
@@ -2228,8 +2222,9 @@
 }</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="按-id-检索对象存储用户">按 ID 检索对象存储用户</h4>
+</div>
+<div class="sect2">
+<h3 id="按-id-检索对象存储用户">按 ID 检索对象存储用户</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法按 ID 检索对象存储使用情况。</p>
 </div>
@@ -2308,8 +2303,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="创建对象存储用户">创建对象存储用户</h4>
+<div class="sect2">
+<h3 id="创建对象存储用户">创建对象存储用户</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法创建对象存储用户。</p>
 </div>
@@ -2397,8 +2392,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="修改对象存储用户">修改对象存储用户</h4>
+<div class="sect2">
+<h3 id="修改对象存储用户">修改对象存储用户</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法修改对象存储用户。</p>
 </div>
@@ -2486,8 +2481,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="将所有-s3-密钥映射到对象存储用户">将所有 S3 密钥映射到对象存储用户</h4>
+<div class="sect2">
+<h3 id="将所有-s3-密钥映射到对象存储用户">将所有 S3 密钥映射到对象存储用户</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法将所有 S3 密钥映射到对象存储用户。</p>
 </div>
@@ -2562,8 +2557,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="为对象存储用户创建-s3-密钥">为对象存储用户创建 S3 密钥</h4>
+<div class="sect2">
+<h3 id="为对象存储用户创建-s3-密钥">为对象存储用户创建 S3 密钥</h3>
 <div class="paragraph">
 <p>使用以下方法为对象存储用户创建 S3 密钥。</p>
 </div>
@@ -2655,8 +2650,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="按密钥-id-为对象存储用户获取-s3-密钥">按密钥 ID 为对象存储用户获取 S3 密钥</h4>
+<div class="sect2">
+<h3 id="按密钥-id-为对象存储用户获取-s3-密钥">按密钥 ID 为对象存储用户获取 S3 密钥</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法按密钥 ID 为对象存储用户获取 S3 密钥。</p>
 </div>
@@ -2742,8 +2737,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="按密钥-id-删除-s3-密钥">按密钥 ID 删除 S3 密钥</h4>
+<div class="sect2">
+<h3 id="按密钥-id-删除-s3-密钥">按密钥 ID 删除 S3 密钥</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法按密钥 ID 删除 S3 密钥。</p>
 </div>
@@ -2809,8 +2804,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="对象存储帐户">对象存储帐户</h3>
+</div>
+<div class="sect1">
+<h2 id="对象存储帐户">对象存储帐户</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下表中列出的方法执行以下任务：</p>
 </div>
@@ -2875,8 +2872,8 @@
 </tr>
 </tbody>
 </table>
-<div class="sect3">
-<h4 id="对象存储帐户属性">对象存储帐户属性</h4>
+<div class="sect2">
+<h3 id="对象存储帐户属性">对象存储帐户属性</h3>
 <div class="paragraph">
 <p>下表列出了对象存储帐户属性。</p>
 </div>
@@ -2911,7 +2908,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 </div>
 <div class="sect2">
 <h3 id="检索所有对象存储帐户">检索所有对象存储帐户</h3>
@@ -2997,8 +2993,9 @@
 }</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="按-id-检索对象存储帐户">按 ID 检索对象存储帐户</h4>
+</div>
+<div class="sect2">
+<h3 id="按-id-检索对象存储帐户">按 ID 检索对象存储帐户</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法按 ID 检索对象存储帐户。</p>
 </div>
@@ -3076,8 +3073,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="激活对象存储帐户">激活对象存储帐户</h4>
+<div class="sect2">
+<h3 id="激活对象存储帐户">激活对象存储帐户</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法激活对象存储帐户。</p>
 </div>
@@ -3162,8 +3159,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="修改对象存储帐户">修改对象存储帐户</h4>
+<div class="sect2">
+<h3 id="修改对象存储帐户">修改对象存储帐户</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法修改对象存储帐户。</p>
 </div>
@@ -3249,8 +3246,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="删除对象存储帐户">删除对象存储帐户</h4>
+<div class="sect2">
+<h3 id="删除对象存储帐户">删除对象存储帐户</h3>
 <div class="paragraph">
 <p>在删除对象存储帐户之前，必须先删除所有关联的组，用户和分段。使用下表中列出的方法删除对象存储帐户。</p>
 </div>
@@ -3345,8 +3342,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="对象存储分段">对象存储分段</h3>
+</div>
+<div class="sect1">
+<h2 id="对象存储分段">对象存储分段</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下表中的 API 创建和检索对象存储分段。</p>
 </div>
@@ -3376,8 +3375,8 @@
 </tr>
 </tbody>
 </table>
-<div class="sect3">
-<h4 id="对象存储分段属性">对象存储分段属性</h4>
+<div class="sect2">
+<h3 id="对象存储分段属性">对象存储分段属性</h3>
 <div class="paragraph">
 <p>下表列出了对象存储分段属性。</p>
 </div>
@@ -3413,8 +3412,8 @@
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="检索-s3-存储分段">检索 S3 存储分段</h4>
+<div class="sect2">
+<h3 id="检索-s3-存储分段">检索 S3 存储分段</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法检索 S3 存储分段。</p>
 </div>
@@ -3485,8 +3484,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="创建-s3-存储分段">创建 S3 存储分段</h4>
+<div class="sect2">
+<h3 id="创建-s3-存储分段">创建 S3 存储分段</h3>
 <div class="paragraph">
 <p>使用下表中列出的方法创建 S3 存储分段。</p>
 </div>
@@ -3586,6 +3585,7 @@
     ]
   }
 }</pre>
+</div>
 </div>
 </div>
 </div>
@@ -3736,4 +3736,5 @@
     </script>
     <script src='/zh-cn/keystone/js/www-ntap.js'></script>
     <script src='/zh-cn/keystone/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/keystone/js/sidebar.js'></script>
   </body></html>

@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/zh-cn/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone Flex 订阅</div>
       </a>
@@ -1395,22 +1387,19 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:19:07 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:20:52 +0000">06/09/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>Flex 订阅有三种操作模式。这些常见问题解答与这些操作模式相关。</p>
 </div>
+<div class="paragraph">
+<p><strong>有哪些不同的运行模式以及由谁负责主要活动？</strong></p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="有哪些不同的运营模式主要活动由谁负责">有哪些不同的运营模式？主要活动由谁负责？</h3>
 <div class="paragraph">
 <p>下表概括了客户可以选择的三种运行模式： NetApp 运营模式，合作伙伴运营模式和客户运营模式。</p>
 </div>
@@ -1532,33 +1521,32 @@
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p><strong>什么是NetApp运营的模型？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="什么是-netapp-运营的模式">什么是 NetApp 运营的模式？</h3>
 <div class="paragraph">
 <p>通过此操作模式，客户可以根据选定的性能层和存储服务类型订阅所提供的服务，并选择 NetApp 操作选项，但需要额外付费。NetApp 定义了架构和产品，在客户内部安装， NetApp 使用我们的存储和 IT 资源管理日常基础架构管理操作。可用的存储服务类型包括文件，块（ iSCSI ）和对象。此外，还支持适用于 GCP 和 AWS 的 Cloud Volumes Service 。</p>
 </div>
 <div class="paragraph">
 <p>NetApp 还会根据需要创建和管理合作伙伴，租户以及管理订阅。</p>
 </div>
+<div class="paragraph">
+<p><strong>什么是合作伙伴运营的模式？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="什么是合作伙伴运营的模式">什么是合作伙伴运营的模式？</h3>
 <div class="paragraph">
 <p>合作伙伴或服务提供商的运营模式与 NetApp 运营的模式类似，但合作伙伴为其最终客户运营服务。在此模型中，合作伙伴是引用的合同方。租户是服务提供商的客户，与 NetApp 没有任何计费关系。他们负责管理租户和客户。租户支持请求首先由服务提供商进行分类，然后再上报到 NetApp 。</p>
 </div>
+<div class="paragraph">
+<p><strong>什么是客户运营的模式？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="什么是客户操作模式">什么是客户操作模式？</h3>
 <div class="paragraph">
 <p>通过此操作模式，客户可以根据选定的性能层和存储服务类型订阅所提供的服务。NetApp 定义了客户内部的架构，产品和安装，并允许客户使用其存储和 IT 资源管理基础架构。可用的存储服务类型包括文件，块（ iSCSI ）和对象。在此模型中，客户引用了合同方，可以是最终用户或合作伙伴。</p>
 </div>
+<div class="paragraph">
+<p><strong>设备所有者是谁？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="设备所有者是谁">设备所有者是谁？</h3>
 <div class="paragraph">
 <p>在所有这三种操作模式中， NetApp 拥有客户内部安装的所有硬件和软件的所有权。</p>
-</div>
 </div>
 
     </article>
@@ -1706,4 +1694,5 @@
     </script>
     <script src='/zh-cn/keystone/js/www-ntap.js'></script>
     <script src='/zh-cn/keystone/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/keystone/js/sidebar.js'></script>
   </body></html>
