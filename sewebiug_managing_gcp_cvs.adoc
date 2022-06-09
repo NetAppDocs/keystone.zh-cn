@@ -64,4 +64,4 @@ NOTE: 应已为 GCP 配置租户和子租户的 Cloud Volumes Service 帐户。�
 
 观看以下视频，了解如何通过 Cloud Volumes Service 和 NetApp 服务引擎在 GCP 上创建卷：
 
-video::Crq5a1zi1Vg[youtube, width=750,height=400]
+video::Crq5a1zi1Vg[youtube,width=750,height=400]

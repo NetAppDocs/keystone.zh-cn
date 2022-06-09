@@ -96,7 +96,7 @@ link:seapiref_users.html#retrieve-all-users["检索所有用户"]， link:seapir
 |===
 
 
-=== 重置用户密码
+== 重置用户密码
 
 使用下表中列出的方法重置用户密码。
 
@@ -154,7 +154,7 @@ link:seapiref_users.html#retrieve-all-users["检索所有用户"]， link:seapir
 ....
 
 
-=== 刷新身份验证令牌
+== 刷新身份验证令牌
 
 使用下表中列出的方法刷新身份验证令牌。
 
@@ -214,7 +214,7 @@ none
 ....
 
 
-=== 登录
+== 登录
 
 使用下表中列出的方法登录。
 

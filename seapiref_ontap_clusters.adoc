@@ -36,7 +36,7 @@ summary:
 |===
 
 
-=== ONTAP 集群属性
+== ONTAP 集群属性
 
 下表列出了 ONTAP 集群的属性。
 
@@ -157,7 +157,7 @@ For example:
 |===
 
 
-=== 检索所有 ONTAP 集群
+== 检索所有 ONTAP 集群
 
 使用以下列出的方法检索所有 ONTAP 集群或部分 ONTAP 集群。
 
@@ -302,7 +302,7 @@ none
 ....
 
 
-=== 按 ID 检索 ONTAP 集群
+== 按 ID 检索 ONTAP 集群
 
 使用下面列出的方法按 ID 检索 ONTAP 集群。
 
@@ -376,7 +376,7 @@ none
 ....
 
 
-=== 创建 ONTAP 集群
+== 创建 ONTAP 集群
 
 使用下表中的 API 创建 ONTAP 集群。
 
@@ -493,7 +493,7 @@ none
 ....
 
 
-=== 修改 ONTAP 集群
+== 修改 ONTAP 集群
 
 使用以下列出的方法修改 ONTAP 集群。
 
@@ -603,7 +603,7 @@ none
 ....
 
 
-=== 删除 ONTAP 集群
+== 删除 ONTAP 集群
 
 使用下表中列出的方法删除 ONTAP 集群。
 

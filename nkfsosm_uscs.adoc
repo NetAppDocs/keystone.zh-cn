@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: nkfsosm_uscs.html 
-keywords: netapp, keystone, US citizen support, USCS 
-summary: Keystone Flex 订阅性能 
+keywords: netapp, keystone, US citizen support, USCS GSSC, Keystone Success Manager, USCS support 
+summary: 美国公民支持（ USCS ） 
 ---
-= 美国公民支持（ USCS ）
+= U.S.公民支持(USCS)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,30 @@ summary: Keystone Flex 订阅性能
 
 
 [role="lead"]
-NetApp Keystone 灵活订阅（ Flex 订阅）可通过 NetApp 全球服务和支持中心（ GSSC ）持续监控和支持美国公民支持（ USCS ）服务。
+美国公民支持(USCS)是NetApp Keystone 订阅的附加服务。您有权从美国获得持续Keystone服务的交付和支持美国公民土壤。
 
-GSSC 是一个分布在不同地理位置的团队，为各种 NetApp 客户提供服务。适用于 Flex 订阅的 USCS 产品可确保灵活订阅服务的监控和支持由位于美国的美国公民提供。此外，还包括维护系统所需的现场支持和故障排除。
+阅读以下各节、了解您订阅中的哪些内容受此附加服务的约束；以及根据NetApp Keystone 协议的条款提供的内容。f脚 注：声明方1[此处所述的服务和服务受完全执行的Keystone协议的约束、限制和约束。]
+
+
+
+== NetApp全球服务支持中心监控
+
+NetApp全球服务和支持中心(GSSC)可监控您的产品和订阅服务的运行状况、提供远程支持、并与您的Keystone Success Manager合作。监控与相关Keystone订阅订单相关的产品的所有人员均为在美国运营的美国公民土壤。
+
+
+
+== Keystone Success Manager
+
+Keystone成功经理是一名美国员工美国公民土壤。其职责在您的NetApp Keystone 协议中进行了规定。
+
+
+
+== 部署活动
+
+如果适用、现场和远程部署和安装活动由美国执行美国公民土壤。脚注：免责声明：是否有适合现场活动的人员取决于Keystone系统的部署地点。]
+
+
+
+== 支持
+
+必要的现场故障排除和支持活动(如果有)由美国政府执行美国公民土壤。脚注：免责声明

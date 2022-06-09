@@ -18,7 +18,7 @@ NetApp 服务引擎 REST API 可通过任何可对 HTTP 请求进行问题描述
 
 
 
-=== HTTP status codes
+== HTTP status codes
 
 在运行 API 或解决问题时，您应了解 NetApp 服务引擎 API 使用的各种 HTTP 状态代码和错误代码。
 
@@ -59,7 +59,7 @@ NetApp 服务引擎 REST API 可通过任何可对 HTTP 请求进行问题描述
 |===
 
 
-=== 使用 API 的建议
+== 使用 API 的建议
 
 使用 API 时，应遵循某些建议的做法：
 

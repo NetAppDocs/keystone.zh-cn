@@ -20,7 +20,7 @@ NetApp 服务引擎提供了一组 API ，用于通过 RESTful Web 服务界面�
 
 
 
-=== 目标受众
+== 目标受众
 
 本指南面向创建通过 REST API 与 NetApp 服务引擎软件交互的应用程序的开发人员。
 
@@ -28,17 +28,17 @@ NetApp 服务引擎提供了一组 API ，用于通过 RESTful Web 服务界面�
 
 
 
-=== NetApp 服务引擎 API 访问和类别
+== NetApp 服务引擎 API 访问和类别
 
 
 
-==== 构建 URL 以直接访问 REST API
+=== 构建 URL 以直接访问 REST API
 
 您可以直接通过编程语言访问 REST API ，例如 Python ， C# ， C++ ， JavaScript ， 等等。要以 `https ： // <hostname>/API` 格式访问 REST API ，请输入主机名或 IP 地址以及 URL 。
 
 
 
-==== 使用者和管理员 API
+=== 使用者和管理员 API
 
 本文档将 API 说明分为两部分，其中包括：
 
@@ -48,7 +48,7 @@ NetApp 服务引擎提供了一组 API ，用于通过 RESTful Web 服务界面�
 
 
 
-=== NetApp 服务引擎的主要概念
+== NetApp 服务引擎的主要概念
 
 NetApp 服务引擎支持区域和区域的概念，如下图所示。区域表示数据中心或站点，而区域表示区域内的存储子单元（从技术上讲，是指数据中心 / 站点内的集群）。多个分区支持数据可用性和数据保护（ DP ）功能。
 

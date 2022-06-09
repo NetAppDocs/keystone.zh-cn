@@ -33,7 +33,7 @@ summary: Keystone 服务请求
 |===
 
 
-=== 服务请求属性
+== 服务请求属性
 
 下表列出了服务请求属性。
 
@@ -84,7 +84,7 @@ summary: Keystone 服务请求
 |===
 
 
-=== 检索服务请求
+== 检索服务请求
 
 使用下表中列出的方法检索指定租户的服务请求类别。
 
@@ -133,7 +133,7 @@ none
 ....
 
 
-=== 按 ID 检索服务请求
+== 按 ID 检索服务请求
 
 使用下表中列出的方法按服务请求 ID 检索服务请求。
 
@@ -181,129 +181,34 @@ none
 ....
 
 
-=== 创建服务请求
+== 创建服务请求
 
 使用下表中列出的方法创建服务请求。
 
-|===
-| HTTP 方法 | 路径 | Description | Parameters 
+返回到"http方法"、返回"HTTP方法"、"路径"、问题描述 "HTTP参数"
 
-
-| `发布` | ` /v2.1/tenant/｛ tenant_id ｝ /servicerequies/categories` | 创建服务请求。 | `tenant_id` ：租户标识符。 
-|===
-所需请求正文属性：所需属性取决于服务请求的类别。下表列出了请求正文属性。
+`发布`我们的文章`我们的文章：`/v2.1/tenant/｛tenant_id｝/servicerequess/categories我们 的文章：创建服务请求。`tenant_id`：租户标识符。
 
 |===
-| 类别 | Required 
 
 
-| 订阅。 | `ssubscription` and `commitment` 
-
-
-| 灾难恢复 | `storage_object_type` ， `ssubtenant_id` 和 `storage_object_id` 
-
-
-| 技术 | `ssubtenant_id` 和 `sservice_type` 如果 `sservice_type` 是文件服务或块存储，则需要区域。 
-
-
-| 其他 | 分区 
+| 所需请求正文属性：所需属性取决于服务请求的类别。下表列出了请求正文属性。 
 |===
-* 请求正文示例： *
+类别|必需
 
-....
-{
-  "subject": "string",
-  "comment": "string",
-  "category": "subscription",
-  "priority": "Normal",
-  "subscription": "A-S00003969",
-  "commitment": {
-    "service_level": "standard",
-    "new_commitment": 10
-  },
-  "zone": "au-east1-a",
-  "subtenant_id": "5d2fb0fb4f47df00015274e3",
-  "storage_object_type": "fileserver",
-  "storage_object_id": "5d2fb0fb4f47df00015274e3",
-  "service_type": "File Services"
-}
-....
-* 响应正文示例： *
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "records": [
-      {
-        "id": "string",
-        "subject": "string",
-        "description": "string",
-        "status": "New",
-        "priority": "Normal",
-        "createdDate": "2020-05-12T03:18:25+0000",
-        "UpdatedDate": "2020-05-12T03:18:25+0000"
-      }
-    ]
-  }
-....
-
-
-=== 检索服务请求类别
-
-下表列出了指定租户的检索服务请求类别。
+`s订阅``subscription` and `scommitment``灾难恢复`storage_object_type`、`ssubtenant_id`和`storage_object_id `s技术` subtenant_id `s和` service_type如果service_type是文件服务或块存储、则需要分区。"其他"区域
 
 |===
-| HTTP 方法 | 路径 | Description | Parameters 
 
 
-| `获取` | ` /v2.1/tenant/｛ tenant_id ｝ /servicerequies/categories` | 检索服务请求类别。 | `tenant_id ：` （可选）返回指定租户的服务请求。 
+| *请求正文示例：*...｛"subject"："string"、"comment"："string"、"category"："subscription"、"priority "："Normal"、"subscription"：A-S00003969、 "commitment"：｛"service_level"："standard"、"new_commitment"：10｝、"zone"："au-East1-a"、"subtenant_id"："5d2fb0fb4f47df00015274e3"、"storage_object_type"："fileserver"、 "storage_object_id"："5d2fb0fb4f47df00015274e3"、"service_type"："文件服务"｝...*响应正文示例：*...｛"status"：｛"user_message"："string"、"verby_message"："string"、"code"："string"｝、"result"：｛"Returned_records"：1、"records"：[｛"id"："string"、"Subject"："string"、"status"："string"、问题描述 ："string"、"status"："status"、"status"："."："、"status"、"nor值："："、"nor值 "createdDate"："2020-05-12T03：18：25+0000"、"UpdatedDate"："2020-05-12T03：18：25+0000"｝]｝……=检索服务请求类别下表列出了指定租户的检索服务请求类别。 
 |===
-所需的请求正文属性： `none`
+"HTTP方法"｛\f2 |｝路径｛\f2问题描述 ｝｛\f2｝参数
 
-* 请求正文示例： *
+`` GET`|`/v2.1/tenant/｛tenant_id｝/servicerequess/categories|检索服务请求类别。`tenant_id：`(可选)返回指定租户的服务请求。
 
-....
-none
-....
-* 响应正文示例： *
+|===
 
-....
-{
-  "status": {
-    "user_message": "Okay. Returned 5 records.",
-    "verbose_message": "",
-    "code": 200
-  },
-  "result": {
-    "returned_records": 5,
-    "records": [
-      {
-        "key": "dr",
-        "value": "Disaster Recovery Failover"
-      },
-      {
-        "key": "technical",
-        "value": "Technical Issue"
-      },
-      {
-        "key": "other",
-        "value": "Other"
-      },
-      {
-        "key": "subscription",
-        "value": "Subscription Management"
-      },
-      {
-        "key": "backup",
-        "value": "Backup Restore"
-      }
-    ]
-  }
-}
-....
+
+| 所需的请求正文属性：`none`*请求正文示例：*...无...*响应正文示例：*...｛"status"：｛"user_message"："好的。返回5条记录。"、"详细消息"：""、"代码"：200｝、"结果"：｛"Returned_records"：5、"记录"：[｛"key"："dr"、"值"："灾难恢复故障转移"｝、｛"key"："技术"、"值"："技术问题描述 "、｛"key"、"键"、"值"、"其他"："键："键"："键"键"、"键"值"："：" "Backup Restore"｝｝…… 
+|===
