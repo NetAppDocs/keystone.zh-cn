@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/keystone/issues/new?body=Page%3A%20[Flex 订阅中的租户和多租户](https://docs.netapp.com/zh-cn/keystone/nkfsosm_tenancy_overview.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/keystone/images/discuss-sm.svg" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/keystone/blob/main/nkfsosm_tenancy_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/keystone/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/keystone/images/article-sm.svg" class="github-icon" />提供者指南</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/keystone/issues/new?body=Page%3A%20[Flex 订阅中的租户和多租户](https://docs.netapp.com/zh-cn/keystone/nkfsosm_tenancy_overview.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/keystone/images/discuss-sm.svg" alt="" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/keystone/blob/main/nkfsosm_tenancy_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/keystone/images/edit-sm.svg" alt="" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/keystone/images/article-sm.svg" alt="" class="github-icon" />提供者指南</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此页面上</div>
@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/zh-cn/keystone/search.html"
           data-type="widget" 
-          data-placeholder="搜索文档" 
-          data-no-results-found="未找到与 {query} 匹配的结果。" 
-          data-did-you-mean="搜索 {suggestion}。" 
-          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
-          data-results-found="找到 {hitCount} 个结果"  
+          data-placeholder="搜索文档"
+          data-no-results-found="未找到与 {query} 匹配的结果。"
+          data-did-you-mean="搜索 {suggestion}。"
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?"
+          data-results-found="找到 {hitCount} 个结果"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -345,7 +347,7 @@
   <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>可用的 PDF<span>
     </span>
   </a>
 </div>
@@ -355,7 +357,7 @@
         
         
         <a target="_blank" href="/zh-cn/keystone/pdfs/fullsite-sidebar/NetApp_Keystone_Flex_订阅文档.pdf" >
-          <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
+          <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>此文档站点的 PDF</a>
 
     
       <ul class="subfolders" style="display:none;">
@@ -368,7 +370,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/NetApp_Keystone_Flex_订阅.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             NetApp Keystone Flex 订阅
           </a>
           
@@ -384,7 +386,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/服务条款和问题描述.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             服务条款和问题描述
           </a>
           
@@ -406,8 +408,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -417,14 +417,7 @@
 
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/keystone/pdfs/pages/nkfsosm_tenancy_overview.pdf" >
-    <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
 
@@ -436,8 +429,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -457,7 +448,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/发行说明.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             发行说明
           </a>
           
@@ -467,8 +458,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -488,7 +477,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/Flex_订阅常见问题解答.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             Flex 订阅常见问题解答
           </a>
           
@@ -500,8 +489,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -521,7 +508,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/NetApp_服务引擎_Web_界面.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             NetApp 服务引擎 Web 界面
           </a>
           
@@ -539,7 +526,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/入门.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             入门
           </a>
           
@@ -553,8 +540,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -578,7 +563,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/使用文件服务.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             使用文件服务
           </a>
           
@@ -602,8 +587,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -623,7 +606,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/使用块存储.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             使用块存储
           </a>
           
@@ -641,8 +624,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -662,7 +643,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/使用对象存储.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             使用对象存储
           </a>
           
@@ -690,8 +671,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -711,7 +690,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/管理云服务.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             管理云服务
           </a>
           
@@ -727,7 +706,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/管理云服务.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             管理云服务
           </a>
           
@@ -741,8 +720,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -762,7 +739,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/管理_Azure_NetApp_Files.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             管理 Azure NetApp Files
           </a>
           
@@ -772,8 +749,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -783,8 +758,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -810,7 +783,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/管理服务请求.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             管理服务请求
           </a>
           
@@ -822,8 +795,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -843,7 +814,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/执行管理任务.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             执行管理任务
           </a>
           
@@ -859,7 +830,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/管理用户.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             管理用户
           </a>
           
@@ -871,8 +842,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -884,8 +853,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -895,8 +862,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -916,7 +881,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/__NetApp_服务引擎_API_参考_.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             《 NetApp 服务引擎 API 参考》
           </a>
           
@@ -936,7 +901,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/使用者_API.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             使用者 API
           </a>
           
@@ -958,8 +923,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -979,7 +942,7 @@
               href="/zh-cn/keystone/pdfs/sidebar/管理员_API.pdf" 
             
           >
-            <img src="/zh-cn/keystone/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/keystone/images/pdf.png" alt="" width="16" height="16"/>
             管理员 API
           </a>
           
@@ -1005,8 +968,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1014,21 +975,18 @@
   
 
 
-
-          
         </li>
       </ul>
     
 
   
-
 
 
 
 </li></ul>
   <div class="zip-pdf-link-container" style="display: none;">   
     <a href="#" id="zipPdf">
-      <img src="/zh-cn/keystone/images/pdf-zip.png" width="16" height="16"/>
+      <img src="/zh-cn/keystone/images/pdf-zip.png" alt="" width="16" height="16"/>
       <pre>收集单独的 PDF 文档<span class="zip-size"></span></pre>
     </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
@@ -1390,6 +1348,9 @@
     <time datetime="2022-04-18 06:19:07 +0000">04/18/2022</time>
     
   
+
+<span>提供者
+</span>
 
 
 </p>
