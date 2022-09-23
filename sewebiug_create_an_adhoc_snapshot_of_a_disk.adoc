@@ -18,8 +18,8 @@ summary: keystone 创建磁盘的临时快照
 
 .步骤
 . 查看 link:sewebiug_view_disks.html#view-disks["磁盘列表"]。
-. 在列表中找到该磁盘，然后单击该磁盘的 Snapshot 图标。（有关使用列表中项目的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview#list-view["列出视图操作"]）。
+. 在列表中找到该磁盘、然后单击该磁盘的快照图标。（有关使用列表中项目的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview#list-view["列出视图操作"]）。
 . 在创建快照对话框中，输入快照的名称，然后单击 * 创建 * 。
 
 
-快照可能需要几分钟才能可用。
+快照可能需要几分钟才能可用。如果可用、您可以通过克隆此快照创建另一个磁盘。有关信息，请参见 link:sewebiug_create_a_disk_from_a_snapshot.html["从快照创建磁盘"]。

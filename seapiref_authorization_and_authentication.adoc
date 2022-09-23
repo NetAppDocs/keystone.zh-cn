@@ -16,6 +16,8 @@ summary: Keystone 授权和身份验证
 [role="lead"]
 NetApp 服务引擎 REST API 可通过任何可对 HTTP 请求进行问题描述处理的 Web 浏览器或编程平台进行访问。NetApp 服务引擎支持基本的 HTTP 身份验证机制以及 Java Web 令牌（ JWT ）承载身份验证。在调用 API 之前，您必须对用户进行身份验证。
 
+对于参考API、您可以登录到NetApp服务引擎Web界面、并从*左侧导航窗格>支持> API文档*中查看Swagger界面。
+
 
 
 == HTTP status codes

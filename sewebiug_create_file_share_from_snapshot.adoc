@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_create_file_share_from_snapshot.html 
-keywords: netapp, keystone, create, file share, Snapshot 
-summary: 从 Snapshot 创建文件共享 
+keywords: netapp, keystone, create, file share, snapshot 
+summary: 从快照创建文件共享 
 ---
-= 从 Snapshot 创建文件共享
+= 从快照创建文件共享
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,21 +14,21 @@ summary: 从 Snapshot 创建文件共享
 
 
 [role="lead"]
-您可以从现有 Snapshot 创建新的文件共享。从 Snapshot 克隆的新文件共享与创建 Snapshot 的文件共享具有相同的属性。
+您可以从现有快照创建新的文件共享。从快照克隆的新文件共享与创建快照的文件共享具有相同的属性。
 
 .步骤
 . 从左侧导航窗格中选择 * 文件服务 * ，然后选择 * 共享 * 。
-. 单击 * 创建共享 * ，然后选择 * 从快照克隆 * 。此时将显示 * 选择共享 * 屏幕，其中包含租户的所有文件共享。您可以按区域，区域和子租户筛选文件共享。您可以选择处于运行状态的任何文件共享。
-. 选中所需文件共享旁边的复选框，然后单击 * 下一步 * 。此时将显示 * 选择 Snapshot* 屏幕，其中包含文件共享的所有 Snapshot 。
+. 单击 * 创建共享 * ，然后选择 * 从快照克隆 * 。或者、如果您知道要用于克隆的快照所在的共享、则可以找到该文件共享并单击其旁边的复制按钮。共享应处于运行状态。有关对象状态的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["对象状态"]。此时将显示*从Snapshot*创建共享"屏幕、其中包含租户的所有文件共享。您可以按区域，区域和子租户筛选文件共享。您可以选择处于运行状态的任何文件共享。
+. 选中所需文件共享旁边的复选框，然后单击 * 下一步 * 。此时将显示文件共享的快照。
 +
 
-NOTE: 对于选定文件共享，如果您在 NetApp 服务引擎之外的 SnapCenter 环境中创建了一些 Snapshot ，则可以找到这些 Snapshot 已导入并列出供您选择。您可以选择这些导入的快照并从中克隆新文件共享。
+NOTE: 对于选定文件共享、如果您在NetApp服务引擎之外的SnapCenter 环境中创建了一些快照、则可以找到这些已导入并列出的快照供您选择。您可以选择这些导入的快照并从中克隆新文件共享。
 
 +
-您可以搜索特定 Snapshot 或选择计划类型以筛选 Snapshot 。
+您可以搜索特定快照或选择计划类型以筛选快照。
 
-. 选中要从中克隆的 Snapshot 旁边的复选框，然后单击 * 下一步 * 。新文件共享将继承选定 Snapshot 的属性。
-. 添加 * 名称 * 和 * 共享路径 * 。更新其他设置，例如分配 * 服务级别 * ，然后单击 * 创建 * 。
+. 选中要从中克隆的快照旁边的复选框、然后单击*下一步*。新文件共享将继承选定快照的属性。
+. 添加 * 名称 * 和 * 共享路径 * 。更新其他设置，例如分配 * 服务级别 * ，然后单击 * 创建 * 。选择最符合您需求的服务级别。
 
 
 .完成后
@@ -40,7 +40,7 @@ NOTE: 对于选定文件共享，如果您在 NetApp 服务引擎之外的 SnapC
 
 * * 创建共享 * 作为异步作业运行。您可以
 +
-** 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
+** 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
 ** 作业完成后，在 * 共享 * 列表中检查共享的状态。
 
 

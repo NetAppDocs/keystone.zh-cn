@@ -18,9 +18,9 @@ summary: Keystone View 磁盘
 
 您也可以在此屏幕上查看现有环境中属于 NetApp 服务引擎中配置的 Storage VM 的磁盘，并将其作为 NetApp Keystone 灵活订阅（ Flex 订阅）服务的一部分进行管理。系统会定期导入在 NetApp 服务引擎外部配置的磁盘，并在此页面上列出相应的状态代码。
 
-如果导入的磁盘符合 NetApp 服务引擎的可接受标准，即，如果使磁盘正常运行所需的所有参数均可用，则导入这些磁盘时的状态为 `Operational` ，并可通过 NetApp 服务引擎直接管理。但是，某些磁盘可能与 NetApp 服务引擎上的现有磁盘的标准不同。导入后，这些磁盘将按 `Imported` 或 `Non-Standard` 状态进行分类。有关磁盘状态以及使其正常运行所要采取的步骤的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["对象状态"]
+如果导入的磁盘符合 NetApp 服务引擎的可接受标准，即，如果使磁盘正常运行所需的所有参数均可用，则导入这些磁盘时的状态为 `Operational` ，并可通过 NetApp 服务引擎直接管理。但是，某些磁盘可能与 NetApp 服务引擎上的现有磁盘的标准不同。导入后，这些磁盘将按 `Imported` 或 `Non-Standard` 状态进行分类。有关磁盘状态以及使其正常运行所要采取的步骤的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["对象状态"]
 
-在磁盘列表中，查看简单信息。有关如何使用列表功能的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["列表视图"]。
+在磁盘列表中，查看简单信息。有关如何使用列表功能的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["列出视图操作"]。
 
 * 磁盘名称
 * 磁盘的路径

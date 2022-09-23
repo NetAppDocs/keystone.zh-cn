@@ -17,8 +17,8 @@ summary: keystone 删除对象存储组
 使用此方法删除对象存储组。
 
 .步骤
-. 查看 link:sewebiug_view_host_groups.html#view-host-groups["组列表"]。
-. 确保选择了正确的子租户，并且显示的是组（而不是用户）。
+. 查看对象存储组 link:sewebiug_view_the_object_storage_group_and_users.html["查看对象存储组和用户"]。
+. 确保选择了正确的子租户、并且您已单击*组*选项卡。
 . 在列表中找到该组，然后单击该组的删除图标。
 . 要确认删除操作，请单击 * 确认 * 。对象存储组将从列表中删除。
 

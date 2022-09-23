@@ -121,7 +121,7 @@ NOTE: 删除块存储之前，应删除映射到该块存储的所有磁盘。
  a| 
 ` v2.1/disks`
 | 您可以创建磁盘。在请求正文中添加值以使用指定参数创建磁盘，例如子租户 ID ，分区，名称，磁盘路径，快照策略， 备份策略和标记。  a| 
-`ssubtenant_id` ：子租户的 ID 。`zone` ：分区的名称。`name` ：磁盘的名称。`disk_path` ：磁盘的路径。`protocol` ：用于块设备访问的存储协议。`OS_type` ：主机操作系统的类型。`hostgroup_mappings` ：主机组映射。`sservice_level` ：适用的服务级别名称：标准，高级，高级分层，至尊或至尊分层。`size_GB` ：磁盘大小，以 GB 为单位。
+`ssubtenant_id` ：子租户的 ID 。`zone` ：分区的名称。`name` ：磁盘的名称。`disk_path` ：磁盘的路径。`protocol` ：用于块设备访问的存储协议。`OS_type` ：主机操作系统的类型。`hostgroup_mappings` ：主机组映射。`sservice_level` ：适用的服务级别名称：标准，高级，高级分层，至尊或至尊分层。`size_GB`：磁盘的大小、以千兆为单位。
 
 
 

@@ -29,5 +29,5 @@ image:sewebiug_image31.png["错误：缺少图形映像"]
 +
 image:sewebiug_image32.png["错误：缺少图形映像"]
 
-. 检查作业列表以确保对象存储已成功初始化。
+. 检查作业列表以确保对象存储已成功初始化。有关信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["作业和作业状态指示符"]。
 

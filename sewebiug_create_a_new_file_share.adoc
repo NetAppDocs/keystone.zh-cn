@@ -14,7 +14,7 @@ summary: Keystone 创建新的文件共享
 
 
 [role="lead"]
-本节介绍如何通过直接指定共享详细信息来创建新共享。要基于现有共享的 Snapshot 创建新共享，请参见 link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["从 Snapshot 创建共享"]。
+本节介绍如何通过直接指定共享详细信息来创建新共享。要基于现有共享的快照创建新共享、请参见 link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["从快照创建共享"]。
 
 .开始之前
 * 共享在文件服务器上创建。要创建新的文件共享，文件服务器必须存在且处于运行状态。
@@ -22,7 +22,7 @@ summary: Keystone 创建新的文件共享
 * 要为共享启用异步灾难恢复选项，必须在启用了异步灾难恢复的服务器上创建共享。有关详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["灾难恢复"]。
 * 要为共享启用同步灾难恢复，请在启用了 MetroCluster 的区域中创建共享。
 * 您可以定义备份策略以按计划捕获文件共享的备份。有关详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups["备份"]。
-* 您可以定义 Snapshot 策略以按计划捕获文件共享的 Snapshot 。有关详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["快照"]。
+* 您可以定义快照策略、以便按计划捕获文件共享的快照。有关详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["快照"]。
 
 
 .步骤
@@ -59,10 +59,10 @@ image:sewebiug_image22.png["错误：缺少图形映像"]
 
 | 安全风格 | 选择适用于文件共享的安全模式。此列表将根据选定的共享类型自动填充。 
 |===
-. 选择性能服务级别。IOPS 和吞吐量限制将根据选定的服务级别显示。
+. 选择服务级别。IOPS 和吞吐量限制将根据选定的服务级别显示。
 +
 
-NOTE: 选择一个选项以查看该级别的性能详细信息（如峰值 / 预期 IOPS/throughput ）。选择最符合您需求的服务级别。
+NOTE: 选择一个选项以查看该服务级别的性能详细信息(如峰值/预期IOPS/throughput)。选择最符合您需求的服务级别。
 
 . 指定文件共享的容量。
 +
@@ -71,15 +71,15 @@ NOTE: 如果指定容量使消耗的容量发生突发（或者如果已发生�
 
 . 如果在底层文件服务器上启用了异步灾难恢复，则会自动为新共享启用异步灾难恢复复制。如果要从异步灾难恢复复制中排除共享，请切换异步灾难恢复按钮以将其禁用。
 . 如果要在已启用 MetroCluster 的区域中创建共享，则同步灾难恢复按钮将自动启用，并且无法禁用。共享将复制到同步灾难恢复切换下面板中显示的分区。
-. 如果此文件共享需要 Snapshot ：
+. 如果此文件共享需要快照：
 +
 .. 切换以启用 Snapshot 策略并查看 Snapshot 策略字段。
 .. 指定何时创建快照：
 +
-*** * 每小时。 * 指定创建 Snapshot 的分钟（每小时）以及要保留的每小时 Snapshot 数量。
-*** * 每日。 * 指定创建快照的时间（小时和分钟）要保留的每日快照数。如果要指定每天必须创建 Snapshot 的多个小时，则可以将小时值添加到逗号分隔列表中，例如 5 ， 10 ， 15 ， 等等。
-*** * 每周。 * 指定创建 Snapshot 的时间（星期几，小时和分钟）以及要保留的每周 Snapshot 数量。
-*** * 每月。 * 指定创建 Snapshot 的时间（日期，小时和分钟）以及要保留的每月 Snapshot 数量。
+*** *每小时。*指定要创建快照的分钟(每小时)以及要保留的每小时快照数。
+*** *每日。*指定创建快照的时间(小时和分钟)要保留的每日快照数。如果要指定每天必须创建快照的多个小时、则可以将小时值添加到逗号分隔列表中、例如5、10、15、 等等。
+*** *每周。*指定创建快照的时间(星期几、小时和分钟)以及要保留的每周快照数。
+*** *每月。*指定创建快照的时间(日期、小时和分钟)以及要保留的每月快照数。
 
 
 
@@ -88,7 +88,7 @@ NOTE: 如果指定容量使消耗的容量发生突发（或者如果已发生�
 +
 .. 切换以启用备份策略和备份策略字段。
 .. 指定备份区域。
-.. 指定要保留的每种备份类型的数量：每日，每周和 / 或每月。
+.. 指定要保留的每种备份类型的数量：每日，每周和 / 或每月。有关详细信息，请参见 link:sewebiug_back_up_file_shares_and_disks.html["备份文件共享和磁盘"]。
 
 
 . 对于 NFS 或多协议共享，请指定导出策略。您可以在一个共享上应用多个导出策略。本节仅适用于 NFS 和多协议共享。
@@ -120,7 +120,7 @@ NOTE: 用户或组名称应遵循标准 AD 格式。如果输入的用户或组�
 
 * 创建共享将作为异步作业运行。您可以
 +
-** 在作业列表中检查作业的状态。
+** 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
 ** 作业完成后，在共享列表中检查共享的状态。
 
 

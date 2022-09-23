@@ -16,18 +16,18 @@ summary: Keystone 视图分段
 [role="lead"]
 " 分段 " 列表显示选定子租户的现有分段。
 
-. 要查看此列表，请从菜单中选择对象存储 > 分段。
+. 要查看此列表、请从菜单中选择*对象存储>分段*。
 . 如果需要，可使用子租户下拉菜单选择其他子租户。
 +
 显示每个存储分段的简单信息，例如：
 
 +
 ** Name
+** Region
+** Size
 ** 创建日期
-** 使用情况
-+
-有关如何使用列表功能的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["列表视图"]。
-
+** 对象
+** 操作(例如删除存储分段)
 
 
 

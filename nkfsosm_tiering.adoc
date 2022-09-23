@@ -30,3 +30,5 @@ NetApp Keystone 灵活订阅服务包括分层功能，可识别不太常用的�
 * 在分层服务级别为卷启用和禁用备份。
 * 在分层服务级别为卷启用和禁用灾难恢复。
 
+
+有关计费的信息、请参见 link:nkfsosm_kfs_billing.html#billing-for-fabricpool-usage["FabricPool 使用情况计费"]。

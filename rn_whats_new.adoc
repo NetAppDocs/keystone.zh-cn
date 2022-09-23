@@ -16,24 +16,7 @@ summary: NetApp 服务引擎中的新增功能
 [role="lead"]
 本发行说明将向您介绍 NetApp Keystone 灵活订阅（ Flex 订阅）服务中引入的新功能和增强功能，以及已知限制和修复。
 
-
-
-== 查看 Cloud Volumes ONTAP 使用情况和计费（ 2021 年 12 月 5 日）
-
-如果您是 NetApp Keystone 灵活订阅（ Flex 订阅）客户，并且还订阅了 Cloud Volumes ONTAP ，则可以使用灵活订阅对 Cloud Volumes ONTAP 使用量进行收费，并查看您的计费和使用量详细信息。Cloud Manager 现在可以发现您的 Flex 订阅帐户并在 Cloud Manager 界面上显示详细信息。单击 * 所有服务 > 数字电子钱包 > Keystone Flex 订阅 * 选项卡后，您可以执行以下活动：
-
-* 查看欢迎屏幕，在此可以请求您的 Flex 订阅管理员将您的 Cloud Manager 用户 ID 与您的 Flex 订阅用户 ID 关联，从而访问 * Keystone Flex 订阅 * 选项卡。
-* 查看内部部署系统和 Cloud Volumes ONTAP 上已订阅服务的已用容量和已用容量的使用数据。
-* 查看与您的 Cloud Manager 帐户关联的 Flex 订阅详细信息。此时将显示已提交，已用和突发容量等详细信息。
-* 将您的 Cloud Volumes ONTAP 帐户与您的 Flex 订阅 ID 关联起来，以便将该帐户与计费和容量使用情况报告关联起来。
-* 请求增加或减少已订阅 Flex 订阅服务的已提交容量。
-* 查看链接的 Flex 订阅 ID 并将其用作 Cloud Volumes ONTAP 消耗计费方法（仅限链接 ID ）。
-
-
-有关详细信息，请参见 Cloud Manager 文档中的以下链接：link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription["Keystone Flex 订阅"]
-link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keystone-flex-subscriptions["管理 Keystone Flex 订阅"]
-
-｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ NetApp 服务引擎的不同版本引入了以下功能，以支持通过 NetApp Keystone 灵活订阅（ Flex 订阅）提供的增强功能：
+不同版本的NetApp服务引擎引入了以下功能、以支持通过NetApp Keystone 灵活订阅(Flex订阅)提供的增强功能：
 
 
 
@@ -112,7 +95,7 @@ NetApp 服务引擎用户界面进行了以下增强：
 
 === 分层
 
-NetApp Keystone Flex 订阅服务现在包括利用 NetApp FabricPool 技术的分层功能。它可以识别不太常用的数据，并将其分层到 NetApp 内部拥有，部署和管理的冷存储中。您可以通过订阅极高分层或高级分层性能级别来选择分层。
+NetApp Keystone Flex 订阅服务现在包括利用 NetApp FabricPool 技术的分层功能。它可以识别不太常用的数据，并将其分层到 NetApp 内部拥有，部署和管理的冷存储中。您可以通过订阅极端分层或高级分层服务级别来选择分层。
 
 以下 API 已进行修改，以包括新分层服务级别的新属性值：
 
@@ -123,7 +106,7 @@ NetApp Keystone Flex 订阅服务现在包括利用 NetApp FabricPool 技术的�
 有关详细信息，请参见以下链接：
 
 * link:nkfsosm_tiering.html["分层"]
-* link:nkfsosm_performance.html["性能服务级别"]
+* link:nkfsosm_performance.html["服务级别"]
 
 
 ｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝

@@ -125,7 +125,7 @@ summary: Keystone 文件服务 API
  a| 
 ` v2.1/fileshares`
 | 您可以创建文件共享。在请求正文中添加值以使用指定参数创建文件共享，例如 ID ，名称， Snapshot 策略，协议， 文件服务器 IP 和标记。  a| 
-`name` ：文件共享的名称。`share _path` ：文件共享的路径。`fileserver_id` ：文件服务器的 ID 。`size_GB` ：文件共享的大小，以 GB 为单位。`sservice_level` ：适用的服务级别名称：标准，高级，高级分层，至尊或至尊分层。`protocol` ：用于访问文件共享的协议（ NFS ， CIFS 或多协议）。`security_style` ：安全模式（ Unix 或 NTFS ）。`export_policy` ：文件共享的导出策略。
+`name` ：文件共享的名称。`share _path` ：文件共享的路径。`fileserver_id` ：文件服务器的 ID 。`size_GB`：文件共享的大小(以Gib为单位)。`sservice_level` ：适用的服务级别名称：标准，高级，高级分层，至尊或至尊分层。`protocol` ：用于访问文件共享的协议（ NFS ， CIFS 或多协议）。`security_style` ：安全模式（ Unix 或 NTFS ）。`export_policy` ：文件共享的导出策略。
 
 
 
@@ -152,7 +152,7 @@ summary: Keystone 文件服务 API
  a| 
 ` /v2.1/fileshares/ ｛ id ｝`
 | 您可以根据文件共享的 ID 修改该文件共享。在请求正文中添加文件服务器的 ID 以及要修改的值，例如名称，协议，快照策略，备份策略和标记。  a| 
-`id` ：文件共享的 ID 。`name` ：文件共享的名称。`size_GB` ：文件共享的大小，以 GB 为单位。`sservice_level` ：适用的服务级别名称：标准，高级，高级分层，至尊或至尊分层。`protocol` ：用于访问文件共享的协议（ NFS ， CIFS 或多协议）。`export_policy` ：文件共享的导出策略。
+`id` ：文件共享的 ID 。`name` ：文件共享的名称。`size_GB`：文件共享的大小(以Gib为单位)。`sservice_level` ：适用的服务级别名称：标准，高级，高级分层，至尊或至尊分层。`protocol` ：用于访问文件共享的协议（ NFS ， CIFS 或多协议）。`export_policy` ：文件共享的导出策略。
 
 
 

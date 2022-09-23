@@ -17,13 +17,13 @@ summary: keystone 修改对象存储组
 使用此方法可以修改对象存储组的详细信息，例如组名称和 S3 策略。
 
 .步骤
-. 查看 link:sewebiug_view_host_groups.html#view-host-groups["组列表"]。
-. 确保选择了正确的子租户，并且显示的是组（而不是用户）。
-. 在列表中找到该组，然后单击该组的编辑图标。
+. 查看对象存储组 link:sewebiug_view_the_object_storage_group_and_users.html["查看对象存储组和用户"]。
+. 确保选择了正确的子租户、并且您已单击*组*选项卡。
+. 在列表中找到该组、然后单击该组的编辑图标。
 +
-有关使用列表中的项目的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["列出视图操作"]。
+有关使用列表中的项目的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["列出视图操作"]。
 
-. 在编辑组对话框中，输入用户名。
-. 选择用于适用场景修改后的组的 S3 策略。
-. 单击 * 创建 * 。此操作将创建一个作业，以便使用指定设置修改组。
+. 在*编辑组*对话框中、修改适用于该组的S3策略。有关S3策略的信息、请参见 https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["在策略中指定权限"]。
+. 您可以根据需要添加其他策略语句。
+. 单击 * 更新 * 。此操作将创建一个作业，以便使用指定设置修改组。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
 

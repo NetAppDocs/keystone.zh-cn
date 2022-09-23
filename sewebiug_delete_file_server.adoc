@@ -17,7 +17,7 @@ summary: Keystone 删除文件服务器
 * 注意： * 删除文件服务器也会删除以下内容：
 
 * 与文件服务器关联的所有备份
-* 与文件服务器关联的所有灾难恢复复制副本您无法撤消对服务器的删除。
+* 与文件服务器关联的所有灾难恢复复制副本。您无法撤消删除服务器。
 
 
 要删除文件服务器，必须先删除该服务器上存在的所有共享。
@@ -36,7 +36,7 @@ image:sewebiug_image21.png["错误：缺少图形映像"]
 * 删除启用了 CIFS 的文件服务器时， Active Directory 计算机对象仍会保留。请 Active Directory 管理员手动从 Active Directory 中删除已删除文件服务器的计算机对象。
 * 删除服务器作为异步作业运行。您可以
 +
-** 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
+** 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
 ** 作业完成后，验证服务器是否已从服务器列表中删除。
 
 

@@ -14,15 +14,15 @@ summary: keystone 创建对象存储组
 
 
 [role="lead"]
-使用此方法可创建新的对象存储组。
+使用此方法创建对象存储组。
 
 .步骤
-. 查看 link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["用户列表"]。
-. 确保选择了正确的子租户，并且显示的是组（而不是用户）。
+. 从*对象存储>用户管理>组*中查看对象存储组列表。
+. 确保选择了正确的子租户、并且您已单击*组*选项卡。
 . 单击 * 创建组 * 。
 . 在创建组对话框中，输入组名称。
-. 从列表中选择 S3 策略。
+. 从列表中选择 S3 策略。有关S3策略的信息、请参见 https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["在策略中指定权限"]。
 . 单击 * 创建 * 。此操作将创建一个作业，用于使用指定设置创建组。
 
 
-创建对象存储组将作为异步作业运行。您可以在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
+创建对象存储组将作为异步作业运行。您可以在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。

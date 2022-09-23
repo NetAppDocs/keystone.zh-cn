@@ -16,17 +16,10 @@ summary: Keystone 创建文件服务器
 [role="lead"]
 文件服务器属于子租户，并在区域内创建。创建服务器时，您可以选择：
 
-* 为服务器启用灾难恢复 DP 。有关灾难恢复在 NetApp 服务引擎中的工作原理的详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["灾难恢复"]。
-* 使其启用 CIFS 。对于启用了 CIFS 的服务器：
-+
-** 您必须提供 Active Directory 用户名， Active Directory 密码，域， DNS 服务器，服务器名称和， 也可以是 Active Directory 组织单位（ OU ）。
-** Active Directory 凭据（ Active Directory 用户名和 Active Directory 密码）必须适用于有权将计算机加入 Active Directory 域的用户。
-** 如果 Active Directory OU 结构为分层结构，如下图所示，请指定从最低到最高的 OU 。在此示例中，要指定 Melbourne OU ，请将 `cifs_ou` 设置为 ` cifs_ou ： "OU=Melbourne ， ou=CIFS" 。`
+* 为服务器启用异步灾难恢复数据保护。有关灾难恢复在 NetApp 服务引擎中的工作原理的详细信息，请参见 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["灾难恢复"]。
+* 如果您订阅了同步灾难恢复数据保护、则默认情况下会启用此功能。
+* 使其启用 CIFS 。默认情况下、NFS服务处于启用状态。
 
-
-
-
-image:sewebiug_image20.png["错误：缺少图形映像"]
 
 请确保您已具备以下条件来创建服务器：
 
@@ -34,9 +27,13 @@ image:sewebiug_image20.png["错误：缺少图形映像"]
 * 服务器所属的区域和分区。
 * 子网和 IP 地址等网络连接详细信息（可选）。如果您不熟悉网络，请咨询 IT 部门以了解相应的值。
 * 要在文件服务器上启用异步灾难恢复，请使用灾难恢复区域（将文件服务器复制到的区域）。
+* 对于CIFS服务器、您应了解Active Directory凭据、DNS服务器、服务器名称以及Active Directory组织单位(OU)(可选)。Active Directory 凭据必须适用于有权将计算机加入 Active Directory 域的用户。
 
 
-.步骤
+如果 Active Directory OU 结构为分层结构，如下图所示，请指定从最低到最高的 OU 。在此示例中，要指定 Melbourne OU ，请将 `cifs_ou` 设置为 ` cifs_ou ： "OU=Melbourne ， ou=CIFS" 。`
+
+image:sewebiug_image20.png["错误：缺少图形映像"]步骤
+
 . 查看 link:sewebiug_view_servers.html#view-servers["文件服务器列表"]。
 . 单击 * 创建服务器 * 。
 . 在创建服务器页面上，填写以下字段：
@@ -71,7 +68,7 @@ image:sewebiug_image20.png["错误：缺少图形映像"]
 
 +
 .. 切换已启用 CIFS 的按钮以查看 CIFS 相关字段。
-.. 填写 Active Directory 用户名， Active Directory 密码，域， DNS 服务器，服务器名称， 也可以是 Active Directory 组织单位。Active Directory 凭据必须适用于有权将计算机加入 Active Directory 域的用户。
+.. 添加域名、DNS服务器IP、服务器名称以及Active Directory组织单位的名称(可选)。
 
 
 . 要在此文件服务器上启用异步灾难恢复 DP ，请执行以下操作：
@@ -79,14 +76,21 @@ image:sewebiug_image20.png["错误：缺少图形映像"]
 .. 切换异步灾难恢复按钮以启用它。
 .. 选择灾难恢复区域和区域。
 .. 选择灾难恢复复制计划。
++
+
+NOTE: 如果您订阅了同步灾难恢复数据保护、则会自动为您的区域激活此功能、并且默认情况下会启用同步灾难恢复切换按钮。您不能禁用此按钮。
 
 
-. 如果启用了同步灾难恢复 DP ，则同步灾难恢复切换将处于启用状态，并且无法禁用。
+
+. 您也可以添加标记和值。
 . 单击 * 创建 * 。此操作将创建一个作业来创建服务器。
 
 
-创建服务器将作为异步作业运行。您可以
 
-* 在作业列表中检查作业的状态。
-* 作业完成后，在服务器列表中检查服务器的状态。
+NOTE: 如果要创建启用了CIFS的服务器、则对于输入的域名(FQDN)、应输入Active Directory用户名和Active Directory密码、然后单击*确认*。
+
+服务器创建将作为异步作业运行。您可以
+
+* 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
+* 作业完成后、在上的服务器列表中检查服务器的状态
 

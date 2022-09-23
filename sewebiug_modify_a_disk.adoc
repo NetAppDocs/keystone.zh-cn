@@ -14,9 +14,9 @@ summary: keystone 修改磁盘
 
 
 [role="lead"]
-您可以更改磁盘名称，主机组映射，性能服务级别，容量和快照策略。如果可用，您可以使用此方法将磁盘移动到不同的服务级别。
+您可以更改磁盘名称、主机组映射、服务级别、容量和快照策略。如果可用，您可以使用此方法将磁盘移动到不同的服务级别。
 
-磁盘必须处于运行状态。有关了解卷状态以及为使其正常运行而要采取的步骤的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["查看磁盘"] 和 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["对象状态"]
+磁盘必须处于运行状态。有关了解卷状态以及为使其正常运行而要采取的步骤的信息，请参见 link:sewebiug_view_disks.html["查看磁盘"] 和 link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["对象状态"]
 
 .步骤
 . 查看 link:sewebiug_view_disks.html#view-disks["磁盘列表"]。
@@ -27,6 +27,6 @@ summary: keystone 修改磁盘
 
 修改磁盘将作为异步作业运行。您可以
 
-* 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
+* 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
 * 作业完成后，在磁盘列表中检查磁盘的状态。
 
