@@ -79,7 +79,7 @@ Cloud Volumes Services 的订阅在 NetApp 服务引擎之外进行管理。NetA
 | `名称` | string | Cloud Volumes Service 实例的名称。 
 
 
-| `cc_working _env` | string | Cloud Manager 中的工作环境名称。 
+| `cc_working _env` | string | BlueXP中的工作环境名称。 
 
 
 | `cc_client_id` | string | Auth0 服务 ID 。 
@@ -97,7 +97,7 @@ Cloud Volumes Services 的订阅在 NetApp 服务引擎之外进行管理。NetA
 | `cc_credentials_id` | string | 以云为中心的工作环境的 ID 。 
 
 
-| `azure_client_id` | string | 应用程序（客户端） ID 。Cloud Manager 可用于向 Azure Active Directory 进行身份验证的 Active Directory 服务主体的 ID 。 
+| `azure_client_id` | string | 应用程序（客户端） ID 。BlueXP可用于向Azure Active Directory进行身份验证的Active Directory服务主体的ID。 
 
 
 | `azure_client_secret` | string | 服务主体应用程序的客户端密钥值。 

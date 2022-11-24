@@ -29,7 +29,7 @@ NOTE: 应已为 GCP 配置租户和子租户的 Cloud Volumes Service 帐户。�
 
 * 此子租户已订阅 Google Cloud 服务。
 * 您已为用户的服务帐户创建了 JSON 文件，并且知道与 Google Cloud 实例关联的 GCP 项目编号。
-* 确保您的支持团队已在 Cloud Manager 上配置适用于 GCP 的 Cloud Volumes Service 。有关详细信息，请参见 https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["设置适用于 Google Cloud 的 Cloud Volumes Service"]。
+* 确保您的支持团队已在BlueXP上配置Cloud Volumes Service for GCP。有关详细信息，请参见 https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["设置适用于 Google Cloud 的 Cloud Volumes Service"]。
 
 
 .步骤

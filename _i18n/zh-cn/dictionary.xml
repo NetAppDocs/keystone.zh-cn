@@ -188,7 +188,6 @@
   <block id="fc4c528ae40d23f09280dab99194a955" category="cell">`名称`</block>
   <block id="8bc48e5f4724775e4f4601a4e4ed2687" category="cell">Cloud Volumes Service 实例的名称。</block>
   <block id="5df5e1234496b4f4567b25a4b7b26ba3" category="cell">`cc_working _env`</block>
-  <block id="2fa447a56e54e8572e7ecaf28e975e80" category="cell">Cloud Manager 中的工作环境名称。</block>
   <block id="c67906f7bee9799974a4de606d2420e2" category="cell">`cc_client_id`</block>
   <block id="2e83a5722e857f87078cabdc3cda5f38" category="cell">Auth0 服务 ID 。</block>
   <block id="f00a35e02aec20c8d9cf536f9dd3bf33" category="cell">`cc_refresh_token`</block>
@@ -200,7 +199,6 @@
   <block id="fdfeff0c0589d5ab72dc570db74d59a7" category="cell">`cc_credentials_id`</block>
   <block id="05daf3080cc6bf51d9a7488838b0650f" category="cell">以云为中心的工作环境的 ID 。</block>
   <block id="bca25748ae9ad08875b859cc2005f825" category="cell">`azure_client_id`</block>
-  <block id="8c39fc45872124f630a477f8a9db2747" category="cell">应用程序（客户端） ID 。Cloud Manager 可用于向 Azure Active Directory 进行身份验证的 Active Directory 服务主体的 ID 。</block>
   <block id="4e293b85fede02c268e93ef73f188710" category="cell">`azure_client_secret`</block>
   <block id="222fdbc61ee44a202596354abd406a32" category="cell">服务主体应用程序的客户端密钥值。</block>
   <block id="476995152e4de0614e55d1be3004b494" category="cell">`azure_tenant_id`</block>
@@ -1922,7 +1920,6 @@
   <block id="0bb5849ddc549d6d9a0166d3663f0d1e" category="admonition">对于 CIFS 共享，在共享路径的末尾添加 ` $` 字符将使其成为隐藏共享，例如， `pathtomyhiddenshare$` 。</block>
   <block id="ff138ca03bebc3f223aa7473c49093cc" category="summary">NetApp 服务引擎 REST API</block>
   <block id="f85fe16835da940dc0eded602be1d88a" category="doc">NetApp 服务引擎 REST API</block>
-  <block id="4bb8f28d1ae5f4c793395a1ce16ebd50" category="paragraph">许多 API 调用返回大量记录。可以通过指定 `offset` 和 `limit` 值来限制记录数：</block>
   <block id="2c9821eb0bfa9053dd0b371fa82738f0" category="list-text">* 限制。 * 要返回的记录数。</block>
   <block id="75100d42069de12445ab076dab1a5044" category="list-text">* 偏移。 * 返回第一个记录之前要跳过的记录数。例如，如果偏移 1 ，则会跳过第一个记录，并返回从 2 开始的记录。</block>
   <block id="6e38eaf3c64cc8f5260081b7bb3a1eb2" category="paragraph">您还可以对响应进行排序：</block>
@@ -1968,7 +1965,6 @@
   <block id="6be9adc0bb5eb38197744a6ba6770654" category="list-text">此子租户已订阅 Google Cloud 服务。</block>
   <block id="b22f259a7845cf612bcf5a7d485a6137" category="list-text">您已为用户的服务帐户创建了 JSON 文件，并且知道与 Google Cloud 实例关联的 GCP 项目编号。</block>
   <block id="b3ae8c33b08587c2b6be6031629d0de3" category="inline-link">设置适用于 Google Cloud 的 Cloud Volumes Service</block>
-  <block id="084cafb5240ee412a1336b10f1e95d54" category="list-text">确保您的支持团队已在 Cloud Manager 上配置适用于 GCP 的 Cloud Volumes Service 。有关详细信息，请参见<block ref="1956ecad31d7ae695fe28eacaf067e5e" category="inline-link-rx"></block>。</block>
   <block id="300a306a4df8277005591f8c37dca4ad" category="list-text">单击 * 创建 * ，然后单击 * Google Cloud* 。</block>
   <block id="d3e4adc8f56c48d2cb91db12131aa538" category="list-text">在 Google Cloud Credentials 部分中，上传包含服务帐户凭据的 JSON 文件。</block>
   <block id="fc5127bbf11e334554718f2fe100b9f3" category="list-text">如果需要，请向服务添加标记。</block>
@@ -2323,7 +2319,6 @@
   <block id="2ac1902f80e6b8be72c8f424ff8e1895" category="cell">删除此 ID 标识的用户。</block>
   <block id="08adb405703760d625a89d2f8489e280" category="summary">Keystone 服务条款和问题描述概述</block>
   <block id="4c81f84de3c6cf1b71adecb694feb770" category="doc">Flex 订阅服务条款和说明</block>
-  <block id="1cbddcf2fa8e22cb8595706c00cc4371" category="list-text">NetApp Keystone 灵活订阅（ Flex 订阅）的有效期至少为一年，最长为三年。初始期限过后，此服务将每年续订一次。容量可以以小至 1 TiB 的增量递增。</block>
   <block id="9597eb938e2fba159aa254b3a95e6efb" category="list-text">每个站点的最小容量为 100 TiB ，每个站点可以有一个或多个集群来满足最低容量要求。在合作伙伴运营的模式下，可以为客户，每个站点以及各个服务级别创建最低灵活的订阅。</block>
   <block id="be9709b8de891bed2cb58977708e499e" category="list-text">租户订阅仅限于合作伙伴订阅的服务级别。</block>
   <block id="87f73c8129d1f6a0026c085c19c37ee7" category="list-text">每个站点可提供 20% 的突发容量；任何突发使用量仅在该计费期间计费。如果您需要超过 20% 的额外突发要求，请联系支持部门。</block>
@@ -2830,14 +2825,6 @@
   <block id="b387af4e718e4b5565ce87f74234f50f" category="paragraph">*初始期限完成后是否有机会转换为购买？*否此优惠不包括转换为购买的选项。此外，以前购买的 NetApp 产品不在此计划范围内。</block>
   <block id="a16dc1f5755db55741d2ae801d6aa73d" category="paragraph">*是否可以请求特定软件版本？*</block>
   <block id="ee62bd671134498c82c2878422e9f59a" category="paragraph">*是否会收到有关软件升级的通知？*</block>
-  <block id="4b27d8b1b37284b9da0b4213e4e6675d" category="paragraph">返回到"http方法"、返回"HTTP方法"、"路径"、问题描述 "HTTP参数"</block>
-  <block id="9104a21e58f1a69b57c6b2ae89602908" category="paragraph">`发布`我们的文章`我们的文章：`/v2.1/tenant/｛tenant_id｝/servicerequess/categories我们 的文章：创建服务请求。`tenant_id`：租户标识符。</block>
-  <block id="58e00570185a83ad51f69b7079961f6b" category="paragraph">类别|必需</block>
-  <block id="4ef290f7b3c58a4e717e6cc36148b17f" category="paragraph">`s订阅``subscription` and `scommitment``灾难恢复`storage_object_type`、`ssubtenant_id`和`storage_object_id `s技术` subtenant_id `s和` service_type如果service_type是文件服务或块存储、则需要分区。"其他"区域</block>
-  <block id="0725399a92712a8b8a9b398144b43a68" category="cell">*请求正文示例：*...｛"subject"："string"、"comment"："string"、"category"："subscription"、"priority "："Normal"、"subscription"：A-S00003969、 "commitment"：｛"service_level"："standard"、"new_commitment"：10｝、"zone"："au-East1-a"、"subtenant_id"："5d2fb0fb4f47df00015274e3"、"storage_object_type"："fileserver"、 "storage_object_id"："5d2fb0fb4f47df00015274e3"、"service_type"："文件服务"｝...*响应正文示例：*...｛"status"：｛"user_message"："string"、"verby_message"："string"、"code"："string"｝、"result"：｛"Returned_records"：1、"records"：[｛"id"："string"、"Subject"："string"、"status"："string"、问题描述 ："string"、"status"："status"、"status"："."："、"status"、"nor值："："、"nor值 "createdDate"："2020-05-12T03：18：25+0000"、"UpdatedDate"："2020-05-12T03：18：25+0000"｝]｝……=检索服务请求类别下表列出了指定租户的检索服务请求类别。</block>
-  <block id="b235a9ee30b02d07ff714bb1542b9b1d" category="paragraph">"HTTP方法"｛\f2 |｝路径｛\f2问题描述 ｝｛\f2｝参数</block>
-  <block id="3cfc9b45a25da8c56ea24ecc26ed6f54" category="paragraph">`` GET`|`/v2.1/tenant/｛tenant_id｝/servicerequess/categories|检索服务请求类别。`tenant_id：`(可选)返回指定租户的服务请求。</block>
-  <block id="c31fc18f14b317fa271c222c8662ff0b" category="cell">所需的请求正文属性：`none`*请求正文示例：*...无...*响应正文示例：*...｛"status"：｛"user_message"："好的。返回5条记录。"、"详细消息"：""、"代码"：200｝、"结果"：｛"Returned_records"：5、"记录"：[｛"key"："dr"、"值"："灾难恢复故障转移"｝、｛"key"："技术"、"值"："技术问题描述 "、｛"key"、"键"、"值"、"其他"："键："键"："键"键"、"键"值"："：" "Backup Restore"｝｝……</block>
   <block id="8615a49d222eeb50c22f60e749d36d5e" category="paragraph">*什么是NetApp服务引擎？*</block>
   <block id="a5e1a7f3557344aca20fdd047ee9cace" category="paragraph">*客户操作模式需要NetApp服务引擎？*</block>
   <block id="46eed4ec681c7ae2f6418744e02e8ba8" category="paragraph">* NetApp服务引擎安装在何处？*</block>
@@ -3130,4 +3117,25 @@
   <block id="3367785c4c24c46720a1f71a3ba620db" category="sidebar">管理Azure卷</block>
   <block id="12c44922182533b1b7bb4417b61b95ec" category="sidebar">管理适用于Google云平台的Cloud Volumes Service</block>
   <block id="8f827fcb6054a7882181161868caf231" category="sidebar">备份卷</block>
+  <block id="a57f88e039b309218996266b80792e58" category="cell"><block ref="3854361464b9a2c3832c47bd39cddf54" prefix="" category="inline-code"></block>：租户标识符。</block>
+  <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">类别</block>
+  <block id="b651efdb98a5d6bd2b3935d0c3f4a5e2" category="cell">Required</block>
+  <block id="787ad0b7a17de4ad6b1711bbf8d79fcb" category="cell">订阅。</block>
+  <block id="102da3147e28a4669677fece4454c61f" category="cell"><block ref="b48b13e73a6ac2a86dc54425dd24d9ff" prefix="" category="inline-code"></block> 和<block ref="e4586172850ecb0954a632168fa0151a" prefix=" " category="inline-code"></block></block>
+  <block id="f92d949ea1f5479f6dd45574e5f59f28" category="cell"><block ref="2aae5dbec169c641bc991a21bba7ded3" prefix="" category="inline-code"></block>，<block ref="f5d285f3c30970bcfcb9cf6292e5948c" prefix=" " category="inline-code"></block>，和<block ref="d8ebad67e49e38d52183df8396039c53" prefix=" " category="inline-code"></block></block>
+  <block id="ad1ec60c9e1f10f6a9f5d9f2c5254bc6" category="cell">技术</block>
+  <block id="1efcb45ce32fab1dd54282a048a8f6e3" category="cell"><block ref="f5d285f3c30970bcfcb9cf6292e5948c" prefix="" category="inline-code"></block> 和<block ref="f43697a993f56955e3f9e353b3b1f210" prefix=" " category="inline-code"></block>条件<block ref="f43697a993f56955e3f9e353b3b1f210" prefix=" " category="inline-code"></block> 是文件服务或块存储、需要分区。</block>
+  <block id="6311ae17c1ee52b36e68aaf4ad066387" category="cell">其他</block>
+  <block id="ac10508ad70f95b289ff520585169501" category="section-title">检索服务请求类别</block>
+  <block id="a6a3bee28fe66348826c742871e5920e" category="paragraph">下表列出了指定租户的检索服务请求类别。</block>
+  <block id="ef64390758ed006361a142422376a39e" category="cell">检索服务请求类别。</block>
+  <block id="ea56ca71a57b3800165f4d81ba320151" category="cell"><block ref="e1e0f0ad1318adbdd4cfa12016e5d06c" prefix="" category="inline-code"></block> (可选)返回指定租户的服务请求。</block>
+  <block id="fecdea178a71ffb2ee93ddcad3d9e020" category="paragraph">许多 API 调用返回大量记录。可以通过指定来限制记录数量<block ref="7a86c157ee9713c34fbd7a1ee40f0c5a" prefix=" " category="inline-code"></block> 和<block ref="aa9f73eea60a006820d0f8768bc8a3fc" prefix=" " category="inline-code"></block> 值。</block>
+  <block id="e50d94eefbc2c17580b0e1711fe9e9e7" category="paragraph">限制这些值：</block>
+  <block id="d2860166293af0668ceaf6fdcb9f2694" category="paragraph">您可以创建用户并将其添加到特定组、以便为其分配对象存储访问权限。</block>
+  <block id="496e90ab3704e4ca4304b45b9f12bbd6" category="list-text">确保您的支持团队已在BlueXP上配置Cloud Volumes Service for GCP。有关详细信息，请参见<block ref="1956ecad31d7ae695fe28eacaf067e5e" category="inline-link-rx"></block>。</block>
+  <block id="2755dc789d3f5fb4106ccd91690ecf5a" category="cell">BlueXP中的工作环境名称。</block>
+  <block id="d717179901a081426cfa25f7009d2d04" category="cell">应用程序（客户端） ID 。BlueXP可用于向Azure Active Directory进行身份验证的Active Directory服务主体的ID。</block>
+  <block id="a7aef034348bc38d9b7f16020d181733" category="paragraph">NetApp Keystone 灵活订阅(Flex订阅)遵循以下服务条款和说明。</block>
+  <block id="0493ca6a55a3d28e65cc473a5710b470" category="list-text">Flex订阅的有效期至少为一年、最长为三年。初始期限过后，此服务将每年续订一次。容量可以以小至 1 TiB 的增量递增。</block>
 </blocks>
