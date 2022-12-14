@@ -32,6 +32,7 @@ image:sewebiug_image25.png["错误：缺少图形映像"]
 . 单击 * 确认 * 。此操作将创建一个用于删除共享的作业。
 
 
+.完成后
 删除共享作为异步作业运行。您可以
 
 * 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。

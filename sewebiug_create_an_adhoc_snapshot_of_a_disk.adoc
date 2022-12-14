@@ -22,4 +22,5 @@ summary: keystone 创建磁盘的临时快照
 . 在创建快照对话框中，输入快照的名称，然后单击 * 创建 * 。
 
 
+.完成后
 快照可能需要几分钟才能可用。如果可用、您可以通过克隆此快照创建另一个磁盘。有关信息，请参见 link:sewebiug_create_a_disk_from_a_snapshot.html["从快照创建磁盘"]。

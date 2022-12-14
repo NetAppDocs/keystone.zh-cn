@@ -41,6 +41,7 @@ Azure Volumes 列表显示指定子租户和位置的 Azure 卷池列表。要�
 
 本节介绍如何添加 Azure 卷。
 
+.开始之前
 您需要：
 
 * Azure 卷所属的子租户

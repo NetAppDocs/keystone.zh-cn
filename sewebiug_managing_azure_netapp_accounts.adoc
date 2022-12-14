@@ -41,6 +41,7 @@ Azure NetApp 帐户列表显示登录用户有权访问的租约中的所有 Azu
 
 本节介绍如何添加 Azure NetApp 帐户。
 
+.开始之前
 您需要：
 
 * Azure NetApp 帐户所属的子租户

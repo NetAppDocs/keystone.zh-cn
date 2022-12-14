@@ -19,6 +19,7 @@ summary: keystone 修改文件共享
 
 NOTE: 如果可用、您可以使用此方法将共享移动到不同的服务级别。只有当服务器支持相应的服务时，才能更改共享类型。
 
+.开始之前
 文件共享必须处于运行状态。有关了解卷状态以及为使其正常运行而要采取的步骤的信息，请参见 link:sewebiug_view_disks.html["查看磁盘"] 和 link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["对象状态"]
 
 .步骤
@@ -28,6 +29,7 @@ NOTE: 如果可用、您可以使用此方法将共享移动到不同的服务�
 . 单击 * 完成 * 。此操作将创建一个作业来修改共享。
 
 
+.完成后
 修改共享将作为异步作业运行。您可以
 
 * 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。

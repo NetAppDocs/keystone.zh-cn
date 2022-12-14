@@ -18,6 +18,7 @@ summary: Keystone 添加云服务
 
 NetApp 服务引擎支持 Azure NetApp Files 。
 
+.开始之前
 您需要有关云服务的信息，包括连接到该服务的凭据。这些信息因云服务类型而异。
 
 .步骤

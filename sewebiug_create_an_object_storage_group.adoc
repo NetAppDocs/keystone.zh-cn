@@ -25,4 +25,5 @@ summary: keystone 创建对象存储组
 . 单击 * 创建 * 。此操作将创建一个作业，用于使用指定设置创建组。
 
 
+.完成后
 创建对象存储组将作为异步作业运行。您可以在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。

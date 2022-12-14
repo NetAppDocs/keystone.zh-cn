@@ -21,6 +21,7 @@ summary: Keystone 创建文件服务器
 * 使其启用 CIFS 。默认情况下、NFS服务处于启用状态。
 
 
+.开始之前
 请确保您已具备以下条件来创建服务器：
 
 * 要托管服务器的子租户。
@@ -89,6 +90,7 @@ NOTE: 如果您订阅了同步灾难恢复数据保护、则会自动为您的�
 
 NOTE: 如果要创建启用了CIFS的服务器、则对于输入的域名(FQDN)、应输入Active Directory用户名和Active Directory密码、然后单击*确认*。
 
+.完成后
 服务器创建将作为异步作业运行。您可以
 
 * 在作业列表中检查作业的状态。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。

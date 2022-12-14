@@ -3138,4 +3138,10 @@
   <block id="d717179901a081426cfa25f7009d2d04" category="cell">应用程序（客户端） ID 。BlueXP可用于向Azure Active Directory进行身份验证的Active Directory服务主体的ID。</block>
   <block id="a7aef034348bc38d9b7f16020d181733" category="paragraph">NetApp Keystone 灵活订阅(Flex订阅)遵循以下服务条款和说明。</block>
   <block id="0493ca6a55a3d28e65cc473a5710b470" category="list-text">Flex订阅的有效期至少为一年、最长为三年。初始期限过后，此服务将每年续订一次。容量可以以小至 1 TiB 的增量递增。</block>
+  <block id="b1fb6edb6a9cd7a76214562e75ef8390" category="paragraph-title">计量已用容量</block>
+  <block id="7f5043ec0394d759e4ce437fc8c9cd52" category="paragraph-title">按月计费</block>
+  <block id="51ebf10290dc90afa947ed3f3696db87" category="paragraph-title">按年计费</block>
+  <block id="6f79e617449041abacad9b220d0cdd03" category="paragraph-title">突发计费的宽限期</block>
+  <block id="1a616d944b2a6237298adf4b4e0db510" category="paragraph-title">配置文件服务器或块存储以支持异步灾难恢复</block>
+  <block id="1e53e767469d41ddc55c1ff94e72e9a6" category="paragraph-title">在文件共享或磁盘上启用异步灾难恢复</block>
 </blocks>
