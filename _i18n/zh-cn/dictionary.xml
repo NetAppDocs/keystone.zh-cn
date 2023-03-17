@@ -504,7 +504,6 @@
   <block id="63e1807e1af53e793c61f4822e068969" category="paragraph">使用下表中列出的方法按 ID 删除服务级别。</block>
   <block id="0ab58fa7eaafb012e33e459f2b152593" category="cell">删除 ID 标识的服务级别。</block>
   <block id="30c740c15df6835e786c16943f13c878" category="summary">Keystone 服务级别指标和定义</block>
-  <block id="5b28c1e596f24c136b5eb202ade03b6f" category="doc">服务级别指标和定义</block>
   <block id="bd3e3fa30e712c1d806acc88cecbed18" category="paragraph">NetApp Keystone 灵活订阅（ Flex 订阅）服务中使用了以下术语和定义：</block>
   <block id="fccdf4385eaed208ed2da98088a58040" category="list-text">* GiB ， TiB 和 PIB 。 * 数据存储容量测量，使用基数为 1024 （ 1 GiB = 1024^3^ 字节， 1 TiB = 1024^4^ 字节， 1 PiB = 1024^5^ 字节）。</block>
   <block id="fdd7161b237f60b8f4481babf5f0254a" category="list-text">* IOPS/TiB 。 * 应用程序请求的每秒协议操作数除以卷的已分配逻辑大小。</block>
@@ -1976,7 +1975,6 @@
   <block id="c255734de720d66c0c72eafba01042a7" category="list-text">选择要为其创建卷的子租户。</block>
   <block id="401c8b82211468039719631c9be4f363" category="list-text">选择区域和网络。此列表将根据 GCP 上子租户的 Cloud Volumes Service 帐户进行筛选。</block>
   <block id="1027be2ec13d0a5c51b04348a001394d" category="list-text">为卷添加名称。</block>
-  <block id="009cb2fa973a63420fb9c3e6d19e6bf7" category="list-text">选择相应的服务级别。</block>
   <block id="42ecabf130bec289f7d0a1d1d0f32de7" category="list-text">输入卷的文件路径作为创建令牌。</block>
   <block id="789713868a6149107b3da72729b9ea14" category="list-text">以字节为单位分配卷配额。</block>
   <block id="2527ce275aacdb527aaf9b12e9515877" category="list-text">如果需要，请为卷添加标记。</block>
@@ -2357,7 +2355,6 @@
   <block id="e9c80bfaff45d429248172e90bf4cf17" category="list-text">正在删除 * 。 * 对象正在被删除并正在处理。</block>
   <block id="942b6d4c89e3eda89bf1fc3fdbb422bb" category="list-text">* 已排队。 * 对象处于已排队状态，正在进行处理。</block>
   <block id="c6c8c040e27193ed150428f0ad7c3c1c" category="list-text">如果在 NetApp 服务引擎外部配置的 * 已导入 * 对象不符合 NetApp Keystone 灵活订阅（ Flex 订阅）的标准，则此状态为已导入。</block>
-  <block id="3929849d264a990dc00723acaab40f6d" category="admonition">此状态通常意味着不会对对象应用 QoS 策略，因此 NetApp 服务引擎无法在您的 Flex 订阅中对其进行管理。您可以通过编辑笔修改对象并分配适当的服务级别。此操作会将该对象的状态更改为 " 已运行 " 。</block>
   <block id="a14e6fa33d61dda2c98b6ecf326fcf81" category="list-text">* 非标准 * 。如果在 NetApp 服务引擎外部配置的对象不符合 NetApp Keystone 灵活订阅（ Flex 订阅）的标准，则会以此状态导入这些对象。</block>
   <block id="77c9210b10afdcdea17f78b57f8021f3" category="admonition">此状态通常表示此对象未达到在您的 Flex 订阅中由 NetApp 服务引擎管理的一个或多个标准。您可以 <block ref="e37ceb28c45a47909eddea846ff49620" category="inline-link-macro-rx"></block> 通过 NetApp 服务引擎门户对其进行标准化和管理，并由支持团队运营。</block>
   <block id="ea3d509a94dc5e437bbb8bc394f84950" category="list-text">* 请联系支持部门。 * 如果配置或修改任务无法完全完成，则会出现此状态。对于处于此状态的项目，请提交支持请求以处理问题描述。</block>
@@ -2571,17 +2568,8 @@
   <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="cell">NetApp</block>
   <block id="244f78a4e039400f39e0eb94595bdc02" category="cell"><block ref="244f78a4e039400f39e0eb94595bdc02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7feb8545e008b64a43a24668068761be" category="summary">客户可以在 Active IQ 中看到 Keystone 的情况</block>
-  <block id="262343e94e4c53e68a3899e4036dbba5" category="doc">Flex订 阅客户可以在 Active IQ 中查看哪些内容？</block>
-  <block id="902acbb4ec533e7ef722d0120abac953" category="paragraph">如果您已订阅 NetApp Keystone 灵活订阅（ Flex 订阅）服务，则可以在 Active IQ 数字顾问信息板上查看使用情况报告和图形。</block>
-  <block id="8aec6a2bcfb78af1fffa4f2c52dfe49d" category="inline-link-macro">Active IQ 数字顾问文档</block>
-  <block id="5b312d01bd3eecc97ac2f41e3e4ddf39" category="paragraph">有关 Active IQ 数字顾问的详细信息，请参见 <block ref="8ea1c0730bcdf181af831ad867c5fa88" category="inline-link-macro-rx"></block></block>
-  <block id="2b1092032299ace7c3847b060eb7665f" category="paragraph">如果您的站点默认安装了 NetApp 服务引擎，则除了 Active IQ 数字顾问之外，您还可以通过 NetApp 服务引擎界面查看使用情况图表。但是，在客户管理的环境中，您无法访问 NetApp 服务引擎界面，并且只能通过 Active IQ 数字顾问信息板查看容量图表和使用情况报告。有关客户管理的环境的信息，请参见 <block ref="6c1babef94ecdfe13ce1038b7eabf5ab" category="inline-link-macro-rx"></block></block>
   <block id="e444f8631d85c8cbe1bb61d4d60f630f" category="paragraph">从您的站点收集指标数据的间隔为 5 分钟。</block>
-  <block id="2844749536976db1a7dcb3cac896aadb" category="paragraph">作为客户，如果您订阅了 Flex 订阅服务，则可以在 Active IQ 数字顾问上查看以下信息：</block>
-  <block id="69e4ec00604265b757632eda3f1e383b" category="list-text">* Keystone Flex 订阅 * 小工具：如果您已登录到 Active IQ 数字顾问，则可以看到 * Keystone Flex 订阅 * 小工具，其中汇总了已购买的 Flex 订阅服务的容量使用情况。</block>
-  <block id="dbba74e6f62c29e1dea79d870e9f4b53" category="list-text">如果单击小工具上的 * 查看详细信息 * ，则可以看到 * Keystone - 容量利用率 * 信息板。"Keystone - 容量利用率 " 信息板可根据订阅的服务（例如服务级别，数据保护和高级数据保护服务）进一步细分和分析容量和使用情况数据。此信息板还会显示过去 1 天， 7 天和 30 天的已用容量，已提交容量和突发容量使用情况图，并计算和拆分当前计期内的平均累积突发量。</block>
   <block id="29cb371773858a73b7aca64ff6f208f4" category="inline-link-macro">使用 NetApp Keystone Flex 订阅查看容量利用率</block>
-  <block id="fc533fceebb994e8ef6bbeba15951fd9" category="paragraph">有关详细信息，请参见 <block ref="30eccfcef2e1a5c7fe1b095bf8a3af1d" category="inline-link-macro-rx"></block>。</block>
   <block id="28307c52fb9de3f0b2b26086b89eb8f3" category="paragraph">此处列出了文件，块和对象存储的服务级别。</block>
   <block id="079bbc110741f438dfb37f32218c4c21" category="cell">* 服务级别 *</block>
   <block id="cdf0cc519fabc4c14999e89090d33dc1" category="cell">* 至尊 *</block>
@@ -2690,7 +2678,6 @@
   <block id="e0860a8634b1f9ca0dc00aba7d58c748" category="sidebar">不可退回的磁盘</block>
   <block id="0e0fe605239796a7018441e65fa28979" category="sidebar">美国公民支持</block>
   <block id="c2c19492d8278f541b461dfa6849c504" category="sidebar">Flex 订阅和 Equinix</block>
-  <block id="6b9cddec4dacfc2b279a47aff83fcc02" category="sidebar">灵活订阅和 Active IQ</block>
   <block id="faf37da472ffd232f9810c360b4c1f18" category="paragraph">安装及相关任务</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="list-text">安装</block>
   <block id="f1206f9fadc5ce41694f69129aecac26" category="list-text">配置</block>
@@ -2795,7 +2782,6 @@
   <block id="00b8e318a80a143ca212b4f3b0cb449f" category="paragraph">* 是否可以订购新的存储服务？ * 是的，可以从 NetApp 服务引擎门户请求新的存储服务或扩展存储服务。NetApp Keystone 运营团队会先处理此请求，然后再将其提供给用户使用。</block>
   <block id="eff136c1ba2e8a2d6e4b14ddd6a80383" category="paragraph">* 是否可以立即增加存储承诺量？ * 根据请求的容量，确定容量是否已部署，或者是否需要运输和安装额外设备。</block>
   <block id="f71fb6dbf8a02dfaed157786a5d1337e" category="paragraph">* 工作负载是否可以在层之间移动？ * 是的，工作负载可以在层之间移动，前提是用户已订阅工作负载要移至的层。但是，我们不建议从较高的层移至较低的层，因为发生原因这样可能会导致性能下降。只需编辑文件共享并更改服务级别设置即可完成此过程。</block>
-  <block id="0d5e545b2de42575e5208d3abb79f68c" category="paragraph">* 默认安装的软件版本（例如 ONTAP ）是什么？ * 根据订阅的服务层（例如，具有文件和块服务的 ONTAP ，用于块的 SANtricity 和用于对象的 StorageGRID ），支持团队安装最新的稳定版本，而不存在任何安全或功能问题。</block>
   <block id="7ae9036783fb54e0a52aedfa26814f6b" category="paragraph">*有哪些不同的运行模式以及由谁负责主要活动？*</block>
   <block id="f2ac98a13f280a4eeb27bb4780175f5e" category="paragraph">*什么是NetApp运营的模型？*</block>
   <block id="7dd4b2b13e8a8a109244cccfafe4b5a5" category="paragraph">*什么是合作伙伴运营的模式？*</block>
@@ -2985,15 +2971,11 @@
   <block id="201a10b44105a7f46600bd19700a5b0b" category="admonition">对于选定文件共享、如果您在NetApp服务引擎之外的SnapCenter 环境中创建了一些快照、则可以找到这些已导入并列出的快照供您选择。您可以选择这些导入的快照并从中克隆新文件共享。</block>
   <block id="675fcd36774818dbea836dc02cf4d0d6" category="list-text">选中要从中克隆的快照旁边的复选框、然后单击*下一步*。新文件共享将继承选定快照的属性。</block>
   <block id="278530798aa56115669d57d1e3fa9073" category="list-text">添加 * 名称 * 和 * 共享路径 * 。更新其他设置，例如分配 * 服务级别 * ，然后单击 * 创建 * 。选择最符合您需求的服务级别。</block>
-  <block id="775c0cf773e692f5b5aff6da7ff3a805" category="paragraph">NetApp Keystone 灵活订阅(Flex订阅)可按预定义的服务级别或性能服务级别提供容量。</block>
-  <block id="fda90827f7dc62058d02279d98e89377" category="paragraph">每个服务级别(服务级别)均通过其I/O密度来定义、该密度是性能(每秒输入/输出操作数IOPS)和已用存储(已存储数据的TiB)(即IOPS/TiB)的比率。</block>
   <block id="7cb1e7ec7bd37f6e4d6191d590b40dfe" category="paragraph">由Flex订阅服务管理的每个卷都与一个服务级别相关联。在计算卷的 I/O 密度时会考虑相应卷上使用的所有 I/O 操作和所有已用存储。</block>
   <block id="c369a24416627121068456b8b8aad586" category="paragraph">下表定义了服务级别。</block>
   <block id="9298a8df81bc0591b45113097c6a4118" category="section-title">不同存储类型的服务级别</block>
   <block id="18cf673c6b162cc27313691486836fca" category="admonition">^1^ NetApp直接商机的任何文件共享和块服务级别组合的最小期限为一年、最小容量为100 TiB。^2^ 为渠道主导的商机选择的每个服务层的最小一年期限和最小规定容量。</block>
   <block id="c3010f4da438652aab9b42654d086f8d" category="admonition">^1^ NetApp直接商机的任何文件共享和块服务级别组合的最小期限为一年、最小容量为100 TiB。^2^ 为渠道主导的商机选择的每个服务层的最小一年期限和最小规定容量。^3^ 为任一商机类型选择的每个服务层的最小一年期限和最小指定容量。</block>
-  <block id="abafef4130ed8938c3153ad43e1ac52e" category="paragraph">您可以从NetApp服务引擎用户界面的多个屏幕为订阅分配服务级别。有关详细信息，请参见</block>
-  <block id="1e40687eaf73dde4f163672091e3ee28" category="paragraph">**** <block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block></block>
   <block id="39cd3f32af1f6142ceceefd9378ef437" category="list-text">与文件服务器关联的所有灾难恢复复制副本。您无法撤消删除服务器。</block>
   <block id="a189c66e23fd7e79d1bebf594d16fb15" category="paragraph">如果已用容量大于给定服务级别的已用容量、则会记录突发消耗量、并相应地收取费用。生成的每个消耗记录都会发生此过程。因此，突发消耗量反映了超出承诺容量的过度消耗容量的数量和使用期限。</block>
   <block id="e0450cba6f565299b1277f655c94fa25" category="paragraph">在激活订阅后的前60天内、您累积的任何突发消耗量都会记录下来、但不会计入您的Flex订阅发票。此宽限期允许您有时间为存储配置适当的自适应服务质量(AQoS)设置、以便对其进行适当监控和计费。正确配置存储后、您可以避免任何意外的突发费用。在60天的初始宽限期之后累积的任何突发使用量将在您的下一张发票上计费。此宽限期不会影响对现有订阅的任何修改或续订。</block>
@@ -3110,7 +3092,6 @@
   <block id="6f6cb72d544962fa333e2e34ce64f719" category="list-text">Size</block>
   <block id="c8308b1eba7ba926a61b8fd802194386" category="list-text">对象</block>
   <block id="a2a8d61c91e599b9767a25a53af35534" category="list-text">操作(例如删除存储分段)</block>
-  <block id="2a96a4cfac487b5cc41e8fd4506c4230" category="sidebar">性能服务级别或服务级别</block>
   <block id="469b359223644ae76f8489201eaba251" category="sidebar">管理Azure NetApp Files</block>
   <block id="1b0a895ad5dbae078e4d9e0514db2461" category="sidebar">管理Azure NetApp帐户</block>
   <block id="5397c058f4d19f86cf260de9d12c163e" category="sidebar">管理Azure容量池</block>
@@ -3144,4 +3125,105 @@
   <block id="6f79e617449041abacad9b220d0cdd03" category="paragraph-title">突发计费的宽限期</block>
   <block id="1a616d944b2a6237298adf4b4e0db510" category="paragraph-title">配置文件服务器或块存储以支持异步灾难恢复</block>
   <block id="1e53e767469d41ddc55c1ff94e72e9a6" category="paragraph-title">在文件共享或磁盘上启用异步灾难恢复</block>
+  <block id="66c777f6bba3f375b5c9f563b51df61b" category="list-text">选择相应的服务级别。</block>
+  <block id="89fb8980c16c92d28af72e0579cfac9c" category="summary">Keystone订阅报告和图形</block>
+  <block id="8d0df828e022d4082415c7c86746be9f" category="doc">适用于Flex订阅的Digital Advisor信息板和报告</block>
+  <block id="1aa4a8544fc94c7ce0ff8c9bc46bb523" category="paragraph">通过Active IQ 数字顾问(Digital Advisor)信息板、您可以监控与NetApp Keystone 订阅相关的使用情况并生成报告。订阅Keystone服务时、您可以在Digital Advisor信息板上的* Keystone订阅*小工具中查看订阅和使用情况的详细信息。</block>
+  <block id="936acd8bca51b1c47ce51ce5d9e45134" category="admonition">此处提供的信息包括适用场景 ONTAP 和StorageGRID。相关章节指出了一些例外情况。</block>
+  <block id="b5d0947d6bc5e70f868d560d859163f5" category="inline-link">查看NetApp Keystone 订阅的容量利用率</block>
+  <block id="90022a4ed9f097be4671116b6b5b7754" category="paragraph">有关Keystone Digital Advisor小工具的信息、请参见<block ref="553d5c0a148912943ee201440d3b98c5" category="inline-link-rx"></block>。</block>
+  <block id="af23688fe47e4923ebd83f7238688630" category="paragraph">要查看详细信息、请执行以下步骤：</block>
+  <block id="e84dede1181b53e24bdf1d55508b83bf" category="list-text">在Digital Advisor上、单击小工具上的*查看更多详细信息*、在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规&gt; Keystone订阅*。</block>
+  <block id="b49a48b1a3504debfe7fedab8ad4086d" category="paragraph">订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在* Keystone订阅*屏幕的不同选项卡中。</block>
+  <block id="3e7fbf68bb6fb2a1a061e9b1a50441d9" category="inline-link">服务级别指标和定义</block>
+  <block id="1cc53c243cc7aca8f5ccf3f64e634b22" category="admonition">Keystone订阅中的容量消耗以Tib形式显示在信息板和报告上、最多可显示两位小数。如果使用量小于0.01TiB、则该值显示为<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> 或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。有关其他使用指标、请参见<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。有关Keystone中使用的不同容量的信息、请参见<block ref="138642b64e1fce198a03042cd762c1d6" category="inline-link-rx"></block>。</block>
+  <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">查看订阅详细信息</block>
+  <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">您可以在*订阅详细信息*选项卡中查看帐户名称的所有订阅。</block>
+  <block id="3134c27d858b331bf91068bcd770722c" category="paragraph"><block ref="3134c27d858b331bf91068bcd770722c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="60d8073bb007efeabf44bc4eea759210" category="paragraph">对于每个订阅编号、您可以查看以下信息：</block>
+  <block id="8e43124ddee77b223f1e720973e147e7" category="list-text">*订阅编号*：NetApp分配的Keystone订阅的订阅编号。</block>
+  <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*跟踪ID*：激活订阅时分配的跟踪ID。这是每个订阅和站点的唯一ID、用于跟踪订阅。</block>
+  <block id="3644820829d44e327e43dd95769b1686" category="list-text">*计费期限*：订阅的计费期限、例如每月、每季度或每年。</block>
+  <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*开始日期*：订阅的开始日期。</block>
+  <block id="b8905d711198e80b0e2927dff32cfd11" category="list-text">*结束日期*：订阅的结束日期。根据此日期、您可能会看到即将到期的订阅的信息消息。</block>
+  <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*使用状态*：指示已使用或过度使用的订阅量。如果要查看最高消耗记录、可以按此列对列表进行排序。</block>
+  <block id="87620cf1d6b63757e4ea27dcc44a9358" category="list-text"><block ref="5d188bf7f39558255a337fa21a17a0b0" category="inline-image-macro-rx" type="image"></block>：单击此图标将打开*订阅时间序列*选项卡、在此可以查看此订阅中包含的每个服务级别的历史使用情况数据。</block>
+  <block id="dc73bcb00aeb285be26cfd179924fe9e" category="paragraph">您可以单击订阅记录的向下箭头来查看更多详细信息。服务级别名称、已提交、已使用、可用容量以及当前和累积突发使用量等详细信息将显示在TiB中。系统将突出显示消耗量较高的特定服务级别。此外、还会显示为卷生成的任何警告和警报。</block>
+  <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">有关Keystone存储服务和相关服务级别的信息、请参见<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
+  <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">您可以参考以下使用情况指示器来检查每个订阅的使用状态：</block>
+  <block id="3aaeea3f20263addb794c645bdef9c16" category="paragraph"><block ref="3aaeea3f20263addb794c645bdef9c16" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88fa71f0a6e0dfedbb46d91cc0b37a50" category="paragraph-title">索引</block>
+  <block id="cf6ffa83aadbdcc3058434f093ea54ec" category="paragraph"><block ref="56a93b6a2a3614c3aeb1b9851c5e43f2" category="inline-image-macro-rx" type="image"></block>：未根据服务级别的已提交容量记录容量使用情况<block ref="bb7f7720d1162aeddd650a9a9446141b" category="inline-image-macro-rx" type="image"></block>：使用量正常、在已承诺容量的80%范围内<block ref="7646cb232eca2204ee8b299f2fdebfb4" category="inline-image-macro-rx" type="image"></block>：最大使用量、即使用量即将达到已承诺容量的100%或更多。对于超过已提交容量80%的任何消耗、*已用*列将显示此指示符<block ref="2acc4efd0d7d55d52fc790f88116c2e0" category="inline-image-macro-rx" type="image"></block>：消耗量在突发限制范围内。突发消耗量是指在服务级别的100%已承诺容量之上、并且处于商定的突发使用量限制(例如120%)范围内的消耗量<block ref="9dd31109acddbedcca8dcf80e09eebda" category="inline-image-macro-rx" type="image"></block>：表示消耗量超过规定的突发限制</block>
+  <block id="6258cb1a842831f15b22f87325717f37" category="section-title">查看历史订阅数据</block>
+  <block id="a514224616890dbac3dede8f0d533add" category="paragraph">*订阅时间序列*选项卡显示特定时间段的订阅历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。</block>
+  <block id="c46ba64e2bab36ac2ede95ae5f0692dc" category="list-text">单击*订阅时间序列*选项卡。</block>
+  <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">选择要查看其详细信息的所需订阅。默认情况下、系统会选择您帐户名称中的第一个订阅。</block>
+  <block id="9ff2c2d2ffe68a2a0862d38fe356318c" category="list-text">从*自日期*和*至日期*字段中的日历图标中选择时间范围。默认时间范围是从计费周期的开始日期到当前日期。</block>
+  <block id="22dcf7d0676ff8f536ed431a7b672de7" category="list-text">单击 * 查看详细信息 * 。系统将根据选定时间范围显示每个服务级别的订阅历史使用数据。您可以将鼠标光标悬停在图表上方、以查看该数据点上已提交、已使用、突发以及超过突发限制数据的使用情况细分。</block>
+  <block id="4ace5fc4007e7d1732831506700b3e06" category="paragraph"><block ref="4ace5fc4007e7d1732831506700b3e06" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35070e1c588eb56d935a4877ffdfdb10" category="paragraph">此时将显示以下详细信息：</block>
+  <block id="8cdd8d8e55dfdcaf50118c634169eaf7" category="list-text">*订阅详细信息*：订阅的开始和结束日期以及计费期限、例如季度、年度等。</block>
+  <block id="12ed0205cd7410bc01e15e4b8a285019" category="list-text">*使用情况图表*：条形图显示服务级别名称以及在日期范围内根据该服务级别消耗的容量。收集的日期和时间显示在图表底部。</block>
+  <block id="a0844c086d0417165bb56c154e3ddbcc" category="admonition">根据查询的日期范围、使用情况图表将以30个数据点的范围显示。</block>
+  <block id="3a6ef8ff534dc5701b3936464bf23441" category="paragraph">条形图中的以下颜色表示服务级别中定义的已用容量：</block>
+  <block id="19e499aa450e552c41a06bb0742085d6" category="list-text">绿色：在80%以内。</block>
+  <block id="744f7cb6bd1aa9077ff244891a651e80" category="list-text">琥珀色：80%- 100%。</block>
+  <block id="c3b2392317dad26eb62ae53f36697f5e" category="list-text">红色：突发使用量(承诺容量的100%达到约定的突发限制)</block>
+  <block id="7673426e4a1c3cc1b97d1f96f8bd076a" category="list-text">紫色：超过突发限制或<block ref="a9793d8430f5962bfc6384a1d9f6d19b" prefix=" " category="inline-code"></block>。</block>
+  <block id="4bd2482822c2e802c391dac7e891d9b1" category="list-text">灰色：_Provisional usage _-当此时间段的确切数据不可用并替换为上一个数据收集点提供的数据时记录的使用量。</block>
+  <block id="e87913116d2be6cac8be4e9b2fdf61e4" category="list-text">*当前已用容量*：用于指示为服务级别定义的已用容量(以TiB为单位)。此字段使用特定的颜色：</block>
+  <block id="500993209cab49c52b98999c19742b12" category="list-text">灰色：无。</block>
+  <block id="3cc6f4aa3b6f7beebb36ba03d0894c83" category="list-text">绿色：在已提交容量的80%范围内。</block>
+  <block id="33ac206d1e2d75015388a71d724255eb" category="list-text">琥珀色：超过已承诺容量80%的任何消耗。</block>
+  <block id="6294dd4382e993530f7872de2d246655" category="list-text">*当前突发*：指示已用容量是否在定义的突发限制内或以上。在约定的突发限制内使用的任何内容、例如、超出已提交容量20%的使用量均在突发限制范围内。如果使用量超过突发限制、则进一步使用量将被视为超过突发限制。此字段使用特定的颜色：</block>
+  <block id="b19e15743d3257f81d946a8133069a26" category="list-text">红色：突发。</block>
+  <block id="8cb9900bd09a496f0e4b2e4220549b55" category="list-text">紫色：超过突发限制。</block>
+  <block id="2ace5c82683c2f75d293a1427df222e4" category="list-text">*累积突发*：当前计费期间每月计算的累积突发使用量或已消耗容量的指标。累积突发使用量是根据服务级别的已使用容量和已用容量计算得出的：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
+  <block id="393e226f044ba6b817b81de6d94e7276" category="admonition">*当前已用*、*当前突发*和*累积突发*指标用于确定订阅计费期间的消耗量、而不是基于查询的日期范围。</block>
+  <block id="b99a21b99fb9e230b533835afc100672" category="section-title">查看系统详细信息</block>
+  <block id="819abf779095094c4f296a2f1911a333" category="paragraph">在*系统详细信息*选项卡上、您可以查看ONTAP 中卷的使用情况和其他详细信息。对于StorageGRID 、此选项卡将显示节点及其在对象存储环境中的个别使用情况。</block>
+  <block id="7fdbc37a63f55a7bf94c4f7eee9fbbb6" category="example-title">&lt;strong&gt; 卷中的详细信息&lt;/strong&gt;</block>
+  <block id="6f7e564e5f841331ad117d7eb3b3ae10" category="paragraph">对于ONTAP 、*系统详细信息*选项卡将显示相关信息、例如Keystone订阅所管理的存储环境中卷的容量使用情况、卷类型、集群、聚合和服务级别。</block>
+  <block id="d2c1241be04ae4d70013755a80c6cbd2" category="list-text">单击*系统详细信息*选项卡。</block>
+  <block id="ccdbd07a063ad5631511d37c5d2f5a36" category="list-text">选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。</block>
+  <block id="881fb88f30cf9ba2d57147ddfb898685" category="paragraph">此时将显示卷详细信息。您可以将鼠标悬停在列标题旁边的信息图标上、滚动浏览列并了解有关这些列的更多信息。您可以按列排序并筛选列表以查看特定信息。您可以单击*复制节点序列*按钮来复制单个节点序列号。</block>
+  <block id="2ebe85ca38ab100590dc16fd81d18da1" category="paragraph"><block ref="2ebe85ca38ab100590dc16fd81d18da1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8b315ff987c2e0cfd5650f23e5464623" category="example-title">&lt;strong&gt; GRID节点和消费详细信息&lt;/strong&gt;</block>
+  <block id="b3e33e1c1964ee47822698a5c69ad576" category="paragraph">对于StorageGRID 、此选项卡将显示对象存储环境中节点的逻辑使用情况。</block>
+  <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。选择订阅编号后、将启用对象存储详细信息的链接。</block>
+  <block id="1690678f16ffa10ab1e26e44aa686db5" category="paragraph"><block ref="1690678f16ffa10ab1e26e44aa686db5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">单击此链接可查看每个节点的节点名称和逻辑使用情况详细信息。</block>
+  <block id="47e40976658c073c0e6048f08d9a27c6" category="paragraph"><block ref="47e40976658c073c0e6048f08d9a27c6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ecd0726b721e17d74d280fdd93e49f8" category="section-title">生成报告</block>
+  <block id="4fdff89d4e1cb0e4a41e6c52ac0eca05" category="paragraph">您可以通过单击*下载CSV*按钮从每个选项卡生成并查看订阅详细信息、某个时间范围的历史使用情况数据以及系统详细信息报告： <block ref="f865f0dd5bea740b7e77dd6862c1f366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03051fbd458dd7625e7969d74dd74735" category="paragraph">详细信息以CSV格式生成、您可以保存这些详细信息以供将来使用。</block>
+  <block id="e14d9b45f9f7753ca5842f57c89f2f92" category="paragraph">在*订阅时间序列*选项卡中、您可以选择下载查询日期范围内默认30个数据点的报告或每日报告。</block>
+  <block id="d5b4a5bc607e49724b373b44e10a1b6d" category="paragraph"><block ref="d5b4a5bc607e49724b373b44e10a1b6d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f564a49686a18ae09da9597e6538840" category="paragraph">*订阅时间序列*选项卡的示例报告、其中会转换图形数据：</block>
+  <block id="0a5468723ee164f4220a0538b1ff32b4" category="paragraph"><block ref="0a5468723ee164f4220a0538b1ff32b4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">查看警报</block>
+  <block id="c71fcee7f813aa85774b9114dfba4ef1" category="paragraph">信息板上的警报会发送一些警告消息、使您能够了解存储环境中发生的问题。</block>
+  <block id="903961eaa166cc0c38b735276961eb0c" category="paragraph">警报可以有两种类型：</block>
+  <block id="7a0a61d280e201148fcd091f8167d88f" category="list-text">*信息*：对于诸如订阅即将结束等问题、您可以看到信息警报。将光标悬停在信息图标上方、了解有关问题描述 的更多信息。</block>
+  <block id="d08b54ee187c7327910bae3997812ee1" category="list-text">*警告*：违规等问题将显示为警告。例如、如果受管集群中的卷未附加自适应QoS (AQoS)策略、您可以看到一条警告消息。您可以单击警告消息上的链接、在*系统详细信息*选项卡中查看不合规卷的列表。</block>
+  <block id="77561a56c28ac9cccc7140baff66eefa" category="paragraph">有关AQO策略的信息、请参见<block ref="eb9e151d2a405494b16ec028c9292f15" category="inline-link-rx"></block>。</block>
+  <block id="2f79ebd4f32cabd1114c688445ebf53e" category="paragraph"><block ref="2f79ebd4f32cabd1114c688445ebf53e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a8e64b58beb4844a89f1dc662bd47837" category="paragraph">有关这些注意事项和警告消息的详细信息、请联系NetApp支持部门。有关信息，请参见<block ref="a434e165bb861f31d95108a8980bc76d" category="inline-link-rx"></block>。</block>
+  <block id="f5db195a7ff1968e337408920b956125" category="paragraph">NetApp Keystone 灵活订阅(Flex订阅)可按预定义的性能服务级别(服务级别)提供容量。</block>
+  <block id="4c351868537e82b27bc0dc0ae18a7633" category="paragraph">每个服务级别均通过其I/O密度来定义、该密度是性能(每秒输入/输出操作数IOPS)与已用存储(已存储数据的TiB)(即IOPS/TiB)之比。</block>
+  <block id="c42f8376955b2ed929e56dac3d7fa30e" category="paragraph">您可以从NetApp服务引擎用户界面的多个屏幕为订阅分配服务级别。有关详细信息，请参见 <block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block>。</block>
+  <block id="80501b8cb950ef7173fcd14a0b645162" category="doc">Flex订 阅客户可以在Active IQ 数字顾问中查看哪些内容？</block>
+  <block id="10a5d15772da49e32e43a900f71621ce" category="paragraph">如果您已订阅NetApp Keystone 灵活订阅(Flex订阅)服务、则可以在Active IQ 数字顾问(Digital Advisor)信息板上查看使用情况报告和图形。</block>
+  <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link-macro">Digital Advisor文档</block>
+  <block id="199941fcffe1cc10f1d78276fb963281" category="paragraph">有关Digital Advisor的详细信息、请参见 <block ref="6ddd16d015a7ae88cd6e808110d98222" category="inline-link-macro-rx"></block>。</block>
+  <block id="4990a96b0c95260b0d9f8cfea8027323" category="paragraph">如果您的站点默认安装了NetApp服务引擎、则除了可以通过Digital Advisor之外、您还可以通过NetApp服务引擎界面查看使用情况图表。但是、在客户管理的环境中、您无法访问NetApp服务引擎界面、并且只能通过Digital Advisor信息板查看容量图表和使用情况报告。有关客户管理的环境的信息，请参见<block ref="c3e9ea2899321a2aa6e747d59ecbded6" category="inline-link-rx"></block></block>
+  <block id="e26e1d65695e28b374df5ca908c92139" category="paragraph">作为客户、如果您订阅了Flex订阅服务、则可以在Digital Advisor上查看以下信息：</block>
+  <block id="763ef308610fa0c0e4819b7d32e376db" category="list-text">* Keystone Flex订阅*小工具：如果您已登录到Digital Advisor、则可以看到* Keystone Flex订阅*小工具、其中汇总了已购买的Flex订阅服务的容量使用情况。</block>
+  <block id="25a073100ab530af78a4207498fddc80" category="paragraph">有关详细信息，请参见 <block ref="261ab361347f64f3209b06735747fe46" category="inline-link-macro-rx"></block>。</block>
+  <block id="c8248eedf8c02ace20c31385d67a0f1e" category="paragraph">有关* Keystone订阅*选项卡的信息、请参见_Digital Advisor信息板和Flex订阅报告。</block>
+  <block id="efc03cbbb4d0230d7feb269ad27e9cef" category="admonition">此状态通常意味着不会对对象应用 QoS 策略，因此 NetApp 服务引擎无法在您的 Flex 订阅中对其进行管理。您可以通过编辑笔修改对象并分配适当的服务级别。此操作会将该对象的状态更改为 " 已运行 " 。</block>
+  <block id="d7b031f9c8084a9ac68f816f54b2be3b" category="paragraph">*默认安装的软件版本(例如ONTAP)是什么？*根据订阅的服务层(例如、具有文件和块服务的ONTAP 、用于块的SANtricity 和用于对象的StorageGRID)、支持团队安装最新的稳定版本、而不存在任何安全或功能问题。</block>
+  <block id="596c605317cc14ada22698b4c013fd32" category="sidebar">Flex订阅中的服务级别</block>
+  <block id="8629d433b3c29320111a02fbc3cc079b" category="sidebar">Flex订 阅和Active IQ 数字顾问</block>
+  <block id="63d539af1a31e2f3e8acd3fdd788eac6" category="sidebar">从Active IQ 数字顾问查看和生成报告</block>
 </blocks>
