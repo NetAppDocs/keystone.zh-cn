@@ -22,7 +22,7 @@ summary: Keystone 文件服务 API
 
 == 文件服务器 API
 
-您可以使用文件服务器 API 查看和管理文件服务器。有关文件服务器的详细信息，请参见 link:hsewebiug_create_a_file_server.html["创建文件服务器"]。
+您可以使用文件服务器 API 查看和管理文件服务器。有关文件服务器的详细信息，请参见 link:sewebiug_create_a_file_server.html["创建文件服务器"]。
 
 [cols="1,1,3,2"]
 |===
