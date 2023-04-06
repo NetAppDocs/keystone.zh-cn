@@ -9,7 +9,7 @@ settings:
   langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: NetApp Keystone Flex 订阅
+  - title: NetApp Keystone 服务
     url: "/index.html"
     entries:
     - title: 服务条款和问题描述
@@ -17,7 +17,7 @@ sidebar:
       entries:
       - title: 服务容量定义
         url: "/nkfsosm_keystone_service_capacity_definitions.html"
-      - title: Flex订阅中的服务级别
+      - title: Keystone中的服务级别
         url: "/nkfsosm_performance.html"
       - title: 服务级别指标和定义
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
@@ -31,19 +31,19 @@ sidebar:
         url: "/nkfsosm_nrd.html"
       - title: 美国公民支持
         url: "/nkfsosm_uscs.html"
-      - title: Flex 订阅和 Equinix
+      - title: Keystone和Equinix
         url: "/nkfsosm_equinix.html"
     - title: 运营模式和职责
       url: "/nkfsosm_overview.html"
     - title: 租户和多租户
       url: "/nkfsosm_tenancy_overview.html"
-    - title: Flex 订阅基础架构
+    - title: Keystone基础架构
       url: "/nkfsosm_keystone_service_delivery_architecture_overview.html"
     - title: 站点要求
       url: "/nkfsosm_site_requirements.html"
     - title: 操作
       url: "/nkfsosm_netapp_global_services_and_support_center_@gssc@.html"
-    - title: Flex订 阅和Active IQ 数字顾问
+    - title: Keystone和Active IQ 数字顾问
       url: "/nkfsosm-keystone-and-aiq.html"
       entries:
       - title: 从Active IQ 数字顾问查看和生成报告
@@ -56,10 +56,10 @@ sidebar:
       url: "/rn_fixed_issues.html"
     - title: 已知问题
       url: "/rn_known_issues.html"
-  - title: Flex 订阅常见问题解答
+  - title: Keystone订阅常见问题解答
     url: "/nkfsfaq_overview.html"
     entries:
-    - title: Flex 订阅
+    - title: Keystone订阅
       url: "/nkfsfaq_keystone_subscription.html"
     - title: 服务优惠详细信息
       url: "/nkfsfaq_service_offer_details.html"
@@ -84,7 +84,7 @@ sidebar:
         url: "/sewebiug_select_tenant.html"
       - title: 查看 NetApp 服务引擎 Web 界面
         url: "/sewebiug_netapp_service_engine_web_interface_overview.html"
-    - title: 查看 Flex 订阅信息板
+    - title: 查看Keystone订阅DSboard
       url: "/sewebiug_dashboard.html"
     - title: 查看计费
       url: "/sewebiug_billing.html"

@@ -4,7 +4,7 @@ permalink: nkfsfaq_keystone_subscription.html
 keywords: netapp, keystone, subscription, subscriptions, 
 summary: NetApp Keystone 订阅 
 ---
-= NetApp Keystone Flex 订阅常见问题解答
+= NetApp Keystone 常见问题解答
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,23 +14,23 @@ summary: NetApp Keystone 订阅
 
 
 [role="lead"]
-以下问题解答了您经常询问的有关 NetApp Keystone Flex 订阅服务的问题。
+以下问题解答了您经常询问的有关NetApp Keystone Keystone服务的问题。
 
-* NetApp Keystone Flex订阅中提供的内容？* NetApp Keystone Flex订阅(Flex订阅)是一种基于订阅的服务产品、可用于块、文件和对象数据服务、这些服务可在内部部署、并可由NetApp、合作伙伴或客户操作。
+*作为NetApp Keystone 的一部分提供了哪些服务？* NetApp Keystone 是一种基于订阅的服务产品、适用于块、文件和对象数据服务、可在内部部署、并可由NetApp、合作伙伴或客户运营。
 
-*在Flex订阅中提供了哪些存储服务？*有关信息、请参见 link:nkfsosm_performance.html["服务级别"]
+* Keystone提供了哪些存储服务？*有关信息、请参见 link:nkfsosm_performance.html["服务级别"]
 
 *支持哪些附加服务？*高级数据保护(备份和灾难恢复)和采用FabricPool 的混合云分层是可以选择的附加服务、但需要额外付费。
 
 * NetApp通过该服务保证哪些服务级别？*在NetApp运营的情况下、NetApp Keystone 保证所配置存储的IOPS/TiB以及每个服务级别的延迟。
 
-* Flex订阅与什么对应？* Flex订阅映射到单个站点或单个数据中心、它可以包含不同的服务级别。
+Keystone映射到什么？* Keystone映射到单个站点或单个数据中心、它可以包含不同的服务级别。
 
 *极高分层和高级分层服务级别有哪些优势？*在极高分层和高级分层服务级别中启用了分层、可帮助您减少存储占用空间和相关成本。NetApp 假定 25% 的数据为热数据，而其余 75% 的数据不常使用或冷数据，并将其移至冷存储。此外，您还可以查看使用情况报告以了解访问数据的频率，并根据这些信息启用分层服务。
 
 *合作伙伴向客户销售的容量是否超过从NetApp购买的容量？*租户订阅不受合作伙伴购买的容量的限制。合作伙伴可以向客户销售比从 NetApp 购买的容量更多的容量。超出已购买容量的容量称为超额预订。
 
-*是否提供了用于与客户工具集成的API？*是的、RESTful API可集成到您自己的应用程序中。导航到 * 支持 > API 文档 * 以查看 Flex 订阅服务的 API 文档。有关详细信息，请参见 link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Keystone Flex 订阅 API 指南"]。
+*是否提供了用于与客户工具集成的API？*是的、RESTful API可集成到您自己的应用程序中。导航到*支持> API文档*以查看Keystone服务的API文档。有关详细信息，请参见 link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Keystone Keystone API指南"]。
 
 *什么是突发容量？*您可以将利用率提高和降低到比已承诺容量高出20%的程度。突发容量使用量按天计量，仅在使用时计费。例如，如果已提交容量为 100 TiB ，则可以突发到 120 TiB 。
 
@@ -44,7 +44,7 @@ summary: NetApp Keystone 订阅
 
 *如果我达到已提交容量使用量的特定百分比、是否会收到任何通知？*是的、管理工具会通过NetApp服务引擎信息板提供有关容量使用情况的通知。
 
-* 如何查看 Flex 订阅使用情况？ * NetApp 服务引擎提供了一个信息板视图，其中包含有关已订阅的所有服务以及已使用量的信息。有关 NetApp 服务引擎的详细信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["此处"]。
+*如何查看Keystone使用情况？* NetApp服务引擎提供了一个信息板视图、其中包含已订阅的所有服务以及已使用的服务的信息。有关 NetApp 服务引擎的详细信息，请参见 link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["此处"]。
 
 * 如何报告此服务的任何问题？ * 可以通过以下各种渠道获得 NetApp Keystone 支持：
 

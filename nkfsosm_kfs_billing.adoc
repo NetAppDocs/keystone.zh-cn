@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: nkfsosm_kfs_billing.html 
-keywords: netapp, keystone, billing, flex subscription billing logic, charges, charging, billing cycle, billing schedule, MetroCluster billing, TMP temporary volumes, Adaptive QoS policy billing, cloned volumes, burst billing 
-summary: Keystone Flex 订阅计费 
+keywords: netapp, keystone, billing, Keystone billing logic, charges, charging, billing cycle, billing schedule, MetroCluster billing, TMP temporary volumes, Adaptive QoS policy billing, cloned volumes, burst billing 
+summary: Keystone计费 
 ---
-= Flex 订阅计费
+= Keystone计费
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,21 +14,21 @@ summary: Keystone Flex 订阅计费
 
 
 [role="lead"]
-NetApp Keystone 灵活订阅（ Flex 订阅）可为您的存储订阅提供可预测的前期定价。
+NetApp Keystone 可以为您的存储订阅提供可预测的前期定价。
 
-如果您更喜欢运营支出（ OPEX ）消费模式而不是资本支出（ CAPEX ）或租赁模式，则可以选择灵活的 " 按需购买 " 模式来满足您灵活且可扩展的消费需求。
+如果您更喜欢运营支出(OpEx)消费模式而不是资本支出(Capex)或租赁模式、则可以选择Keystone按需购买模式来满足您灵活且可扩展的消费需求。
 
-Flex 订阅可为您提供以下计费工具：
+Keystone为您提供了以下计费工具：
 
-* 您可以根据已提交的 IOPS 和延迟容量付费，以满足各种工作负载需求。您可以通过不同的性能服务层（至尊版，高级版，标准版和价值）根据您为 Flex 订阅购买的服务级别来管理存储。
+* 您可以根据已提交的 IOPS 和延迟容量付费，以满足各种工作负载需求。您可以通过不同的性能服务层(至尊、高级、标准和价值)根据为Keystone服务购买的服务级别来管理存储。
 * 它可以为已提交容量提供可预测的计费，并按使用情况为可变（突发）容量使用量付费。
 * 您可以为硬件，核心操作系统选择捆绑包价格，并以每 TiB 价格获得支持。对于每种存储类型，文件，块，对象或云存储服务，您都有一张发票。
 * 选择灵活的服务和付款期限：您可以选择每个站点 12 个月， 100 TiB 或更多。此后，您可以自动续订 12 个月，也可以按月续订。
 
 
-Flex 订阅计费基于已提交容量和可变突发消耗量。
+Keystone计费基于已提交容量和可变突发消耗量。
 
-有关已提交容量和突发容量使用情况的信息，请参见 link:nkfsosm_keystone_service_capacity_definitions.html["Flex 订阅服务容量定义"]。
+有关已提交容量和突发容量使用情况的信息，请参见 link:nkfsosm_keystone_service_capacity_definitions.html["Keystone 服务容量定义"]。
 
 有关如何查看计费详细信息的信息，请参见 link:sewebiug_billing.html["查看计费"]。
 
@@ -36,10 +36,10 @@ Flex 订阅计费基于已提交容量和可变突发消耗量。
 
 == 根据已提交容量计费
 
-已承诺容量是指由相关方（ NetApp/ 合作伙伴和客户）商定的单一订阅中各种服务的容量。此容量在每个 Flex 订阅订单上进行说明，并进行计费，而不管实际使用量如何。
+已承诺容量是指由相关方（ NetApp/ 合作伙伴和客户）商定的单一订阅中各种服务的容量。此容量在每个Keystone订单上进行说明、并会进行计费、而不管实际消耗量如何。
 
 .计量已用容量
-在 Flex订 阅服务部署中， NetApp 会持续监控和衡量服务的使用情况。系统每五分钟生成一次使用记录，详细说明订阅的当前已用容量。这些记录会在计费期间进行汇总，以生成发票和使用情况报告。
+作为Keystone服务部署的一部分、NetApp会持续监控和衡量服务的使用情况。系统每五分钟生成一次使用记录，详细说明订阅的当前已用容量。这些记录会在计费期间进行汇总，以生成发票和使用情况报告。
 
 
 
@@ -51,7 +51,7 @@ Flex 订阅计费基于已提交容量和可变突发消耗量。
 
 == 计费计划
 
-Flex 订阅服务按月和按年计费。
+Keystone服务按月和按年计费。
 
 .按月计费
 发票每月发送一次。对于提供服务的月份，将在下个月发送发票。例如，您在 1 月份使用的服务的发票将在 2 月初交付。此发票包括已提交容量的费用以及任何突发使用情况（如果适用）。
@@ -60,13 +60,13 @@ Flex 订阅服务按月和按年计费。
 在每个订阅年度开始时，系统会为已提交容量的最低付款生成一张发票。它会在订阅开始日期生成。订阅季度结束时会发送另一张发票，汇总该季度累积的任何突发使用量的适用费用。如果已提交容量在订阅期间发生更改，则会在已提交容量更改生效的当天为该订阅年度其余时间按比例分配的最低付款发送发票。
 
 .突发计费的宽限期
-在激活订阅后的前60天内、您累积的任何突发消耗量都会记录下来、但不会计入您的Flex订阅发票。此宽限期允许您有时间为存储配置适当的自适应服务质量(AQoS)设置、以便对其进行适当监控和计费。正确配置存储后、您可以避免任何意外的突发费用。在60天的初始宽限期之后累积的任何突发使用量将在您的下一张发票上计费。此宽限期不会影响对现有订阅的任何修改或续订。
+在激活订阅后的前60天内、您累积的任何突发消耗量都会进行记录、但不会计入Keystone服务发票。此宽限期允许您有时间为存储配置适当的自适应服务质量(AQoS)设置、以便对其进行适当监控和计费。正确配置存储后、您可以避免任何意外的突发费用。在60天的初始宽限期之后累积的任何突发使用量将在您的下一张发票上计费。此宽限期不会影响对现有订阅的任何修改或续订。
 
 
 
-== Flex 订阅计费的其他情形
+== Keystone计费的其他方案
 
-Flex 订阅计费有多种情形，您应熟悉这些情形。
+Keystone计费有多种情形、您应熟悉这些情形。
 
 
 
@@ -84,9 +84,9 @@ Flex 订阅计费有多种情形，您应熟悉这些情形。
 
 === MetroCluster 计费
 
-高级数据保护使用 NetApp MetroCluster 在两个物理隔离的集群之间镜像数据。在 MetroCluster 镜像聚合上，数据写入两次，每个集群一次。Flex 订阅服务会对每一方的消费单独收取费用，从而产生两个相同的消费记录。如果您通过 ONTAP System Manager （ System Manager ）或 Active IQ Unified Manager （ Unified Manager ）监控集群，则可能会发现这些工具上报告的使用量与 Flex 订阅之间存在差异。System Manager 和 Unified Manager 不会报告镜像（远程）集群上的卷，在这样做时，会报告 Flex 订阅服务报告的使用量指标的一半。
+高级数据保护使用 NetApp MetroCluster 在两个物理隔离的集群之间镜像数据。在 MetroCluster 镜像聚合上，数据写入两次，每个集群一次。Keystone服务对每一方单独消费收取费用、从而产生两个相同的消费记录。如果您通过ONTAP System Manager (System Manager)或Active IQ Unified Manager (Unified Manager)监控集群、则可能会发现这些工具上报告的使用量与Keystone服务之间存在差异。System Manager和Unified Manager不会报告镜像(远程)集群上的卷、在这样做时、会报告Keystone服务报告的一半使用指标。
 
-例如：站点 A 和站点 B 在 MetroCluster 配置中设置。当用户在站点 A 中创建一个 10 TB 的卷时，会在站点 B 中创建一个 10 TB 的相同卷Flex 订阅可区分这两个卷，并在每个站点中额外记录 10 TB 的使用量，总增加量为 20 TB 。System Manager 和 Unified Manager 报告在站点 A 中创建了一个 10 TB 的卷
+例如：站点 A 和站点 B 在 MetroCluster 配置中设置。当用户在站点 A 中创建一个 10 TB 的卷时，会在站点 B 中创建一个 10 TB 的相同卷Keystone可区分这两个卷、并在每个站点中额外记录10 TB的使用量、总增加量为20 TB。System Manager 和 Unified Manager 报告在站点 A 中创建了一个 10 TB 的卷
 
 
 
@@ -98,7 +98,7 @@ Flex 订阅计费有多种情形，您应熟悉这些情形。
 
 === 计费和自适应 QoS 策略
 
-Flex订阅可根据服务级别衡量使用情况。每个服务级别都与一个特定的自适应服务质量(QoS)策略相关联。在部署期间，您将了解订阅的 Flex 订阅服务的每个 QoS 策略的详细信息。在存储管理操作期间、请确保您的卷已根据您订阅的服务级别分配适当的QoS策略、以避免意外计费。有关 ONTAP 中 QoS 策略的详细信息，请参见 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"]。
+Keystone根据服务级别衡量使用情况。每个服务级别都与一个特定的自适应服务质量(QoS)策略相关联。在部署期间、您将了解所订阅的Keystone服务的每个QoS策略的详细信息。在存储管理操作期间、请确保您的卷已根据您订阅的服务级别分配适当的QoS策略、以避免意外计费。有关 ONTAP 中 QoS 策略的详细信息，请参见 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"]。
 
 
 
@@ -136,4 +136,4 @@ FlexGroup 根据 FlexGroup 的自适应 QoS 策略进行计费。不考虑其成
 
 === 系统卷和根卷的计费
 
-在对 Flex 订阅服务进行整体监控的过程中，系统卷和根卷会受到监控，但不会计入或计费。这些卷上的消费免除计费。
+系统卷和根卷会作为Keystone服务整体监控的一部分进行监控、但不会计入或计费。这些卷上的消费免除计费。

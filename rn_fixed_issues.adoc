@@ -14,7 +14,7 @@ summary: 已修复 NetApp 服务引擎中的问题
 
 
 [role="lead"]
-已修复先前版本的 NetApp 服务引擎中发现的以下问题，以使您能够成功使用 NetApp Keystone 灵活订阅服务。
+先前版本的NetApp服务引擎中发现的以下问题已得到修复、可供您成功使用NetApp Keystone 服务。
 
 [cols="3*"]
 |===

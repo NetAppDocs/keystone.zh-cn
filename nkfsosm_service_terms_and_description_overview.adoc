@@ -4,7 +4,7 @@ permalink: nkfsosm_service_terms_and_description_overview.html
 keywords: netapp, keystone, service, terms, description, overview, 
 summary: Keystone 服务条款和问题描述概述 
 ---
-= Flex 订阅服务条款和说明
+= Keystone服务条款和说明
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Keystone 服务条款和问题描述概述
 
 
 [role="lead"]
-NetApp Keystone 灵活订阅(Flex订阅)遵循以下服务条款和说明。
+NetApp Keystone 遵循以下服务条款和说明。
 
-* Flex订阅的有效期至少为一年、最长为三年。初始期限过后，此服务将每年续订一次。容量可以以小至 1 TiB 的增量递增。
+* Keystone服务的有效期至少为一年、最长为三年。初始期限过后，此服务将每年续订一次。容量可以以小至 1 TiB 的增量递增。
 * 每个站点的最小容量为 100 TiB ，每个站点可以有一个或多个集群来满足最低容量要求。在合作伙伴运营的模式下，可以为客户，每个站点以及各个服务级别创建最低灵活的订阅。
 * 100 TiB容量可以是一个服务级别、也可以是多个级别的组合。
 * 租户订阅仅限于合作伙伴订阅的服务级别。

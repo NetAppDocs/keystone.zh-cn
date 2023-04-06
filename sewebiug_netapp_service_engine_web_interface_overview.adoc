@@ -26,7 +26,7 @@ summary: NetApp 服务引擎 Web 界面概述
 * * NetApp 标识。 * 随时单击此按钮可将显示内容恢复为信息板视图。
 * * 租户。 * 显示当前选定的租户。要更改租户，请参见 link:sewebiug_select_tenant.html["选择租户"]。
 * * 作业。 * 单击可查看最新配置作业的状态。此图标将更改颜色以显示配置作业状态。有关详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["作业和作业状态指示符"]。
-* * 用户登录。 * 显示当前已登录用户的名称。单击此图标可注销。有关详细信息，请参见 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["从 NetApp 服务引擎 Web 界面中注销"]。
+* *用户登录。*显示当前已登录用户的nKeystoneame。单击此图标可注销。有关详细信息，请参见 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["从 NetApp 服务引擎 Web 界面中注销"]。
 
 
 image:sewebiug_image9_dashboard1.png["NSE 信息板 -1"]
@@ -37,7 +37,7 @@ image:sewebiug_image9_dashboard2.png["NSE 信息板 -2"]
 
 == 信息板视图
 
-信息板可显示有关 NetApp Keystone 存储订阅的信息，例如已用容量，使用情况计费以及最近的警报和服务请求。这是首次登录 NetApp 服务引擎时的默认视图。有关信息板的详细信息，请参见 link:sewebiug_dashboard.html["查看 Flex 订阅信息板"]。
+信息板可显示有关 NetApp Keystone 存储订阅的信息，例如已用容量，使用情况计费以及最近的警报和服务请求。这是首次登录 NetApp 服务引擎时的默认视图。有关信息板的详细信息，请参见 link:sewebiug_dashboard.html["查看Keystone信息板"]。
 
 
 
@@ -88,15 +88,15 @@ image:sewebiug_image9_dashboard2.png["NSE 信息板 -2"]
 * * 运行。 * 表示存储资源已正确配置 / 修改，并且可用，联机且正常运行。
 * 正在删除 * 。 * 对象正在被删除并正在处理。
 * * 已排队。 * 对象处于已排队状态，正在进行处理。
-* 如果在 NetApp 服务引擎外部配置的 * 已导入 * 对象不符合 NetApp Keystone 灵活订阅（ Flex 订阅）的标准，则此状态为已导入。
+* 如果在NetApp服务引擎外部配置的*已导入*对象不符合NetApp Keystone 订阅标准、则此状态为已导入。
 +
 
-NOTE: 此状态通常意味着不会对对象应用 QoS 策略，因此 NetApp 服务引擎无法在您的 Flex 订阅中对其进行管理。您可以通过编辑笔修改对象并分配适当的服务级别。此操作会将该对象的状态更改为 " 已运行 " 。
+NOTE: 此状态通常意味着不会对对象应用QoS策略、因此NetApp服务引擎无法在您的Keystone订阅中对其进行管理。您可以通过编辑笔修改对象并分配适当的服务级别。此操作会将该对象的状态更改为 " 已运行 " 。
 
-* * 非标准 * 。如果在 NetApp 服务引擎外部配置的对象不符合 NetApp Keystone 灵活订阅（ Flex 订阅）的标准，则会以此状态导入这些对象。
+* 如果在NetApp服务引擎之外配置的*非标准*对象不符合NetApp Keystone 订阅标准、则会使用此状态导入这些对象。
 +
 
-NOTE: 此状态通常表示此对象未达到在您的 Flex 订阅中由 NetApp 服务引擎管理的一个或多个标准。您可以 link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["提出服务请求"] 通过 NetApp 服务引擎门户对其进行标准化和管理，并由支持团队运营。
+NOTE: 此状态通常意味着、在您的Keystone订阅中、此对象未达到NetApp服务引擎管理的一个或多个标准。您可以 link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["提出服务请求"] 通过 NetApp 服务引擎门户对其进行标准化和管理，并由支持团队运营。
 
 * * 请联系支持部门。 * 如果配置或修改任务无法完全完成，则会出现此状态。对于处于此状态的项目，请提交支持请求以处理问题描述。
 * * 可操作（对于备份的源对象）。 * 可能的状态如下：

@@ -4,7 +4,7 @@ permalink: nkfsfaq_service_offer_details.html
 keywords: netapp, keystone, service, offer, details, 
 summary: 服务优惠详细信息 
 ---
-= Flex 订阅服务优惠详细信息
+= Keystone服务产品
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,15 @@ summary: 服务优惠详细信息
 
 
 [role="lead"]
-以下问题解答了您经常询问的有关 NetApp Keystone Flex 订阅服务产品的问题。
+以下问题解答了您经常询问的有关NetApp Keystone Keystone服务产品的问题。
 
 *最小已提交容量是多少？*
 
-NetApp Keystone 灵活订阅（ Flex 订阅）的最小已提交容量为每个站点在一个或多个服务层中的 100 TiB 。
+NetApp Keystone 订阅服务的最小已提交容量为每个站点在一个或多个服务层中的100 TiB。
 
-*灵活订阅协议的典型期限是多长？*
+* Keystone服务协议的典型期限是多长？*
 
-Flex 订阅提供 12 个月， 24 个月和 36 个月的期限。
+Keystone服务提供12个月、24个月和36个月的期限。
 
 如何访问存储？*
 
@@ -54,7 +54,7 @@ NetApp 服务引擎是一款业务流程和管理工具，您可以使用它来�
 
 *租户订阅条款是否可以超出合作伙伴的订阅期限？*
 
-租户订阅的有效期可以超过合作伙伴当前的 Flex 订阅期限。创建订阅时以及在使用情况报告中都会显示警告。
+租户订阅可以超出合作伙伴当前的Keystone服务期限。创建订阅时以及在使用情况报告中都会显示警告。
 
 *是否可以在同一个ONTAP 集群上混用多个订阅？*
 

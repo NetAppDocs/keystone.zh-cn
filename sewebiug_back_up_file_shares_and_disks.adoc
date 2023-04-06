@@ -21,7 +21,7 @@ NOTE: 创建或编辑卷的备份策略时、系统会自动创建备份。您�
 
 有关信息，请参见 link:seapiref_backups_apis.html["备份API"]
 
-您可以通过在Flex订阅中启用的NetApp SnapMirror技术来备份源卷。有关信息，请参见 link:index.html#flex-subscription["此处"]。
+您可以通过在Keystone订阅服务中启用的NetApp SnapMirror技术来备份源卷。有关信息，请参见 link:index.html#flex-subscription["此处"]。
 
 创建或编辑卷时、您可以定义其备份计划。备份按预期间隔进行、并存储在目标系统上。要使备份正常运行、应与目标环境建立SnapMirror关系。从不同区域复制的文件共享和磁盘存储在每个集群上的专用备份 Storage VM （ Storage Virtual Machine ，也称为 SVM ）上。可以在不同分区中的两个独立 ONTAP 集群之间执行备份。
 

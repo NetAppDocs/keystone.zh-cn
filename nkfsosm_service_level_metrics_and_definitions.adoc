@@ -14,7 +14,7 @@ summary: Keystone 服务级别指标和定义
 
 
 [role="lead"]
-NetApp Keystone 灵活订阅（ Flex 订阅）服务中使用了以下术语和定义：
+NetApp Keystone 中使用了以下术语和定义：
 
 * * GiB ， TiB 和 PIB 。 * 数据存储容量测量，使用基数为 1024 （ 1 GiB = 1024^3^ 字节， 1 TiB = 1024^4^ 字节， 1 PiB = 1024^5^ 字节）。
 * * IOPS/TiB 。 * 应用程序请求的每秒协议操作数除以卷的已分配逻辑大小。

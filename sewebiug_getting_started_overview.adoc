@@ -27,7 +27,7 @@ NOTE: 在NetApp服务引擎门户中导航时、您会看到某些信息(例如�
 ** 使用NetApp SSO登录有关信息、请参见 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html["登录到 NetApp 服务引擎 Web 界面"]
 
 
-* 选择租户。此时将显示信息板。有关信息，请参见 link:sewebiug_dashboard.html["查看 Flex 订阅信息板"]
+* 选择租户。此时将显示信息板。有关信息，请参见 link:sewebiug_dashboard.html["查看Keystone信息板"]
 
 
 有关NetApp服务引擎Web界面概述、请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html["NetApp 服务引擎 Web 界面概述"]

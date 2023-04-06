@@ -4,7 +4,7 @@ permalink: index.html
 keywords: netapp, keystone, service, offering, 
 summary: 欢迎使用 Keystone 文档门户。 
 ---
-= NetApp Keystone Flex 订阅文档
+= NetApp Keystone 文档
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -13,42 +13,36 @@ summary: 欢迎使用 Keystone 文档门户。
 :imagesdir: ./media/
 
 
-NetApp Keystone 灵活订阅是 NetApp Keystone 服务产品的一部分。NetApp Keystone 是一种内部资本支出（ capex ）替代产品组合，旨在实现云之旅的快速发展，其中包括 NetApp Keystone Flex Pay 和 NetApp Keystone Flex 订阅服务。NetApp Keystone 通过存储服务在您的内部环境和云中提供无缝的混合云体验。有关 NetApp Keystone 的详细信息，请参见 link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
+NetApp Keystone 是一种内部资本支出(capex)替代方案组合、旨在帮助您踏上云之旅。NetApp Keystone 通过存储服务在您的内部环境和云中提供无缝的混合云体验。有关 NetApp Keystone 的详细信息，请参见 link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
-有关 NetApp Keystone Flex 订阅的详细信息，请参见 link:https://www.netapp.com/services/subscriptions/keystone/flex-subscription["Keystone Flex 订阅"]
+有关 NetApp Keystone 的详细信息，请参见 https://www.netapp.com/services/keystone/["NetApp Keystone"]。
 
-Flex 订阅是一种存储即服务产品，可在您的内部系统上提供类似于云的体验，并可连接到云—具体视您的意愿而定。
-
-* * NetApp Keystone 灵活支付 * — NetApp Keystone 灵活支付（ Flex Pay ）是一套灵活的财务备选方案组合，其中包括传统的融资，租赁和固定 / 可变选项，可满足客户的现金流需求。
-* * NetApp Keystone 灵活订阅 * — NetApp Keystone 灵活订阅（ Flex 订阅）是一种按需购买，基于结果的订阅服务，可提供类似于内部云的体验。
-
-
-image:nkfsosm_image1.png["错误：缺少图形映像"]
+Keystone是一款存储即服务产品、可在您的内部系统上提供类似于云的体验、并可连接到云—具体视您的意愿而提供。
 
 
 
-== Flex 订阅
+== Keystone
 
-Flex 订阅是一种按需购买的基于订阅的服务模式，可为那些倾向于使用运营支出消费模式而不是前期资本支出或租赁模式的客户提供无缝的混合云体验。它可以减少与管理不可预测的容量增长以及经历复杂的采购周期相关的障碍，帮助客户加速实现价值。通过 Flex 订阅，客户可以根据业务优先级调整经济效益和运营。
+Keystone是一种按需购买、基于订阅的服务模式、可为那些倾向于使用运营支出消费模式而不是前期资本支出或租赁模式的客户提供无缝的混合云体验。它可以减少与管理不可预测的容量增长以及经历复杂的采购周期相关的障碍，帮助客户加速实现价值。Keystone让客户可以根据业务优先级调整经济效益和运营。
 
 image:nkfsosm_image2.png["错误：缺少图形映像"]
 
-Flex订阅是一种基于订阅的服务产品、可按预定义的性能服务级别(服务级别)为块、文件和对象数据类型提供存储容量、这些数据可在内部部署、并可由NetApp、合作伙伴或客户操作。除了 Flex 订阅提供的基础服务之外，还可以选择附加服务，但需要额外付费。下图介绍了这些服务。
+Keystone是一种基于订阅的服务产品、可按预定义的性能服务级别(服务级别)为块、文件和对象数据类型提供存储容量、这些数据可在内部部署、并可由NetApp、合作伙伴或客户操作。除了Keystone提供的基础服务之外、还可以选择附加服务、但需要额外付费。下图介绍了这些服务。
 
 * * 数据保护基本 * 服务使用默认设置提供 NetApp SnapMirror 和 NetApp SnapVault 功能。
 * * 高级数据保护 * 可利用 NetApp MetroCluster 功能提供 SLA 为 RPO=0 的服务。
 
 
 
-NOTE: Flex 订阅可使用 SnapVault 技术执行备份操作，并使用 SnapMirror 进行灾难恢复以远程复制数据；它不会自动故障转移和还原应用程序。
+NOTE: Keystone使用SnapVault 技术执行备份操作、并使用SnapMirror进行灾难恢复、以远程复制数据；它不会自动故障转移和还原应用程序。
 
 image:nkfsosm_image3.png["错误：缺少图形映像"]
 
 
 
-=== Flex 订阅的优势
+=== Keystone的优势
 
-Flex 订阅具有以下优势：
+Keystone具有以下优势：
 
 * 将 IT 员工从与存储相关的复杂任务中解放出来，让他们可以专注于应用程序管理
 * 减少前期资本投资

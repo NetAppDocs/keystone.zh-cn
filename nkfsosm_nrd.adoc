@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: nkfsosm_nrd.html 
 keywords: netapp, keystone, NRD, Non-returnable disk 
-summary: Keystone Flex 订阅和 Equinix 
+summary: Keystone和Equinix 
 ---
 = 不可退回的磁盘产品
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: Keystone Flex 订阅和 Equinix
 
 
 [role="lead"]
-作为 NetApp Keystone 灵活订阅（ Flex 订阅）的一部分， NetApp 扩展了不可退回磁盘（ NRD ）服务。
+作为NetApp Keystone 服务的一部分、NetApp扩展了不可退回磁盘(NRD)产品。
 
-如果您购买了适用于 Flex 订阅的 NRD 产品，则 NetApp 不会因支持和维护活动而恢复整个服务期限内使用的物理存储介质，也不会在服务终止时恢复 NetApp 在交付服务时使用的所有物理资产。
+如果您为Keystone购买了NRD产品、则NetApp不会因支持和维护活动而恢复整个服务期限内使用的物理存储介质、也不会在服务终止时恢复NetApp在交付服务时使用的所有物理资产。
 
 如果您已购买此服务，请注意以下事项：
 
 * 即使购买了此服务，您也可以选择让 NetApp 恢复物理存储介质。
-* 如果 NetApp 不负责恢复介质，您有权在服务使用期限结束时销毁用于交付 Flex 订阅服务的存储介质或磁盘。
+* 如果NetApp不负责恢复介质、您有权在服务期限结束时销毁用于交付Keystone服务的存储介质或磁盘。
 * 您可以在订阅续订期间添加，修改或终止 NRD 产品，而不是在使用期限中间。
 * 与 NRD 产品相关的成本会根据订阅的已提交容量而变化。也就是说，如果您选择在订阅期中间增加已承诺容量，则 NRD 的成本也会相应地进行修订。增加量将与承诺容量的增加成比例。
 * 您只能保留服务中使用的物理存储介质。控制器，磁盘架，缆线，交换机，网卡， NetApp 拥有的任何其他设备将由 NetApp 进行恢复。

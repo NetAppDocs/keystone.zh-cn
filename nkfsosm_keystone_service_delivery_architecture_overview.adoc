@@ -4,7 +4,7 @@ permalink: nkfsosm_keystone_service_delivery_architecture_overview.html
 keywords: netapp, keystone, service, delivery, architecture, overview, 
 summary: 服务交付架构概述 
 ---
-= Flex 订阅基础架构
+= Keystone基础架构
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: 服务交付架构概述
 
 
 [role="lead"]
-本节介绍适用于 NetApp 和客户操作环境的 NetApp Keystone 灵活订阅（ Flex 订阅）基础架构和管理应用程序。
+本节介绍适用于NetApp和客户操作环境的NetApp Keystone 基础架构和管理应用程序。
 
-灵活订阅基础架构架构架构，设计，技术选择和组件产品仅由 NetApp 提供。NetApp 保留采取以下操作的权利：
+Keystone基础架构架构、设计、技术选择和组件产品仅由NetApp提供。NetApp 保留采取以下操作的权利：
 
 * 选择，替换或重新利用产品。
 * 如果认为合适，请使用新技术更新产品。
@@ -24,11 +24,11 @@ summary: 服务交付架构概述
 * 修改架构，技术和 / 或产品以满足服务要求。
 
 
-Flex 订阅基础架构包括多个组件：
+Keystone基础架构包括多个组件：
 
 * NetApp 服务引擎的用户界面（ Web 门户）。
 * 用于集成的 NetApp 服务引擎 API 。
-* 包含存储控制器的 Flex 订阅基础架构
+* 包括存储控制器的Keystone基础架构
 * 用于管理和运行服务的工具，例如 OpsRamp ， Active IQ 和 Active IQ Unified Manager 。
 
 
@@ -40,7 +40,7 @@ image:nkfsosm_image8.png["错误：缺少图形映像"]
 
 == NetApp 服务引擎
 
-您可以使用 NetApp 服务引擎 Web 门户以 NetApp ，合作伙伴或客户运营的模式管理和监控您的 Flex 订阅服务。此门户包含以下功能：
+您可以使用NetApp服务引擎Web门户以NetApp、合作伙伴或客户运营的模式管理和监控Keystone服务。此门户包含以下功能：
 
 * 一个图形界面（ NetApp 服务引擎 Web 界面），支持监控和简单的存储配置。
 * 一组 NetApp 服务引擎 REST API ，支持更高级的设置和存储管理操作。

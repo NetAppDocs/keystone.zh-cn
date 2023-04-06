@@ -4,7 +4,7 @@ permalink: aiq-keystone-details.html
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
 summary: Keystone订阅报告和图形 
 ---
-= 适用于Flex订阅的Digital Advisor信息板和报告
+= Keystone的Digital Advisor信息板和报告
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -24,13 +24,14 @@ NOTE: 此处提供的信息包括适用场景 ONTAP 和StorageGRID。相关章�
 要查看详细信息、请执行以下步骤：
 
 .步骤
-. 在Digital Advisor上、单击小工具上的*查看更多详细信息*、在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规> Keystone订阅*。
+. 登录到Digital Advisor。您可以看到* Keystone订阅*小工具、其中汇总了已购买Keystone服务的容量使用情况。
+. 在* Keystone订阅*小工具中、单击*查看更多详细信息*以在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规> Keystone订阅*。
 
 
 订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在* Keystone订阅*屏幕的不同选项卡中。
 
 
-NOTE: Keystone订阅中的容量消耗以Tib形式显示在信息板和报告上、最多可显示两位小数。如果使用量小于0.01TiB、则该值显示为 `0` 或 `No Usage`。有关其他使用指标、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["服务级别指标和定义"]。有关Keystone中使用的不同容量的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Flex 订阅服务容量定义"]。
+NOTE: Keystone订阅中的容量消耗以Tib形式显示在信息板和报告上、最多可显示两位小数。如果使用量小于0.01TiB、则该值显示为 `0` 或 `No Usage`。有关其他使用指标、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["服务级别指标和定义"]。有关Keystone中使用的不同容量的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone 服务容量定义"]。
 
 
 

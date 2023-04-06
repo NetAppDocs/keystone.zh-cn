@@ -1,26 +1,21 @@
----
-sidebar: sidebar 
-permalink: nkfsosm_keystone_service_capacity_definitions.html 
-keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity 
-summary: Keystone 服务容量定义 
----
-= Flex 订阅服务容量定义
-:hardbreaks:
+= Keystone 服务容量定义
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
+
+—定义边栏：边栏perMalink：nkfsosm_keystone_service_capacity_definitions.html关键字：netapp、keystone、服务、容量、定义、 突发、已提交容量、已消耗容量、已计费容量摘要：Keystone服务容量定义——
+
+
+
+= Keystone 服务容量定义
 
 [role="lead"]
-NetApp Keystone 灵活订阅（ Flex 订阅）服务容量包括：
+NetApp Keystone 服务容量包括：
 
 
 
 == 逻辑容量
 
-这是客户放入 Flex 订阅基础架构的数据。所有 Flex 订阅容量均指逻辑容量。例如，如果一个 1 TiB 文件存储在 Flex 订阅基础架构上，则必须至少购买 1 TiB 的容量。
+这是客户放入Keystone基础架构的数据。所有Keystone容量均指逻辑容量。例如、如果Keystone基础架构上存储了1 TiB文件、则必须至少购买1 TiB的容量。
 
 
 
@@ -50,7 +45,7 @@ NetApp Keystone 灵活订阅（ Flex 订阅）服务容量包括：
 
 这是已超过已提交容量的逻辑容量。请注意以下几点：
 
-* Flex 订阅服务提供的容量超过已承诺容量的 20% 。
+* Keystone服务提供的容量超出承诺容量的20%。
 * 突发容量可以灵活地使用，并按每日消耗的平均值进行收费。
 * 突发容量的充电速率高达 20% ，与已承诺容量的充电速率相同。
 * 超过已提交容量 20% 的突发容量按高级费率收费。如需了解超过 20% 的额外突发要求，请联系支持部门。
@@ -60,7 +55,7 @@ NetApp Keystone 灵活订阅（ Flex 订阅）服务容量包括：
 
 == 已用 / 已配置容量
 
-已用容量是指服务当前使用的存储容量（以 TiB 为单位）。Flex订阅服务会将特定服务级别上所有卷的已配置大小(而不是已用逻辑或物理容量)之和视为该服务级别的已用容量。其中包括：
+已用容量是指服务当前使用的存储容量（以 TiB 为单位）。Keystone服务会将特定服务级别上所有卷的已配置大小(而不是已用逻辑或物理容量)之和视为该服务级别的已用容量。其中包括：
 
 * 通过卷的创建，修改，删除或潜在的自动增长配置的容量。
 * Snapshot 副本和克隆。
@@ -76,4 +71,4 @@ NOTE: 不考虑在已配置容量内存储的数据量或实际写入磁盘的�
 
 每月账单 = （已提交容量 [TiB] * 已提交速率 [$/TiB] ） + （每日平均已配置突发容量 [TiB] * 突发速率 [$/TiB] ）。每月账单包含基于已提交容量的最低费用。
 
-根据每日平均突发容量消耗，每月费用可能会超过最低费用。有关计费的详细信息，请参见 link:nkfsosm_kfs_billing.html["Flex 订阅计费"]。
+根据每日平均突发容量消耗，每月费用可能会超过最低费用。有关计费的详细信息，请参见 link:nkfsosm_kfs_billing.html["Keystone计费"]。

@@ -14,7 +14,7 @@ summary: Keystone 分层
 
 
 [role="lead"]
-NetApp Keystone 灵活订阅服务包括分层功能，可识别不太常用的数据，并将其分层到 NetApp 拥有，部署和管理的冷存储。
+NetApp Keystone 服务包括分层功能、可识别不太常用的数据、并将其分层到NetApp拥有、部署和管理的冷存储。
 
 分层功能可利用 NetApp FabricPool 技术将数据自动分层到内部或外部的低成本对象存储层。借助此功能，不常访问的数据会根据商定的服务自动分层到内部或云中成本较低的存储中。
 

@@ -44,7 +44,7 @@ NetApp 服务引擎允许您使用以下凭据登录：
 | NetApp 管理员（读取） | 对所有组件的只读访问。 
 
 
-| NetApp 管理员 | 完全访问和权限，可执行 NetApp 服务引擎 Web 门户中用于管理 NetApp Keystone Flex 订阅的所有功能，以及用于合作伙伴和租户管理的所有活动。 
+| NetApp 管理员 | 完全访问和权限、可执行NetApp服务引擎Web门户中用于管理NetApp Keystone 订阅服务的所有功能、以及用于合作伙伴和租户管理的所有活动。 
 |===
 
 
@@ -83,7 +83,7 @@ NOTE: 如果登录成功，但无法看到信息板，请与 NetApp 服务引擎
 . 选择 NetApp SSO 。
 . 在 SSO 登录页面上，输入您的用户名和密码，然后单击 * 登录 * 。
 +
-成功登录后， NetApp 服务引擎 Web 界面将加载，此时将显示 Flex 订阅信息板。有关图形用户界面的概述，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp 服务引擎 Web 界面概述"]。
+成功登录后、NetApp服务引擎Web界面将加载、此时将显示Keystone订阅服务信息板。有关图形用户界面的概述，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp 服务引擎 Web 界面概述"]。
 
 
 
