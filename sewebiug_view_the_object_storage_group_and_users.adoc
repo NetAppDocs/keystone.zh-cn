@@ -22,7 +22,7 @@ summary: Keystone 查看对象存储组和用户
 . 使用*用户*和*组*选项卡在用户和组之间切换显示。
 +
 ** 用户列表显示为选定子租户定义的对象存储用户。对于每个用户，它会显示其名称及其所属的对象存储组。
-** 组列表显示为选定子租户定义的对象存储组。它会显示分配给该组的组名称和S3策略。有关存储分段组和S3策略的信息、请参见 https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#access-policy-overview["存储分段和组访问策略"]。
+** 组列表显示为选定子租户定义的对象存储组。它会显示分配给该组的组名称和S3策略。有关存储分段组和S3策略的信息、请参见 https://["存储分段和组访问策略"]。
 +
 有关如何使用列表功能的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["列出视图操作"]。
 

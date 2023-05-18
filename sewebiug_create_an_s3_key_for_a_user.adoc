@@ -25,7 +25,7 @@ summary: Keystone 为用户创建 S3 密钥
 +
 有关使用列表中的项目的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["列出视图操作"]。
 
-. 此时将显示*管理S3密钥*对话框、其中显示了用户的密钥列表。有关密钥的信息、请参见 https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["在策略中指定权限"]。
+. 此时将显示*管理S3密钥*对话框、其中显示了用户的密钥列表。有关密钥的信息、请参见 https://["在策略中指定权限"]。
 . 如果用户没有现有密钥，请单击 * 创建 S3 密钥 * 以查看用于创建密钥的字段。
 . 如果希望密钥过期，请以 UTC 格式指定到期日期和到期时间。否则、请保留这些字段中的默认值。
 . 要创建密钥，请单击复选标记。此时将显示* S3密钥详细信息*对话框、其中显示了访问密钥和机密密钥。

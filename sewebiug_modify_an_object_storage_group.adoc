@@ -23,7 +23,7 @@ summary: keystone 修改对象存储组
 +
 有关使用列表中的项目的详细信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["列出视图操作"]。
 
-. 在*编辑组*对话框中、修改适用于该组的S3策略。有关S3策略的信息、请参见 https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["在策略中指定权限"]。
+. 在*编辑组*对话框中、修改适用于该组的S3策略。有关S3策略的信息、请参见 https://["在策略中指定权限"]。
 . 您可以根据需要添加其他策略语句。
 . 单击 * 更新 * 。此操作将创建一个作业，以便使用指定设置修改组。有关跟踪作业的信息，请参见 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["此处"]。
 

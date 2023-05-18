@@ -27,7 +27,7 @@ NOTE: 在Keystone环境中、单个租户是由NetApp运营的模式、而多租
 .子租户
 Keystone子租户完全位于具有多对一关系的父租户中。子租户可在租户中提供逻辑资源隔离，并用作回放报告的基础。所有存储资源（即文件服务，块存储和对象存储）均属于子租户。
 
-image:nkfsosm_image10.png[""]
+image:nkfsosm_image10.png["租户架构"]
 
 
 

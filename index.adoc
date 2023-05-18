@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: index.html 
 keywords: netapp, keystone, service, offering, 
-summary: 欢迎使用 Keystone 文档门户。 
+summary: NetApp Keystone 是一款按需购买、按需购买的存储即服务产品、可在一个订阅下同时提供内部和云数据存储服务、并能够跨云重新分配存储支出。 
 ---
 = NetApp Keystone 文档
 :hardbreaks:
@@ -15,7 +15,7 @@ summary: 欢迎使用 Keystone 文档门户。
 
 NetApp Keystone 是一种内部资本支出(capex)替代方案组合、旨在帮助您踏上云之旅。NetApp Keystone 通过存储服务在您的内部环境和云中提供无缝的混合云体验。有关 NetApp Keystone 的详细信息，请参见 link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
-有关 NetApp Keystone 的详细信息，请参见 https://www.netapp.com/services/keystone/["NetApp Keystone"]。
+有关 NetApp Keystone 的详细信息，请参见 https://["NetApp Keystone"]。
 
 Keystone是一款存储即服务产品、可在您的内部系统上提供类似于云的体验、并可连接到云—具体视您的意愿而提供。
 
@@ -25,7 +25,7 @@ Keystone是一款存储即服务产品、可在您的内部系统上提供类似
 
 Keystone是一种按需购买、基于订阅的服务模式、可为那些倾向于使用运营支出消费模式而不是前期资本支出或租赁模式的客户提供无缝的混合云体验。它可以减少与管理不可预测的容量增长以及经历复杂的采购周期相关的障碍，帮助客户加速实现价值。Keystone让客户可以根据业务优先级调整经济效益和运营。
 
-image:nkfsosm_image2.png["错误：缺少图形映像"]
+image:nkfsosm_image2.png["Keystone拱形结构"]
 
 Keystone是一种基于订阅的服务产品、可按预定义的性能服务级别(服务级别)为块、文件和对象数据类型提供存储容量、这些数据可在内部部署、并可由NetApp、合作伙伴或客户操作。除了Keystone提供的基础服务之外、还可以选择附加服务、但需要额外付费。下图介绍了这些服务。
 
@@ -36,7 +36,7 @@ Keystone是一种基于订阅的服务产品、可按预定义的性能服务级
 
 NOTE: Keystone使用SnapVault 技术执行备份操作、并使用SnapMirror进行灾难恢复、以远程复制数据；它不会自动故障转移和还原应用程序。
 
-image:nkfsosm_image3.png["错误：缺少图形映像"]
+image:nkfsosm_image3.png["Keystone服务"]
 
 
 
@@ -53,4 +53,4 @@ Keystone具有以下优势：
 * 能够正确控制合规性，性能和安全性
 
 
-image:nkfsosm_image4.png["错误：缺少图形映像"]
+image:nkfsosm_image4.png["优势"]

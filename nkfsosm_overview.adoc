@@ -46,7 +46,7 @@ Keystone提供了三种服务交付操作模式。
 * 部署
 * 板载
 
-| image:check.png[""] | 无 
+| image:check.pngcheck["检查"] | 无 
 
 
  a| 
@@ -57,7 +57,7 @@ Keystone提供了三种服务交付操作模式。
 * 执行管理任务
 * 警报
 
-| 无 | image:check.png[""] 
+| 无 | image:check.png["检查"] 
 
 
  a| 
@@ -67,7 +67,7 @@ Keystone提供了三种服务交付操作模式。
 * 管理性能
 * 管理 SLA
 
-| 无 | image:check.png[""] 
+| 无 | image:check.png["检查"] 
 
 
  a| 
@@ -78,7 +78,7 @@ Keystone提供了三种服务交付操作模式。
 * 软件支持
 * 升级和修补程序
 
-| image:check.png[""] | 无 
+| image:check.png["检查"] | 无 
 |===
 
 

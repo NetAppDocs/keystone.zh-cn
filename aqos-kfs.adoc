@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: aqos-kfs.html 
+keywords: aqos, qos, adaptive quality of service, quality of service 
+summary: 'Keystone自适应服务质量(AQoS)' 
+---
+= Keystone中的自适应服务质量
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如用于启动多个系统的工作负载)可能会在一段时间内占用大部分或全部资源、并影响其他工作负载。有关QoS的信息、请参见 https://["QoS 概述保证吞吐量"^]。
+
+
+
+== 自适应 QoS
+
+Keystone服务使用自适应QoS (AQoS)根据卷大小动态保持IOS/TiB比率。有关AQO策略的信息、请参见 https://["关于自适应 QoS"^]。
+
+Keystone为您提供了AQO策略、您可以在集群投入使用后设置这些策略。您应确保所有卷都与系统中已创建并可用的正确AQO策略相关联。
+
+如果ONTAP 卷未应用AQoS策略、则此卷不合规。没有QoS策略的卷是系统优先级列表中最后一个可提供任何可用输入输出操作的卷。但是、如果有任何输入-输出操作可用、则卷可能会占用所有可用的IO。
+
+
+NOTE: 如果您尚未对卷应用AQoS策略、系统将根据您的订阅按最高服务级别对这些卷进行衡量和收费。这可能会导致意外的突发费用。
+
+
+
+=== 自适应QoS设置
+
+自适应QoS (AQoS)设置因服务级别而异。
+
+|===
+
+
+| *策略名称* | *至尊*和*至尊分层* | *高级*和*高级分层* | * 标准 * | * 值 * 
+
+
+| *预期IOP* | 6,144 | 2 ， 048 | 128. | 64 
+
+
+| *预期IOPS分配* 4+| 已分配空间 
+
+
+| *峰值IOP* | 12,288 | 4,096 | 512 | 128. 
+
+
+| *峰值IOPS分配* 4+| 已分配空间 
+
+
+| * 块大小 * 4+| 32 K 
+|===

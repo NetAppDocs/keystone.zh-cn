@@ -18,7 +18,7 @@ summary: NetApp Keystone 概述
 
 *什么是NetApp Keystone ？*
 
-NetApp Keystone 是一种内部资本支出(capex)替代方案组合。有关详细信息，请参见 https://www.netapp.com/services/keystone/["NetApp Keystone"]。
+NetApp Keystone 是一种内部资本支出(capex)替代方案组合。有关详细信息，请参见 https://["NetApp Keystone"]。
 
 * NetApp Keystone 如何让客户受益？*
 

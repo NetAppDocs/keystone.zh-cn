@@ -97,7 +97,6 @@
   <block id="03f4a47830f97377a35321051685071e" category="cell">已关闭</block>
   <block id="8c6ed17d43fdff1098f07504d08b6db2" category="cell">此请求已关闭。</block>
   <block id="49160028ef392112eb613b320b874fc3" category="paragraph">您可以通过查看 NetApp 服务引擎中的状态来跟踪服务请求的状态，如下所述，也可以跟踪在该过程中发送的自动电子邮件中的状态。</block>
-  <block id="560c822dc17f9ac8ce69bf5b11416ace" category="paragraph"><block ref="560c822dc17f9ac8ce69bf5b11416ace" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f503801323daa68428cbc58b04af9c66" category="section-title">NetApp 运营的（单租户）环境中的订阅模式</block>
   <block id="f414f33dd36c7df5855c80c5efb4a954" category="list-text">订阅由 NetApp 管理员或 GSSC 为租户和区域创建。</block>
   <block id="7e58a49da804872ab7943c863fa6aedd" category="list-text">订阅名称来自为租户订阅的计费实体。</block>
@@ -1217,7 +1216,6 @@
   <block id="ec1b7e7cfe1ccc10863feb992dae9df6" category="list-text">管理员 API</block>
   <block id="648c58637f3ee6ceee5a88bedcdadcde" category="section-title">NetApp 服务引擎的主要概念</block>
   <block id="13fd5896918659251fe2f5bf181b010f" category="paragraph">NetApp 服务引擎支持区域和区域的概念，如下图所示。区域表示数据中心或站点，而区域表示区域内的存储子单元（从技术上讲，是指数据中心 / 站点内的集群）。多个分区支持数据可用性和数据保护（ DP ）功能。</block>
-  <block id="5a0b4973d48063535696aa9e17c4d1a7" category="paragraph"><block ref="5a0b4973d48063535696aa9e17c4d1a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f1aaa0834c53b85da9b4a081d34a946" category="paragraph">一个 NetApp 服务引擎实例可以支持一个或多个租户。NetApp 服务引擎将租户和子租户概念用作拥有或管理存储服务的分层实体。</block>
   <block id="cfec8dcefc0bb72f0cd2b90d8ecaa9f0" category="paragraph">子租户是完全位于租户内的实体。它可用于回放，安全隔离等。</block>
   <block id="e5e9dc3c16d4b85d14949811db406ceb" category="paragraph">存储项按子租户创建。每个子租户都可以拥有适合该子租户的类型和编号的多个存储项。</block>
@@ -1390,11 +1388,9 @@
   <block id="50b3ca2bf45db45c46e3f489f5322d29" category="list-text">用于管理和运行服务的工具，例如 OpsRamp ， Active IQ 和 Active IQ Unified Manager 。</block>
   <block id="25ee4245ff35e15ec0a6dda5f6cd1765" category="inline-link-macro">Active IQ 数字顾问文档</block>
   <block id="32577a69f048903f418e8743cf0bac99" category="paragraph">有关 NetApp Keystone 与 Active IQ 集成的详细信息，请参见 <block ref="38a54c9e880fa18a2a1c016836ec12db" category="inline-link-macro-rx"></block></block>
-  <block id="fc051047f55f16b2ba9881dd1f074063" category="paragraph"><block ref="fc051047f55f16b2ba9881dd1f074063" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60ee3c04aeb77fc87402f54ca6193f17" category="section-title">NetApp 服务引擎</block>
   <block id="154899bfba4f244880d8d8dae2bd4625" category="list-text">一个图形界面（ NetApp 服务引擎 Web 界面），支持监控和简单的存储配置。</block>
   <block id="484bbc8723fb454613a0af113567bc2a" category="list-text">一组 NetApp 服务引擎 REST API ，支持更高级的设置和存储管理操作。</block>
-  <block id="4fe249fd11a4d63ff19500469f271f6c" category="paragraph"><block ref="4fe249fd11a4d63ff19500469f271f6c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b01d8c4c08d74db1b2ec0d2c3ee4e0ad" category="paragraph">NetApp 服务引擎门户是一个单一界面，可供客户执行以下任务：</block>
   <block id="d79d981e75d77c1fad1bb30f8c0f894e" category="list-text">订阅信息板。查看已订阅容量的状态以及正在使用的容量。</block>
   <block id="81ccfbf3dcf427cf92a64d3c55325446" category="list-text">存储配置用于创建 NFS/CIFS 文件共享， FC/iSCSI 磁盘和 S3 存储分段的工作流。</block>
@@ -1410,13 +1406,9 @@
   <block id="8758e23e7960e73e6ab424225ab3813c" category="list-text">如果用户没有现有密钥，请单击 * 创建 S3 密钥 * 以查看用于创建密钥的字段。</block>
   <block id="00a06b08857b60c805bcaf007a9ddc9c" category="list-text">单击 * 关闭 * 。</block>
   <block id="edea9398bafcc918142f79d91b628f61" category="list-text">再次单击 * 关闭 * 以关闭 " 管理 S3 密钥 " 对话框。</block>
-  <block id="e4355ea354829ede276c4aa44fe13eb2" category="summary">欢迎使用 Keystone 文档门户。</block>
-  <block id="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="paragraph"><block ref="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="173cfa01f909dadb1cc7bb7d43b24a2e" category="list-text">* 数据保护基本 * 服务使用默认设置提供 NetApp SnapMirror 和 NetApp SnapVault 功能。</block>
   <block id="1ca92842b9f8718a33770baa49c236e6" category="list-text">* 高级数据保护 * 可利用 NetApp MetroCluster 功能提供 SLA 为 RPO=0 的服务。</block>
-  <block id="98fe652f43ec6cef9ce4e8038be74733" category="paragraph"><block ref="98fe652f43ec6cef9ce4e8038be74733" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1a8f20342523eaa8f9195dffa647161c" category="list-text">能够正确控制合规性，性能和安全性</block>
-  <block id="a0a35eef0076381c8b78bfe2cdbed28b" category="paragraph"><block ref="a0a35eef0076381c8b78bfe2cdbed28b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="64cb5f10c6949d975da63108f4244697" category="paragraph">您需要：</block>
   <block id="02154846d04868cd579969e490705c31" category="summary">登录到 NetApp 服务引擎 Web 界面</block>
   <block id="6502fca6147310b6dade74cf980b775c" category="doc">登录到 NetApp 服务引擎 Web 界面</block>
@@ -1866,7 +1858,6 @@
   <block id="a7b56e7d77b5e12d417d0361594ad521" category="list-text">在确认删除对话框中，输入要删除的 Azure 容量池的名称。</block>
   <block id="9a4f480d8a363d2e1a887848ac25f500" category="summary">Keystone 使用文件服务概述</block>
   <block id="ae5865954998f77611c9b7eca56ea522" category="paragraph">本节介绍如何管理文件服务器和 NFS/CIFS 文件共享。您可以查看有关文件服务器的信息，并共享，创建，修改和删除它们。</block>
-  <block id="89c3a4001bb90f26ff84b68cb534b8ee" category="paragraph">报告卷级别的 I/O 密度计算，以显示前一周的峰值 I/O 密度。峰值性能是按每小时时间间隔确定的。每个月都会按卷生成 I/O 密度报告，以衡量是否符合相应的服务级别。</block>
   <block id="e84417b811d892cfabeb4dbee529c832" category="summary">在 Google Cloud Platform 上管理 Cloud Volume 订阅</block>
   <block id="d2b2c18fa0ca629c1ca61a9d48a4cb2b" category="doc">管理适用于 GCP 的 Cloud Volumes Service</block>
   <block id="e946962d2bea46b9a982a912efacd934" category="inline-link">了解适用于 Google Cloud 的 Cloud Volumes Service</block>
@@ -2453,9 +2444,7 @@
   <block id="463c3a95787ac56f36c227feeb7bd389" category="list-text">* 客户运营模式 * ：下表总结了整体服务生命周期模式以及在客户运营的环境中与其相关的角色和职责。</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">任务</block>
   <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="cell">NetApp</block>
-  <block id="244f78a4e039400f39e0eb94595bdc02" category="cell"><block ref="244f78a4e039400f39e0eb94595bdc02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7feb8545e008b64a43a24668068761be" category="summary">客户可以在 Active IQ 中看到 Keystone 的情况</block>
-  <block id="28307c52fb9de3f0b2b26086b89eb8f3" category="paragraph">此处列出了文件，块和对象存储的服务级别。</block>
   <block id="079bbc110741f438dfb37f32218c4c21" category="cell">* 服务级别 *</block>
   <block id="cdf0cc519fabc4c14999e89090d33dc1" category="cell">* 至尊 *</block>
   <block id="153a19d482de580ce84c77ac52c6f907" category="cell">* 高级版 *</block>
@@ -2477,31 +2466,21 @@
   <block id="49f593d642a7f3dccf1fe5bf08aaf55a" category="cell">* 最大吞吐量 MBps （ 32 KB/IOP ） *</block>
   <block id="0584ce565c824b7b7f50282d9a19945b" category="cell">384</block>
   <block id="c74d97b01eae257e44aa9d5bade97baf" category="cell">16.</block>
-  <block id="eea2274bcc20c5ab5c322a30dcee6258" category="cell">* 延迟 *</block>
   <block id="99f8d77b50f8491531357b2d907d59d1" category="cell">小于 1 毫秒</block>
   <block id="6fad0b609a57af2ae4dbbf92ff728673" category="cell">小于 2 毫秒</block>
   <block id="342e06f2c04b016459176bdbbd984dfe" category="cell">小于 17 毫秒</block>
-  <block id="6dc055784da42aa0a64927764707636c" category="cell">* 最小容量 *^1 ， 2^</block>
-  <block id="5c3110c52843bef1e5effeb6f09a6ab9" category="cell">100 TiB^1^</block>
-  <block id="6b2c7dcd56a1cb15a3943cec9cbc288a" category="cell">15 TiB^2^</block>
-  <block id="2d46634ee64919ed31d1417b57f21934" category="cell">25 TiB^2^</block>
-  <block id="7d7a1cbef5663cabe63cfb0d8ca01cb8" category="cell">50 TiB^2^</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="section-title">块存储</block>
   <block id="8e634bafd4732f9f05a35ceb5ed54902" category="paragraph">* 支持的协议 * ： FC 和 iSCSI</block>
   <block id="2f569257101cf136a49d983584bfc44f" category="cell">HPC</block>
   <block id="887af0da9693198de27d195a46aa6675" category="cell">视频监控</block>
-  <block id="346042acde3f070972b08ae84fafa549" category="cell">5.500</block>
   <block id="a078c2a6f2d4313df0b942ebf9d6b940" category="cell">4 ， 000</block>
   <block id="17e62166fc8586dfa4d1bc0e1742c08b" category="cell">43</block>
   <block id="c16a5320fa475530d9583c34fd356ef5" category="cell">31</block>
   <block id="f369b2981da1e28bb1901ae50eeb877a" category="cell">&lt;0.5 毫秒</block>
-  <block id="bf9224ad67754b6fee4e952851b35d3e" category="cell">100 TiB^3^</block>
-  <block id="2378ad2afb80cd0122c6f07757ca1321" category="cell">300 TiB^3^</block>
   <block id="670aaecb1a526fbed439dad3ec353a96" category="section-title">对象存储</block>
   <block id="58d801506333ab644845942779162cbc" category="paragraph">* 支持的协议 * ： S3</block>
   <block id="497031794414a552435f90151ac3b54b" category="cell">对象</block>
   <block id="346ddf53d2d569d0bb73eb7826cf95d8" category="cell">介质存储库，归档</block>
-  <block id="29de402441037919e9b47a4ad8a12baa" category="cell">500 TiB^3^</block>
   <block id="f1dae87d14ba76423e263dc9a79acdd7" category="paragraph">下表概括了客户可以选择的三种运行模式： NetApp 运营模式，合作伙伴运营模式和客户运营模式。</block>
   <block id="10288ddd3c9dd46deaa222ee129df3fb" category="doc">美国公民支持（ USCS ）</block>
   <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">逻辑容量</block>
@@ -2560,7 +2539,6 @@
   <block id="550340cfbad3ac61a634336458de3119" category="list-text">硬件中断修复</block>
   <block id="9f65492afee4fdfba75618fed6d0f9dd" category="list-text">软件支持</block>
   <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">升级和修补程序</block>
-  <block id="e674e65192e6527dabaf52c23f514da4" category="section-title">文件服务</block>
   <block id="73cf2790a3f92d26764722174d70cf34" category="paragraph">* 支持的协议 * ： NFS ， CIFS ， iSCSI 和 FC</block>
   <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
   <block id="5866f5199f36da24870932aa9db6ab49" category="list-text">它可以为已提交容量提供可预测的计费，并按使用情况为可变（突发）容量使用量付费。</block>
@@ -2811,10 +2789,6 @@
   <block id="201a10b44105a7f46600bd19700a5b0b" category="admonition">对于选定文件共享、如果您在NetApp服务引擎之外的SnapCenter 环境中创建了一些快照、则可以找到这些已导入并列出的快照供您选择。您可以选择这些导入的快照并从中克隆新文件共享。</block>
   <block id="675fcd36774818dbea836dc02cf4d0d6" category="list-text">选中要从中克隆的快照旁边的复选框、然后单击*下一步*。新文件共享将继承选定快照的属性。</block>
   <block id="278530798aa56115669d57d1e3fa9073" category="list-text">添加 * 名称 * 和 * 共享路径 * 。更新其他设置，例如分配 * 服务级别 * ，然后单击 * 创建 * 。选择最符合您需求的服务级别。</block>
-  <block id="c369a24416627121068456b8b8aad586" category="paragraph">下表定义了服务级别。</block>
-  <block id="9298a8df81bc0591b45113097c6a4118" category="section-title">不同存储类型的服务级别</block>
-  <block id="18cf673c6b162cc27313691486836fca" category="admonition">^1^ NetApp直接商机的任何文件共享和块服务级别组合的最小期限为一年、最小容量为100 TiB。^2^ 为渠道主导的商机选择的每个服务层的最小一年期限和最小规定容量。</block>
-  <block id="c3010f4da438652aab9b42654d086f8d" category="admonition">^1^ NetApp直接商机的任何文件共享和块服务级别组合的最小期限为一年、最小容量为100 TiB。^2^ 为渠道主导的商机选择的每个服务层的最小一年期限和最小规定容量。^3^ 为任一商机类型选择的每个服务层的最小一年期限和最小指定容量。</block>
   <block id="39cd3f32af1f6142ceceefd9378ef437" category="list-text">与文件服务器关联的所有灾难恢复复制副本。您无法撤消删除服务器。</block>
   <block id="a189c66e23fd7e79d1bebf594d16fb15" category="paragraph">如果已用容量大于给定服务级别的已用容量、则会记录突发消耗量、并相应地收取费用。生成的每个消耗记录都会发生此过程。因此，突发消耗量反映了超出承诺容量的过度消耗容量的数量和使用期限。</block>
   <block id="17165dfb97a3399066f5846aed0c4af9" category="list-text">如果没有向卷写入新数据、则不会考虑使用具有标准和值服务级别的克隆卷。例如，在备份或还原使用情形中，从克隆卷备份或还原数据不会更改克隆卷本身中的数据，也不会将其视为消耗。</block>
@@ -2823,7 +2797,6 @@
   <block id="eb71f31c80be60d1b83c15a9023c5aa0" category="paragraph">要将数据分层到任何第三方对象存储、请联系Keystone Success Manager。</block>
   <block id="742eeba5dde6c1c0f5b7c867d0ee4115" category="paragraph">有关在Keystone订阅中使用FabricPool 技术的信息、请参见 <block ref="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="inline-link-macro-rx"></block>。</block>
   <block id="49e55f1469134d874d5c920897870fab" category="section-title">系统卷和根卷的计费</block>
-  <block id="6a1836144168f39941f392b695d13d99" category="paragraph"><block ref="6a1836144168f39941f392b695d13d99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd5fb265e740e897efd97ec6db65e09f" category="paragraph">作为合作伙伴管理员、您可以查看选定子租户的每月计费细分。</block>
   <block id="7405166a7ce32802615fd74dd60f9ac4" category="admonition">您也可以单击信息板上的*截止日期成本*小工具右上角的箭头或小工具中表示一个月的任意条形以查看计费页面。此时将显示选定月份的所有订阅。</block>
   <block id="37c88707e5f04d4dd1d96b217e3b8f6b" category="list-text">也可以将鼠标悬停在表示月份的条形图上以查看其他详细信息。</block>
@@ -2962,7 +2935,6 @@
   <block id="3e7fbf68bb6fb2a1a061e9b1a50441d9" category="inline-link">服务级别指标和定义</block>
   <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">查看订阅详细信息</block>
   <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">您可以在*订阅详细信息*选项卡中查看帐户名称的所有订阅。</block>
-  <block id="3134c27d858b331bf91068bcd770722c" category="paragraph"><block ref="3134c27d858b331bf91068bcd770722c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60d8073bb007efeabf44bc4eea759210" category="paragraph">对于每个订阅编号、您可以查看以下信息：</block>
   <block id="8e43124ddee77b223f1e720973e147e7" category="list-text">*订阅编号*：NetApp分配的Keystone订阅的订阅编号。</block>
   <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*跟踪ID*：激活订阅时分配的跟踪ID。这是每个订阅和站点的唯一ID、用于跟踪订阅。</block>
@@ -2970,24 +2942,16 @@
   <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*开始日期*：订阅的开始日期。</block>
   <block id="b8905d711198e80b0e2927dff32cfd11" category="list-text">*结束日期*：订阅的结束日期。根据此日期、您可能会看到即将到期的订阅的信息消息。</block>
   <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*使用状态*：指示已使用或过度使用的订阅量。如果要查看最高消耗记录、可以按此列对列表进行排序。</block>
-  <block id="87620cf1d6b63757e4ea27dcc44a9358" category="list-text"><block ref="5d188bf7f39558255a337fa21a17a0b0" category="inline-image-macro-rx" type="image"></block>：单击此图标将打开*订阅时间序列*选项卡、在此可以查看此订阅中包含的每个服务级别的历史使用情况数据。</block>
-  <block id="dc73bcb00aeb285be26cfd179924fe9e" category="paragraph">您可以单击订阅记录的向下箭头来查看更多详细信息。服务级别名称、已提交、已使用、可用容量以及当前和累积突发使用量等详细信息将显示在TiB中。系统将突出显示消耗量较高的特定服务级别。此外、还会显示为卷生成的任何警告和警报。</block>
   <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">有关Keystone存储服务和相关服务级别的信息、请参见<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
   <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">您可以参考以下使用情况指示器来检查每个订阅的使用状态：</block>
-  <block id="3aaeea3f20263addb794c645bdef9c16" category="paragraph"><block ref="3aaeea3f20263addb794c645bdef9c16" category="inline-image-macro-rx" type="image"></block></block>
   <block id="88fa71f0a6e0dfedbb46d91cc0b37a50" category="paragraph-title">索引</block>
-  <block id="cf6ffa83aadbdcc3058434f093ea54ec" category="paragraph"><block ref="56a93b6a2a3614c3aeb1b9851c5e43f2" category="inline-image-macro-rx" type="image"></block>：未根据服务级别的已提交容量记录容量使用情况<block ref="bb7f7720d1162aeddd650a9a9446141b" category="inline-image-macro-rx" type="image"></block>：使用量正常、在已承诺容量的80%范围内<block ref="7646cb232eca2204ee8b299f2fdebfb4" category="inline-image-macro-rx" type="image"></block>：最大使用量、即使用量即将达到已承诺容量的100%或更多。对于超过已提交容量80%的任何消耗、*已用*列将显示此指示符<block ref="2acc4efd0d7d55d52fc790f88116c2e0" category="inline-image-macro-rx" type="image"></block>：消耗量在突发限制范围内。突发消耗量是指在服务级别的100%已承诺容量之上、并且处于商定的突发使用量限制(例如120%)范围内的消耗量<block ref="9dd31109acddbedcca8dcf80e09eebda" category="inline-image-macro-rx" type="image"></block>：表示消耗量超过规定的突发限制</block>
   <block id="6258cb1a842831f15b22f87325717f37" category="section-title">查看历史订阅数据</block>
-  <block id="a514224616890dbac3dede8f0d533add" category="paragraph">*订阅时间序列*选项卡显示特定时间段的订阅历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。</block>
   <block id="c46ba64e2bab36ac2ede95ae5f0692dc" category="list-text">单击*订阅时间序列*选项卡。</block>
   <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">选择要查看其详细信息的所需订阅。默认情况下、系统会选择您帐户名称中的第一个订阅。</block>
   <block id="9ff2c2d2ffe68a2a0862d38fe356318c" category="list-text">从*自日期*和*至日期*字段中的日历图标中选择时间范围。默认时间范围是从计费周期的开始日期到当前日期。</block>
-  <block id="22dcf7d0676ff8f536ed431a7b672de7" category="list-text">单击 * 查看详细信息 * 。系统将根据选定时间范围显示每个服务级别的订阅历史使用数据。您可以将鼠标光标悬停在图表上方、以查看该数据点上已提交、已使用、突发以及超过突发限制数据的使用情况细分。</block>
-  <block id="4ace5fc4007e7d1732831506700b3e06" category="paragraph"><block ref="4ace5fc4007e7d1732831506700b3e06" category="inline-image-macro-rx" type="image"></block></block>
   <block id="35070e1c588eb56d935a4877ffdfdb10" category="paragraph">此时将显示以下详细信息：</block>
   <block id="8cdd8d8e55dfdcaf50118c634169eaf7" category="list-text">*订阅详细信息*：订阅的开始和结束日期以及计费期限、例如季度、年度等。</block>
   <block id="12ed0205cd7410bc01e15e4b8a285019" category="list-text">*使用情况图表*：条形图显示服务级别名称以及在日期范围内根据该服务级别消耗的容量。收集的日期和时间显示在图表底部。</block>
-  <block id="a0844c086d0417165bb56c154e3ddbcc" category="admonition">根据查询的日期范围、使用情况图表将以30个数据点的范围显示。</block>
   <block id="3a6ef8ff534dc5701b3936464bf23441" category="paragraph">条形图中的以下颜色表示服务级别中定义的已用容量：</block>
   <block id="19e499aa450e552c41a06bb0742085d6" category="list-text">绿色：在80%以内。</block>
   <block id="744f7cb6bd1aa9077ff244891a651e80" category="list-text">琥珀色：80%- 100%。</block>
@@ -3008,30 +2972,20 @@
   <block id="6f7e564e5f841331ad117d7eb3b3ae10" category="paragraph">对于ONTAP 、*系统详细信息*选项卡将显示相关信息、例如Keystone订阅所管理的存储环境中卷的容量使用情况、卷类型、集群、聚合和服务级别。</block>
   <block id="d2c1241be04ae4d70013755a80c6cbd2" category="list-text">单击*系统详细信息*选项卡。</block>
   <block id="ccdbd07a063ad5631511d37c5d2f5a36" category="list-text">选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。</block>
-  <block id="881fb88f30cf9ba2d57147ddfb898685" category="paragraph">此时将显示卷详细信息。您可以将鼠标悬停在列标题旁边的信息图标上、滚动浏览列并了解有关这些列的更多信息。您可以按列排序并筛选列表以查看特定信息。您可以单击*复制节点序列*按钮来复制单个节点序列号。</block>
-  <block id="2ebe85ca38ab100590dc16fd81d18da1" category="paragraph"><block ref="2ebe85ca38ab100590dc16fd81d18da1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8b315ff987c2e0cfd5650f23e5464623" category="example-title">&lt;strong&gt; GRID节点和消费详细信息&lt;/strong&gt;</block>
   <block id="b3e33e1c1964ee47822698a5c69ad576" category="paragraph">对于StorageGRID 、此选项卡将显示对象存储环境中节点的逻辑使用情况。</block>
   <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。选择订阅编号后、将启用对象存储详细信息的链接。</block>
-  <block id="1690678f16ffa10ab1e26e44aa686db5" category="paragraph"><block ref="1690678f16ffa10ab1e26e44aa686db5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">单击此链接可查看每个节点的节点名称和逻辑使用情况详细信息。</block>
-  <block id="47e40976658c073c0e6048f08d9a27c6" category="paragraph"><block ref="47e40976658c073c0e6048f08d9a27c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7ecd0726b721e17d74d280fdd93e49f8" category="section-title">生成报告</block>
-  <block id="4fdff89d4e1cb0e4a41e6c52ac0eca05" category="paragraph">您可以通过单击*下载CSV*按钮从每个选项卡生成并查看订阅详细信息、某个时间范围的历史使用情况数据以及系统详细信息报告： <block ref="f865f0dd5bea740b7e77dd6862c1f366" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03051fbd458dd7625e7969d74dd74735" category="paragraph">详细信息以CSV格式生成、您可以保存这些详细信息以供将来使用。</block>
-  <block id="e14d9b45f9f7753ca5842f57c89f2f92" category="paragraph">在*订阅时间序列*选项卡中、您可以选择下载查询日期范围内默认30个数据点的报告或每日报告。</block>
-  <block id="d5b4a5bc607e49724b373b44e10a1b6d" category="paragraph"><block ref="d5b4a5bc607e49724b373b44e10a1b6d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f564a49686a18ae09da9597e6538840" category="paragraph">*订阅时间序列*选项卡的示例报告、其中会转换图形数据：</block>
-  <block id="0a5468723ee164f4220a0538b1ff32b4" category="paragraph"><block ref="0a5468723ee164f4220a0538b1ff32b4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">查看警报</block>
   <block id="c71fcee7f813aa85774b9114dfba4ef1" category="paragraph">信息板上的警报会发送一些警告消息、使您能够了解存储环境中发生的问题。</block>
   <block id="903961eaa166cc0c38b735276961eb0c" category="paragraph">警报可以有两种类型：</block>
   <block id="7a0a61d280e201148fcd091f8167d88f" category="list-text">*信息*：对于诸如订阅即将结束等问题、您可以看到信息警报。将光标悬停在信息图标上方、了解有关问题描述 的更多信息。</block>
   <block id="d08b54ee187c7327910bae3997812ee1" category="list-text">*警告*：违规等问题将显示为警告。例如、如果受管集群中的卷未附加自适应QoS (AQoS)策略、您可以看到一条警告消息。您可以单击警告消息上的链接、在*系统详细信息*选项卡中查看不合规卷的列表。</block>
   <block id="77561a56c28ac9cccc7140baff66eefa" category="paragraph">有关AQO策略的信息、请参见<block ref="eb9e151d2a405494b16ec028c9292f15" category="inline-link-rx"></block>。</block>
-  <block id="2f79ebd4f32cabd1114c688445ebf53e" category="paragraph"><block ref="2f79ebd4f32cabd1114c688445ebf53e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8e64b58beb4844a89f1dc662bd47837" category="paragraph">有关这些注意事项和警告消息的详细信息、请联系NetApp支持部门。有关信息，请参见<block ref="a434e165bb861f31d95108a8980bc76d" category="inline-link-rx"></block>。</block>
-  <block id="4c351868537e82b27bc0dc0ae18a7633" category="paragraph">每个服务级别均通过其I/O密度来定义、该密度是性能(每秒输入/输出操作数IOPS)与已用存储(已存储数据的TiB)(即IOPS/TiB)之比。</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link-macro">Digital Advisor文档</block>
   <block id="199941fcffe1cc10f1d78276fb963281" category="paragraph">有关Digital Advisor的详细信息、请参见 <block ref="6ddd16d015a7ae88cd6e808110d98222" category="inline-link-macro-rx"></block>。</block>
   <block id="d7b031f9c8084a9ac68f816f54b2be3b" category="paragraph">*默认安装的软件版本(例如ONTAP)是什么？*根据订阅的服务层(例如、具有文件和块服务的ONTAP 、用于块的SANtricity 和用于对象的StorageGRID)、支持团队安装最新的稳定版本、而不存在任何安全或功能问题。</block>
@@ -3044,7 +2998,6 @@
   <block id="582e8b474c4c411c4bfbaa64ebf38461" category="paragraph">NetApp Keystone 是一种基于内部订阅的全新灵活采购模式。它可以消除资源管理方面的障碍，让客户在漫长的采购周期内加速实现价值。Keystone服务使客户能够根据业务优先级调整经济效益。有关详细信息，请参见 <block ref="e54def7567bc3788d2fec2fa9a5026d4" category="inline-link-macro-rx"></block>。</block>
   <block id="2c73325886a5bb00150c4f6251e0fe6d" category="paragraph">* Keystone服务有哪些优势？*</block>
   <block id="e8fae73e1864731d82c5af04538f4b0b" category="paragraph">Keystone服务的一些优势包括：</block>
-  <block id="14384a9ad0a54dc5a3ba41313d3f91fb" category="paragraph">—定义边栏：边栏perMalink：nkfsosm_keystone_service_capacity_definitions.html关键字：netapp、keystone、服务、容量、定义、 突发、已提交容量、已消耗容量、已计费容量摘要：Keystone服务容量定义——</block>
   <block id="96d2b38eee6470bf2333246e23312820" category="paragraph">NetApp Keystone 服务容量包括：</block>
   <block id="07a94a7bd2b381bae37a94cd365377c7" category="paragraph">这是客户放入Keystone基础架构的数据。所有Keystone容量均指逻辑容量。例如、如果Keystone基础架构上存储了1 TiB文件、则必须至少购买1 TiB的容量。</block>
   <block id="dfe3a64edf2cc8e36f72d43579e07d11" category="list-text">Keystone服务提供的容量超出承诺容量的20%。</block>
@@ -3189,9 +3142,6 @@
   <block id="c04de822849a69b106080c4121f9936c" category="list-text">如果在NetApp服务引擎之外配置的*非标准*对象不符合NetApp Keystone 订阅标准、则会使用此状态导入这些对象。</block>
   <block id="22dc3956acd0c1c011f37cec3f332d69" category="admonition">此状态通常意味着、在您的Keystone订阅中、此对象未达到NetApp服务引擎管理的一个或多个标准。您可以 <block ref="e37ceb28c45a47909eddea846ff49620" category="inline-link-macro-rx"></block> 通过 NetApp 服务引擎门户对其进行标准化和管理，并由支持团队运营。</block>
   <block id="64e53d0250b48253841708a269aa9ef3" category="summary">Keystone性能服务级别</block>
-  <block id="7bb45ed1c44b24e3467af52573764a53" category="paragraph">NetApp Keystone 可在预定义的性能服务级别(服务级别)提供容量。</block>
-  <block id="ccc2d0f52940259874b8f9b759c2073a" category="paragraph">由Keystone服务管理的每个卷都与一个服务级别相关联。在计算卷的I/O密度时、会考虑相应卷上使用的所有I/O操作和所有已用存储。</block>
-  <block id="42511be44369fa72bd6e7314d949364e" category="paragraph">您可以从NetApp服务引擎用户界面的多个屏幕为订阅分配服务级别。有关详细信息，请参见 <block ref="678d7f07c3c6f8b6162f789c01992ea4" category="inline-link-macro-rx"></block>。</block>
   <block id="74692532fcc640962f96132119394098" category="paragraph">Keystone服务有三种操作模式。这些常见问题解答与这些操作模式相关。</block>
   <block id="6076a11aebeaaa6dbe074a0a08b1b142" category="list-text">选择租户。此时将显示信息板。有关信息，请参见 <block ref="dd1715a7c78c6dc04fdff72810b50dc1" category="inline-link-macro-rx"></block></block>
   <block id="c556196a410876d85c1dc7aafc4fee9f" category="doc">Keystone基础架构</block>
@@ -3206,4 +3156,131 @@
   <block id="c06919229cadbe5cd8d5d386238c994e" category="sidebar">Keystone订阅常见问题解答</block>
   <block id="6e0ffc28497d27ad3c6bea6ff91952d8" category="sidebar">Keystone订阅</block>
   <block id="01f997e2a423afa5cbbc884d9826beb8" category="sidebar">查看Keystone订阅DSboard</block>
+  <block id="918d1cd98a55c119d7e4e81b3cfac0f8" category="summary">Keystone自适应服务质量(AQoS)</block>
+  <block id="2cc739ab414b782a0ba5a2dafc3c878f" category="doc">Keystone中的自适应服务质量</block>
+  <block id="5f558fad18c536fde918f6d8470c0f4c" category="paragraph">存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如用于启动多个系统的工作负载)可能会在一段时间内占用大部分或全部资源、并影响其他工作负载。有关QoS的信息、请参见<block ref="3c8d0a20452a1fdd8de7e683059a52bc" category="inline-link-rx"></block>。</block>
+  <block id="acdda1c20fb3985ce840929f7525c803" category="section-title">自适应 QoS</block>
+  <block id="24fe24243f6cf0a0fada99032a85c028" category="inline-link">关于自适应 QoS</block>
+  <block id="3e0c227cab019a94ad107467446bc4a1" category="paragraph">Keystone服务使用自适应QoS (AQoS)根据卷大小动态保持IOS/TiB比率。有关AQO策略的信息、请参见<block ref="837de1b03a328f464002642d845ea947" category="inline-link-rx"></block>。</block>
+  <block id="b41d880d5f9cddb842b19d183ce73f2e" category="paragraph">Keystone为您提供了AQO策略、您可以在集群投入使用后设置这些策略。您应确保所有卷都与系统中已创建并可用的正确AQO策略相关联。</block>
+  <block id="772f84cc1580c3b2eb870e7f4a05c668" category="paragraph">如果ONTAP 卷未应用AQoS策略、则此卷不合规。没有QoS策略的卷是系统优先级列表中最后一个可提供任何可用输入输出操作的卷。但是、如果有任何输入-输出操作可用、则卷可能会占用所有可用的IO。</block>
+  <block id="8076a815ea253b898f1e1205fc7aa039" category="admonition">如果您尚未对卷应用AQoS策略、系统将根据您的订阅按最高服务级别对这些卷进行衡量和收费。这可能会导致意外的突发费用。</block>
+  <block id="bc26ba2885b2bd7d8c41202e1d58b847" category="section-title">自适应QoS设置</block>
+  <block id="d2c88ef05da757a3aeaaf8bc9fe70038" category="paragraph">自适应QoS (AQoS)设置因服务级别而异。</block>
+  <block id="3e1621011a15ff9b858d144dd8b32184" category="cell">*策略名称*</block>
+  <block id="93c756223ca0ced7c8d807e176f861a3" category="cell">*至尊*和*至尊分层*</block>
+  <block id="ff68631a0d10b38d2b323da42e788055" category="cell">*高级*和*高级分层*</block>
+  <block id="e61bad254169eaf696462c655e0bb47a" category="cell">*预期IOP*</block>
+  <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
+  <block id="8dea0526cd966f1d2b8537ec99d156b6" category="cell">*预期IOPS分配*</block>
+  <block id="d948b8bd026bed9e90e7989a41fdbb46" category="cell">已分配空间</block>
+  <block id="7954bc4f3c43f3e699c2169329a71b4b" category="cell">*峰值IOP*</block>
+  <block id="13533e52f2c161b3cad8ec91b2a8bc26" category="cell">*峰值IOPS分配*</block>
+  <block id="fd5c2880a704553c642b2e60a6ff5cf2" category="cell">* 块大小 *</block>
+  <block id="de66b0668daa0803e4322ddd80158d6c" category="cell">32 K</block>
+  <block id="24acc0fc2175fef09b1a2963dcd51bb1" category="inline-image-macro">区域和区域关系</block>
+  <block id="3cc7e158f8699d90d955763d4ad3a6bb" category="paragraph"><block ref="3cc7e158f8699d90d955763d4ad3a6bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="978c8164dc991cb5252f85067c6fdbe4" category="inline-image-macro">租户架构</block>
+  <block id="5cee2df0715294af225b93a062c0b3bf" category="paragraph"><block ref="5cee2df0715294af225b93a062c0b3bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ce0a3714c71298667d65ee297b12efd2" category="paragraph">Keystone可通过订阅按预定义的性能服务级别(服务级别)提供数据存储容量。由Keystone服务管理的每个卷都与一个服务级别相关联。</block>
+  <block id="f93af6ea2aaeafbfa26e3fe0954ccc1a" category="paragraph">每个服务级别均由其I/O密度(即IOP/TiB/卷)定义。这是性能(每秒输入/输出操作数[IOS])与已分配存储容量(TiB)的比率、即每个卷平均延迟时的IOS/TiB。</block>
+  <block id="0d2770e6697ff41e6cac5eec9a3d728b" category="paragraph">卷的I/O密度每小时计算一次、以报告峰值I/O密度。每个月都会生成卷的I/O密度报告。</block>
+  <block id="26ee386c417635b5c1e5d8ffd5bbb0bd" category="paragraph">此处列出了文件、块和对象存储类型的服务级别。</block>
+  <block id="8edf08839950862fe56f04959fd3f87b" category="section-title">文件存储的服务级别</block>
+  <block id="10fde21ab3bcb7083e8e5bed1ca3af80" category="cell">*每个卷分配的最大IOS/逻辑TiB*</block>
+  <block id="0402a8a3b6eb168a997a74fb30635a37" category="cell">*每个卷分配的目标IOS/逻辑TiB*</block>
+  <block id="bed05c1f8f35eb6280e2bbc20794825c" category="cell">*每个卷分配的最大MBps/Logical TiB。*</block>
+  <block id="61871926ab208323c9981229029b2c82" category="cell">*平均延迟*</block>
+  <block id="d6b228a8ed209a51c109dc08e1f357ce" category="cell">*块大小*</block>
+  <block id="bf79e80bcc6c0a1ed97c7270c5aa6360" category="section-title">有关文件存储服务级别的更多信息</block>
+  <block id="c4701e06633afc0b1161fbc6049cc803" category="paragraph">服务级别指标取决于以下条件：</block>
+  <block id="210b39d4b6b8c3231fc8e5027adff975" category="list-text">文件和块存储的服务级别支持ONTAP 9.7及更高版本。</block>
+  <block id="02007b308c5bfea2eb09b0fa9b7f04d5" category="list-text">服务级别的IOps/TiB/卷、MBps/TiB/卷和延迟值基于卷中存储的逻辑数据量、32 KB块大小以及70%读取和30%写入IO操作的随机组合。</block>
+  <block id="1ce7cadb42fda63031710acdb1e36d13" category="list-text">根据实际或假设的块大小、系统工作负载并发性或输入输出操作、实际IOps/TiB/卷和MBps/TiB/卷可能会有所不同。</block>
+  <block id="58ec0dfd62f9630c9b479a35a8b38962" category="list-text">延迟不包括以下内容：</block>
+  <block id="e777748ce6788629275890358373ad33" category="list-text">应用程序或主机延迟</block>
+  <block id="303d588a44f75e97197277df23fe31a6" category="list-text">与控制器端口之间的客户网络延迟</block>
+  <block id="66da45e9c280e17b214fda19697e0c52" category="list-text">在使用FabricPool 的情况下、与向对象存储传输数据相关的开销</block>
+  <block id="0fd1f337932287ae81d08c74974e8e88" category="list-text">QoS会自动应用延迟、以使IO保持在服务级别最大值范围内</block>
+  <block id="85bc0e8522deb39494936f2ff6c542e4" category="list-text">延迟值不适用于MetroCluster 写入操作。这些写入操作取决于远程系统的距离。</block>
+  <block id="7f3016a798d65c7f0d25cbde5e2c95b6" category="list-text">如果存储系统上的一个或多个卷未分配AQoS策略、则这些卷将被视为不合规卷、并且没有适用于这些系统的目标服务级别。</block>
+  <block id="d292740ed171285325a91f3bddbbc59d" category="list-text">只有当层策略设置为"无"且云中没有任何块时、_Expected IOPs_才会针对FabricPool。_expected IOPs_适用于不属于SnapMirror同步关系的卷。</block>
+  <block id="acad586f6e3c240e49bc22095d3d4c92" category="list-text">工作负载IO操作需要在所有已部署的控制器之间保持平衡、具体取决于Keystone顺序。</block>
+  <block id="1256942c94d399bcecc06318a23887e2" category="section-title">块存储的服务级别</block>
+  <block id="d3c97afc8b4986d186e623295f348fec" category="cell">5、500</block>
+  <block id="e5a4cf7b6c8ebfdefa41faab2b2fc12f" category="section-title">对象存储的服务级别</block>
+  <block id="0ba4439ee9a46d9d9f14c60f88f45f87" category="inline-image-macro">检查</block>
+  <block id="2c21fb28bfa079bac10074fb46528030" category="cell"><block ref="2c21fb28bfa079bac10074fb46528030" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="72cedb4011bb3b8175b8fe1013b23cee" category="inline-image-macro">KS-Infrastructure</block>
+  <block id="589812ff47f2ace9d0321e7e0cc1349e" category="paragraph"><block ref="589812ff47f2ace9d0321e7e0cc1349e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="31d6b6f48c9c3b45e43d0a7f91fa68ae" category="inline-image-macro">KS架构</block>
+  <block id="c1dcba1c197607307ac99eb420d848a8" category="paragraph"><block ref="c1dcba1c197607307ac99eb420d848a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed6736a84f4c19935077bc72bc043890" category="summary">NetApp Keystone 是一款按需购买、按需购买的存储即服务产品、可在一个订阅下同时提供内部和云数据存储服务、并能够跨云重新分配存储支出。</block>
+  <block id="7851c7dc22287278c0102d8c2973f79b" category="inline-image-macro">Keystone拱形结构</block>
+  <block id="d7f25eda72ffc7d44074ad3c4292c129" category="paragraph"><block ref="d7f25eda72ffc7d44074ad3c4292c129" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="51543cae6c0bf5ae4bf7c4e28be0eeaa" category="inline-image-macro">Keystone服务</block>
+  <block id="af62e715e88586950d9cd9496f456488" category="paragraph"><block ref="af62e715e88586950d9cd9496f456488" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="79da17fa16c14866aa3306a4541afec5" category="inline-image-macro">优势</block>
+  <block id="d5f09abcaaeae775c256fb4fff1f7f24" category="paragraph"><block ref="d5f09abcaaeae775c256fb4fff1f7f24" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41a7d4440132225535ddd040dd7eec64" category="cell"><block ref="41a7d4440132225535ddd040dd7eec64" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41220b85d8467c5822466b54e2f77fdf" category="inline-image-macro">订阅详细信息选项卡</block>
+  <block id="3863c999fd2904d6bd45c5fac0637857" category="paragraph"><block ref="3863c999fd2904d6bd45c5fac0637857" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">图标。</block>
+  <block id="465b53bf56fb8c088ea55a58377aec59" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block>：单击此图标将打开*订阅时间序列*选项卡、在此可以查看此订阅中包含的每个服务级别的历史使用情况数据。</block>
+  <block id="0e25c249c47d5b9cd3933dea0b0e9bfb" category="paragraph">您可以单击订阅记录的向下箭头来查看更多详细信息。服务级别名称、已提交、已使用、可用容量以及当前和累积突发使用量等详细信息将显示在TiB中。</block>
+  <block id="3a6fffe4877ca42144b232cb74b25c92" category="admonition">系统将突出显示消耗量较高的特定服务级别。您还可以查看为卷生成的警告和警报。</block>
+  <block id="bd21190449b7e88db48fa0f580a8f666" category="inline-image-macro">图标</block>
+  <block id="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="paragraph"><block ref="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="47ad2f3b9648e3f48662d8605e8e8bdb" category="paragraph"><block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
+<block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
+<block ref="21452eeae7e892826e6a3f9830c7e20b" category="inline-image-macro-rx" type="image"></block>：未根据服务级别的已提交容量记录容量使用情况<block ref="6e54d61599459e1ccb3438749a59c870" category="inline-image-macro-rx" type="image"></block>：使用量正常、在已承诺容量的80%范围内<block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大使用量、即使用量即将达到已承诺容量的100%或更多。对于超过已提交容量80%的任何消耗、*已用*列将显示此指示符<block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：消耗量在突发限制范围内。突发消耗量是指在服务级别的100%已承诺容量之上、并且处于商定的突发使用量限制(例如120%)范围内的消耗量<block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：表示消耗量超过规定的突发限制</block>
+  <block id="779b97a34eb91d859eaec88fd66360be" category="paragraph">*订阅时间序列*选项卡显示特定时间段内Keystone订阅的历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。</block>
+  <block id="abc995760236584824b9e9fb494224ef" category="admonition">为了获得最佳性能和用户体验、请将查询的日期范围限制为三个月或更短。</block>
+  <block id="f4cba785ff76b826ab5119954c5eab69" category="list-text">单击 * 查看详细信息 * 。系统将根据选定时间范围显示每个服务级别的订阅历史使用数据。您可以将鼠标悬停在图表上方、以查看该数据收集点的已提交、已使用、突发以及突发限制以上数据的使用情况细分。</block>
+  <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">历史数据</block>
+  <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e8f49e2b6da7339d918b4030b299167c" category="admonition">根据查询的日期范围、使用情况图表将显示在30个数据收集点范围内。</block>
+  <block id="9c559d13aa46e64e5c1b49a0e0a1432e" category="example-title">&lt;strong&gt; 的&lt;/strong&gt; 的</block>
+  <block id="cdd4bd25f20c449a0963f56aa74dcbab" category="paragraph">如果您已订阅数据保护(DP)服务、则可以在*订阅时间序列*选项卡上根据MetroCluster 主站点和镜像站点查看消耗数据的拆分情况。</block>
+  <block id="087f6b1f88be44a104173a6f203b90b1" category="paragraph">有关数据保护的信息、请参见<block ref="4f245631ed62c18d2a1d6d25320b34f1" category="inline-link-rx"></block>。</block>
+  <block id="04db5afbef84567f5c1ef044a2971b66" category="paragraph">如果您的ONTAP 存储环境中的集群是在MetroCluster 设置中配置的、则Keystone订阅的使用情况数据将拆分到同一时间序列图表中、以显示主站点和镜像站点上基本服务级别的使用情况。</block>
+  <block id="281d16d13e34f7444117e4fa04008cd2" category="admonition">仅针对基本服务级别拆分消耗条形图。对于DP服务级别、不会显示此划分。</block>
+  <block id="e1d364a7f674f544c03d16d5e011a4cd" category="paragraph-title">数据保护服务级别</block>
+  <block id="d1bb5be7c1d9696a6692a5707b28c8a6" category="paragraph">对于DP服务级别、总使用量将被拆分、每个站点的使用量将通过单独的订阅反映出来并计费；即、主站点的一个订阅、镜像站点的另一个订阅。因此，当您在*订阅时间序列*选项卡上选择主站点的订阅编号时，DP服务级别的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster 配置中的每个站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。</block>
+  <block id="c3c3060e985c56412fb0189a9c010a6d" category="paragraph-title">基本服务级别</block>
+  <block id="2da97e4dcd0aded3c38f66cbf8f9886b" category="paragraph">但是、对于基本服务级别、每个卷在主站点和镜像站点按配置收费、因此、同一条形图会根据主站点和镜像站点的使用情况进行拆分。</block>
+  <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">您可以看到的主要订阅内容</block>
+  <block id="d8476da72783640883a9e5629643666c" category="paragraph">下图显示了_Extreme服务级别和主订阅编号的图表。"相同时间"序列图表以主站点所用颜色代码的较浅阴影标记镜像站点的使用量。鼠标悬停时的工具提示会显示主站点和镜像站点的消耗分解(以TiB为单位)、分别为1.02 TiB和1.05 TiB。</block>
+  <block id="7cbd40b0470c3f0ea1063db9202530ff" category="inline-image-macro">MCC主系统</block>
+  <block id="69ee7237e9b9f659b4b0f2cee316a662" category="paragraph"><block ref="69ee7237e9b9f659b4b0f2cee316a662" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="691f3f8af0331dffbbb99f55392f1b1d" category="paragraph">对于_Data-Protect至尊_服务级别、图表如下所示：</block>
+  <block id="4bb0adac0644b7c8396196d410d47909" category="inline-image-macro">MCC主底座</block>
+  <block id="2788c6179b3412862ccb0aa51af8fb00" category="paragraph"><block ref="2788c6179b3412862ccb0aa51af8fb00" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cd9124dc0715967bbbd4e31ad8a6f35d" category="paragraph-title">您可以看到的二级(镜像站点)订阅内容</block>
+  <block id="780f5e670e2c04a97e27a55ce4e5fe77" category="paragraph">检查二级订阅时、您会看到同一数据收集点的_Extreme服务级别条形图已反转、主站点和镜像站点的消耗细分分别为1.05 TiB和1.02 TiB。</block>
+  <block id="ff58d4e2d2a69e5e91f9509907ba3bd1" category="inline-image-macro">MCC镜像</block>
+  <block id="292d6b6f6df888f5de022ad6bebc7e52" category="paragraph"><block ref="292d6b6f6df888f5de022ad6bebc7e52" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="096ba4c1255ddf7f6a7f129dc338ad4d" category="paragraph">对于_Data-Protect至尊_服务级别、图表在同一收集点显示如下：</block>
+  <block id="ab682f0abbe8b97aaec76b435ca52575" category="inline-image-macro">MCC镜像底座</block>
+  <block id="32b6695c9f1befd719e0c7b2c28dfea1" category="paragraph"><block ref="32b6695c9f1befd719e0c7b2c28dfea1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48d59ef93e565c1c62d4604f7ddf6561" category="inline-link">了解 MetroCluster 数据保护和灾难恢复</block>
+  <block id="11faa60292999fe44e704021ce9a5657" category="paragraph">有关MetroCluster 如何保护数据的信息、请参见<block ref="f22c59fda71318ed939c4a5a7c90b447" category="inline-link-rx"></block>。</block>
+  <block id="793c1a98e090ba1b0f167e3a8b0c5b37" category="paragraph">此时将显示卷详细信息。您可以将鼠标悬停在列标题旁边的信息图标上、滚动浏览列并了解有关这些列的更多信息。您可以按列排序并筛选列表以查看特定信息。</block>
+  <block id="6857abe02d1e9615946756081a1a8169" category="admonition">对于数据保护服务、将显示一个附加列、指示此卷在MetroCluster 配置中是主卷还是镜像卷。您可以单击*复制节点序列*按钮来复制单个节点序列号。</block>
+  <block id="0bb9d5f8cc89f1784aecd52a98b80f07" category="inline-image-macro">系统详细信息选项卡</block>
+  <block id="8b672bec07d1efa43e526f4981ffb4e7" category="paragraph"><block ref="8b672bec07d1efa43e526f4981ffb4e7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4f42ad6a3c3832d3bf584971680c1ebb" category="inline-image-macro">SG系统详细信息</block>
+  <block id="99f0b49642035c5cfb207aac14d1a8a5" category="paragraph"><block ref="99f0b49642035c5cfb207aac14d1a8a5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="32213372d6e54774952c294947e823b3" category="inline-image-macro">SG弹出窗口</block>
+  <block id="95d8d7b4f026ffa4ad680a1e5997be51" category="paragraph"><block ref="95d8d7b4f026ffa4ad680a1e5997be51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26b4aee602cdc66122bb6d728f867b41" category="inline-image-macro">下载报告图标</block>
+  <block id="0f3423da50b7d7441392096dd6c78fac" category="paragraph">您可以通过单击*下载CSV*按钮从每个选项卡生成并查看订阅详细信息、某个时间范围的历史使用情况数据以及系统详细信息报告： <block ref="785382ed2a85b4539c4016da106c0215" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="71a1fbaca678e13a8273c81f0c6acf72" category="paragraph">在*订阅时间序列*选项卡中，您可以选择下载查询日期范围内默认30个数据收集点的报告，或下载每日报告。</block>
+  <block id="69d93398ad0e22b2ac431db7ec005308" category="inline-image-macro">报告示例</block>
+  <block id="ae36f6805d5f090b092ed6be03fa8820" category="paragraph"><block ref="ae36f6805d5f090b092ed6be03fa8820" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7df8a07436fa2a6fa44c6c89de1dc353" category="paragraph"><block ref="7df8a07436fa2a6fa44c6c89de1dc353" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="abca7cba75e5a9ff86b1490f32891f82" category="inline-image-macro">警报</block>
+  <block id="2fdc90e57385ab614099e9145cde6b8e" category="paragraph"><block ref="2fdc90e57385ab614099e9145cde6b8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="be10ab795d4b4daf77ddb3146f1aac29" category="inline-image-macro">帐单图表</block>
+  <block id="72bd452fe460a2000d8537f422c4b81d" category="paragraph"><block ref="72bd452fe460a2000d8537f422c4b81d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

@@ -37,7 +37,7 @@ Keystone服务有三种操作模式。这些常见问题解答与这些操作模
 * 部署
 * 板载
 
-| image:check.png[""] | 无 
+| image:check.png["检查"] | 无 
 
 
  a| 
@@ -48,7 +48,7 @@ Keystone服务有三种操作模式。这些常见问题解答与这些操作模
 * 执行管理任务
 * 警报
 
-| 无 | image:check.png[""] 
+| 无 | image:check.png["检查"] 
 
 
  a| 
@@ -58,7 +58,7 @@ Keystone服务有三种操作模式。这些常见问题解答与这些操作模
 * 管理性能
 * 管理 SLA
 
-| 无 | image:check.png[""] 
+| 无 | image:check.png["检查"] 
 
 
  a| 
@@ -69,7 +69,7 @@ Keystone服务有三种操作模式。这些常见问题解答与这些操作模
 * 软件支持
 * 升级和修补程序
 
-| image:check.png[""] | 无 
+| image:check.png["检查"] | 无 
 |===
 *什么是NetApp运营的模型？*
 

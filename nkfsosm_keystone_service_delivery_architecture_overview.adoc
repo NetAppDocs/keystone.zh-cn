@@ -34,7 +34,7 @@ Keystone基础架构包括多个组件：
 
 有关 NetApp Keystone 与 Active IQ 集成的详细信息，请参见 link:https://docs.netapp.com/us-en/active-iq/["Active IQ 数字顾问文档"]
 
-image:nkfsosm_image8.png["错误：缺少图形映像"]
+image:nkfsosm_image8.png["KS-Infrastructure"]
 
 
 
@@ -46,7 +46,7 @@ image:nkfsosm_image8.png["错误：缺少图形映像"]
 * 一组 NetApp 服务引擎 REST API ，支持更高级的设置和存储管理操作。
 
 
-image:nkfsosm_image9.png["错误：缺少图形映像"]
+image:nkfsosm_image9.png["KS架构"]
 
 NetApp 服务引擎门户是一个单一界面，可供客户执行以下任务：
 
