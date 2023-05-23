@@ -19,7 +19,7 @@ summary: Keystone订阅报告和图形
 
 NOTE: 此处提供的信息包括适用场景 ONTAP 和StorageGRID。相关章节指出了一些例外情况。
 
-有关Keystone Digital Advisor小工具的信息、请参见 https://["查看NetApp Keystone 订阅的容量利用率"^]。
+有关Keystone Digital Advisor小工具的信息、请参见 https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["查看NetApp Keystone 订阅的容量利用率"^]。
 
 要查看详细信息、请执行以下步骤：
 
@@ -31,7 +31,7 @@ NOTE: 此处提供的信息包括适用场景 ONTAP 和StorageGRID。相关章�
 订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在* Keystone订阅*屏幕的不同选项卡中。
 
 
-NOTE: Keystone订阅中的容量消耗以Tib形式显示在信息板和报告上、最多可显示两位小数。如果使用量小于0.01TiB、则该值显示为 `0` 或 `No Usage`。有关其他使用指标、请参见 https://["服务级别指标和定义"]。有关Keystone中使用的不同容量的信息、请参见 https://["Keystone 服务容量定义"]。
+NOTE: Keystone订阅中的容量消耗以Tib形式显示在信息板和报告上、最多可显示两位小数。如果使用量小于0.01TiB、则该值显示为 `0` 或 `No Usage`。有关其他使用指标、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["服务级别指标和定义"]。有关Keystone中使用的不同容量的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone 服务容量定义"]。
 
 
 
@@ -57,7 +57,7 @@ image:aiq-ks-dtls.png["订阅详细信息选项卡"]
 
 NOTE: 系统将突出显示消耗量较高的特定服务级别。您还可以查看为卷生成的警告和警报。
 
-有关Keystone存储服务和相关服务级别的信息、请参见 https://["服务级别"]。
+有关Keystone存储服务和相关服务级别的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["服务级别"]。
 
 您可以参考以下使用情况指示器来检查每个订阅的使用状态：
 
@@ -72,12 +72,16 @@ image:icon-grey.png["图标。"]：未根据服务级别的已提交容量记录
 
 == 查看历史订阅数据
 
-a514224616890dbac3dede8f0d533add
+*订阅时间序列*选项卡显示特定时间段内Keystone订阅的历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。
 
 .步骤
 . 单击*订阅时间序列*选项卡。
 . 选择要查看其详细信息的所需订阅。默认情况下、系统会选择您帐户名称中的第一个订阅。
 . 从*自日期*和*至日期*字段中的日历图标中选择时间范围。默认时间范围是从计费周期的开始日期到当前日期。
++
+
+NOTE: 为了获得最佳性能和用户体验、请将查询的日期范围限制为三个月或更短。
+
 . 单击 * 查看详细信息 * 。系统将根据选定时间范围显示每个服务级别的订阅历史使用数据。您可以将鼠标悬停在图表上方、以查看该数据收集点的已提交、已使用、突发以及突发限制以上数据的使用情况细分。
 
 
@@ -131,7 +135,7 @@ NOTE: *当前已用*、*当前突发*和*累积突发*指标用于确定订阅�
 ====
 如果您已订阅数据保护(DP)服务、则可以在*订阅时间序列*选项卡上根据MetroCluster 主站点和镜像站点查看消耗数据的拆分情况。
 
-有关数据保护的信息、请参见 https://["数据保护"]。
+有关数据保护的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html["数据保护"]。
 
 如果您的ONTAP 存储环境中的集群是在MetroCluster 设置中配置的、则Keystone订阅的使用情况数据将拆分到同一时间序列图表中、以显示主站点和镜像站点上基本服务级别的使用情况。
 
@@ -162,7 +166,7 @@ image:mcc-chart-mirror.png["MCC镜像"]
 
 image:dp-mir.png["MCC镜像底座"]
 
-有关MetroCluster 如何保护数据的信息、请参见 https://["了解 MetroCluster 数据保护和灾难恢复"^]。
+有关MetroCluster 如何保护数据的信息、请参见 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["了解 MetroCluster 数据保护和灾难恢复"^]。
 
 ====
 
@@ -236,10 +240,10 @@ image:report.png["报告示例"]
 * *信息*：对于诸如订阅即将结束等问题、您可以看到信息警报。将光标悬停在信息图标上方、了解有关问题描述 的更多信息。
 * *警告*：违规等问题将显示为警告。例如、如果受管集群中的卷未附加自适应QoS (AQoS)策略、您可以看到一条警告消息。您可以单击警告消息上的链接、在*系统详细信息*选项卡中查看不合规卷的列表。
 +
-有关AQO策略的信息、请参见 https://["计费和自适应 QoS 策略"]。
+有关AQO策略的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies["计费和自适应 QoS 策略"]。
 
 
 
 image:alert-aiq.png["警报"]
 
-有关这些注意事项和警告消息的详细信息、请联系NetApp支持部门。有关信息，请参见 https://["提出服务请求"]。
+有关这些注意事项和警告消息的详细信息、请联系NetApp支持部门。有关信息，请参见 https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["提出服务请求"]。

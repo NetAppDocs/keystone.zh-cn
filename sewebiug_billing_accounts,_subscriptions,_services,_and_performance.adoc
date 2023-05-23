@@ -40,10 +40,10 @@ NOTE: 如果多个数据中心需要存储，则每个数据中心需要单独�
 
 有关详细信息，请参见
 
-* https://["块存储"]
-* https://["文件服务"]
-* https://["对象存储"]
-* https://["MetroCluster 文档"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_block_storage_overview.html["块存储"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_file_services_overview.html["文件服务"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_object_storage_overview.html["对象存储"]
+* https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster 文档"]
 
 
 

@@ -14,13 +14,13 @@ summary: 'Keystone自适应服务质量(AQoS)'
 
 
 [role="lead"]
-存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如用于启动多个系统的工作负载)可能会在一段时间内占用大部分或全部资源、并影响其他工作负载。有关QoS的信息、请参见 https://["QoS 概述保证吞吐量"^]。
+存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如用于启动多个系统的工作负载)可能会在一段时间内占用大部分或全部资源、并影响其他工作负载。有关QoS的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"^]。
 
 
 
 == 自适应 QoS
 
-Keystone服务使用自适应QoS (AQoS)根据卷大小动态保持IOS/TiB比率。有关AQO策略的信息、请参见 https://["关于自适应 QoS"^]。
+Keystone服务使用自适应QoS (AQoS)根据卷大小动态保持IOS/TiB比率。有关AQO策略的信息、请参见 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["关于自适应 QoS"^]。
 
 Keystone为您提供了AQO策略、您可以在集群投入使用后设置这些策略。您应确保所有卷都与系统中已创建并可用的正确AQO策略相关联。
 

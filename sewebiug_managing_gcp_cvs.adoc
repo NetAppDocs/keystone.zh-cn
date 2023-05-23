@@ -14,7 +14,7 @@ summary: 在 Google Cloud Platform 上管理 Cloud Volume 订阅
 
 
 [role="lead"]
-Cloud Volumes Service for Google Cloud Platform （ GCP ）的订阅与租户下的特定子租户相关联。一个子租户订阅一个 Google Cloud 服务。您可以为租户和子租户创建和管理云服务（ Google Cloud 实例），并根据租约在 Google Cloud 上配置存储。在通过 NetApp 服务引擎管理 Google Cloud 实例之前，应先设置租户和子租户的 Cloud Volumes Service 帐户。有关 GCP 上的 Cloud Volumes Service 的信息，请参见 https://["了解适用于 Google Cloud 的 Cloud Volumes Service"]。
+Cloud Volumes Service for Google Cloud Platform （ GCP ）的订阅与租户下的特定子租户相关联。一个子租户订阅一个 Google Cloud 服务。您可以为租户和子租户创建和管理云服务（ Google Cloud 实例），并根据租约在 Google Cloud 上配置存储。在通过 NetApp 服务引擎管理 Google Cloud 实例之前，应先设置租户和子租户的 Cloud Volumes Service 帐户。有关 GCP 上的 Cloud Volumes Service 的信息，请参见 https://docs.netapp.com/us-en/occm/concept_cvs_gcp.html["了解适用于 Google Cloud 的 Cloud Volumes Service"]。
 
 
 NOTE: 应已为 GCP 配置租户和子租户的 Cloud Volumes Service 帐户。有关服务帐户详细信息，请联系支持部门。您需要具有客户管理员访问权限才能管理 Google Cloud Volumes 。
@@ -30,7 +30,7 @@ NOTE: 应已为 GCP 配置租户和子租户的 Cloud Volumes Service 帐户。�
 
 * 此子租户已订阅 Google Cloud 服务。
 * 您已为用户的服务帐户创建了 JSON 文件，并且知道与 Google Cloud 实例关联的 GCP 项目编号。
-* 确保您的支持团队已在BlueXP上配置Cloud Volumes Service for GCP。有关详细信息，请参见 https://["设置适用于 Google Cloud 的 Cloud Volumes Service"]。
+* 确保您的支持团队已在BlueXP上配置Cloud Volumes Service for GCP。有关详细信息，请参见 https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["设置适用于 Google Cloud 的 Cloud Volumes Service"]。
 
 
 .步骤
