@@ -2940,7 +2940,6 @@
   <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*跟踪ID*：激活订阅时分配的跟踪ID。这是每个订阅和站点的唯一ID、用于跟踪订阅。</block>
   <block id="3644820829d44e327e43dd95769b1686" category="list-text">*计费期限*：订阅的计费期限、例如每月、每季度或每年。</block>
   <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*开始日期*：订阅的开始日期。</block>
-  <block id="b8905d711198e80b0e2927dff32cfd11" category="list-text">*结束日期*：订阅的结束日期。根据此日期、您可能会看到即将到期的订阅的信息消息。</block>
   <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*使用状态*：指示已使用或过度使用的订阅量。如果要查看最高消耗记录、可以按此列对列表进行排序。</block>
   <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">有关Keystone存储服务和相关服务级别的信息、请参见<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
   <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">您可以参考以下使用情况指示器来检查每个订阅的使用状态：</block>
@@ -2990,7 +2989,6 @@
   <block id="199941fcffe1cc10f1d78276fb963281" category="paragraph">有关Digital Advisor的详细信息、请参见 <block ref="6ddd16d015a7ae88cd6e808110d98222" category="inline-link-macro-rx"></block>。</block>
   <block id="d7b031f9c8084a9ac68f816f54b2be3b" category="paragraph">*默认安装的软件版本(例如ONTAP)是什么？*根据订阅的服务层(例如、具有文件和块服务的ONTAP 、用于块的SANtricity 和用于对象的StorageGRID)、支持团队安装最新的稳定版本、而不存在任何安全或功能问题。</block>
   <block id="63d539af1a31e2f3e8acd3fdd788eac6" category="sidebar">从Active IQ 数字顾问查看和生成报告</block>
-  <block id="fcdba6ace545174b3125451ecdd38a60" category="admonition">将鼠标悬停在条形图上时、您可以查看_Provisional usage数据。这是在该时间段的确切数据不可用时记录的使用量、并替换为上一个数据收集点提供的数据。</block>
   <block id="bad6d4d49543b42a93697517b551920a" category="paragraph">您可以使用文件服务器 API 查看和管理文件服务器。有关文件服务器的详细信息，请参见 <block ref="b7c7173b32246b86fba34bb5faef1e28" category="inline-link-macro-rx"></block>。</block>
   <block id="6e7c483cdb01e24565496a3900e28fec" category="paragraph">NetApp Keystone 是一种内部资本支出(capex)替代方案组合。有关详细信息，请参见<block ref="fd61a890a707ca05d29be95e1bcac169" category="inline-link-rx"></block>。</block>
   <block id="b56dfcbdbeaf347744e50267854b6402" category="paragraph">NetApp Keystone 品牌提供一系列灵活的支付解决方案、其中包括为注重现金的客户提供的传统融资、租赁和固定/可变选项以及Keystone服务。</block>
@@ -3283,4 +3281,6 @@
   <block id="72bd452fe460a2000d8537f422c4b81d" category="paragraph"><block ref="72bd452fe460a2000d8537f422c4b81d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="779b97a34eb91d859eaec88fd66360be" category="paragraph">*订阅时间序列*选项卡显示特定时间段内Keystone订阅的历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。</block>
   <block id="abc995760236584824b9e9fb494224ef" category="admonition">为了获得最佳性能和用户体验、请将查询的日期范围限制为三个月或更短。</block>
+  <block id="e34cff1dbe58bcff4567c9224e5370c6" category="list-text">*结束日期*：订阅的结束日期。空白日期表示订阅没有结束日期、它将自动续订。根据此日期、您可能会看到即将到期或附加了自动续订策略的订阅的信息消息。</block>
+  <block id="85701aafc47f53d769db3988637e595c" category="admonition">空白图表表示您的环境中在该数据收集点没有可用数据。</block>
 </blocks>
