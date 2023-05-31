@@ -64,9 +64,11 @@ NOTE: 系统将突出显示消耗量较高的特定服务级别。您还可以�
 image:usage-indicator.png["图标"]
 
 .索引
-image:usage-indicator.png["图标。"]
-image:usage-indicator.png["图标。"]
-image:icon-grey.png["图标。"]：未根据服务级别的已提交容量记录容量使用情况image:icon-green.png["图标。"]：使用量正常、在已承诺容量的80%范围内image:icon-amber.png["图标。"]：最大使用量、即使用量即将达到已承诺容量的100%或更多。对于超过已提交容量80%的任何消耗、*已用*列将显示此指示符image:icon-red.png["图标。"]：消耗量在突发限制范围内。突发消耗量是指在服务级别的100%已承诺容量之上、并且处于商定的突发使用量限制(例如120%)范围内的消耗量image:icon-purple.png["图标。"]：表示消耗量超过规定的突发限制
+image:icon-grey.png["图标。"]：未根据服务级别的已提交容量记录容量使用情况
+image:icon-green.png["图标。"]：使用量正常、在已承诺容量的80%范围内
+image:icon-amber.png["图标。"]：最大使用量、即使用量即将达到已承诺容量的100%或更多。对于超过已提交容量80%的任何消耗、*已用*列将显示此指示符
+image:icon-red.png["图标。"]：消耗量在突发限制范围内。突发消耗量是指在服务级别的100%已承诺容量之上、并且处于商定的突发使用量限制(例如120%)范围内的消耗量
+image:icon-purple.png["图标。"]：表示消耗量超过规定的突发限制
 
 
 

@@ -3229,9 +3229,6 @@
   <block id="3a6fffe4877ca42144b232cb74b25c92" category="admonition">系统将突出显示消耗量较高的特定服务级别。您还可以查看为卷生成的警告和警报。</block>
   <block id="bd21190449b7e88db48fa0f580a8f666" category="inline-image-macro">图标</block>
   <block id="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="paragraph"><block ref="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="47ad2f3b9648e3f48662d8605e8e8bdb" category="paragraph"><block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
-<block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
-<block ref="21452eeae7e892826e6a3f9830c7e20b" category="inline-image-macro-rx" type="image"></block>：未根据服务级别的已提交容量记录容量使用情况<block ref="6e54d61599459e1ccb3438749a59c870" category="inline-image-macro-rx" type="image"></block>：使用量正常、在已承诺容量的80%范围内<block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大使用量、即使用量即将达到已承诺容量的100%或更多。对于超过已提交容量80%的任何消耗、*已用*列将显示此指示符<block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：消耗量在突发限制范围内。突发消耗量是指在服务级别的100%已承诺容量之上、并且处于商定的突发使用量限制(例如120%)范围内的消耗量<block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：表示消耗量超过规定的突发限制</block>
   <block id="f4cba785ff76b826ab5119954c5eab69" category="list-text">单击 * 查看详细信息 * 。系统将根据选定时间范围显示每个服务级别的订阅历史使用数据。您可以将鼠标悬停在图表上方、以查看该数据收集点的已提交、已使用、突发以及突发限制以上数据的使用情况细分。</block>
   <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">历史数据</block>
   <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
@@ -3283,4 +3280,9 @@
   <block id="abc995760236584824b9e9fb494224ef" category="admonition">为了获得最佳性能和用户体验、请将查询的日期范围限制为三个月或更短。</block>
   <block id="e34cff1dbe58bcff4567c9224e5370c6" category="list-text">*结束日期*：订阅的结束日期。空白日期表示订阅没有结束日期、它将自动续订。根据此日期、您可能会看到即将到期或附加了自动续订策略的订阅的信息消息。</block>
   <block id="85701aafc47f53d769db3988637e595c" category="admonition">空白图表表示您的环境中在该数据收集点没有可用数据。</block>
+  <block id="2e4921125672d7122b9c21478a168883" category="paragraph"><block ref="21452eeae7e892826e6a3f9830c7e20b" category="inline-image-macro-rx" type="image"></block>：未根据服务级别的已提交容量记录容量使用情况
+<block ref="6e54d61599459e1ccb3438749a59c870" category="inline-image-macro-rx" type="image"></block>：使用量正常、在已承诺容量的80%范围内
+<block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大使用量、即使用量即将达到已承诺容量的100%或更多。对于超过已提交容量80%的任何消耗、*已用*列将显示此指示符
+<block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：消耗量在突发限制范围内。突发消耗量是指在服务级别的100%已承诺容量之上、并且处于商定的突发使用量限制(例如120%)范围内的消耗量
+<block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：表示消耗量超过规定的突发限制</block>
 </blocks>
