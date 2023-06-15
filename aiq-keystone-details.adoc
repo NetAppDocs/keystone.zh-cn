@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: aiq-keystone-details.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, MetroCluster, StorageGRID, consumption details 
 summary: Keystone订阅报告和图形 
 ---
 = Keystone的Digital Advisor信息板和报告
@@ -45,6 +45,11 @@ image:aiq-ks-dtls.png["订阅详细信息选项卡"]
 
 * *订阅编号*：NetApp分配的Keystone订阅的订阅编号。
 * *跟踪ID*：激活订阅时分配的跟踪ID。这是每个订阅和站点的唯一ID、用于跟踪订阅。
++
+
+TIP: 如果您的订阅分配了数据保护服务级别或费率计划、则会显示一个工具提示、帮助您确定MetroCluster设置中合作伙伴订阅的跟踪ID。要了解如何在MetroCluster配置中查看合作伙伴订阅的详细使用情况、请参阅 https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["有关数据保护的其他详细信息"]。
+
+* *使用类型*：您可能订阅了多个Keystone (版本1)或Keystone STaaS (版本2)订阅。对于这两种订阅类型、服务级别的费率计划规则可能会有所不同。通过查看此列中的值、您可以了解使用类型是按任一的已配置使用量还是逻辑使用量计费 `v1` 或 `v2`。有关Keystone STaaS的详细信息、请参见 https://docs.netapp.com/us-en/keystone-staas/index.html["Keystone STaaS文档"]。
 * *计费期限*：订阅的计费期限、例如每月、每季度或每年。
 * *开始日期*：订阅的开始日期。
 * *结束日期*：订阅的结束日期。空白日期表示订阅没有结束日期、它将自动续订。根据此日期、您可能会看到即将到期或附加了自动续订策略的订阅的信息消息。
@@ -55,7 +60,7 @@ image:aiq-ks-dtls.png["订阅详细信息选项卡"]
 您可以单击订阅记录的向下箭头来查看更多详细信息。服务级别名称、已提交、已使用、可用容量以及当前和累积突发使用量等详细信息将显示在TiB中。
 
 
-NOTE: 系统将突出显示消耗量较高的特定服务级别。您还可以查看为卷生成的警告和警报。
+TIP: 系统将突出显示消耗量较高的特定服务级别。您还可以查看为卷生成的警告和警报。
 
 有关Keystone存储服务和相关服务级别的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["服务级别"]。
 
@@ -82,7 +87,7 @@ image:icon-purple.png["图标。"]：表示消耗量超过规定的突发限制
 . 从*自日期*和*至日期*字段中的日历图标中选择时间范围。默认时间范围是从计费周期的开始日期到当前日期。
 +
 
-NOTE: 为了获得最佳性能和用户体验、请将查询的日期范围限制为三个月或更短。
+TIP: 为了获得最佳性能和用户体验、请将查询的日期范围限制为三个月或更短。
 
 . 单击 * 查看详细信息 * 。系统将根据选定时间范围显示每个服务级别的订阅历史使用数据。您可以将鼠标悬停在图表上方、以查看该数据收集点的已提交、已使用、突发以及突发限制以上数据的使用情况细分。
 
@@ -132,10 +137,14 @@ NOTE: *当前已用*、*当前突发*和*累积突发*指标用于确定订阅�
 
 
 
-.<strong> 的</strong> 的
+
+
+=== 有关数据保护的其他详细信息
+
+.单击此处
 [%collapsible]
 ====
-如果您已订阅数据保护(DP)服务、则可以在*订阅时间序列*选项卡上根据MetroCluster 主站点和镜像站点查看消耗数据的拆分情况。
+如果您已订阅数据保护(DP)服务、则可以根据MetroCluster合作伙伴站点的*订阅时间序列*选项卡查看消费数据的分类。
 
 有关数据保护的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html["数据保护"]。
 
@@ -145,7 +154,7 @@ NOTE: *当前已用*、*当前突发*和*累积突发*指标用于确定订阅�
 NOTE: 仅针对基本服务级别拆分消耗条形图。对于DP服务级别、不会显示此划分。
 
 .数据保护服务级别
-对于DP服务级别、总使用量将被拆分、每个站点的使用量将通过单独的订阅反映出来并计费；即、主站点的一个订阅、镜像站点的另一个订阅。因此，当您在*订阅时间序列*选项卡上选择主站点的订阅编号时，DP服务级别的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster 配置中的每个站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。
+对于DP服务级别、总使用量将被拆分、每个合作伙伴站点的使用量将通过单独的订阅反映出来并计费；即、主站点的一个订阅、镜像站点的另一个订阅。因此，当您在*订阅时间序列*选项卡上选择主站点的订阅编号时，DP服务级别的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster配置中的每个配对站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。
 
 .基本服务级别
 但是、对于基本服务级别、每个卷在主站点和镜像站点按配置收费、因此、同一条形图会根据主站点和镜像站点的使用情况进行拆分。
@@ -177,7 +186,11 @@ image:dp-mir.png["MCC镜像底座"]
 
 在*系统详细信息*选项卡上、您可以查看ONTAP 中卷的使用情况和其他详细信息。对于StorageGRID 、此选项卡将显示节点及其在对象存储环境中的个别使用情况。
 
-.<strong> 卷中的详细信息</strong>
+
+
+=== ONTAP卷详细信息
+
+.单击此处
 [%collapsible]
 ====
 对于ONTAP 、*系统详细信息*选项卡将显示相关信息、例如Keystone订阅所管理的存储环境中卷的容量使用情况、卷类型、集群、聚合和服务级别。
@@ -197,7 +210,11 @@ NOTE: 对于数据保护服务、将显示一个附加列、指示此卷在Metro
 image:aiq-ks-sysdtls.png["系统详细信息选项卡"]
 
 ====
-.<strong> GRID节点和消费详细信息</strong>
+
+
+=== StorageGRID节点和使用情况详细信息
+
+.单击此处
 [%collapsible]
 ====
 对于StorageGRID 、此选项卡将显示对象存储环境中节点的逻辑使用情况。
@@ -241,6 +258,10 @@ image:report.png["报告示例"]
 
 * *信息*：对于诸如订阅即将结束等问题、您可以看到信息警报。将光标悬停在信息图标上方、了解有关问题描述 的更多信息。
 * *警告*：违规等问题将显示为警告。例如、如果受管集群中的卷未附加自适应QoS (AQoS)策略、您可以看到一条警告消息。您可以单击警告消息上的链接、在*系统详细信息*选项卡中查看不合规卷的列表。
++
+
+NOTE: 如果您订阅了单个服务级别或速率计划、则无法看到不合规卷的警报。
+
 +
 有关AQO策略的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies["计费和自适应 QoS 策略"]。
 

@@ -2967,11 +2967,9 @@
   <block id="393e226f044ba6b817b81de6d94e7276" category="admonition">*当前已用*、*当前突发*和*累积突发*指标用于确定订阅计费期间的消耗量、而不是基于查询的日期范围。</block>
   <block id="b99a21b99fb9e230b533835afc100672" category="section-title">查看系统详细信息</block>
   <block id="819abf779095094c4f296a2f1911a333" category="paragraph">在*系统详细信息*选项卡上、您可以查看ONTAP 中卷的使用情况和其他详细信息。对于StorageGRID 、此选项卡将显示节点及其在对象存储环境中的个别使用情况。</block>
-  <block id="7fdbc37a63f55a7bf94c4f7eee9fbbb6" category="example-title">&lt;strong&gt; 卷中的详细信息&lt;/strong&gt;</block>
   <block id="6f7e564e5f841331ad117d7eb3b3ae10" category="paragraph">对于ONTAP 、*系统详细信息*选项卡将显示相关信息、例如Keystone订阅所管理的存储环境中卷的容量使用情况、卷类型、集群、聚合和服务级别。</block>
   <block id="d2c1241be04ae4d70013755a80c6cbd2" category="list-text">单击*系统详细信息*选项卡。</block>
   <block id="ccdbd07a063ad5631511d37c5d2f5a36" category="list-text">选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。</block>
-  <block id="8b315ff987c2e0cfd5650f23e5464623" category="example-title">&lt;strong&gt; GRID节点和消费详细信息&lt;/strong&gt;</block>
   <block id="b3e33e1c1964ee47822698a5c69ad576" category="paragraph">对于StorageGRID 、此选项卡将显示对象存储环境中节点的逻辑使用情况。</block>
   <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">选择订阅编号。默认情况下、系统会选择第一个可用订阅编号。选择订阅编号后、将启用对象存储详细信息的链接。</block>
   <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">单击此链接可查看每个节点的节点名称和逻辑使用情况详细信息。</block>
@@ -3180,7 +3178,6 @@
   <block id="3cc7e158f8699d90d955763d4ad3a6bb" category="paragraph"><block ref="3cc7e158f8699d90d955763d4ad3a6bb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="978c8164dc991cb5252f85067c6fdbe4" category="inline-image-macro">租户架构</block>
   <block id="5cee2df0715294af225b93a062c0b3bf" category="paragraph"><block ref="5cee2df0715294af225b93a062c0b3bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ce0a3714c71298667d65ee297b12efd2" category="paragraph">Keystone可通过订阅按预定义的性能服务级别(服务级别)提供数据存储容量。由Keystone服务管理的每个卷都与一个服务级别相关联。</block>
   <block id="f93af6ea2aaeafbfa26e3fe0954ccc1a" category="paragraph">每个服务级别均由其I/O密度(即IOP/TiB/卷)定义。这是性能(每秒输入/输出操作数[IOS])与已分配存储容量(TiB)的比率、即每个卷平均延迟时的IOS/TiB。</block>
   <block id="0d2770e6697ff41e6cac5eec9a3d728b" category="paragraph">卷的I/O密度每小时计算一次、以报告峰值I/O密度。每个月都会生成卷的I/O密度报告。</block>
   <block id="26ee386c417635b5c1e5d8ffd5bbb0bd" category="paragraph">此处列出了文件、块和对象存储类型的服务级别。</block>
@@ -3233,13 +3230,10 @@
   <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">历史数据</block>
   <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8f49e2b6da7339d918b4030b299167c" category="admonition">根据查询的日期范围、使用情况图表将显示在30个数据收集点范围内。</block>
-  <block id="9c559d13aa46e64e5c1b49a0e0a1432e" category="example-title">&lt;strong&gt; 的&lt;/strong&gt; 的</block>
-  <block id="cdd4bd25f20c449a0963f56aa74dcbab" category="paragraph">如果您已订阅数据保护(DP)服务、则可以在*订阅时间序列*选项卡上根据MetroCluster 主站点和镜像站点查看消耗数据的拆分情况。</block>
   <block id="087f6b1f88be44a104173a6f203b90b1" category="paragraph">有关数据保护的信息、请参见<block ref="4f245631ed62c18d2a1d6d25320b34f1" category="inline-link-rx"></block>。</block>
   <block id="04db5afbef84567f5c1ef044a2971b66" category="paragraph">如果您的ONTAP 存储环境中的集群是在MetroCluster 设置中配置的、则Keystone订阅的使用情况数据将拆分到同一时间序列图表中、以显示主站点和镜像站点上基本服务级别的使用情况。</block>
   <block id="281d16d13e34f7444117e4fa04008cd2" category="admonition">仅针对基本服务级别拆分消耗条形图。对于DP服务级别、不会显示此划分。</block>
   <block id="e1d364a7f674f544c03d16d5e011a4cd" category="paragraph-title">数据保护服务级别</block>
-  <block id="d1bb5be7c1d9696a6692a5707b28c8a6" category="paragraph">对于DP服务级别、总使用量将被拆分、每个站点的使用量将通过单独的订阅反映出来并计费；即、主站点的一个订阅、镜像站点的另一个订阅。因此，当您在*订阅时间序列*选项卡上选择主站点的订阅编号时，DP服务级别的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster 配置中的每个站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。</block>
   <block id="c3c3060e985c56412fb0189a9c010a6d" category="paragraph-title">基本服务级别</block>
   <block id="2da97e4dcd0aded3c38f66cbf8f9886b" category="paragraph">但是、对于基本服务级别、每个卷在主站点和镜像站点按配置收费、因此、同一条形图会根据主站点和镜像站点的使用情况进行拆分。</block>
   <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">您可以看到的主要订阅内容</block>
@@ -3285,4 +3279,15 @@
 <block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大使用量、即使用量即将达到已承诺容量的100%或更多。对于超过已提交容量80%的任何消耗、*已用*列将显示此指示符
 <block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：消耗量在突发限制范围内。突发消耗量是指在服务级别的100%已承诺容量之上、并且处于商定的突发使用量限制(例如120%)范围内的消耗量
 <block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：表示消耗量超过规定的突发限制</block>
+  <block id="f57aa475ec783bf5f654ae84fb0b5e09" category="paragraph">Keystone可按预定义的性能服务级别(服务级别)或按订阅率计划提供数据存储容量。由Keystone服务管理的每个卷都与一个服务级别相关联。</block>
+  <block id="463e83e0e081379ee2766e73b3eecd12" category="inline-link">有关数据保护的其他详细信息</block>
+  <block id="03c5694e908728e2ac20cf09a2828523" category="admonition">如果您的订阅分配了数据保护服务级别或费率计划、则会显示一个工具提示、帮助您确定MetroCluster设置中合作伙伴订阅的跟踪ID。要了解如何在MetroCluster配置中查看合作伙伴订阅的详细使用情况、请参阅<block ref="79d54d9bd1527f09da2a1c650bb1ebe9" category="inline-link-rx"></block>。</block>
+  <block id="29005d0d658d65418d353d36b2bb6f04" category="inline-link">Keystone STaaS文档</block>
+  <block id="5d37c3b0ff8e3607561838b8a2c41ce6" category="list-text">*使用类型*：您可能订阅了多个Keystone (版本1)或Keystone STaaS (版本2)订阅。对于这两种订阅类型、服务级别的费率计划规则可能会有所不同。通过查看此列中的值、您可以了解使用类型是按任一的已配置使用量还是逻辑使用量计费<block ref="6654c734ccab8f440ff0825eb443dc7f" prefix=" " category="inline-code"></block> 或<block ref="1b267619c4812cc46ee281747884ca50" prefix=" " category="inline-code"></block>。有关Keystone STaaS的详细信息、请参见<block ref="6e40e8ebb5f38b7cc6ad272c1589745e" category="inline-link-rx"></block>。</block>
+  <block id="936ccdb97115e9f35a11d35e3d5b5cad" category="example-title">单击此处</block>
+  <block id="0897cfec13f189dd654fd1a11a3ccb31" category="paragraph">如果您已订阅数据保护(DP)服务、则可以根据MetroCluster合作伙伴站点的*订阅时间序列*选项卡查看消费数据的分类。</block>
+  <block id="ea477a5ac64777287c5e9f0ffda4e1ca" category="paragraph">对于DP服务级别、总使用量将被拆分、每个合作伙伴站点的使用量将通过单独的订阅反映出来并计费；即、主站点的一个订阅、镜像站点的另一个订阅。因此，当您在*订阅时间序列*选项卡上选择主站点的订阅编号时，DP服务级别的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster配置中的每个配对站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。</block>
+  <block id="382af8e8b2bf82c4df59a255786526a2" category="section-title">ONTAP卷详细信息</block>
+  <block id="fc33c921eada2f71b3a548355734f006" category="section-title">StorageGRID节点和使用情况详细信息</block>
+  <block id="248ee1b5c36074ad26f09b9a95a55dca" category="admonition">如果您订阅了单个服务级别或速率计划、则无法看到不合规卷的警报。</block>
 </blocks>
