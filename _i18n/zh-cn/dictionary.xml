@@ -1566,7 +1566,6 @@
   <block id="026ad4d2c920d702727bf108e70e14e0" category="list-text">单击 * 创建子租户 * 。</block>
   <block id="dd76b59dc803b207d74caa8c5e5203c7" category="list-text">添加名称和代码。代表子租户的代码在 NetApp 服务引擎实例中应是唯一的，并由小写字符组成。</block>
   <block id="9203a50eb24a9f4c5c58c57c9f3da40e" category="admonition">您只能修改现有子租户的名称。此外，您不能删除与存储组件关联的子租户。</block>
-  <block id="21a1e68164f738b8be1dae11d5a694b3" category="doc">数据保护</block>
   <block id="7da490627b0929eb399424269ef46d7f" category="list-text">磁盘和共享的备份（在订阅过程中需要数据保护服务）</block>
   <block id="b0609401d759c5156292bcededa3ee06" category="list-text">磁盘和共享的灾难恢复（在订阅过程中需要数据保护服务）</block>
   <block id="53b8c0793d8e01e805f7baa48301f0cb" category="cell">多区域备份（数据保护附加项）</block>
@@ -3037,7 +3036,6 @@
   <block id="56db599b367f1290318fb4abdd42ed2b" category="doc">Keystone的Digital Advisor信息板和报告</block>
   <block id="34c39bccff9d0d20e19cce35894ae174" category="list-text">登录到Digital Advisor。您可以看到* Keystone订阅*小工具、其中汇总了已购买Keystone服务的容量使用情况。</block>
   <block id="d896c0f2329a0638824e70e536ea67ae" category="list-text">在* Keystone订阅*小工具中、单击*查看更多详细信息*以在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规&gt; Keystone订阅*。</block>
-  <block id="e2ffb27c2aa47f644ded27f116869dc8" category="admonition">Keystone订阅中的容量消耗以Tib形式显示在信息板和报告上、最多可显示两位小数。如果使用量小于0.01TiB、则该值显示为<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> 或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。有关其他使用指标、请参见<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。有关Keystone中使用的不同容量的信息、请参见<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
   <block id="5ce1e0f4461b25c4ab605e7e1107117a" category="paragraph">您可以通过NetApp服务引擎Web门户管理和监控NetApp Keystone 服务。门户包含以下组件：</block>
   <block id="0d77f7db2828214c8d1ad32c5f8b881f" category="paragraph">租户可以是客户，合作伙伴或计费实体。租户持有Keystone订阅服务的订阅(或多个订阅)。</block>
   <block id="f087729432bd756193396b1e0365c0c9" category="doc">查看NetApp服务引擎上的Keystone信息板</block>
@@ -3180,7 +3178,6 @@
   <block id="5cee2df0715294af225b93a062c0b3bf" category="paragraph"><block ref="5cee2df0715294af225b93a062c0b3bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f93af6ea2aaeafbfa26e3fe0954ccc1a" category="paragraph">每个服务级别均由其I/O密度(即IOP/TiB/卷)定义。这是性能(每秒输入/输出操作数[IOS])与已分配存储容量(TiB)的比率、即每个卷平均延迟时的IOS/TiB。</block>
   <block id="0d2770e6697ff41e6cac5eec9a3d728b" category="paragraph">卷的I/O密度每小时计算一次、以报告峰值I/O密度。每个月都会生成卷的I/O密度报告。</block>
-  <block id="26ee386c417635b5c1e5d8ffd5bbb0bd" category="paragraph">此处列出了文件、块和对象存储类型的服务级别。</block>
   <block id="8edf08839950862fe56f04959fd3f87b" category="section-title">文件存储的服务级别</block>
   <block id="10fde21ab3bcb7083e8e5bed1ca3af80" category="cell">*每个卷分配的最大IOS/逻辑TiB*</block>
   <block id="0402a8a3b6eb168a997a74fb30635a37" category="cell">*每个卷分配的目标IOS/逻辑TiB*</block>
@@ -3188,7 +3185,6 @@
   <block id="61871926ab208323c9981229029b2c82" category="cell">*平均延迟*</block>
   <block id="d6b228a8ed209a51c109dc08e1f357ce" category="cell">*块大小*</block>
   <block id="bf79e80bcc6c0a1ed97c7270c5aa6360" category="section-title">有关文件存储服务级别的更多信息</block>
-  <block id="c4701e06633afc0b1161fbc6049cc803" category="paragraph">服务级别指标取决于以下条件：</block>
   <block id="210b39d4b6b8c3231fc8e5027adff975" category="list-text">文件和块存储的服务级别支持ONTAP 9.7及更高版本。</block>
   <block id="02007b308c5bfea2eb09b0fa9b7f04d5" category="list-text">服务级别的IOps/TiB/卷、MBps/TiB/卷和延迟值基于卷中存储的逻辑数据量、32 KB块大小以及70%读取和30%写入IO操作的随机组合。</block>
   <block id="1ce7cadb42fda63031710acdb1e36d13" category="list-text">根据实际或假设的块大小、系统工作负载并发性或输入输出操作、实际IOps/TiB/卷和MBps/TiB/卷可能会有所不同。</block>
@@ -3230,30 +3226,22 @@
   <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">历史数据</block>
   <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8f49e2b6da7339d918b4030b299167c" category="admonition">根据查询的日期范围、使用情况图表将显示在30个数据收集点范围内。</block>
-  <block id="087f6b1f88be44a104173a6f203b90b1" category="paragraph">有关数据保护的信息、请参见<block ref="4f245631ed62c18d2a1d6d25320b34f1" category="inline-link-rx"></block>。</block>
   <block id="04db5afbef84567f5c1ef044a2971b66" category="paragraph">如果您的ONTAP 存储环境中的集群是在MetroCluster 设置中配置的、则Keystone订阅的使用情况数据将拆分到同一时间序列图表中、以显示主站点和镜像站点上基本服务级别的使用情况。</block>
-  <block id="281d16d13e34f7444117e4fa04008cd2" category="admonition">仅针对基本服务级别拆分消耗条形图。对于DP服务级别、不会显示此划分。</block>
   <block id="e1d364a7f674f544c03d16d5e011a4cd" category="paragraph-title">数据保护服务级别</block>
   <block id="c3c3060e985c56412fb0189a9c010a6d" category="paragraph-title">基本服务级别</block>
-  <block id="2da97e4dcd0aded3c38f66cbf8f9886b" category="paragraph">但是、对于基本服务级别、每个卷在主站点和镜像站点按配置收费、因此、同一条形图会根据主站点和镜像站点的使用情况进行拆分。</block>
   <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">您可以看到的主要订阅内容</block>
-  <block id="d8476da72783640883a9e5629643666c" category="paragraph">下图显示了_Extreme服务级别和主订阅编号的图表。"相同时间"序列图表以主站点所用颜色代码的较浅阴影标记镜像站点的使用量。鼠标悬停时的工具提示会显示主站点和镜像站点的消耗分解(以TiB为单位)、分别为1.02 TiB和1.05 TiB。</block>
   <block id="7cbd40b0470c3f0ea1063db9202530ff" category="inline-image-macro">MCC主系统</block>
   <block id="69ee7237e9b9f659b4b0f2cee316a662" category="paragraph"><block ref="69ee7237e9b9f659b4b0f2cee316a662" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="691f3f8af0331dffbbb99f55392f1b1d" category="paragraph">对于_Data-Protect至尊_服务级别、图表如下所示：</block>
   <block id="4bb0adac0644b7c8396196d410d47909" category="inline-image-macro">MCC主底座</block>
   <block id="2788c6179b3412862ccb0aa51af8fb00" category="paragraph"><block ref="2788c6179b3412862ccb0aa51af8fb00" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd9124dc0715967bbbd4e31ad8a6f35d" category="paragraph-title">您可以看到的二级(镜像站点)订阅内容</block>
-  <block id="780f5e670e2c04a97e27a55ce4e5fe77" category="paragraph">检查二级订阅时、您会看到同一数据收集点的_Extreme服务级别条形图已反转、主站点和镜像站点的消耗细分分别为1.05 TiB和1.02 TiB。</block>
   <block id="ff58d4e2d2a69e5e91f9509907ba3bd1" category="inline-image-macro">MCC镜像</block>
   <block id="292d6b6f6df888f5de022ad6bebc7e52" category="paragraph"><block ref="292d6b6f6df888f5de022ad6bebc7e52" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="096ba4c1255ddf7f6a7f129dc338ad4d" category="paragraph">对于_Data-Protect至尊_服务级别、图表在同一收集点显示如下：</block>
   <block id="ab682f0abbe8b97aaec76b435ca52575" category="inline-image-macro">MCC镜像底座</block>
   <block id="32b6695c9f1befd719e0c7b2c28dfea1" category="paragraph"><block ref="32b6695c9f1befd719e0c7b2c28dfea1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48d59ef93e565c1c62d4604f7ddf6561" category="inline-link">了解 MetroCluster 数据保护和灾难恢复</block>
   <block id="11faa60292999fe44e704021ce9a5657" category="paragraph">有关MetroCluster 如何保护数据的信息、请参见<block ref="f22c59fda71318ed939c4a5a7c90b447" category="inline-link-rx"></block>。</block>
   <block id="793c1a98e090ba1b0f167e3a8b0c5b37" category="paragraph">此时将显示卷详细信息。您可以将鼠标悬停在列标题旁边的信息图标上、滚动浏览列并了解有关这些列的更多信息。您可以按列排序并筛选列表以查看特定信息。</block>
-  <block id="6857abe02d1e9615946756081a1a8169" category="admonition">对于数据保护服务、将显示一个附加列、指示此卷在MetroCluster 配置中是主卷还是镜像卷。您可以单击*复制节点序列*按钮来复制单个节点序列号。</block>
   <block id="0bb9d5f8cc89f1784aecd52a98b80f07" category="inline-image-macro">系统详细信息选项卡</block>
   <block id="8b672bec07d1efa43e526f4981ffb4e7" category="paragraph"><block ref="8b672bec07d1efa43e526f4981ffb4e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4f42ad6a3c3832d3bf584971680c1ebb" category="inline-image-macro">SG系统详细信息</block>
@@ -3280,14 +3268,28 @@
 <block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：消耗量在突发限制范围内。突发消耗量是指在服务级别的100%已承诺容量之上、并且处于商定的突发使用量限制(例如120%)范围内的消耗量
 <block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：表示消耗量超过规定的突发限制</block>
   <block id="f57aa475ec783bf5f654ae84fb0b5e09" category="paragraph">Keystone可按预定义的性能服务级别(服务级别)或按订阅率计划提供数据存储容量。由Keystone服务管理的每个卷都与一个服务级别相关联。</block>
-  <block id="463e83e0e081379ee2766e73b3eecd12" category="inline-link">有关数据保护的其他详细信息</block>
-  <block id="03c5694e908728e2ac20cf09a2828523" category="admonition">如果您的订阅分配了数据保护服务级别或费率计划、则会显示一个工具提示、帮助您确定MetroCluster设置中合作伙伴订阅的跟踪ID。要了解如何在MetroCluster配置中查看合作伙伴订阅的详细使用情况、请参阅<block ref="79d54d9bd1527f09da2a1c650bb1ebe9" category="inline-link-rx"></block>。</block>
   <block id="29005d0d658d65418d353d36b2bb6f04" category="inline-link">Keystone STaaS文档</block>
   <block id="5d37c3b0ff8e3607561838b8a2c41ce6" category="list-text">*使用类型*：您可能订阅了多个Keystone (版本1)或Keystone STaaS (版本2)订阅。对于这两种订阅类型、服务级别的费率计划规则可能会有所不同。通过查看此列中的值、您可以了解使用类型是按任一的已配置使用量还是逻辑使用量计费<block ref="6654c734ccab8f440ff0825eb443dc7f" prefix=" " category="inline-code"></block> 或<block ref="1b267619c4812cc46ee281747884ca50" prefix=" " category="inline-code"></block>。有关Keystone STaaS的详细信息、请参见<block ref="6e40e8ebb5f38b7cc6ad272c1589745e" category="inline-link-rx"></block>。</block>
   <block id="936ccdb97115e9f35a11d35e3d5b5cad" category="example-title">单击此处</block>
-  <block id="0897cfec13f189dd654fd1a11a3ccb31" category="paragraph">如果您已订阅数据保护(DP)服务、则可以根据MetroCluster合作伙伴站点的*订阅时间序列*选项卡查看消费数据的分类。</block>
-  <block id="ea477a5ac64777287c5e9f0ffda4e1ca" category="paragraph">对于DP服务级别、总使用量将被拆分、每个合作伙伴站点的使用量将通过单独的订阅反映出来并计费；即、主站点的一个订阅、镜像站点的另一个订阅。因此，当您在*订阅时间序列*选项卡上选择主站点的订阅编号时，DP服务级别的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster配置中的每个配对站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。</block>
   <block id="382af8e8b2bf82c4df59a255786526a2" category="section-title">ONTAP卷详细信息</block>
   <block id="fc33c921eada2f71b3a548355734f006" category="section-title">StorageGRID节点和使用情况详细信息</block>
   <block id="248ee1b5c36074ad26f09b9a95a55dca" category="admonition">如果您订阅了单个服务级别或速率计划、则无法看到不合规卷的警报。</block>
+  <block id="807b74f4408b0522944c11fa3c943faa" category="inline-link">有关数据保护的其他详细信息</block>
+  <block id="22af05fccc86b1f0d7872faea8c654a4" category="paragraph">如果您订阅了数据保护服务、则会为您的订阅分配特定的服务级别、例如_Data-Protect Extreme、_Data-Protect Premium等。有关信息，请参见<block ref="ea85780aae2041c315d8d2c95c2ef380" category="inline-link-rx"></block></block>
+  <block id="1929ab48c05126f8a997e319160674e8" category="admonition">Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量小于0.01TiB、则该值显示为<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> 或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。有关其他使用指标、请参见<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。有关Keystone中使用的不同容量的信息、请参见<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
+  <block id="8640c6867f9a397cb1e15b5dc86f5663" category="admonition">如果您的订阅分配了数据保护服务级别或费率计划、则会显示一个工具提示、帮助您确定MetroCluster设置中合作伙伴订阅的跟踪ID。要了解如何在MetroCluster配置中查看合作伙伴订阅的详细使用情况、请参阅<block ref="ea85780aae2041c315d8d2c95c2ef380" category="inline-link-rx"></block>。</block>
+  <block id="8e357471a27451528c5b9baff9e6ce0c" category="paragraph">如果您已订阅数据保护服务、则可以在*订阅时间序列*选项卡上查看MetroCluster合作伙伴站点的消费数据的分类。</block>
+  <block id="1e082e4448eecee03f6bd4c2605a41bc" category="paragraph">有关数据保护的信息、请参见<block ref="88c192a22c75988714ca0d6a3ba44ff9" category="inline-link-rx"></block>。</block>
+  <block id="e6b09591607b38dfa571b28e166b8e42" category="admonition">仅针对基本服务级别拆分消耗条形图。对于数据保护服务级别、不会显示此划分。</block>
+  <block id="a5ee6c11183b804a6d34deec216a083c" category="paragraph">对于数据保护服务级别、总使用量会在配对站点之间分摊、每个配对站点的使用量会通过单独的订阅进行反映和计费；即、主站点使用一个订阅、镜像站点使用另一个订阅。因此，当您在*订阅时间序列*选项卡上选择主站点的订阅编号时，DP服务级别的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster配置中的每个配对站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。</block>
+  <block id="dc22a90e0f32f2a7c39774489ee8fb79" category="admonition">*订阅详细信息*选项卡中订阅的跟踪ID旁边的工具提示可帮助您在MetroCluster设置中识别合作伙伴订阅。</block>
+  <block id="fe1654f1038a98c579f04107a47b091b" category="paragraph">对于基本服务级别、每个卷在主站点和镜像站点配置时计费、因此、同一条形图会根据主站点和镜像站点的使用情况进行拆分。</block>
+  <block id="6f66763d1fa17a342e4bfd7244527ffb" category="paragraph">下图显示了_Extreme服务级别(基础服务级别)和主订阅编号的图表。"相同时间"序列图表以主站点所用颜色代码的较浅阴影标记镜像站点的使用量。鼠标悬停时的工具提示会显示主站点和镜像站点的消耗分解(以TiB为单位)、分别为1.02 TiB和1.05 TiB。</block>
+  <block id="574ca73665514e03da64e46fb1e82604" category="paragraph">对于_Data-Protect至尊_服务级别(数据保护服务级别)、图表如下所示：</block>
+  <block id="de7e96b640e5109ff5e8bcbb7abf5849" category="paragraph">在检查二级订阅时、您会发现、与配对站点位于同一数据收集点的_Extreme服务级别(基础服务级别)条形图已反转、主站点和镜像站点的消耗细分分别为1.05 TiB和1.02 TiB。</block>
+  <block id="b8ed9b54db3e7d83dd75eae7e5078691" category="paragraph">对于_Data-Protect至尊_服务级别(数据保护服务级别)、该图表与配对站点位于同一个收集点处、如下所示：</block>
+  <block id="1e77eca1979c6beac412146f5d5e17fe" category="admonition">对于数据保护服务、将显示一个附加列、指示此卷在MetroCluster配置中是主卷还是镜像卷。您可以单击*复制节点序列*按钮来复制单个节点序列号。</block>
+  <block id="a124cd9706a171f6aa398360fb7ee547" category="paragraph">您可以根据存储环境以及存储和使用需求选择服务级别。默认情况下、您可以使用基本服务级别。如果您选择了特定服务、则还可以使用其他服务级别。例如、对于数据保护服务、_Data-Protect &lt;base-service-level&gt;_服务级别将分配给您的订阅。</block>
+  <block id="12e64e130cc4e82cf93d846901ed35da" category="paragraph">此处列出了文件、块和对象存储类型的基本服务级别。</block>
+  <block id="6839a21037309515ac19670a2a6b09fe" category="paragraph">基本服务级别指标取决于以下条件：</block>
 </blocks>

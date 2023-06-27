@@ -24,6 +24,8 @@ NetApp Keystone 数据保护服务可以备份您的数据、并可在需要时�
 
 NOTE: 备份和灾难恢复服务作为附加服务提供、而快照则作为基本存储服务的一部分提供。
 
+如果您订阅了数据保护服务、则会为您的订阅分配特定的服务级别、例如_Data-Protect Extreme、_Data-Protect Premium等。有关信息，请参见 https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["有关数据保护的其他详细信息"]
+
 |===
 |  | 单区域快照(作为基本存储服务的一部分提供) | 多区域备份（数据保护附加项） | 多区域灾难恢复（数据保护附加项） 
 
