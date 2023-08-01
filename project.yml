@@ -86,7 +86,7 @@ sidebar:
         url: "/sewebiug_select_tenant.html"
       - title: 查看 NetApp 服务引擎 Web 界面
         url: "/sewebiug_netapp_service_engine_web_interface_overview.html"
-    - title: 查看Keystone订阅DSboard
+    - title: 查看Keystone订阅信息板
       url: "/sewebiug_dashboard.html"
     - title: 查看计费
       url: "/sewebiug_billing.html"

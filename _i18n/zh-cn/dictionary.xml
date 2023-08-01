@@ -2929,11 +2929,8 @@
   <block id="936acd8bca51b1c47ce51ce5d9e45134" category="admonition">此处提供的信息包括适用场景 ONTAP 和StorageGRID。相关章节指出了一些例外情况。</block>
   <block id="b5d0947d6bc5e70f868d560d859163f5" category="inline-link">查看NetApp Keystone 订阅的容量利用率</block>
   <block id="90022a4ed9f097be4671116b6b5b7754" category="paragraph">有关Keystone Digital Advisor小工具的信息、请参见<block ref="553d5c0a148912943ee201440d3b98c5" category="inline-link-rx"></block>。</block>
-  <block id="af23688fe47e4923ebd83f7238688630" category="paragraph">要查看详细信息、请执行以下步骤：</block>
-  <block id="b49a48b1a3504debfe7fedab8ad4086d" category="paragraph">订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在* Keystone订阅*屏幕的不同选项卡中。</block>
   <block id="3e7fbf68bb6fb2a1a061e9b1a50441d9" category="inline-link">服务级别指标和定义</block>
   <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">查看订阅详细信息</block>
-  <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">您可以在*订阅详细信息*选项卡中查看帐户名称的所有订阅。</block>
   <block id="60d8073bb007efeabf44bc4eea759210" category="paragraph">对于每个订阅编号、您可以查看以下信息：</block>
   <block id="8e43124ddee77b223f1e720973e147e7" category="list-text">*订阅编号*：NetApp分配的Keystone订阅的订阅编号。</block>
   <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*跟踪ID*：激活订阅时分配的跟踪ID。这是每个订阅和站点的唯一ID、用于跟踪订阅。</block>
@@ -2941,10 +2938,8 @@
   <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*开始日期*：订阅的开始日期。</block>
   <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*使用状态*：指示已使用或过度使用的订阅量。如果要查看最高消耗记录、可以按此列对列表进行排序。</block>
   <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">有关Keystone存储服务和相关服务级别的信息、请参见<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
-  <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">您可以参考以下使用情况指示器来检查每个订阅的使用状态：</block>
   <block id="88fa71f0a6e0dfedbb46d91cc0b37a50" category="paragraph-title">索引</block>
   <block id="6258cb1a842831f15b22f87325717f37" category="section-title">查看历史订阅数据</block>
-  <block id="c46ba64e2bab36ac2ede95ae5f0692dc" category="list-text">单击*订阅时间序列*选项卡。</block>
   <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">选择要查看其详细信息的所需订阅。默认情况下、系统会选择您帐户名称中的第一个订阅。</block>
   <block id="9ff2c2d2ffe68a2a0862d38fe356318c" category="list-text">从*自日期*和*至日期*字段中的日历图标中选择时间范围。默认时间范围是从计费周期的开始日期到当前日期。</block>
   <block id="35070e1c588eb56d935a4877ffdfdb10" category="paragraph">此时将显示以下详细信息：</block>
@@ -2974,7 +2969,6 @@
   <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">单击此链接可查看每个节点的节点名称和逻辑使用情况详细信息。</block>
   <block id="7ecd0726b721e17d74d280fdd93e49f8" category="section-title">生成报告</block>
   <block id="03051fbd458dd7625e7969d74dd74735" category="paragraph">详细信息以CSV格式生成、您可以保存这些详细信息以供将来使用。</block>
-  <block id="3f564a49686a18ae09da9597e6538840" category="paragraph">*订阅时间序列*选项卡的示例报告、其中会转换图形数据：</block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">查看警报</block>
   <block id="c71fcee7f813aa85774b9114dfba4ef1" category="paragraph">信息板上的警报会发送一些警告消息、使您能够了解存储环境中发生的问题。</block>
   <block id="903961eaa166cc0c38b735276961eb0c" category="paragraph">警报可以有两种类型：</block>
@@ -3035,7 +3029,6 @@
   <block id="535fdb1ab2c166c0c63a26bfd6b8a4dd" category="paragraph">Keystone具有以下优势：</block>
   <block id="56db599b367f1290318fb4abdd42ed2b" category="doc">Keystone的Digital Advisor信息板和报告</block>
   <block id="34c39bccff9d0d20e19cce35894ae174" category="list-text">登录到Digital Advisor。您可以看到* Keystone订阅*小工具、其中汇总了已购买Keystone服务的容量使用情况。</block>
-  <block id="d896c0f2329a0638824e70e536ea67ae" category="list-text">在* Keystone订阅*小工具中、单击*查看更多详细信息*以在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规&gt; Keystone订阅*。</block>
   <block id="5ce1e0f4461b25c4ab605e7e1107117a" category="paragraph">您可以通过NetApp服务引擎Web门户管理和监控NetApp Keystone 服务。门户包含以下组件：</block>
   <block id="0d77f7db2828214c8d1ad32c5f8b881f" category="paragraph">租户可以是客户，合作伙伴或计费实体。租户持有Keystone订阅服务的订阅(或多个订阅)。</block>
   <block id="f087729432bd756193396b1e0365c0c9" category="doc">查看NetApp服务引擎上的Keystone信息板</block>
@@ -3149,7 +3142,6 @@
   <block id="a3297beb0c913ab1ce7de0647b5264d0" category="sidebar">Keystone和Active IQ 数字顾问</block>
   <block id="c06919229cadbe5cd8d5d386238c994e" category="sidebar">Keystone订阅常见问题解答</block>
   <block id="6e0ffc28497d27ad3c6bea6ff91952d8" category="sidebar">Keystone订阅</block>
-  <block id="01f997e2a423afa5cbbc884d9826beb8" category="sidebar">查看Keystone订阅DSboard</block>
   <block id="918d1cd98a55c119d7e4e81b3cfac0f8" category="summary">Keystone自适应服务质量(AQoS)</block>
   <block id="2cc739ab414b782a0ba5a2dafc3c878f" category="doc">Keystone中的自适应服务质量</block>
   <block id="5f558fad18c536fde918f6d8470c0f4c" category="paragraph">存储服务质量(QoS)是一项关键技术、可确保应用程序获得一致且可预测的性能。如果没有QoS、某些工作负载(例如用于启动多个系统的工作负载)可能会在一段时间内占用大部分或全部资源、并影响其他工作负载。有关QoS的信息、请参见<block ref="3c8d0a20452a1fdd8de7e683059a52bc" category="inline-link-rx"></block>。</block>
@@ -3217,9 +3209,6 @@
   <block id="41220b85d8467c5822466b54e2f77fdf" category="inline-image-macro">订阅详细信息选项卡</block>
   <block id="3863c999fd2904d6bd45c5fac0637857" category="paragraph"><block ref="3863c999fd2904d6bd45c5fac0637857" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">图标。</block>
-  <block id="465b53bf56fb8c088ea55a58377aec59" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block>：单击此图标将打开*订阅时间序列*选项卡、在此可以查看此订阅中包含的每个服务级别的历史使用情况数据。</block>
-  <block id="0e25c249c47d5b9cd3933dea0b0e9bfb" category="paragraph">您可以单击订阅记录的向下箭头来查看更多详细信息。服务级别名称、已提交、已使用、可用容量以及当前和累积突发使用量等详细信息将显示在TiB中。</block>
-  <block id="3a6fffe4877ca42144b232cb74b25c92" category="admonition">系统将突出显示消耗量较高的特定服务级别。您还可以查看为卷生成的警告和警报。</block>
   <block id="bd21190449b7e88db48fa0f580a8f666" category="inline-image-macro">图标</block>
   <block id="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="paragraph"><block ref="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4cba785ff76b826ab5119954c5eab69" category="list-text">单击 * 查看详细信息 * 。系统将根据选定时间范围显示每个服务级别的订阅历史使用数据。您可以将鼠标悬停在图表上方、以查看该数据收集点的已提交、已使用、突发以及突发限制以上数据的使用情况细分。</block>
@@ -3250,7 +3239,6 @@
   <block id="95d8d7b4f026ffa4ad680a1e5997be51" category="paragraph"><block ref="95d8d7b4f026ffa4ad680a1e5997be51" category="inline-image-macro-rx" type="image"></block></block>
   <block id="26b4aee602cdc66122bb6d728f867b41" category="inline-image-macro">下载报告图标</block>
   <block id="0f3423da50b7d7441392096dd6c78fac" category="paragraph">您可以通过单击*下载CSV*按钮从每个选项卡生成并查看订阅详细信息、某个时间范围的历史使用情况数据以及系统详细信息报告： <block ref="785382ed2a85b4539c4016da106c0215" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="71a1fbaca678e13a8273c81f0c6acf72" category="paragraph">在*订阅时间序列*选项卡中，您可以选择下载查询日期范围内默认30个数据收集点的报告，或下载每日报告。</block>
   <block id="69d93398ad0e22b2ac431db7ec005308" category="inline-image-macro">报告示例</block>
   <block id="ae36f6805d5f090b092ed6be03fa8820" category="paragraph"><block ref="ae36f6805d5f090b092ed6be03fa8820" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7df8a07436fa2a6fa44c6c89de1dc353" category="paragraph"><block ref="7df8a07436fa2a6fa44c6c89de1dc353" category="inline-image-macro-rx" type="image"></block></block>
@@ -3258,7 +3246,6 @@
   <block id="2fdc90e57385ab614099e9145cde6b8e" category="paragraph"><block ref="2fdc90e57385ab614099e9145cde6b8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be10ab795d4b4daf77ddb3146f1aac29" category="inline-image-macro">帐单图表</block>
   <block id="72bd452fe460a2000d8537f422c4b81d" category="paragraph"><block ref="72bd452fe460a2000d8537f422c4b81d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="779b97a34eb91d859eaec88fd66360be" category="paragraph">*订阅时间序列*选项卡显示特定时间段内Keystone订阅的历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。</block>
   <block id="abc995760236584824b9e9fb494224ef" category="admonition">为了获得最佳性能和用户体验、请将查询的日期范围限制为三个月或更短。</block>
   <block id="e34cff1dbe58bcff4567c9224e5370c6" category="list-text">*结束日期*：订阅的结束日期。空白日期表示订阅没有结束日期、它将自动续订。根据此日期、您可能会看到即将到期或附加了自动续订策略的订阅的信息消息。</block>
   <block id="85701aafc47f53d769db3988637e595c" category="admonition">空白图表表示您的环境中在该数据收集点没有可用数据。</block>
@@ -3270,7 +3257,6 @@
   <block id="f57aa475ec783bf5f654ae84fb0b5e09" category="paragraph">Keystone可按预定义的性能服务级别(服务级别)或按订阅率计划提供数据存储容量。由Keystone服务管理的每个卷都与一个服务级别相关联。</block>
   <block id="29005d0d658d65418d353d36b2bb6f04" category="inline-link">Keystone STaaS文档</block>
   <block id="5d37c3b0ff8e3607561838b8a2c41ce6" category="list-text">*使用类型*：您可能订阅了多个Keystone (版本1)或Keystone STaaS (版本2)订阅。对于这两种订阅类型、服务级别的费率计划规则可能会有所不同。通过查看此列中的值、您可以了解使用类型是按任一的已配置使用量还是逻辑使用量计费<block ref="6654c734ccab8f440ff0825eb443dc7f" prefix=" " category="inline-code"></block> 或<block ref="1b267619c4812cc46ee281747884ca50" prefix=" " category="inline-code"></block>。有关Keystone STaaS的详细信息、请参见<block ref="6e40e8ebb5f38b7cc6ad272c1589745e" category="inline-link-rx"></block>。</block>
-  <block id="936ccdb97115e9f35a11d35e3d5b5cad" category="example-title">单击此处</block>
   <block id="382af8e8b2bf82c4df59a255786526a2" category="section-title">ONTAP卷详细信息</block>
   <block id="fc33c921eada2f71b3a548355734f006" category="section-title">StorageGRID节点和使用情况详细信息</block>
   <block id="248ee1b5c36074ad26f09b9a95a55dca" category="admonition">如果您订阅了单个服务级别或速率计划、则无法看到不合规卷的警报。</block>
@@ -3278,10 +3264,8 @@
   <block id="22af05fccc86b1f0d7872faea8c654a4" category="paragraph">如果您订阅了数据保护服务、则会为您的订阅分配特定的服务级别、例如_Data-Protect Extreme、_Data-Protect Premium等。有关信息，请参见<block ref="ea85780aae2041c315d8d2c95c2ef380" category="inline-link-rx"></block></block>
   <block id="1929ab48c05126f8a997e319160674e8" category="admonition">Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量小于0.01TiB、则该值显示为<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> 或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。有关其他使用指标、请参见<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。有关Keystone中使用的不同容量的信息、请参见<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
   <block id="8640c6867f9a397cb1e15b5dc86f5663" category="admonition">如果您的订阅分配了数据保护服务级别或费率计划、则会显示一个工具提示、帮助您确定MetroCluster设置中合作伙伴订阅的跟踪ID。要了解如何在MetroCluster配置中查看合作伙伴订阅的详细使用情况、请参阅<block ref="ea85780aae2041c315d8d2c95c2ef380" category="inline-link-rx"></block>。</block>
-  <block id="8e357471a27451528c5b9baff9e6ce0c" category="paragraph">如果您已订阅数据保护服务、则可以在*订阅时间序列*选项卡上查看MetroCluster合作伙伴站点的消费数据的分类。</block>
   <block id="1e082e4448eecee03f6bd4c2605a41bc" category="paragraph">有关数据保护的信息、请参见<block ref="88c192a22c75988714ca0d6a3ba44ff9" category="inline-link-rx"></block>。</block>
   <block id="e6b09591607b38dfa571b28e166b8e42" category="admonition">仅针对基本服务级别拆分消耗条形图。对于数据保护服务级别、不会显示此划分。</block>
-  <block id="a5ee6c11183b804a6d34deec216a083c" category="paragraph">对于数据保护服务级别、总使用量会在配对站点之间分摊、每个配对站点的使用量会通过单独的订阅进行反映和计费；即、主站点使用一个订阅、镜像站点使用另一个订阅。因此，当您在*订阅时间序列*选项卡上选择主站点的订阅编号时，DP服务级别的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster配置中的每个配对站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。</block>
   <block id="dc22a90e0f32f2a7c39774489ee8fb79" category="admonition">*订阅详细信息*选项卡中订阅的跟踪ID旁边的工具提示可帮助您在MetroCluster设置中识别合作伙伴订阅。</block>
   <block id="fe1654f1038a98c579f04107a47b091b" category="paragraph">对于基本服务级别、每个卷在主站点和镜像站点配置时计费、因此、同一条形图会根据主站点和镜像站点的使用情况进行拆分。</block>
   <block id="6f66763d1fa17a342e4bfd7244527ffb" category="paragraph">下图显示了_Extreme服务级别(基础服务级别)和主订阅编号的图表。"相同时间"序列图表以主站点所用颜色代码的较浅阴影标记镜像站点的使用量。鼠标悬停时的工具提示会显示主站点和镜像站点的消耗分解(以TiB为单位)、分别为1.02 TiB和1.05 TiB。</block>
@@ -3292,4 +3276,25 @@
   <block id="a124cd9706a171f6aa398360fb7ee547" category="paragraph">您可以根据存储环境以及存储和使用需求选择服务级别。默认情况下、您可以使用基本服务级别。如果您选择了特定服务、则还可以使用其他服务级别。例如、对于数据保护服务、_Data-Protect &lt;base-service-level&gt;_服务级别将分配给您的订阅。</block>
   <block id="12e64e130cc4e82cf93d846901ed35da" category="paragraph">此处列出了文件、块和对象存储类型的基本服务级别。</block>
   <block id="6839a21037309515ac19670a2a6b09fe" category="paragraph">基本服务级别指标取决于以下条件：</block>
+  <block id="42bb1b11612744ae96538087e8d89e64" category="paragraph">要查看Keystone订阅和使用情况详细信息、请执行以下步骤：</block>
+  <block id="0e36e4920a72685c5bf66bc9dcc92631" category="list-text">在* Keystone订阅*小工具中、单击*查看更多详细信息*以在* Keystone订阅*页面上查看卷上的使用情况详细信息和警报。或者、从左侧导航窗格中、转到*常规&gt; Keystone订阅*。
+订阅详细信息、每个服务级别的使用情况图表以及卷详细信息将显示在* Keystone订阅*屏幕的不同选项卡中。</block>
+  <block id="97bc392a54093706b77166ffad5ea0d0" category="section-title">查看所有订阅</block>
+  <block id="2fe8aaafbfc1675fe82744032b0d0cf7" category="paragraph">您可以在*所有订阅*选项卡中查看所有订阅的列表。</block>
+  <block id="6af07443bb9ad7040cdd401c709ccbab" category="inline-image-macro">所有订阅选项卡的图像</block>
+  <block id="1026961b348768f00fe99c6335970163" category="paragraph"><block ref="1026961b348768f00fe99c6335970163" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0217421b29817efbd12b8a6b40478e08" category="list-text"><block ref="f5416884a5e4dfec0dfa2f3734568648" category="inline-image-macro-rx" type="image"></block>：单击此订阅图标将打开*订阅详细信息*选项卡，其中包含该订阅的其他详细信息。</block>
+  <block id="327f95562dd791a77e81a667b1df9fa2" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block>：单击此图标将打开*时间序列*选项卡，您可以在其中查看此订阅中每个服务级别的历史使用数据。
+您可以参考以下使用情况指示器来检查每个订阅的使用状态：</block>
+  <block id="8ef32aa104ea3562916b70b4b76567dc" category="paragraph">要了解订阅的详细信息，请单击*订阅详细信息*选项卡，然后选择所需的订阅编号。</block>
+  <block id="5c5d0bc72c60ee286bac97972345b3e3" category="paragraph">服务级别名称、已提交、已使用、可用容量以及当前和累积突发使用量等详细信息将显示在TiB中。</block>
+  <block id="6d3602bc1499d37d6352a07745fe82a3" category="inline-image-macro">信息图标</block>
+  <block id="d99c74aa854c016d1663a41aa2c66269" category="admonition">。 <block ref="41cd2369ab2f394456f5dd45b77d6e7d" category="inline-image-macro-rx" type="image"></block> 每个列旁边的图标提供有关该列的全面信息。系统将突出显示消耗量较高的特定服务级别。您还可以查看为卷生成的警告和警报。</block>
+  <block id="83528b1e6d4213feabc83b2181314b13" category="paragraph">*时间序列*选项卡显示特定时间段内Keystone订阅的历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。</block>
+  <block id="132388a6a35c7d25ea2062b8273f7f26" category="list-text">单击*时间序列*选项卡。</block>
+  <block id="8344f7a6b8dcdb4c4ccdda87c123a728" category="paragraph">如果您已订阅数据保护服务，则可以在*Time SERIVE*选项卡上查看MetroCluster配对站点的使用数据的分解情况。</block>
+  <block id="4795287a6f8c3961f5253f7ecd3113a8" category="paragraph">对于数据保护服务级别、总使用量会在配对站点之间分摊、每个配对站点的使用量会通过单独的订阅进行反映和计费；即、主站点使用一个订阅、镜像站点使用另一个订阅。因此，当您在*时间序列*选项卡上选择主站点的订阅编号时，DP服务级别的消费图表仅显示主站点的离散消费详细信息。由于MetroCluster配置中的每个配对站点都充当源和镜像、因此每个站点的总使用量包括源卷以及在该站点创建的镜像卷。</block>
+  <block id="af81edf5bcc17eaccb12af11d8027e2a" category="paragraph">在*时间序列*选项卡中，您可以选择下载查询日期范围内默认30个数据收集点的报告，或下载每日报告。</block>
+  <block id="1ab7bb685c5a04401573e75118c580cb" category="paragraph">用于*时间序列*选项卡的示例报告，其中转换了图形数据：</block>
+  <block id="c0bce484f13c952e32f78691687f5ae8" category="sidebar">查看Keystone订阅信息板</block>
 </blocks>
