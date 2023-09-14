@@ -47,6 +47,8 @@ TIP: 单击*订阅*链接可在*订阅*选项卡中查看过滤的订阅列表�
 
 
 
+image:db-card.png["无SLA"]
+
 有关Digital Advisor的详细信息、请参见 link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"]。
 
 有关* Keystone订阅*选项卡的信息、请参见_Digital Advisor Keystone_信息板和报告。

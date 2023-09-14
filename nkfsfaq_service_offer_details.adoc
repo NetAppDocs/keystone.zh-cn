@@ -26,15 +26,16 @@ Keystone服务提供12个月、24个月和36个月的期限。
 
 如何访问存储？*
 
-在 NetApp 操作的（标准）模式下，存储控制器（ ONTAP 系统管理器或对系统的管理访问）由 NetApp 拥有和管理。您只能通过 NetApp 服务引擎 UI 和 API 监控和管理存储。在客户管理的（或精简版）部署中， NetApp 服务引擎 UI 和 API 主要用于计费功能，您可以访问存储控制器，例如 Active IQ Unified Manager 和 ONTAP System Manager ，并直接访问 ONTAP 集群。
+在 NetApp 操作的（标准）模式下，存储控制器（ ONTAP 系统管理器或对系统的管理访问）由 NetApp 拥有和管理。您只能通过Active IQ数字顾问UI监控存储。
+在客户管理(或精简版)的部署中、Active IQ数字顾问UI主要用于计费功能、您可以访问存储控制器(例如Active IQ Unified Manager和ONTAP System Manager)并直接访问ONTAP集群。
 
 *如何管理此服务？*
 
-NetApp 服务引擎是一款业务流程和管理工具，您可以使用它来配置存储并获取有关服务使用情况的报告。
+您可以根据任何要求提交支持服务单。
 
 *如何增加订阅中的已提交容量？*
 
-您可以通过 NetApp 服务引擎管理工具或其 NetApp Keystone 成功经理提交容量添加请求。
+通过您的NetApp Keystone成功经理。
 
 *增加容量是否会延长此期限？*
 

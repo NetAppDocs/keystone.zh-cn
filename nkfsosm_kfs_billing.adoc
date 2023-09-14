@@ -30,8 +30,6 @@ Keystone计费基于已提交容量和可变突发消耗量。
 
 有关已提交容量和突发容量使用情况的信息，请参见 link:nkfsosm_keystone_service_capacity_definitions.html["Keystone 服务容量定义"]。
 
-有关如何查看计费详细信息的信息，请参见 link:sewebiug_billing.html["查看计费"]。
-
 
 
 == 根据已提交容量计费

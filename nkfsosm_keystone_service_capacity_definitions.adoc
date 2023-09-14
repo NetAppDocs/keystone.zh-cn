@@ -41,7 +41,7 @@ NetApp Keystone 服务容量包括：
 
 * 已提交的容量不能减少
 * 已提交容量不能在您的订阅到期前 90 天增加，除非此订阅将再续订 12 个月。
-* 您可以通过 NetApp 服务引擎界面或 Keystone Success Manager 请求更改已提交容量。有关请求更改的信息，请参见 link:sewebiug_raise_a_service_request.html["提出服务请求"]。
+* 您可以通过Keystone Success Manager请求更改已提交容量。
 
 
 
