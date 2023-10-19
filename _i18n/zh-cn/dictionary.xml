@@ -885,7 +885,6 @@ Active IQ数字顾问提供了一个信息板视图、其中包含有关订阅�
   <block id="9a1db55a20b384661303cf6789a6fed8" category="list-text">单击 * 查看详细信息 * 。系统将根据选定时间范围显示每个服务级别的订阅历史使用数据。</block>
   <block id="5c0d50dc2c715b658984931c688519eb" category="paragraph">条形图显示日期范围内服务级别名称以及该服务级别占用的容量。收集的日期和时间显示在图表底部。根据查询的日期范围、使用情况图表将显示在30个数据收集点范围内。您可以将鼠标悬停在图表上方、以查看该数据收集点的已提交、已使用、突发以及突发限制以上数据的使用情况细分。</block>
   <block id="f8eaf321d70fdf3e9d097bb407d56130" category="paragraph">条形图中的以下颜色表示服务级别中定义的已用容量。图表中的每月数据用一条竖线分隔。</block>
-  <block id="4bc2af7993e31ca7b54c80a630603236" category="paragraph">您可以单击切换按钮*显示当前使用量*，查看订阅计费期的当前使用量和突发使用量。这些值不基于查询的日期范围。</block>
   <block id="a122d7ff9fbb0694ecb095cdf8f27baa" category="section-title">查看历史突发数据</block>
   <block id="7f4aafd34e1281a2bb7098e5b06084bd" category="paragraph">如果您选择了*累积突发*选项，则默认情况下，您可以查看过去12个月的每月累积突发使用量数据。您可以按过去30个月的日期范围进行查询。</block>
   <block id="75ddfeb3beb9d2a265ac2ce3b66ef050" category="admonition">累积突发使用量或已用容量是按当前计费期间的每月计算的。累积突发使用量是根据服务级别的已提交容量和已使用容量通过以下公式计算得出的：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
@@ -895,4 +894,6 @@ Active IQ数字顾问提供了一个信息板视图、其中包含有关订阅�
   <block id="efca37f4dc4125775aa5043cc3e4ba6c" category="list-text">选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。</block>
   <block id="0116cc33ffc94de41f0b9cda437db400" category="paragraph">*是否可以订购新的存储服务？*
 可以、可以通过KSM请求新的存储服务或扩展存储服务。NetApp Keystone 运营团队会先处理此请求，然后再将其提供给用户使用。</block>
+  <block id="4c81eafa216c925957e13d302baa98d5" category="paragraph">您可以单击切换按钮*显示当前使用情况*来查看当前计费期间的使用量、突发使用量和应计突发数据。这些详细信息不基于查询的日期范围。</block>
+  <block id="6b7dfe5a7e219d1bb1b0d4dec89d1cb1" category="list-text">*应计突发*：当前计费期间每月计算的应计突发使用量或已用容量的指标。累积突发使用量是根据服务级别的已使用容量和已用容量计算得出的：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
 </blocks>
