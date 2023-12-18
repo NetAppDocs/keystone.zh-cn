@@ -16,6 +16,10 @@ summary: 客户可以在 Active IQ 中看到 Keystone 的情况
 [role="lead"]
 如果您订阅了NetApp Keystone服务，则可以在Active IQ数字顾问(数字顾问)信息板的*Keystone订阅*小工具上查看您的订阅概览。
 
+您可以通过按客户名称或包含多个客户的监视列表名称搜索Keystone订阅详细信息。有关如何按监视列表搜索Keystone订阅的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm-keystone-and-aiq.html#search-by-using-keystone-watchlists["使用Keystone监视列表进行搜索"]。
+
+Digital Advisor提供了一个统一的信息板，可通过*切换到旧/新信息板*按钮深入了解不同级别的订阅数据和使用情况信息。
+
 Digital Advisor提供了一个统一的信息板，通过*切换到旧/新信息板*按钮，您可以深入了解各种级别的订阅数据和使用情况信息。
 
 .默认(旧)信息板
@@ -49,6 +53,27 @@ TIP: 单击*订阅*链接可在*订阅*选项卡中查看过滤的订阅列表�
 
 image:db-card.png["无SLA"]
 
-有关Digital Advisor的详细信息、请参见 link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"]。
+有关Digital Advisor的详细信息、请参见 link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"^]。
 
 有关* Keystone订阅*选项卡的信息、请参见_Digital Advisor Keystone_信息板和报告。
+
+
+
+== 使用Keystone监视列表进行搜索
+
+监视列表是Active IQ数字顾问(数字顾问)的一项功能。有关信息，请参见 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["了解监视列表"^]。有关创建监视列表的信息、请参见 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["创建监视列表"^]。
+
+Keystone支持创建监视列表并按监视列表进行搜索、以查看多个客户的订阅详细信息。请按照以下步骤为Keystone客户创建监视列表：
+
+. 在*创建监视列表*屏幕上、提供Keystone监视列表的名称。
+. 在*添加系统依据*字段中选择*类别*。默认情况下，在*Choose Category (选择类别)*字段中选择了*Customer*。
+. 按客户名称搜索所需客户并添加。您只能添加有权查看其详细信息的客户。
+. 单击 * 创建监视列表 * 。Digital Advisor屏幕将显示新监视列表的数据。
+
+
+在Digital Advisor屏幕上按监视列表进行搜索时、您可以在*Keystone订阅*小工具的*订阅*下拉列表中查看客户及其订阅。
+
+
+TIP: 如果正在*Keystone订阅*小工具上查看_new_信息板，请单击*切换到旧信息板*以查看列表。
+
+image:watchlist.png["监视列表屏幕"]

@@ -13,9 +13,8 @@ summary: NetApp Keystone 是一款按需购买、按需购买的存储即服务�
 :imagesdir: ./media/
 
 
-NetApp Keystone 是一种内部资本支出(capex)替代方案组合、旨在帮助您踏上云之旅。NetApp Keystone 通过存储服务在您的内部环境和云中提供无缝的混合云体验。有关 NetApp Keystone 的详细信息，请参见 link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
-
-Keystone是一款存储即服务产品、可在您的内部系统上提供类似于云的体验、并可连接到云—具体视您的意愿而提供。
+NetApp Keystone是一套内部资本支出(Capex)替代方案产品组合、可帮助客户顺利过渡到云。NetApp Keystone 通过存储服务在您的内部环境和云中提供无缝的混合云体验。
+有关 NetApp Keystone 的详细信息，请参见 link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
 
 
@@ -53,4 +52,4 @@ Keystone具有以下优势：
 
 image:nkfsosm_image4.png["优势"]
 
-Keystone服务与NetApp Keystone STaaS产品不同。有关NetApp Keystone STaaS的详细信息、请参见https://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaaS]。
+Keystone服务与NetApp Keystone STaaS产品不同。有关NetApp Keystone STaaS的详细信息、请参见https://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaaS^。

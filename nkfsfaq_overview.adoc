@@ -18,15 +18,22 @@ summary: NetApp Keystone 概述
 
 *什么是NetApp Keystone ？*
 
-NetApp Keystone 是一种内部资本支出(capex)替代方案组合。有关详细信息，请参见 https://www.netapp.com/services/keystone/["NetApp Keystone"]。
+NetApp Keystone是一套内部资本支出(Capex)替代方案。
+有关详细信息，请参见 https://www.netapp.com/services/keystone/["NetApp Keystone"^]。
 
 * NetApp Keystone 如何让客户受益？*
 
-NetApp Keystone 是连接我们资本支出和混合云战略的核心要素的桥梁，可提供灵活性，财务灵活性和降低财务风险，帮助客户满足其现金流和业务需求。
+NetApp Keystone是连接我们的资金管理和混合云战略各个支柱的桥梁、可提供敏捷性、财务灵活性和降低财务风险、帮助客户满足其现金流和业务需求。
 
 NetApp Keystone 品牌提供一系列灵活的支付解决方案、其中包括为注重现金的客户提供的传统融资、租赁和固定/可变选项以及Keystone服务。
 
-* Keystone服务(运营支出、类似云的体验)：*更喜欢100%运营支出、因此资产不会最终出现在客户的资产负债表中*希望将成本与使用量/收入保持一致的内部/外部服务提供商*容量增长不可预测的工作负载*从典型存储任务(迁移、技术更新、升级、 等)*将工作负载迁移到云之前的短期解决方案 *将工作负载从云返回内部
+* Keystone服务(运营支出、类云体验)：*
+*倾向于100%运营支出、因此资产不会最终出现在客户的资产负债表上
+*希望将成本与使用/收入挂钩的内部/外部服务提供商
+*容量增长不可预测的工作负载
+*从典型存储任务(迁移、技术更新、升级等)重新分配IT资源
+*将工作负载迁移到云之前的短期解决方案
+*将工作负载从云恢复到内部环境
 
 *什么是NetApp Keystone ？*
 

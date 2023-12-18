@@ -27,7 +27,8 @@ NetApp全球服务和支持中心(GSSC)团队主要为NetApp Keystone 客户提�
 
 您还可以使用以下信息联系支持团队。
 
-* 全球服务联系人：https://www.netapp.com/us/contact-us/support.aspx[]
+* 全球服务联系人：
+https://www.netapp.com/us/contact-us/support.aspx[]
 * 如果您有待处理案例 / 服务单需要上报，请发送电子邮件至以下地址之一： Keystone.services@netapp.com Keystone.escalations@netapp.com
 * NetApp 使用基于云的远程网关解决方案 OpsRamp 主动监控和连接到 NetApp Keystone 环境以进行故障排除。有关 OpsRamp 的信息，请参见 https://www.opsramp.com/#[]。
 

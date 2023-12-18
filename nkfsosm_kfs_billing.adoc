@@ -97,7 +97,8 @@ Keystone计费有多种情形、您应熟悉这些情形。
 
 === 计费和自适应 QoS 策略
 
-Keystone根据服务级别衡量使用情况。每个服务级别都与一个特定的自适应服务质量(QoS)策略相关联。在部署期间、您将了解所订阅的Keystone服务的每个QoS策略的详细信息。在存储管理操作期间、请确保您的卷已根据您订阅的服务级别分配适当的QoS策略、以避免意外计费。有关 ONTAP 中 QoS 策略的详细信息，请参见 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"]。
+Keystone根据服务级别衡量使用情况。每个服务级别都与一个特定的自适应服务质量(QoS)策略相关联。在部署期间、您将了解所订阅的Keystone服务的每个QoS策略的详细信息。在存储管理操作期间、请确保您的卷已根据您订阅的服务级别分配适当的QoS策略、以避免意外计费。
+有关 ONTAP 中 QoS 策略的详细信息，请参见 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoS 概述保证吞吐量"^]。
 
 
 

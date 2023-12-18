@@ -30,6 +30,6 @@ Keystone基础架构包括多个组件：
 * 用于管理和操作服务的工具、例如、OpsRamp、Active IQ数字顾问和Active IQ Unified Manager。
 
 
-有关 NetApp Keystone 与 Active IQ 集成的详细信息，请参见 link:https://docs.netapp.com/us-en/active-iq/["Active IQ 数字顾问文档"]
+有关 NetApp Keystone 与 Active IQ 集成的详细信息，请参见 link:https://docs.netapp.com/us-en/active-iq/["Active IQ 数字顾问文档"^]
 
 image:nkfsosm_image8.png["KS-Infrastructure"]

@@ -30,13 +30,13 @@ NOTE: 此处提供的信息包括适用场景 ONTAP 和StorageGRID。相关章�
 
 
 
-NOTE: Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量小于0.01TiB、则该值显示为 `0` 或 `No Usage`。在这些选项卡中为查询输入的本地时间将转换为UTC时间。因此、根据查询的时间、返回的数据可能会稍有不同。
+NOTE: Keystone订阅中的容量消耗会在信息板和报告上以Tib为单位显示、并四舍五入为小数点后两位。如果使用量小于0.01TiB、则该值显示为 `0` 或 `No Usage`。这些屏幕上的数据以UTC时间(服务器时区)显示。输入查询日期时、系统会自动将其视为UTC时间。
 
 有关使用情况指标的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["服务级别指标和定义"]。有关Keystone中使用的不同容量的信息、请参见 https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone 服务容量定义"]。
 
 
 
-== 查看订阅
+== 订阅
 
 您可以在*订阅*选项卡中查看订阅列表。
 
@@ -71,7 +71,7 @@ image:icon-purple.png["图标。"]：表示消耗量超过规定的突发限制
 
 
 
-== 查看订阅的使用情况详细信息
+== 当前使用情况
 
 要了解订阅的详细信息，请单击*当前使用情况*选项卡，然后选择所需的订阅编号。
 
@@ -86,7 +86,7 @@ TIP: 。 image:icon-info.png["信息图标"] 每个列旁边的图标提供有�
 
 
 
-== 查看历史使用情况数据
+== 容量趋势
 
 *容量趋势*选项卡显示特定时间段内Keystone订阅的历史数据。垂直图显示选定时间范围的使用情况详细信息、并提供相应的指示符、供您比较和生成报告。
 
@@ -215,7 +215,7 @@ image:dp-mir.png["MCC镜像底座"]
 ====
 
 
-== 查看卷和对象详细信息
+== 卷和对象
 
 在*卷和对象*选项卡上，您可以在ONTAP中查看卷的使用情况和其他详细信息。对于StorageGRID 、此选项卡将显示节点及其在对象存储环境中的个别使用情况。
 
@@ -224,7 +224,7 @@ NOTE: 此选项卡的名称因站点部署的性质而异。如果同时具有�
 
 
 
-=== ONTAP卷详细信息
+=== 查看ONTAP卷详细信息
 
 .了解更多信息。
 [%collapsible]
@@ -248,12 +248,12 @@ image:aiq-ks-sysdtls.png["卷和对象选项卡()"]
 ====
 
 
-=== StorageGRID节点和使用情况详细信息
+=== 查看StorageGRID节点和使用情况
 
 .了解更多信息。
 [%collapsible]
 ====
-对于StorageGRID 、此选项卡将显示对象存储环境中节点的逻辑使用情况。
+对于StorageGRID、此选项卡显示对象存储节点的逻辑使用情况。
 
 .步骤
 . 单击*Objects*选项卡。
@@ -270,11 +270,12 @@ image:sg-link-2.png["SG弹出窗口"]
 ====
 
 
-== 查看ONTAP卷性能
+== 性能
 
-您可以单击*性能*选项卡查看Keystone订阅所管理的ONTAP卷的性能详细信息。
+通过*性能*选项卡、您可以查看Keystone订阅所管理的ONTAP卷的性能指标。
 
-您可能无法使用此选项卡查看ONTAP卷上的性能指标。要查看此选项卡、请联系支持部门。
+
+TIP: 您可以选择使用此选项卡。要查看此选项卡、请联系支持部门。
 
 .步骤
 . 单击*Performance*选项卡。
