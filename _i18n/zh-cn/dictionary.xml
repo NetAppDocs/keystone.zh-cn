@@ -856,16 +856,12 @@ Active IQ数字顾问提供了一个信息板视图、其中包含有关订阅�
   <block id="80a3381e7f0324d1481403cc81d8b605" category="list-text">克隆的卷没有24小时宽限期、仅考虑克隆的大小。</block>
   <block id="5e46e614581cd458f9521294062d3783" category="list-text">一旦克隆卷超过父卷物理大小的10%、克隆将作为标准卷(逻辑使用容量)计费。</block>
   <block id="bc175ffde055d74266df92b003372145" category="paragraph">有关使用情况指标的信息、请参见<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。有关Keystone中使用的不同容量的信息、请参见<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
-  <block id="ef67282c9adc01fdca335af4d78a2c4b" category="list-text">如果要查看历史数据并分析容量使用趋势，请选择*Capacity Try*。如果要查看历史突发使用量数据，并根据发票分析计费使用量，请选择*应计突发*。</block>
   <block id="856c97744d50a2803c2f50202219de2d" category="section-title">查看容量趋势</block>
   <block id="b7d541aea481ae26f60f1033b3cab726" category="paragraph">如果选择了*Capacity Try*选项，请按照以下步骤操作：</block>
   <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">从*自日期*和*至日期*字段中的日历图标中选择时间范围。选择查询的日期范围。日期范围可以是本月开始日期或订阅开始日期到当前日期或订阅结束日期。您不能选择未来日期。</block>
   <block id="9a1db55a20b384661303cf6789a6fed8" category="list-text">单击 * 查看详细信息 * 。系统将根据选定时间范围显示每个服务级别的订阅历史使用数据。</block>
   <block id="5c0d50dc2c715b658984931c688519eb" category="paragraph">条形图显示日期范围内服务级别名称以及该服务级别占用的容量。收集的日期和时间显示在图表底部。根据查询的日期范围、使用情况图表将显示在30个数据收集点范围内。您可以将鼠标悬停在图表上方、以查看该数据收集点的已提交、已使用、突发以及突发限制以上数据的使用情况细分。</block>
   <block id="f8eaf321d70fdf3e9d097bb407d56130" category="paragraph">条形图中的以下颜色表示服务级别中定义的已用容量。图表中的每月数据用一条竖线分隔。</block>
-  <block id="a122d7ff9fbb0694ecb095cdf8f27baa" category="section-title">查看历史突发数据</block>
-  <block id="7f4aafd34e1281a2bb7098e5b06084bd" category="paragraph">如果您选择了*累积突发*选项，则默认情况下，您可以查看过去12个月的每月累积突发使用量数据。您可以按过去30个月的日期范围进行查询。</block>
-  <block id="75ddfeb3beb9d2a265ac2ce3b66ef050" category="admonition">累积突发使用量或已用容量是按当前计费期间的每月计算的。累积突发使用量是根据服务级别的已提交容量和已使用容量通过以下公式计算得出的：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
   <block id="952c204f277570032cf6454e003c63da" category="inline-image-macro">累积突发使用量图表</block>
   <block id="b9e135b5bcd23b0beff424e32497e77c" category="paragraph"><block ref="b9e135b5bcd23b0beff424e32497e77c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="36234decc68306d26e71012f98474aa1" category="paragraph">此功能在仅预览模式下可用。请联系您的KSM以了解有关此功能的更多信息。</block>
@@ -919,4 +915,8 @@ Active IQ数字顾问提供了一个信息板视图、其中包含有关订阅�
   <block id="53ee52defbf70af2e9afed973e812462" category="paragraph">NetApp Keystone是一套内部资本支出(Capex)替代方案产品组合、可帮助客户顺利过渡到云。NetApp Keystone 通过存储服务在您的内部环境和云中提供无缝的混合云体验。
 有关 NetApp Keystone 的详细信息，请参见 <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
   <block id="073ad031fe3412f290d7e3ed4beeb9b4" category="paragraph">Keystone服务与NetApp Keystone STaaS产品不同。有关NetApp Keystone STaaS的详细信息、请参见https://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaaS^。</block>
+  <block id="989f69001ddcc32301bcbd805f65e578" category="list-text">如果要查看历史数据并分析容量使用趋势，请选择*Capacity Try*。如果要查看已生成发票的历史突发使用情况数据，请选择“*开票应计突发事件”。您可以使用此数据根据发票分析计费使用情况。</block>
+  <block id="b01022ea67a6b913d57f7194fcc72d9d" category="section-title">查看已开票的应计突发量</block>
+  <block id="db0ef40224829d8428d6c42004012b26" category="paragraph">如果您选择了*开票应计突发*选项，则默认情况下，您可以查看过去12个月内已计费的每月应计突发使用量数据。您可以按过去30个月的日期范围进行查询。此时将显示发票数据的条形图、如果尚未对使用量计费、则会显示该月的_Pending _。</block>
+  <block id="393673167b0e2f5fe79a42f45c884852" category="admonition">已开票的应计突发使用量是根据服务级别的已提交容量和已使用容量按计费期间计算的。</block>
 </blocks>
